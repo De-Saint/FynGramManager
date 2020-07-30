@@ -1,0 +1,102 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details carts </small>
+            </div>
+
+        </div> 
+        <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Cart</h6>
+                                <h3 class="m-0 cart_total_count">0</h3>
+                            </div>
+                            <div class="ml-auto"> 
+                                <div class="w-7 h-7" > <i class="fa fa-cart-plus fs-50 text-primary-shadow"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Cart With Discount Codes</h6>
+                                <h3 class="m-0 cart_total_discount_count">0</h3>
+                            </div>
+                            <div class="ml-auto"> 
+                                  <div class="w-7 h-7" > <i class="fa fa-gift fs-50 text-primary-shadow"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Shopping Carts </div>
+                        <div class="card-options"> <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i
+                                    class="fe fe-chevron-up"></i></a> <a href="#" class="card-options-fullscreen"
+                                                                 data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a> <a href="#"
+                                                                                                class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a> </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table card-table table-striped text-nowrap table-bordered border-top">
+                                <thead>
+                                    <tr>
+                                        <th>SN</th>
+                                        <th>Name</th>
+                                        <th>Amount</th>
+                                        <th>Discount</th>
+                                        <th>Value</th>
+                                        <th>Total Amount</th>
+                                        <th>Shipping Type</th>
+                                        <th>Fees</th>
+                                        <th>Status</th>
+                                        <th>Date</th>
+                                        <th>Count</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="CartList">
+                                    <tr class="cartclone d-none">
+                                        <td class="cart-sn">#12450</td>
+                                        <td class="cart-name">Buy</td>
+                                        <td class="cart-amount">$ 5273.15</td>
+                                        <td class="cart-discount"></td>
+                                        <td class="cart-discount-value"></td>
+                                        <td class="cart-total-amount">52681.13</td>
+                                        <td class="cart-ship-type">0.1</td>
+                                        <td class="cart-ship-fees"></td>
+                                        <td><span class="badge cart-status badge-pill">Completed</span></td>
+                                        <td class="cart-date-time"></td>
+                                        <td class="cart-product-count"></td>
+                                        <td> 
+                                            <button  class="btn btn-primary ml-0 ml-md-4  btn-cart-details mr-1 "> <i class="fa fa-info-circle"></i></button>
+                                            <button  class="btn btn-pink ml-0 ml-md-4 btn-cart-delete "> <i class="fa fa-trash-o"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

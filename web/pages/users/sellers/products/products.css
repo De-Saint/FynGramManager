@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 8, 2020, 1:08:35 PM
+    Author     : mac
+*/
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 365px;
+    overflow: auto;
+}
+.my-custom-scrollbar2 {
+    position: relative;
+    height: 365px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}

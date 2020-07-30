@@ -1,0 +1,26 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header bg-primary text-center">
+            <h6 class="modal-title ">Add Image</h6>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div> 
+        <form class="form" name="addImageForm" id=""  method="POST" enctype="multipart/form-data">
+            <div class="modal-body">
+
+                <div class="modal-body">
+                    <div class="form-group"> 
+                        <input type="file" id="change-upload-box" name="imageData" multiple="true" value="" class="dropify"  data-allowed-file-extensions="png" data-max-file-size="2M" />
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button class="btn btn-left btn-outline-primary float-right" data-type="finish" type="submit">  Upload Picture </button>
+            </div>
+        </form>
+    </div>
+</div>  

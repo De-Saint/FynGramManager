@@ -1,0 +1,44 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="modal-dialog">
+    <div class="modal-content modal-lg">
+        <div class="modal-header bg-primary">
+            <h5 class="modal-title" id="category-details">Category Details </h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="font-weight-bold">Name</div>
+                    <div class="cat-list-name"></div>
+                    <div class="font-weight-bold">Description</div>
+                    <div class="cat-list-description"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="cat-det-proplist my-custom-scrollbar2">
+                        <div class="cat-det-proplist-clone d-none">
+                            <div class="custom-controls pl-4  "> 
+                                  <div class="cat-det-prop-name font-weight-bold">Main Property</div> 
+                                <div class="cat-det-subproplist">
+                                    <div class="cat-det-subprop-clone d-none">
+                                        <div class=" pl-4 cat-det-subprop-name "> 
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-end">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+

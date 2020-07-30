@@ -1,0 +1,53 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="modal-dialog">
+    <div class="modal-content shadow border-0">
+        <div class="modal-header bg-primary">
+            <h5 class="modal-title" id="newsubscriptionamount">Create New Subscription Amount</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body p-0">
+            <div class="mb-0">
+                <div class="card-body px-lg-5 py-lg-5">
+                    <form name="newSubscriptionAmountForm" id="newSubscriptionAmountForm">
+                        <div class="form-group mb-3">
+                            <label>Select The Seller Type</label>
+                            <div class="input-group input-group-alternative">
+                                <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear" id="SubAmtSellerTypes" tabindex="-1" aria-hidden="true">
+                                    <option selected="selected">Select Seller Type</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Select The Subscription Type</label>
+                            <div class="input-group input-group-alternative">
+                                <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear" id="SubAmtSubcriptionTypes" tabindex="-1" aria-hidden="true">
+                                    <option selected="selected">Select Subscription Type</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Amount</label>
+                            <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend"> 
+                                    <span class="input-group-text p-0 w-7">
+                                        <i  class="fa fa-money mx-auto text-muted fs-18"></i>
+                                    </span>
+                                </div> 
+                                <input class="form-control" id="subAmtAmount" data-type="currency"  placeholder="New Amount" type="text">
+
+                            </div>
+                        </div>
+                        <div class="text-center"> 
+                            <button type="submit"class="btn btn-primary my-4">Submit</button> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

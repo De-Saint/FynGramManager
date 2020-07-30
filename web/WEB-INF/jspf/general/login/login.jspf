@@ -1,0 +1,47 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- Page opened -->
+<div class="page">
+    <div class="">
+        <div class="col col-login mx-auto">
+            <div class="text-center"> 
+                <img src="assets/images/brand/logo.png" class="header-brand-img desktop-logo h-100 mb-5" alt="Dashlot logo"> 
+            </div>
+        </div> <!-- container opened -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 justify-content-center mx-auto text-center">
+                    <div class="card">
+                        <form name="loginForm" id="">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-7 pr-0 d-none d-lg-block"> <img
+                                        src="assets/images/photos/login.jpg" alt="img" class="br-tl-2 br-bl-2 ">
+                                </div>
+
+                                <div class="col-md-12 col-lg-5 pl-0 ">
+                                    <div class="card-body p-6 about-con pabout">
+                                        <div class="card-title text-center  mb-4">LOGIN</div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="fgemail"  placeholder="Email"> </div>
+                                        <div class="form-group"> 
+                                            <input type="password" class="form-control"  id="fgpass" placeholder="Password"> </div>
+                                        <div class="form-group"> 
+                                            <label class="custom-control custom-checkbox"> 
+                                                <a href="${pageContext.request.contextPath}/LinksServlet?type=Recovery" class="float-right small text-info">Forgot password?</a> </label>
+                                        </div>
+                                        <div class="form-footer mt-1 mb-3">
+                                            <button type="submit" class="btn btn-success btn-block">SignIn</button> 
+                                        </div>
+                                        <hr class="divider">
+                                        <div class="mt-7"> <a  href="${pageContext.request.contextPath}/LinksServlet?type=Register" class="btn btn-facebook btn-block">SignUp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- container closed -->
+    </div>
+</div> <!-- Page closed -->

@@ -1,0 +1,175 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the form to add new category.</small>
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Create New Category</div>
+                    </div>
+                    <div class="card-body">
+                        <form class="form-horizontal notcreated" id="newCategoryForm" name="newCategoryForm">
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+
+                                    <div class="card  box-shadow-0 ">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Category Info</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-horizontal">
+                                                <div class="form-group"> 
+                                                    <label>Enter The Category Name <span class="text-red font-weight-bold"> *</span>  <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Please provide the name of the category your wish to create.</a></p> " data-original-title="" title="">?</span></label>
+                                                    <input type="text" class="form-control" required="true" id="newcat-name" placeholder="Category Name">
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Provide a brief Description <span class="text-red font-weight-bold"> *</span></label>
+                                                    <textarea class="form-control"  maxlength="200" required="true" id="newcat-desc" rows="6" placeholder="Give a brief Description of the category"></textarea>
+                                                </div>
+
+                                                <div class="form-group"> 
+                                                    <label>Is Root Category 
+                                                        <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Is the category you want to create a root/top category?.</a></p> " data-original-title="" title="">?</span> </label> 
+                                                    <div class="custom-controls row pl-4"> 
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio"class="custom-control-input"  name="isrootcat" value="1"> 
+                                                            <span class="custom-control-label mr-2">Yes</span> 
+                                                        </label> 
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input" name="isrootcat" value="0"  checked="true" > 
+                                                            <span class="custom-control-label">No</span> 
+                                                        </label> 
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group cat-root-disp"> 
+                                                    <label>Parent Category <span class="text-red font-weight-bold">*</span></label> 
+                                                    <div class="row mb-3 pl-3">
+                                                        <select class="form-control select2-show-search mb-5" id="cat-root-cat"
+                                                                data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+                                                        </select>
+                                                    </div>
+                                                    <div class="row mb-3 pl-3 cat-par-cat d-none">
+                                                        <select class="form-control select2-show-search mt-3" id="cat-par-cat" style="width: 800px;"
+                                                                data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+                                                        </select>
+                                                    </div>
+                                                    <div class="row pl-3 cat-child-cat d-none">
+                                                        <select class="form-control select2-show-search mt-3"  id="cat-child-cat" name="cat-child-cat" style="width: 800px;"
+                                                                data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="row pl-3 mt-3">
+                                                        <div class="form-group w-100">
+                                                            <div class="input-group "> 
+                                                                <span class="input-group-prepend"> 
+                                                                    <button class="btn btn-primary-light border-0 box-shadow-0" type="button">
+                                                                        The Selected Parent Category
+                                                                    </button> 
+                                                                </span> 
+                                                                <input type="text" disabled="true" placeholder="Select a category" value="" id="selectedcattext" class="form-control"/>
+                                                                <input type="hidden" disabled="true" value="" id="selectedcatid" class="form-control"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Tags</label>  
+                                                    <input type="text" value="" class="bg-primary w-100 form-control " id="newcat-tags" data-role="tagsinput" placeholder="Add tags" />
+                                                    <small class="font-weight-semibold">To add tags, click in the field, write something, and then press the "Enter" key</small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Pick Related Main And Sub Properties  </h4>
+                                            <div class="card-options"> 
+                                                <a href="${pageContext.request.contextPath}/LinksServlet?type=AdminNewProperty" class="btn btn-outline-primary btn-sm btn-prop-details" >
+                                                    Create New Property</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <div class="col-md-12 table-wrapper-scroll-y my-custom-scrollbar3 ">
+                                                    <div class="addcat-proplist">
+                                                        <div class="addprod-prop-clone d-none">
+                                                            <div class="custom-controls pl-4 "> 
+                                                                <label class="custom-control custom-checkbox pr-4 "> 
+                                                                    <input type="checkbox" class="custom-control-input addprod-prop-id" name="addprod-prop-id"> 
+                                                                    <span class="custom-control-label addprod-prop-name">Option 1</span> 
+                                                                    <div class="float-right">Main Property</div>
+                                                                </label> 
+                                                                <div class="addprod-subproplist">
+                                                                    <div class="addprod-subprop-clone d-none">
+                                                                        <div class="custom-controls pl-4 "> 
+                                                                            <label class="custom-control custom-checkbox pr-4 "> 
+                                                                                <input type="checkbox" class="custom-control-input addprod-subprop-id"  name="addprod-subprop-id"> 
+                                                                                <span class="custom-control-label addprod-subprop-name">Option 1</span> 
+                                                                                <!--<div class="float-right">Sub</div>-->
+                                                                            </label> 
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button type="submit"  class="btn btn-primary">Save And Continue</button>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                                <form class="created d-none mt-4"  method="POST" enctype="multipart/form-data" name="newCategoryImageForm">
+                                    <div class="">
+                                        <div class="form-group row "> 
+                                            <div class="col-md-2 text-center">
+                                               <img src="../../../../assets/images/no-image.png"
+                                                    alt="img" class="cat-image" style="height: 14em; width: 14em">
+                                               <p> <small>Drag or click the space on the right IF you want to change the Image</small></p>
+                                            </div>
+                                            
+                                            <div class="col-md-10"> 
+                                                <input type="hidden" disabled="true" value="20" id="newcreatedcatid" class="form-control"/>
+                                                <input type="file" name="imageData" id="catimage" value="" class="dropify"  data-allowed-file-extensions="png" data-max-file-size="1M" />
+                                            </div>
+
+                                        </div>
+                                    </div>   
+                                    <div class="text-center">
+                                        <button class="btn btn-left btn-outline-primary" data-type="finish" type="submit">  Upload Image </button>
+                                        <button class="btn btn-left btn-outline-danger" id="closenewcat" data-type="finish" type="button ">  Close </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

@@ -1,0 +1,86 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                 <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of your internal messages.</small>
+            </div>
+            <div class="page-rightheader">
+                
+            </div>
+        </div> 
+
+       <div class="row">
+
+    <div class="col-lg-12  col-xl-12 col-md-12 col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Inbox</h3>
+                <div class="card-options">
+                    <form>
+                        <div class="input-group"> <input type="text" class="form-control form-control-sm"
+                                placeholder="Search.." name="s"> <span class="input-group-btn ml-0"> <button
+                                    class="btn btn-sm btn-primary" type="submit"> <span
+                                        class="fe fe-search text-white"></span> </button> </span> </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="inbox-body">
+                    <div class="mail-option">
+                        <div class="btn-group hidden-phone"> <a data-toggle="dropdown" href="#" class="btn mini blue"
+                                aria-expanded="false"> Message Options <i class="fa fa-angle-down "></i> </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="mt-1 text-primary"><i class="fa fa-envelope-open"></i> Inbox</a></li>
+                                 <li class="divider"></li>
+                                 <li><a href="#" class="text-success"><i class="fa fa-envelope"></i> Sent</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" class="mb-1 text-danger"><i class="fa fa-trash"></i> Trash</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group"> <a href="#" class="btn mini"> <span>1-50 of 234</span>
+                            </a> </div>
+                        <ul class="unstyled inbox-pagination mt-3">
+                            <li><span>1-50 of 234</span></li>
+                        </ul>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-inbox table-hover  mail-body text-nowrap">
+                            <tbody id="MessageList">
+                                <tr class="unread msg-clone d-none">
+                                    <td class="inbox-small-cells"> 
+                                        <label class="custom-control custom-checkbox"> 
+                                            <input type="checkbox" class="custom-control-input msg-sn" name="checkbox" value="checkbox"> <span class="custom-control-label "></span> </label>
+                                    </td>
+                                    <td class="view-message  dont-show d-inline-block text-truncate font-weight-semibold msg-sender" style="max-width: 170px; width: 20em;">
+                                    </td>
+                                    
+                                    <td class="view-message d-inline-block text-truncate font-weight-semibold pr-1 msg-subject" style="max-width: 200px; width: 40em; cursor: pointer"> Admin Frygram</td>
+                                    <td class="view-message d-inline-block text-truncate text-muted msg-body" style="max-width: 420px;">Congratulations!!! </td>
+                                    
+                                    <td class="view-message  text-right msg-date-time">9:27 AM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="pagination mb-5">
+            <li class="page-item page-prev disabled"> <a class="page-link" href="#" tabindex="-1">Prev</a> </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item page-next"> <a class="page-link" href="#">Next</a> </li>
+        </ul>
+    </div>
+</div>
+    </div>
+</div> 
+<!-- App-content closed -->

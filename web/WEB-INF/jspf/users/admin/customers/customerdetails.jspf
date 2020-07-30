@@ -1,0 +1,254 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section business-management mt-5">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of all registered customers.</small>
+            </div>
+
+        </div> <!-- Page-header closed -->
+
+        <!-- row opened -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Customer Information</div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="wideget-user-desc d-flex">
+                                    <div class="wideget-user-img"> 
+                                        <img class="avatar h-9 w-9 brround customer-uimage"  alt="img"> 
+                                    </div>
+                                    <div class="user-wrap mt-0">
+                                        <h4 class="mb-2 customer-uname">Robert Stewart</h4>
+                                        <h6 class="text-muted mb-3 fw-400">Member Since: <span class="customer-uDateJoined"></span> <span class="customer-uTimeJoined"></span></h6>
+                                        <!--<a href="#" class="btn btn-outline-primary mt-1 mb-1"><i class="fa fa-envelope mr-1"></i> Send A Message</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="row ml-3  ml-auto mt-lg-0">
+                                    <div class="col-xl-4 mt-5 mt-xl-0">
+                                        <div class="border-right pr-4 mt-xl-3 mt-lg-0 d-xl-block">
+                                            <!--<a href="#" class="btn btn-outline-primary mt-1 mb-1"><i class="fa fa-envelope mr-1"></i> Send A Message</a>-->
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row closed -->
+        <!-- row opened -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wideget-user-tab wideget-user-tab3 border-bottom">
+                    <div class="tab-menu-heading">
+                        <div class="tabs-menu1">
+                            <ul class="nav">
+                                <li><a href="#tab-11" data-toggle="tab" class="h5 active show">Details</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white widget-user mb-0">
+                    <div class="card-body">
+                        <div class="border-0">
+                            <div class="tab-content">
+                                <div class="tab-pane userprof-tab active show" id="tab-11">
+                                    <!--row open-->
+                                    <div class="profile-log-switch">
+                                        <div class="row">
+                                            <div class="col-xl-8 col-lg-12 col-md-12">
+                                                <div class="card box-shadow-0">
+                                                    <div class="card-header">
+                                                        <h3 class="card-title">Details</h3>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane active show" id="tab-51">
+                                                                <div id="profile-log-switch">
+                                                                    <div class="table-responsive mb-5">
+                                                                        <table class="table row table-borderless w-100 m-0 border">
+                                                                            <tbody class="col-lg-6 p-0">
+                                                                                <tr>
+                                                                                    <td><strong>First Name :</strong> <span class="customer-uFirstName"></span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><strong>Last Name :</strong> <span class="customer-uLastName"></span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><strong>Date Joined :</strong> <span class="customer-uDateJoined"></span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><strong>Newsletter :</strong> <span class="customer-uNewsletter"></span></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tbody class="col-lg-6 p-0">
+                                                                                <tr>
+                                                                                    <td><strong>Email :</strong> <span class="customer-uEmail"></span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><strong>Phone :</strong> <span class="customer-uPhone"></span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><strong>Gender :</strong> <span class="customer-uGender"></span></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><strong>Wallet Pin :</strong> <span class="customer-uTPin"></span></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="p-5 border">
+                                                                        <div class="media-heading">
+                                                                            <h4><strong>Bank Details</strong></h4>
+                                                                        </div>
+                                                                        <div class="">
+                                                                            <div class="table-responsive">
+                                                                                <table class="table card-table table-striped text-nowrap table-bordered border-top">
+                                                                                    <thead id="">
+                                                                                        <tr>
+                                                                                            <th>Bank Name</th>
+                                                                                            <th>Account Number</th>
+                                                                                            <th>Account Type</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody id="bankdetails">
+                                                                                        <tr class="">
+                                                                                            <td class="bdbkid d-none"></td>
+                                                                                            <td class="customer-ubdbkkname"></td>
+                                                                                            <td class="customer-ubdbkacctnum"></td>
+                                                                                            <td class="customer-ubdbkaccttype"></td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                                        <div class="card mb-xl-0 box-shadow-0">
+                                                            <div class="card-body text-center">
+                                                                <p class=" mb-1 ">Wallet Number</p>
+                                                                <h3 class="mb-1 customer-uwalletNumber">0</h3> 
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- COL END -->
+                                                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+                                                        <div class="card mb-xl-0 box-shadow-0 text-center">
+                                                            <div class="card-body text-center">
+                                                                <p class=" mb-1  ">Main Balance</p>
+                                                                <h3 class="mb-1 customer-umainBalance">0</h3> <span
+                                                                    class="mb-1 text-muted fs-13">
+
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- COL END -->
+                                                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+                                                        <div class="card mb-xl-0 box-shadow-0 text-center">
+                                                            <div class="card-body text-center">
+                                                                <p class=" mb-1  ">Pending Balance</p>
+                                                                <h3 class="mb-1 customer-upendingBalance">0</h3> 
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- COL END -->
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 col-md-12">
+                                                <div class="card overflow-hidden mb-0 box-shadow-0">
+                                                    <div class="card-header">
+                                                        <h3 class="card-title">Related Details</h3>
+                                                    </div>
+                                                    <div class="project text-white Project-status ">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="">Current Account Balance</div>
+                                                                    <div class="h3 mt-2 mb-2 customer-umainBalance"> <b>55%</b><span class="text-success fs-13 ml-2">(completed)</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto align-self-center ">
+                                                                    <div class="feature mt-0 mb-0"> <i
+                                                                            class="fa fa-money box-shadow-0 project text-white"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="">
+                                                                <p class="mb-1">Customer Overview
+                                                                </p>
+                                                                <div
+                                                                    class="progress box-shadow-0 h-2 mt-1 mb-1">
+                                                                    <div class="progress-bar bg-white w-100 "
+                                                                         role="progressbar"></div>
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-0">
+                                                        <div class="row pt-3 pb-3 pl-5 pr-5 mt-0">
+                                                            <div class="col"> <span class="mb-0 mt-1 fs-15">Total Orders:</span> </div>
+                                                            <div class="col col-auto font-weight-semibold fs-15 customer-uorders"> 0 </div>
+                                                        </div>
+                                                        <div class="row pt-3 pb-3 pl-5 pr-5 bg-light">
+                                                            <div class="col"> <span class="mb-0 mt-1 fs-15">Total Messages:</span> </div>
+                                                            <div class="col col-auto font-weight-semibold fs-15 customer-umessages"> 0</div>
+                                                        </div>
+                                                        <div class="row pt-3 pb-3 pl-5 pr-5">
+                                                            <div class="col"> <span class="mb-0 mt-1 fs-15">Total Address:</span> </div>
+                                                            <div class="col col-auto font-weight-semibold fs-15 customer-uaddress"> 0 </div>
+                                                        </div>
+                                                        <div class="row pt-3 pb-3 pl-5 pr-5 bg-light">
+                                                            <div class="col"> <span class="mb-0 mt-1 fs-15">Total CashOut Requests:</span> </div>
+                                                            <div class="col col-auto font-weight-semibold fs-15 customer-ucashout"> 0 </div>
+                                                        </div>
+                                                        <div class="row pt-3 pb-3 pl-5 pr-5">
+                                                            <div class="col"> <span class="mb-0 mt-1 fs-15">Total Payments Made:</span> </div>
+                                                            <div class="col col-auto font-weight-semibold fs-15 customer-upayment"> 0 </div>
+                                                        </div>
+                                                        <div class="row pt-3 pb-3 pl-5 pr-5 bg-light">
+                                                            <div class="col"> <span class="mb-0 mt-1 fs-15">Total Reviews</span>  </div>
+                                                            <div class="col col-auto font-weight-semibold fs-15 customer-ureviews"> 0 </div>
+                                                        </div>
+                                                        <div class="row pt-3 pb-3 pl-5 pr-5"> 
+                                                            <div class="col"> <span class="mb-0 mt-1 fs-15">Total Transactions:</span> </div>
+                                                            <div  class="col col-auto font-weight-semibold fs-15 customer-utransactions"> 0 </div>
+                                                        </div>
+                                                        <div class="row pt-3 pb-3 pl-5 pr-5 bg-light">
+                                                            <div class="col mt-1"> <span class="mb-0 mt-1 fs-15">Total Discount Codes:</span> </div>
+                                                            <div class=" col-auto font-weight-semibold fs-15 customer-udiscountcodes"> 0 </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--row closed-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row closed -->
+
+
+    </div> <!-- Page-header closed -->
+
+</div> <!-- App-content closed -->

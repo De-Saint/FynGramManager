@@ -1,0 +1,42 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="first-sidemenu ps ps--active-y">
+    <div class="line-animations">
+        <ul class="resp-tabs-list hor_1" style="margin-top: 3px;">
+            <li class="resp-tab-item  hor_1" id="id-dashboard-svg"  aria-controls="hor_1_tab_item-0" role="tab" >
+                <span  class="side-menu__icon"></span>
+                <img src="../../../../assets/images/svgs/homepage.svg" class="side_menu_img svg-1" alt="image">
+            </li>
+            <li class="resp-tab-item hor_1"  id="id-shop-svg" aria-controls="hor_1_tab_item-1" role="tab">
+                <span class="side-menu__icon"></span>
+                <img src="../../../../assets/images/svgs/shopping-cart.svg" class="side_menu_img svg-1" alt="image">
+            </li>
+            <li class="resp-tab-item hor_1"  id="id-accounts-svg" aria-controls="hor_1_tab_item-2" role="tab">
+                <span class="side-menu__icon"></span>
+                <img src="../../../../assets/images/svgs/wallets.svg" class="side_menu_img svg-1" alt="image">
+            </li>
+            <li class="resp-tab-item hor_1"  id="id-users-svg"aria-controls="hor_1_tab_item-3"role="tab"  >
+                <span class="side-menu__icon"></span>
+                <img  src="../../../../assets/images/svgs/users.svg" class="side_menu_img svg-1" alt="image">
+            </li>
+            <li class="resp-tab-item hor_1"  id="id-carrier-svg" aria-controls="hor_1_tab_item-4" role="tab">
+                <span class="side-menu__icon" ></span>
+                <img src="../../../../assets/images/svgs/writing.svg" class="side_menu_img svg-1" alt="image">
+            </li>
+            <li class="resp-tab-item hor_1"  id="id-notifications-svg" aria-controls="hor_1_tab_item-5" role="tab">
+                <span class="side-menu__icon"></span>
+                <img src="../../../../assets/images/svgs/email.svg" class="side_menu_img svg-1" alt="image">
+            </li>
+            <li class="resp-tab-item hor_1"  id="id-pages-svg" aria-controls="hor_1_tab_item-6" role="tab">
+                <span class="side-menu__icon"></span>
+                <img src="../../../../assets/images/svgs/layers.svg" class="side_menu_img svg-1" alt="image">
+            </li>
+        </ul>
+    </div>
+    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+    </div>
+    <div class="ps__rail-y" style="top: 0px; height: 761px; right: -2px;">
+        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 584px;"></div>
+    </div>
+</div>

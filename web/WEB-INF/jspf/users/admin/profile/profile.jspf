@@ -1,0 +1,135 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows your personal  details..</small>
+            </div>
+        </div> 
+
+        <div class="row" id="user-profile">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="wideget-user">
+                            <div class="row">
+                                <div class="col-lg-12 col-xl-6 col-md-12">
+                                    <div class="wideget-user-desc d-flex">
+                                        <div class="wideget-user-img"> 
+                                            <img class="UserImage img-fluid img-thumbnail " style="width: 6em; height: 6em;"   alt="img" > </div>
+                                        <div class="user-wrap mt-lg-0">
+                                            <h4 class="UserName">Loading Name</h4>
+                                            <h6 class="text-muted mb-3 font-weight-normal"><span class="UserType font-weight-bold"></span></h6> 
+                                            <a href="javascript:void(0)"   data-toggle="modal" data-target="#addimage" class="btn btn-primary mt-1 mb-1"><i class="fa fa-camera"></i> Change Image</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="row ml-3  ml-auto mt-lg-0">
+                                        <div class="col-xl-6 mt-3 mt-xl-0">
+                                            <div class="border-right pr-2 mt-xl-3 mt-lg-0 d-xl-block">
+                                                <a  href="javascript:void(0)"  data-toggle="modal" data-target="#addbankdetails" class="btn btn-primary mt-1 mb-1"><i class="fa fa-bank mr-1"></i> Add Bank Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top">
+                        <div class="wideget-user-tab p-4">
+                            <div class="tab-menu-heading">
+                                <div class="tabs-menu1">
+                                    <ul class="nav">
+                                        <li class=""><a href="#tab-51" class="active show" data-toggle="tab">Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="border-0">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tab-51">
+                                    <div id="profile-log-switch">
+                                        <div class="table-responsive mb-5">
+                                            <table class="table row table-borderless w-100 m-0 border">
+                                                <tbody class="col-lg-6 p-0">
+                                                    <tr>
+                                                        <td><strong>First Name :</strong> <span class="uFirstName"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Last Name :</strong> <span class="uLastName"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Date Joined :</strong> <span class="uDateJoined"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Newsletter :</strong> <span class="uNewsletter"></span></td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody class="col-lg-6 p-0">
+                                                    <tr>
+                                                        <td><strong>Email :</strong> <span class="uEmail"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Phone :</strong> <span class="uPhone"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Gender :</strong> <span class="uGender"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Wallet Pin :</strong> <span class="uTPin"></span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="p-5 border">
+                                            <div class="media-heading">
+                                                <h4><strong>Bank Details</strong></h4>
+                                            </div>
+                                            <div class="">
+                                                <div class="table-responsive">
+                                                    <table class="table card-table table-striped text-nowrap table-bordered border-top">
+                                                        <thead id="">
+                                                            <tr>
+                                                                <th>Bank Name</th>
+                                                                <th>Account Number</th>
+                                                                <th>Account Type</th>
+                                                                <th>Delete</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="bankdetails">
+                                                            <tr class="">
+                                                                <td class="bdbkid d-none"></td>
+                                                                <td class="bdbkkname"></td>
+                                                                <td class="bdbkacctnum"></td>
+                                                                <td class="bdbkaccttype"></td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-danger btn-sm btn-delete-bkdetails"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete Bank Details" ><i class="fa fa-times-circle"></i> Delete</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- col end -->
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

@@ -1,0 +1,223 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of added categories.</small>
+            </div>
+
+            <div class="page-rightheader">
+                <div class="ml-3 ml-auto d-flex">
+                    <div class="mt-3 mt-md-0 mr-1">
+                        <div class="border-right mt-1 d-xl-block">
+                            <a   href="${pageContext.request.contextPath}/LinksServlet?type=AdminNewCategory" class="btn btn-primary ml-0 ml-md-4  d-sm-block addcaty "><i
+                                    class="typcn typcn-plus mr-1"></i>Create New Category</a>
+                        </div>
+                    </div>
+                    <div class="mt-3 mt-md-0">
+                        <div class="border-right mt-1 d-xl-block"> 
+                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=AdminNewProperty" class="btn btn-outline-primary ml-0 ml-md-4  d-sm-block addpropty"><i
+                                    class="typcn typcn-plus mr-1 "></i>Create New Property</a>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="card">
+                        <div class="card-body bg-primary-transparent">
+                            <div class="card-order">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Total Added Categories</div>
+                                        <div class="h3 mt-2 mb-2"><span class="font-weight-bold TotalCategories">0</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto align-self-center ">
+                                        <div class="chart-circle chart-circle-xs" data-value="1" data-thickness="6" data-color="#0245da">
+                                            <canvas width="80" height="80" style="height: 40px; width: 40px;"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div><!-- col end -->
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="card ">
+                        <div class="card-body">
+                            <div class="card-order">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Total Root/Top Categories</div>
+                                        <div class="h3 mt-2 mb-2"><span class="font-weight-bold TotalRootCategories">0</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-auto align-self-center ">
+                                        <div class="chart-circle chart-circle-xs" data-value="0.95" data-thickness="6"
+                                             data-color="#f88960"><canvas width="80" height="80" style="height: 40px; width: 40px;"></canvas></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> 
+                </div><!-- col end -->
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="card ">
+                        <div class="card-body bg-success-transparent">
+                            <div class="card-order">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="">Total Main/Parent Categories</div>
+                                        <div class="h3 mt-2 mb-2"><span class="font-weight-bold TotalEmptyRootCategories">0</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-auto align-self-center ">
+                                        <div class="chart-circle chart-circle-xs" data-value="0.95" data-thickness="6"
+                                             data-color="#f88960"><canvas width="80" height="80" style="height: 40px; width: 40px;"></canvas></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> 
+            </div><!-- col end -->
+
+
+        </div>
+        <div class="row">
+          
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-8">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Properties</div>
+
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row  my-custom-scrollbar2">
+                            <div class="table-responsive">
+                                <table class="table border table-bordered mb-0 text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>Name</th>
+                                            <th>Values</th>
+                                            <th>Option</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="PropList">
+                                        <tr class="propclone d-none">
+                                            <td class="propsn">1</td>
+                                            <td class="propname">#5346257370</td>
+                                            <td class="propvalue">03:14:32</td>
+                                            <td class=""> 
+                                                <button type="button" class="btn btn-outline-success btn-sm btn-prop-details"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Details"  ><i class="fa fa-info-circle"></i></button>
+                                                <button type="button" class="btn btn-outline-primary btn-sm btn-prop-edit"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"  ><i class="fa fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-danger btn-sm btn-prop-delete"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"  ><i class="fa fa-trash-o"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span class="PropertyName">Select Property</span>>> Values</div>
+
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row  my-custom-scrollbar2">
+                            <div class="table-responsive">
+                                <table class="table table-responsive border table-bordered mb-0 text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>SN</th>
+                                            <th>Name</th>
+                                            <th>Option</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="PropValuesList">
+                                        <tr class="propvalclone d-none">
+                                            <td class="propval-sn">1</td>
+                                            <td class="propval-name">#5346257370</td>
+                                            <td class="">    
+                                                <button type="button" class="btn btn-outline-primary btn-sm btn-propval-edit"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"  ><i class="fa fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-danger btn-sm btn-propval-delete"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"  ><i class="fa fa-trash-o"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title mt-2 ml-3">Categories</h3> 
+                    </div>
+                    <div class="card-body">
+                        <div id="table2" class="table-responsive table-editable">
+                            <table class="table table-bordered table-responsive-md table-striped mb-0 text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th class="">Sn</th>
+                                        <th class="">Image</th>
+                                        <th class="">Name</th>
+                                        <th class="">Description</th>
+                                        <th class="">Is Root Category</th>
+                                        <th class="">Parent Category</th>
+                                        <th class="">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="CategoryList">
+                                    <tr class="catlist-clone d-none">
+                                        <td class="catlist-sn">SN</td>
+                                        <td class="sorting_1"> 
+                                            <img src="../../../../assets/images/no-image.png"
+                                                 alt="img" class="h-7 w-7 catlist-image">
+                                        </td>
+                                        <td class="catlist-name">Name</td>
+                                        <td><span class="catlist-desc d-inline-block text-truncate  border-0 font-weight-semibold pr-1 msg-subject" title="home alone" style="max-width: 250px; width: 50em;">Description</span></td>
+                                        <td > <span class="catlist-root badge fs-14">No</span></td>
+                                        <td class="catlst-parent">Home</td>
+                                        <td> 
+                                            <button type="button"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"    class="btn btn-outline-primary btn-rounded btn-sm my-0 btn-catlist-edit"><i class="fa fa-pencil fa-fw"></i></button>
+                                            <button type="button"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"    class="btn btn-outline-danger btn-rounded btn-sm my-0 btn-catlist-delete"><i class="fa fa-trash-o fa-fw"></i></button>
+                                            <button type="button"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Details"    class="btn btn-outline-success btn-rounded btn-sm my-0 btn-catlist-details"><i class="fa fa-info-circle fa-fw"></i></button>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> 
+<!-- App-content closed -->

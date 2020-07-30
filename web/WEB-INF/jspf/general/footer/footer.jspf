@@ -1,0 +1,92 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- Footer opened -->
+<footer class="footer-main leftmenu-footer">
+    <div class="container">
+        <div class="  mt-2 mb-2 text-center"> Copyright &copy; <script>  document.write(new Date().getFullYear());</script>
+            <a href="#" class="fs-14 text-primary">FynGram</a> All rights reserved. 
+        </div>
+    </div>
+    <!-- Back to top --> 
+    <a href="#top" id="back-to-top" style="display: none;"><i class="fa fa-angle-double-up"></i></a>
+</footer> <!-- Footer closed -->
+
+<div class="modal fade" id="addimage">
+    <%@include file="../../users/admin/profile/addimage.jspf" %>
+</div>
+<div class="modal fade" id="addbankdetails">
+    <%@include file="../../users/admin/profile/addbankdetails.jspf" %>
+</div>
+
+<div class="modal fade" id="discountcodedetails">
+    <%@include file="../../users/admin/discount/discountcodedetails.jspf" %>
+</div>
+<div class="modal fade" id="newdiscountcodedeductiontype">
+    <%@include file="../../users/admin/discount/newdiscountcodedeductiontype.jspf" %>
+</div>
+<div class="modal fade" id="newdiscountcodetype" >
+    <%@include file="../../users/admin/discount/newdiscountcodetype.jspf" %>
+</div>
+<div class="modal fade" id="newsubscriptiontype" >
+    <%@include file="../../users/admin/subscription/newsubscriptiontype.jspf" %>
+</div>
+<div class="modal fade" id="newsubscriptionamount">
+    <%@include file="../../users/admin/subscription/newsubscriptionamount.jspf" %>
+</div>
+<div class="modal fade" id="fundwallet">
+    <%@include file="../../users/admin/wallet/fundwallet.jspf" %>
+</div>
+
+<div class="modal fade" id="editsubscriptionamount">
+    <%@include file="../../users/admin/subscription/editsubscriptionamount.jspf" %>
+</div>
+
+
+<div class="modal fade" id="new_customer" >
+    <%@include file="../../users/admin/customers/newcustomer.jspf" %>
+</div>
+
+<div class="modal fade" id="new_seller_type" >
+    <%@include file="../../users/admin/sellers/newsellertype.jspf" %>
+</div>
+
+<div class="modal fade" id="category-details">
+    <%@include file="../../users/admin/category/categorydetails.jspf" %>
+</div>
+
+<div class="modal fade" id="newbank" >
+    <%@include file="../../users/admin/cashout/newbank.jspf" %>
+</div>
+
+<div class="modal fade" id="new_cashout_request">
+    <%@include file="../../users/admin/cashout/cashoutrequest.jspf" %>
+</div>
+
+<div class="modal fade" id="transactions_details">
+    <%@include file="../../users/admin/transaction/transactiondetails.jspf" %>
+</div>
+
+<div class="modal fade" id="new_shipping_fees">
+    <%@include file="../../users/admin/shipping/newshippingfees.jspf" %>
+</div>
+
+<div class="modal fade" id="new-address-type">
+    <%@include file="../../users/admin/address/newaddresstype.jspf" %>
+</div>
+<div class="modal fade" id="restock">
+    <%@include file="../../users/admin/stock/newstock.jspf" %>
+</div>
+
+<div class="modal fade" id="newproductunit">
+    <%@include file="../../users/admin/products/newproductunit.jspf" %>
+</div>
+<div class="modal fade" id="newproductcondition">
+    <%@include file="../../users/admin/products/newproductcondition.jspf" %>
+</div>
+<div class="modal fade" id="add_address">
+    <%@include file="../../users/sellers/profile/new_address.jspf" %>
+</div>
+<div class="modal fade" id="pay_subscription">
+    <%@include file="../../users/sellers/subscription/pay_subscription.jspf" %>
+</div>
+

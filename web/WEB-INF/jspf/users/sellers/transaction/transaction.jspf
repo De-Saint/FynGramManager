@@ -1,0 +1,120 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows transactions details</small>
+            </div>
+
+        </div> 
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Transactions</h6>
+                                <h3 class="m-0 transTotalCount">0</h3>
+                            </div>
+                            <div class="ml-auto"> <img class="w-7 h-7"
+                                                       src="../../../../assets/images/crypto-currencies/round-outline/Bitcoin.svg" alt="image"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Credit</h6>
+                                <h3 class="m-0 transTotalCrCount">0</h3>
+                            </div>
+                            <div class="ml-auto"> <img class="w-7 h-7"
+                                                       src="../../../../assets/images/crypto-currencies/round-outline/Ethereum.svg" alt="image"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Debit</h6>
+                                <h3 class="m-0 transTotalDrCount">0</h3>
+                            </div>
+                            <div class="ml-auto"> <img class="w-7 h-7"
+                                                       src="../../../../assets/images/crypto-currencies/round-outline/Bitcoin.svg" alt="image"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Recent Transactions </div>
+                        <div class="card-options"> <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i
+                                    class="fe fe-chevron-up"></i></a> <a href="#" class="card-options-fullscreen"
+                                                                 data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a> <a href="#"
+                                                                                                class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a> </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table card-table table-striped text-nowrap table-bordered border-top">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Transaction Name</th>
+                                        <th>Transaction Type</th>
+                                        <th>Transaction Reference</th>
+                                        <th>Amount</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="TransactionList">
+                                    <tr class="tnxclone d-none">
+                                        <td class="tnx-count"></td>
+                                        <td class="tnx-name">Buy</td>
+                                        <td class="tnx-type">Buy</td>
+                                        <td class="tnx-reference"> 0.37218</td>
+                                        <td class="tnx-amount"></td>
+                                        <td class="tnx-date">52681.13</td>
+                                        <td class="tnx-time">$ 5273.15</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" id="ViewTransDetails" data-toggle="modal" data-target="#transactions_details">Details</button>
+                                            <button type="button" class="btn btn-outline-danger btn-sm delete_trans_btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination ">
+                <li class="page-item disabled"> <a class="page-link" href="#" tabindex="-1"> <i class="fa fa-angle-left"></i>
+                        <span class="sr-only">Previous</span> </a> </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"> <a class="page-link" href="#"> <i class="fa fa-angle-right"></i> <span
+                            class="sr-only">Next</span> </a> </li>
+            </ul>
+        </nav>
+    </div>
+</div> 
+<!-- App-content closed -->

@@ -1,0 +1,159 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of available pickup stations added.</small>
+            </div>
+            <div class="page-rightheader">
+                <div class="d-flex  mt-4 mt-xl-0 mt-lg-0">
+                    <!-- media --> <a  href="${pageContext.request.contextPath}/LinksServlet?type=AdminNewPickup" class="btn btn-primary ml-0 ml-md-4 d-none d-sm-block " >
+                        <i class="fa fa-plus-circle fa-fw mr-1"></i>Add New Pickup Center</a>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-6">
+                <div class="card bg-gradient-primary">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total States/Regions</h6>
+                                <h3 class="m-0">1.343434</h3>
+                            </div>
+                            <div class="ml-auto"> <img class="w-7 h-7"
+                                                       src="../../../../assets/images/crypto-currencies/round-outline/Bitcoin.svg" alt="image"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-6">
+                <div class="card bg-gradient-success">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Pickup Stations</h6>
+                                <h3 class="m-0">3.763674</h3>
+                            </div>
+                            <div class="ml-auto"> <img class="w-7 h-7"
+                                                       src="../../../../assets/images/crypto-currencies/round-outline/Ethereum.svg" alt="image"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Pickup Station(s) </div>
+                        <div class="card-options"> <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i
+                                    class="fe fe-chevron-up"></i></a> <a href="#" class="card-options-fullscreen"
+                                                                 data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a> <a href="#"
+                                                                                                class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a> </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table card-table table-striped text-nowrap table-bordered border-top">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Type</th>
+                                        <th>Amount</th>
+                                        <th>Remaining</th>
+                                        <th>Price</th>
+                                        <th>USD</th>
+                                        <th>Fee (%)</th>
+                                        <th>Status</th>
+                                        <th>Date</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#12450</td>
+                                        <td class="text-success">Buy</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.37218</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.42173</td>
+                                        <td>52681.13</td>
+                                        <td>$ 5273.15</td>
+                                        <td>0.1</td>
+                                        <td><span class="badge badge-success-light badge-pill">Completed</span></td>
+                                        <td>31-05-2019 02:12:34</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success btn-sm mt-1"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Approve"  ><i class="fa fa-check-circle"></i></button>
+                                            <button type="button" class="btn btn-outline-danger mt-1 btn-sm"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Reject" ><i class="fa fa-times-circle"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12451</td>
+                                        <td class="text-danger">Sell</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 1.47364</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.36472</td>
+                                        <td>73647.15</td>
+                                        <td>$ 2637.37</td>
+                                        <td>0.1</td>
+                                        <td><span class="badge badge-warning-light badge-pill">Pending</span></td>
+                                        <td>02-06-2019 07:14:32</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>#12452</td>
+                                        <td class="text-danger">Sell</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.63736</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.73748</td>
+                                        <td>72637.02</td>
+                                        <td>$ 6345.16</td>
+                                        <td>0.1</td>
+                                        <td><span class="badge badge-danger-light badge-pill">Cancelled</span></td>
+                                        <td>05-06-2019 12:57:12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12453</td>
+                                        <td class="text-success">Buy</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.63647</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.83643</td>
+                                        <td>83748.19</td>
+                                        <td>$ 23836.09</td>
+                                        <td>0.1</td>
+                                        <td><span class="badge badge-success-light badge-pill">Completed</span></td>
+                                        <td>15-07-2019 10:43:17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12454</td>
+                                        <td class="text-success">Buy</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.76263</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.72563</td>
+                                        <td>32635.32</td>
+                                        <td>$ 7235.25</td>
+                                        <td>0.1</td>
+                                        <td><span class="badge badge-success-light badge-pill">Completed</span></td>
+                                        <td>22-07-2019 11:44:45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12455</td>
+                                        <td class="text-danger">Sell</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.46263</td>
+                                        <td><i class="cc BTC-alt text-warning"></i> 0.27363</td>
+                                        <td>28937.22</td>
+                                        <td>$ 4853.15</td>
+                                        <td>0.1</td>
+                                        <td><span class="badge badge-info-light badge-pill">In Process</span></td>
+                                        <td>30-07-2019 08:23:15</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

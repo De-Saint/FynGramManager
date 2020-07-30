@@ -1,0 +1,258 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- Sidebar menu-->
+<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+<aside class="app-sidebar">
+    <div class="side-tab-body p-0 border-0 resp-vtabs hor_1" id="sidemenu-Tab"
+         style="display: block; width: 100%; margin: 0px;">
+        <%@include file="sidebar_mobile_sellers.jspf" %>
+
+        <div class="second-sidemenu ps ps--active-y">
+            <div class="resp-tabs-container hor_1">
+                <!--Dashboard-->
+                <div class="resp-tab-content hor_1" id="id-dashboard-side" aria-labelledby="hor_1_tab_item-0">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active " id="side1">
+                                            <h5 class="mt-3 mb-4">FynGram</h5> 
+                                            <a class="slide-item" href="${pageContext.request.contextPath}/LinksServlet?type=SellerDashboard" id="id-dashboard-dash">Dashboard</a> 
+                                            <a class="slide-item" href="${pageContext.request.contextPath}/LinksServlet?type=SellerProfile"  id="id-dashboard-profile">Profile</a> 
+
+                                            <h5 class="fs-15 font-weight-semibold mt-5 mb-4">Overview</h5>
+                                            <div class=" mt-5">
+                                                <div class="card menu-icons">
+                                                    <div class="card-body p-3">
+                                                        <div class="d-flex">
+                                                            <div class="pr-4 mt-0"> <i
+                                                                    class="fa fa-dollar bg-secondary-transparent text-secondary-shadow text-secondary menu-icon"></i>
+                                                            </div>
+                                                            <div class=""> <span>Revenue</span>
+                                                                <h3 class="mb-0 fs-20">$459.2</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                            <div class=" mt-4">
+                                                <div class="card menu-icons">
+                                                    <div class="card-body p-3">
+                                                        <div class="d-flex">
+                                                            <div class="pr-4 mt-0"> <i
+                                                                    class="fa fa-files-o bg-info-transparent text-info-shadow text-info menu-icon"></i>
+                                                            </div>
+                                                            <div class=""> <span>Products</span>
+                                                                <h3 class="mb-0 fs-20">487</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <div class="card menu-icons">
+                                                    <div class="card-body p-3">
+                                                        <div class="d-flex">
+                                                            <div class="pr-4 mt-0"> <i
+                                                                    class="fa fa-handshake-o  bg-success-transparent text-success-shadow text-success menu-icon"></i>
+                                                            </div>
+                                                            <div class=""> <span>Orders</span>
+                                                                <h3 class="mb-0 fs-20">158</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Shop-->
+                <div class="resp-tab-content hor_1" id="id-shop-side" aria-labelledby="hor_1_tab_item-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active " id="side11">
+                                            <h5 class="mt-3 mb-4">Shop</h5> 
+                                            
+                                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=SellerProducts" class="slide-item" id="id-shop-product">Products</a>
+                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=SellerOrders" class="slide-item" id="id-shop-order">Orders</a>
+                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=SellerStock" class="slide-item" id="id-shop-stock">Stock Management</a>
+
+
+                                            <h5 class="fs-15 font-weight-semibold mt-5 mb-4">Overview</h5>
+                                            <div class=" mt-5">
+                                                <div class="card menu-icons">
+                                                    <div class="card-body p-3">
+                                                        <div class="d-flex">
+                                                            <div class="pr-4 mt-0"> <i
+                                                                    class="fa fa-dollar bg-secondary-transparent text-secondary-shadow text-secondary menu-icon"></i>
+                                                            </div>
+                                                            <div class=""> <span>Revenue</span>
+                                                                <h3 class="mb-0 fs-20">$459.2</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                            <div class=" mt-4">
+                                                <div class="card menu-icons">
+                                                    <div class="card-body p-3">
+                                                        <div class="d-flex">
+                                                            <div class="pr-4 mt-0"> <i
+                                                                    class="fa fa-files-o bg-info-transparent text-info-shadow text-info menu-icon"></i>
+                                                            </div>
+                                                            <div class=""> <span>Products</span>
+                                                                <h3 class="mb-0 fs-20">487</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <div class="card menu-icons">
+                                                    <div class="card-body p-3">
+                                                        <div class="d-flex">
+                                                            <div class="pr-4 mt-0"> <i
+                                                                    class="fa fa-handshake-o  bg-success-transparent text-success-shadow text-success menu-icon"></i>
+                                                            </div>
+                                                            <div class=""> <span>Orders</span>
+                                                                <h3 class="mb-0 fs-20">158</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Accounts-->
+                <div class="resp-tab-content hor_1" id="id-accounts-side" aria-labelledby="hor_1_tab_item-2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="side-1">
+                                            <h5 class="mt-3 mb-4">Accounts</h5> 
+                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=SellerWallet" class="slide-item" id="id-accounts-wallet">Wallet</a> 
+                                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=SellerTransactions" class="slide-item" id="id-accounts-transactions">Transactions</a>
+                                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=SellerPayments" class="slide-item" id="id-accounts-payments">Payments</a>
+                                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=SellerSubscription" class="slide-item" id="id-accounts-subscription">Subscriptions</a>
+                                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=SellerCashOut" class="slide-item" id="id-accounts-cashout">Cash-Out</a>
+
+                                            <h5 class="fs-15 font-weight-semibold mt-5 mb-4">Overview</h5>
+                                            <div class="mb-4">
+                                                <p class="mb-2 ">Overall Transactions<span
+                                                        class="float-right text-default">85%</span></p>
+                                                <div class="progress progress-sm mb-3 h-1">
+                                                    <div
+                                                        class="progress-bar progress-bar-striped progress-bar-animated bg-primary w-85">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <p class="mb-2 ">Overall Payments<span
+                                                        class="float-right text-default">65%</span></p>
+                                                <div class="progress progress-sm mb-3 h-1">
+                                                    <div
+                                                        class="progress-bar progress-bar-striped progress-bar-animated bg-secondary w-60">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <p class="mb-2 ">Overall Cash-Out<span
+                                                        class="float-right text-default">95%</span></p>
+                                                <div class="progress progress-sm mb-3 h-1">
+                                                    <div
+                                                        class="progress-bar progress-bar-striped progress-bar-animated bg-info w-30">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Notifications-->
+                <div class="resp-tab-content hor_1" id="id-notifications-side" aria-labelledby="hor_1_tab_item-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active " id="side31">
+                                            <h5 class="mt-3 mb-4">Notifications</h5> 
+                                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=SellerMessages" class="slide-item"  id="id-notifications-messages">Messages</a> 
+                                            <a   href="${pageContext.request.contextPath}/LinksServlet?type=SellerReviews" class="slide-item" id="id-notifications-reiviews">Reviews</a> 
+                                            <h5 class="fs-15 font-weight-semibold mt-5 mb-4">Overview
+                                            </h5>
+                                            <div class="row p-2"> 
+                                                <div class="col-6 p-0">
+                                                    <div class="border text-center border-right-0"><i
+                                                            class="ti-email fs-30 text-secondary-shadow text-secondary"></i>
+                                                        <a><small class="mb-0">Messages</small></a> </div>
+                                                </div>
+                                                <div class="col-6 p-0">
+                                                    <div class="border text-center"><i
+                                                            class="ti-bell fs-30 text-warning-shadow text-warning"></i>
+                                                        <a><small class="mb-0">Reviews</small></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--General-->
+                <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel sidetab-menu">
+                                <div class="panel-body tabs-menu-body p-0 border-0">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active " id="side21">
+                                            <h5 class="mt-3 mb-4">General</h5> 
+                                            <a href="/FynGramShop/pages/shop/faq/faq.jsp" class="slide-item" target="blank">FAQ</a> 
+                                            <a href="/FynGramShop/pages/shop/privacy/privacy.jsp" class="slide-item" target="blank">Privacy Policy</a> 
+                                            <a href="/FynGramShop/pages/shop/terms/terms.jsp"  class="slide-item" target="blank">Customer - Terms</a> 
+                                            <a href="/FynGramShop/pages/shop/support/support.jsp"  class="slide-item" target="blank">Supports</a> 
+                                            <a href="/FynGramShop/pages/shop/aboutus/aboutus.jsp" class="slide-item" target="blank">About Us</a>
+                                            <a href="/FynGramShop/pages/shop/contact/contact.jsp" class="slide-item" target="blank">Contact Us</a>
+                                            <a href="/FynGramShop/pages/shop/services/services.jsp" class="slide-item" target="blank">Services</a>
+                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=Terms"  class="slide-item" target="blank">Supplier - Terms</a> 
+                                            <a  href="${pageContext.request.contextPath}/LinksServlet?type=LogOut" class="slide-item text-danger CallLogOut1">Sign Out</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+            </div>
+            <div class="ps__rail-y" style="top: 0px; height: 761px; right: -2px;">
+                <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 416px;"></div>
+            </div>
+        </div>
+    </div>
+</aside> <!-- Sidemenu closed -->

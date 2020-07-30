@@ -1,0 +1,321 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the form to add new  product.</small>
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">New Product Information</div>
+
+                    </div>
+                    <div class="card-body">
+                        <form name="newProductForm" id="newProductForm" class="notcreated">
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Product Details</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-horizontal">
+                                                <div class="form-group"> 
+                                                    <label>Enter The Product Name <span class="text-red font-weight-bold"> *</span></label>
+                                                    <input type="text" class="form-control" id="addprod-name" required placeholder="Name"> 
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Provide a brief Description <span class="text-red font-weight-bold"> *</span></label>
+                                                    <textarea class="form-control" maxlength="200" rows="2" id="addprod-desc" required placeholder="Description"></textarea>
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Enter The Product Reference Number</label> 
+                                                    <input type="text" class="form-control" required id="addprod-refnumber" placeholder="Product Reference Number - AA00ZZ11"> 
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Enter The Product UPC Barcode</label> 
+                                                    <input type="text" class="form-control" id="addprod-upcbarcode" placeholder="Product UPC Barcode"> 
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Select Product Condition <span class="text-red font-weight-bold">*</span></label> 
+                                                    <select class="form-control select2-show-search w-100"  required id="addprod-prodcondition"
+                                                            data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0 ">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Product Price</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <div class="form-group"> 
+                                                    <label>Enter The Product Selling/Promo Price 
+                                                        <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Please provide the selling price that will show on our store.</a></p> " data-original-title="" title="">?</span> <span class="text-red font-weight-bold"> *</span></label>
+                                                    <input type="text" class="form-control" data-type="currency" id="addprod-sellingprice" required placeholder="Product Selling Price"> 
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Enter The Product Actual Price <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Please provide the cost price of the product.</a></p> " data-original-title="" title="">?</span><span class="text-red font-weight-bold"> *</span></label>
+                                                    <input type="text" class="form-control" data-type="currency"  id="addprod-costprice" required placeholder="Product Cost Price"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card  box-shadow-0 ">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Product Quantity</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <div class="form-group"> 
+                                                    <label>Enter The Product Quantity</label> <span class="text-red font-weight-bold"> *</span>
+                                                    <input type="number" class="form-control" min="1" id="addprod-quantity" required placeholder="Product Quantity"> 
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Enter The Product Minimum Quantity <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Please provide the minimum quantity before we notification to restock.</a></p> " data-original-title="" title="">?</span> <span class="text-red font-weight-bold"> *</span></label>
+                                                    <input type="number" class="form-control" value="1" id="addprod-quantitymin" required placeholder="Product Minimum Quantity"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+
+                                    <div class="card  box-shadow-0 ">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Product Category <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Please, tick only the categories that relate to your product.</a></p> " data-original-title="" title="">?</span></h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <div class="col-md-12 table-wrapper-scroll-y my-custom-scrollbar2 ">
+                                                    <div class="" id="addprod-categorylist">
+                                                        <div class="addprod-category-clone d-none">
+                                                            <div class="custom-controls pl-4 "> 
+                                                                <label class="custom-control custom-checkbox pr-4 "> 
+                                                                    <input type="checkbox" class="custom-control-input addprod-cat-id"  name="addprod-cat-id"> 
+                                                                    <span class="custom-control-label addprod-cat-name">Option 1</span> 
+                                                                </label> 
+                                                                <div class="" id="addprod-parcategorylist">
+                                                                    <div class="addprod-parcategory-clone d-none">
+                                                                        <div class="custom-controls pl-4 "> 
+                                                                            <label class="custom-control custom-checkbox pr-4 "> 
+                                                                                <input type="checkbox" class="custom-control-input addprod-parcat-id"   name="addprod-parcat-id"> 
+                                                                                <span class="custom-control-label addprod-parcat-name">Option 1</span> 
+                                                                                <div class="" id="addprod-subcategorylist">
+                                                                                    <div class="custom-controls pl-4 addprod-subcategory-clone d-none"> 
+                                                                                        <label class="custom-control custom-checkbox pr-4 "> 
+                                                                                            <input type="checkbox" class="custom-control-input addprod-subcat-id"  name="addprod-subcat-id"> 
+                                                                                            <span class="custom-control-label addprod-subcat-name">Option 1</span> 
+                                                                                        </label> 
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </label> 
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Product Properties  <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Please, tick only one item from <span class='text-danger'>Each Main Property</span> that relates to your product.</a></p> " data-original-title="" title="">?</span></h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <div class="col-md-12 table-wrapper-scroll-y my-custom-scrollbar ">
+                                                    <div class="addprod-proplist">
+                                                        <div class="addprod-prop-clone d-none">
+                                                            <div class="custom-controls pl-4 "> 
+                                                                <label class="custom-control custom-checkbox pr-4 "> 
+                                                                    <input type="checkbox" class="custom-control-input addprod-prop-id" name="addprod-prop-id"> 
+                                                                    <span class="custom-control-label addprod-prop-name">Option 1</span> 
+                                                                    <div class="float-right">Main Property</div>
+                                                                </label> 
+                                                                <div class="addprod-subproplist">
+                                                                    <div class="addprod-subprop-clone d-none">
+                                                                        <div class="custom-controls pl-4 "> 
+                                                                            <label class="custom-control custom-checkbox pr-4 "> 
+                                                                                <input type="checkbox" class="custom-control-input addprod-subprop-id"  name="addprod-subprop-id"> 
+                                                                                <span class="custom-control-label addprod-subprop-name">Option 1</span> 
+                                                                                <!--<div class="float-right">Sub</div>-->
+                                                                            </label> 
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0 ">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Product Unit & Tags</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <div class="form-group"> 
+                                                    <label>Select The Product Unit<span class="text-red font-weight-bold">*</span></label> 
+                                                    <select class="form-control select2-show-search" required id="addprod-unit"
+                                                            data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+
+                                                    </select>
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Enter The Product Unit Value</label> 
+                                                    <input type="text" class="form-control"  value="2" required  id="addprod-unitvalue" placeholder="Unit Value - 3"> 
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="">Enter the Product Tags 
+                                                        <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Please provide few tags to increase the visibility of your product during search.</a></p> " data-original-title="" title="">?</span>
+                                                    </label>
+                                                    <input type="text" value="" required class="bg-primary w-100" id="addprod-tags" data-role="tagsinput" placeholder="Add tags" />
+                                                    <small>To add tags, click in the field, write something, and then press the "Enter" key</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Product Stock Management</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <div class="form-group"> 
+                                                    <label>Select Stock Notification Type<span class="text-red font-weight-bold">*</span>
+
+                                                    </label> 
+                                                    <select class="form-control select2-show-search" required id="addprod-stocknotification"
+                                                            data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+
+                                                    </select>
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Enter The Product Minimum Stock Level
+                                                        <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Please provide the minimum stock level before we notification to restock.</a></p> " data-original-title="" title="">?</span>
+                                                        <span class="text-red font-weight-bold"> *</span>
+                                                    </label>
+                                                    <input type="number" class="form-control" value="2" min="1" id="addprod-stockmin" required > 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0 ">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Product Shipping Package</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group">
+
+                                                <div class="form-group form-row">
+                                                    <div class="col-sm-4"> 
+                                                        <label>Height</label>
+                                                        <div class="input-group input-group-alternative">
+                                                            <div class="input-group-prepend"> 
+                                                                <span class="input-group-text p-0 w-7">
+                                                                    <span class="mx-auto text-muted fs-18">cm</span>
+                                                                </span>
+                                                            </div> 
+                                                            <input type="number" class="form-control"  value="0"  id="addprod-shippingwidth"> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4"> 
+                                                        <label>Width</label>
+                                                        <div class="input-group input-group-alternative">
+                                                            <div class="input-group-prepend"> 
+                                                                <span class="input-group-text p-0 w-7">
+                                                                    <span class="mx-auto text-muted fs-18">cm</span>
+                                                                </span>
+                                                            </div> 
+                                                            <input type="number" class="form-control"  value="0"  id="addprod-shippingheight"> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4"> 
+                                                        <label>Depth</label>
+                                                        <div class="input-group input-group-alternative">
+                                                            <div class="input-group-prepend"> 
+                                                                <span class="input-group-text p-0 w-7">
+                                                                    <span class="mx-auto text-muted fs-18">cm</span>
+                                                                </span>
+                                                            </div> 
+                                                            <input type="number" class="form-control"  value="0"  id="addprod-shippingdepth"> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                                    <div class="card box-shadow-0 mb-0"> 
+                                        <div class="card-body text-center">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+
+                        <form class="created mt-4 d-none" id="newProductImageForm"  method="POST" enctype="multipart/form-data" name="newProductImageForm">
+                            <div class="">
+                                <div class="form-group "> 
+                                    <label class="">Upload Product Image <small class="text-primary">You can upload multiple images (.PNG Images Only) Maximum of 4 Images</small> </label> 
+                                    <input type="hidden" disabled="true" value="20" id="newcreatedprodid" class="form-control"/>
+                                    <input id="demo" type="file" name="files" accept=".png, image/png" multiple="" class="ff_fileupload_hidden">
+
+                                </div> 
+                                <div class="justify-content-center text-center ">
+                                    <button class="btn btn-outline-primary" id="AddNewProduct"> Click to add new Product after adding the image(s)</button> </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

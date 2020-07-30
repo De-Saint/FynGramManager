@@ -1,0 +1,200 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="page">
+    <div class="">
+        <div class="col col-login mx-auto">
+            <div class="text-center"> <img src="../../../assets/images/brand/logo.png"
+                                           class="header-brand-img desktop-logo h-100 mb-5" alt="Dashlot logo">  </div>
+        </div>
+    </div> <!-- Container opened -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 mx-auto">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-12  pl-0 ">
+                            <div class="card-body about-con pabout">
+                                <div class="card-title text-center">Seller/Supplier/Vendor Registration</div>
+                                <form id="form" name="sellerRegisterForm">
+                                    <div class="list-group">
+                                        <div class="list-group-item py-3 open" data-acc-step="">
+                                            <h5 class="mb-0" data-acc-title="">Seller Info</h5>
+                                            <div data-acc-content="" style="">
+                                                <div class="my-3">
+                                                    <div class="form-group form-row mt-2">
+                                                        <div class="col-sm-3"> <label>Gender <span class="text-red font-weight-bold">*</span></label> </div>
+                                                        <div class="col-sm-9">
+                                                            <div class="custom-controls row pl-4">
+                                                                <label class="custom-control custom-radio">
+                                                                    <input type="radio" class="custom-control-input" required name="sell-gender" value="Male" checked="true">
+                                                                    <span class="custom-control-label mr-2">Mr.</span>
+                                                                </label>
+                                                                <label class="custom-control custom-radio">
+                                                                    <input type="radio" class="custom-control-input" required name="sell-gender" value="Female">
+                                                                    <span class="custom-control-label">Mrs.</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>First Name <span class="text-red font-weight-bold">*</span></label> 
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" name="firstname" placeholder="First Name" id="sell-firstname" required class="form-control"> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Last Name <span class="text-red font-weight-bold">*</span></label> 
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" name="lastname" placeholder="LastName" id="sell-lastname" required class="form-control"> 
+                                                        </div>
+                                                    </div>
+
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item py-3" data-acc-step="">
+                                            <h5 class="mb-0" data-acc-title=""> Contact</h5>
+                                            <div data-acc-content="" style="display: none;">
+                                                <div class="my-3">
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Email <span class="text-red font-weight-bold">*</span></label>  
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="email" name="email" placeholder="Email" required id="sell-email" class="form-control"> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Phone <span class="text-red font-weight-bold">*</span></label> 
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="tel" name="phone" placeholder="Phone" required id="sell-phone" class="form-control"> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Password <span class="text-red font-weight-bold">*</span></label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="password" name="password" required  id="sell-password" class="form-control"> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item py-3" data-acc-step="">
+                                            <h5 class="mb-0" data-acc-title=""> Business Info</h5>
+                                            <div data-acc-content="" style="display: none;">
+                                                <div class="my-3">
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Business Name <span class="text-red font-weight-bold">*</span></label> 
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" name="bizname" placeholder="Business Name"  required id="sell-bizname" class="form-control">  
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Business Email <span class="text-red font-weight-bold">*</span></label> 
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="email" name="bizemail" placeholder="Business Email" required  id="sell-bizemail" class="form-control">  
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Business Phone <span class="text-red font-weight-bold">*</span></label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="tel" name="bizphone" placeholder="Business Phone" required  id="sell-bizphone" class="form-control">  
+                                                        </div>
+                                                    </div>
+                                                </div> 
+
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item py-3" data-acc-step="">
+                                            <h5 class="mb-0" data-acc-title=""> Business Shipping</h5>
+                                            <div data-acc-content="" style="display: none;">
+                                                <div class="my-3">
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Minimum Shipping Day(s) <span class="text-red font-weight-bold">*</span> <br> </label> 
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="number"  id="sell-minbizshippingdays" required placeholder="3" name="sell-minbizshippingdays" class="form-control">
+                                                            <small>The minimum number of days to deliver a product? E.g 2 </small>  
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Maximum Shipping Day(s) <span class="text-red font-weight-bold">*</span> <br> </label> 
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="number"  id="sell-maxbizshippingdays" required placeholder="5" name="sell-maxbizshippingdays" class="form-control">
+                                                            <small>The maximum number of days to deliver a product? E.g 5 </small>  
+                                                        </div>
+                                                    </div>
+                                                </div> 
+
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item py-3" data-acc-step="">
+                                            <h5 class="mb-0" data-acc-title="">Business Type</h5>
+                                            <div data-acc-content="" style="display: none;">
+                                                <div class="my-3">
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Select Seller Type <span class="text-red font-weight-bold">*</span></label> 
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <select class="form-control select2-show-search"  required id="sell-sellertype"  style="width: 520px;"
+                                                                    data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Select Payment Plan <span class="text-red font-weight-bold">*</span></label> 
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <select class="form-control select2-show-search" required id="sell-substype"  style="width: 520px;"
+                                                                    data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="checkbox">
+                                                            <div class="custom-checkbox custom-control"> 
+                                                                <input type="checkbox" required data-checkboxes="mygroup" class="custom-control-input" checked="" id="terms"> 
+                                                                <label for="checkbox-2" class="custom-control-label mt-1">I have read and agreed to FynGram <a href="${pageContext.request.contextPath}/LinksServlet?&type=Terms">Terms and Conditions For Sellers</a></label> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                            <div class="text-center  mb-0"> Already have account? <a  href="${pageContext.request.contextPath}/LinksServlet?&type=Login"
+                                                                                      class="text-primary">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Container closed -->
+    </div>

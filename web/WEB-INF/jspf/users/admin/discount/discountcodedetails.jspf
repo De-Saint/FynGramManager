@@ -1,0 +1,52 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="modal-dialog">
+    <div class="modal-content wide">
+        <div class="modal-header bg-primary">
+            <h6 class="modal-title">Discount Code Details </h6>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive-lg">
+                        <table class="table table-responsive-lg  table-striped table-bordered border-top">
+                            <tbody class="w-100">
+                                <tr class="">
+                                    <td class="bold">Description</td>
+                                    <td class="dcode-desc"></td>
+                                </tr>
+                                <tr class="">
+                                    <td class="bold">Apply To</td>
+                                    <td class="dcode-for"></td>
+                                </tr>
+                                <tr class="">
+                                    <td class="bold">Deduction Type</td>
+                                    <td class="dcode-dedtype"></td>
+                                </tr>
+                                <tr class="">
+                                    <td class="bold">Deduction Value</td>
+                                    <td class="bold dcode-dedvalue"></td>
+                                </tr>
+                                <tr class="">
+                                    <td class="bold">Total Created</td>
+                                    <td class="bold dcode-totalcreated ">Debit</span></td>
+                                </tr>
+                                <tr class="">
+                                    <td class="bold">Total Available</td>
+                                    <td class="dcode-totalavail"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+
+

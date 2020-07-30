@@ -1,0 +1,84 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page gives the form to create new shipping address..</small>
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Shipping Address</div>
+                        <div class="card-options "> 
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <form class="form-horizontal" name="addShippingAddressForm">
+                                    <div class="form-group row"> 
+                                        <label class="col-md-3 col-form-label text-right font-weight-bold">Name</label>
+                                        <div class="col-md-9"> 
+                                            <input type="text" id="add_ship_name" required placeholder="XYZ Logistics" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row"> 
+                                        <label class="col-md-3 col-form-label text-right font-weight-bold">Delivery Interval</label>
+                                        <div class="col-md-9">
+                                            <textarea cols="3" maxlength="100" required id="add_ship_interval" name="" class="form-control" placeholder="Would take 4 Business days to deliver to any location"></textarea> 
+                                        </div>
+                                    </div>
+<!--                                    <div class="form-group row"> 
+                                        <label class="col-md-3 col-form-label text-right font-weight-bold">Shipping Fess</label>
+                                        <div class="col-md-9">
+                                            <input type="text" required  class="form-control" id="add_ship_fees"   data-type="currency" placeholder="Shipping Fees 2,000" >
+                                        </div>
+                                    </div>-->
+                                    <div class="form-group row"> 
+                                        <label class="col-md-3 col-form-label text-right font-weight-bold">FynGram Shipping Fees Percentage</label>
+                                        <div class="col-md-9"> 
+                                            <div class="input-group input-group-alternative">
+                                                <div class="input-group-prepend"> 
+                                                    <span class="input-group-text w-7 fs-18 font-weight-bold">
+                                                        %
+                                                    </span>
+                                                </div> 
+                                                <input class="form-control"required type="number" placeholder="40" id="add_ship_admin_percent" name="number">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group row"> 
+                                        <label class="col-md-3 col-form-label text-right font-weight-bold">Seller Shipping Fees Percentage</label>
+                                        <div class="col-md-9">
+                                            <div class="input-group input-group-alternative">
+                                                <div class="input-group-prepend"> 
+                                                    <span class="input-group-text w-7 fs-18 font-weight-bold">
+                                                        %
+                                                    </span>
+                                                </div> 
+                                                <input class="form-control" required type="number" placeholder="60" id="add_ship_seller_percent" name="number"> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center"> 
+                                        <button type="submit" class="btn btn-primary my-4">Submit</button> 
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

@@ -1,0 +1,153 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                 <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of reviews on either a  product or a seller.</small>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-body iconfont text-left">
+                        <h6 class="mb-3">Total Reviews</h6>
+                        <h3 class="mb-1 font-weight-semibold">0<span class="text-success fs-13 ml-2"></span></h3>
+                        <p class="mb-2 mt-3 text-muted">Overview of Progressive Reviews</p>
+                        <div class="progress h-1 mb-2">
+                            <div class="progress-bar bg-primary w-100 " role="progressbar"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-body iconfont text-left">
+                        <h6 class="mb-3">Total Product Reviews</h6>
+                        <h3 class="mb-1 font-weight-semibold">0<span class="text-success fs-13 ml-2"></span></h3>
+                        <p class="mb-2 mt-3 text-muted">Overview of Progressive Reviews</p>
+                        <div class="progress h-1 mb-2">
+                            <div class="progress-bar bg-secondary w-100" role="progressbar"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-body iconfont text-left">
+                        <h6 class="mb-3">Total Seller Reviews</h6>
+                        <h3 class="mb-1 font-weight-semibold">0<span class="text-success fs-13 ml-2"></span></h3>
+                        <p class="mb-2  mt-3 text-muted">Overview of Progressive Reviews</p>
+                        <div class="progress h-1 mb-2">
+                            <div class="progress-bar bg-info w-100 " role="progressbar"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Rating And Reviews</h3>
+                </div>
+                <div class="card-body p-0">
+                    <div class="media mt-0 p-5">
+                        <div class="d-flex mr-3"> 
+                            <a href="#"><img class="media-object brround" alt="64x64" src="../../../../assets/images/users/5.jpg"> </a> 
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1 font-weight-semibold">Joanne Scott 
+                                <span class="fs-14 ml-2"> 4.5 <i class="fa fa-star text-yellow"></i></span> 
+                            </h5> 
+                            <small class="text-muted" >
+                                <i class="fa fa-calendar"></i> Dec 21st 
+                                <i class=" ml-3 fa fa-clock-o"></i> 13.00 
+                            </small>
+                            <p class="font-13  mb-2 mt-2"> Ut enim ad minim veniam, quis Neque porro quisquam est, qui dolorem
+                                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                                incidunt ut labore et nostrud exercitation ullamco laboris commodo consequat. 
+                            </p>
+                            <a href="#" class="mr-2"><span class="badge badge-primary">Helpful</span></a> 
+                            <a href="" class="mr-2 badge badge-danger" data-toggle="modal" data-target="#Comment"><span class="">Delete</span></a> 
+
+                            <div class="media mt-5">
+                                <div class="d-flex mr-3"> 
+                                    <a href="#"> 
+                                        <img class="media-object brround" alt="64x64" src="../../../../assets/images/users/2.jpg"> 
+                                    </a> 
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1 font-weight-bold fs-18 "><span class="bg-primary-tranparant badge badge-primary-light">Rose Slater</span> 
+                                        <span class="fs-14 ml-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Seller">
+                                            <i class="fa fa-user-circle-o text-success"></i>
+                                        </span>
+                                    </h5> 
+                                    <small class="text-muted">
+                                        <i class="fa fa-calendar"></i> Dec 22st 
+                                        <i class=" ml-3 fa fa-clock-o"></i> 6.00 
+                                    </small>
+                                    <p class="font-13  mb-2 mt-2"> Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris commodo Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur consequat. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="card-body p-0">
+                    <div class="media mt-0 p-5">
+                        <div class="d-flex mr-3"> 
+                            <a href="#"><img class="media-object brround" alt="64x64" src="../../../../assets/images/users/5.jpg"> </a> 
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1 font-weight-semibold">Joanne Scott 
+                                <span class="fs-14 ml-2"> 4.5 <i class="fa fa-star text-yellow"></i></span> 
+                            </h5> 
+                            <small class="text-muted" >
+                                <i class="fa fa-calendar"></i> Dec 21st 
+                                <i class=" ml-3 fa fa-clock-o"></i> 13.00 
+                            </small>
+                            <p class="font-13  mb-2 mt-2"> Ut enim ad minim veniam, quis Neque porro quisquam est, qui dolorem
+                                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                                incidunt ut labore et nostrud exercitation ullamco laboris commodo consequat. 
+                            </p>
+                            <a href="#" class="mr-2"><span class="badge badge-success">Good</span></a> 
+                             <a href="" class="mr-2 badge badge-danger" data-toggle="modal" data-target="#Comment"><span class="">Delete</span></a>
+
+                            <div class="media mt-5">
+                                <div class="d-flex mr-3"> 
+                                    <a href="#"> 
+                                        <img class="media-object brround" alt="64x64" src="../../../../assets/images/users/2.jpg"> 
+                                    </a> 
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1 font-weight-semibold">Samsumg Xmax 
+                                        <span class="fs-14 ml-0" data-toggle="tooltip" data-placement="top" title="" data-original-title="Product">
+                                            <i class="fa fa-shopping-bag text-success"></i>
+                                        </span>
+                                    </h5> 
+                                    <small class="text-muted">
+                                        <i class="fa fa-calendar"></i> Dec 22st 
+                                        <i class=" ml-3 fa fa-clock-o"></i> 6.00 
+                                    </small>
+                                    <p class="font-13  mb-2 mt-2"> Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris commodo Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur consequat. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

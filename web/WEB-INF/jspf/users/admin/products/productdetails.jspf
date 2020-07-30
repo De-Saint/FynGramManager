@@ -1,0 +1,309 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of selected product.</small>
+            </div> 
+            <div class="page-rightheader ">
+                <!--                <div class="d-flex mt-4 mt-xl-0 mt-lg-0">
+                                    <div class="media mr-2 mt-0">
+                                        <div class="media-body"> 
+                                            <a href="#" class="btn btn-primary  ml-0 ml-md-4 d-none d-sm-block">
+                                                Add Product</a>
+                                        </div> media-body 
+                                    </div> media  
+                                </div>-->
+            </div>
+        </div> 
+        <!-- Page-header closed -->
+        <!-- row opened -->
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-body"> 
+                    <div class="demo-gallery"> 
+
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="single-productslide">
+                        <div class="row no-gutter">
+                            <div class="col-lg-12 col-xl-5 col-md-12 border-right pr-0">
+                                <div class="product-gallery pt-5 pl-5 pr-5 pb-0">
+                                    <div class="product-slider">
+                                        <div id="carousel2" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item pimg active"> 
+                                                    <img  class="product-image" alt="img">
+                                                </div>
+                                                <div class="carousel-item pimg1">
+                                                    <img  class="product-image1"  alt="img"> 
+                                                </div>
+                                                <div class="carousel-item pimg2">
+                                                    <img   class="product-image2" alt="img"> 
+                                                </div>
+                                                <div class="carousel-item pimg3">
+                                                    <img class="product-image3" alt="img"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div id="thumbcarousel1" class="carousel slide mt-5 thumbcarousel" data-interval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <div data-target="#carousel2" data-slide-to="0" class="thumb pimg">
+                                                            <img  class="product-image" alt="img"></div>
+                                                        <div data-target="#carousel2" data-slide-to="1" class="thumb pimg1">
+                                                            <img  class="product-image1" alt="img"></div>
+                                                        <div data-target="#carousel2" data-slide-to="2" class="thumb pimg2">
+                                                            <img  class="product-image2"alt="img"></div>
+                                                        <div data-target="#carousel2" data-slide-to="3" class="thumb pimg3">
+                                                            <img  class="product-image3" alt="img"></div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div data-target="#carousel2" data-slide-to="4" class="thumb pimg">
+                                                            <img  class="product-image"" alt="img"></div>
+                                                        <div data-target="#carousel2" data-slide-to="5" class="thumb pimg1">
+                                                            <img  class="product-image1" alt="img"></div>
+                                                        <div data-target="#carousel2" data-slide-to="6" class="thumb pimg2">
+                                                            <img  class="product-image2" alt="img"></div>
+                                                        <div data-target="#carousel2" data-slide-to="7" class="thumb pimg3">
+                                                            <img  class="product-image3" alt="img"></div>
+                                                    </div>
+                                                </div> 
+                                                <a class="carousel-control-prev" href="#thumbcarousel1" role="button" data-slide="prev"> 
+                                                    <i class="fa fa-angle-left" aria-hidden="true"></i> 
+                                                </a> 
+                                                <a class="carousel-control-next" href="#thumbcarousel1" role="button" data-slide="next"> 
+                                                    <i class="fa fa-angle-right" aria-hidden="true"></i> 
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <dl class="product-gallery-quty mt-5 mb-0">
+                                                <h6 class="font-weight-semibold">SELLER DETAILS</h6>
+                                                <dd>
+                                                    <div class="form-group">
+                                                        <span class=" product-seller-name h4 text-primary">0</span> 
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-3">
+                                            <dl class="product-gallery-quty mt-5 mb-0">
+                                                <h6 class="font-weight-medium">STATUS</h6>
+                                                <dd>
+                                                    <div class="form-group text-center">
+                                                        <span class=" product-status badge h4">0</span> 
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-3">
+                                            <dl class="product-gallery-quty mt-5 mb-0">
+                                                <h6 class="font-weight-medium">LISTED</h6>
+                                                <dd>
+                                                    <div class="form-group">
+                                                        <span class=" product-active h4 text-white">0</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 product-note">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-7 col-md-12">
+                                <div class="product-gallery-data mb-0">
+                                    <h4 class="mb-3 font-weight-semibold product-name">name</h4>
+                                    <div class="mb-3"> 
+                                        <div class="float-left">
+                                            <span class="font-weight-semibold h3 text-danger product-price">0</span> 
+                                            (Cost Price <small class="font-weight-semibold product-cprice">0</small> )
+                                        </div>
+
+                                        <div class="float-right">
+                                            <span class="font-weight-semibold h4 text-primary product-rootcat">0</span> <small>(Root Category)</small>
+                                        </div>
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <h6 class="font-weight-semibold mt-3">Description</h6>
+                                    <p class="text-muted product-desc ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore and dolore magna aliqua domenus orioneu..
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <dl class="product-gallery-quty mt-2 mb-0">
+                                                <h6 class="font-weight-semibold">Reference Number</h6>
+                                                <dd>
+                                                    <div class="form-group">
+                                                        <span class="font-weight-semibold h6 text-primary product-ref">0</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-4">
+                                            <dl class="product-gallery-quty mt-2 mb-0">
+                                                <h6 class="font-weight-semibold">Condition</h6>
+                                                <dd>
+                                                    <div class="form-group">
+                                                        <span class="product-condition">0</span> 
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-4">
+                                            <dl class="product-gallery-quty mt-2 mb-0">
+                                                <h6 class="font-weight-semibold">UPC Barcode</h6>
+                                                <dd>
+                                                    <div class="form-group">
+                                                        <span class="font-weight-semibold h6 text-primary product-upc">0</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-4">
+                                            <dl class="product-gallery-quty mt-2 mb-0">
+                                                <h6 class="font-weight-bolder">Unit</h6>
+                                                <dd>
+                                                    <div class="form-group">
+                                                        <span class=" product-unit-value h4 text-primary">0</span>   
+                                                        <span class=" product-unit-name">0</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-4">
+                                            <dl class="product-gallery-quty mt-2 mb-0">
+                                                <h6 class="font-weight-bolder">Quantity</h6>
+                                                <dd>
+                                                    <div class="form-group">
+                                                        <span class=" product-quantity h4 text-primary">0</span> 
+                                                        ( Min. Quantity <span class=" product-mquantity">0</span>)
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-4">
+                                            <dl class="product-gallery-quty mt-2 mb-0">
+                                                <h6 class="font-weight-bolder">Date & Time Added</h6>
+                                                <dd>
+                                                    <div class="form-group">
+                                                        <span class=" product-date-added">0</span>   
+                                                        <span class=" product-time-added">0</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div> 
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h6 class="font-weight-semibold">Categories</h6>
+                                            <div id="product-categories-list">
+                                                <dl class="product-gallery-data1 product-categories-list-clone d-none">
+                                                    <dt class="product-categories-name">Color</dt>
+                                                </dl>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <h6 class="font-weight-semibold">Properties</h6>
+                                            <div id="product-properties-list">
+                                                <dl class="product-gallery-data1 product-properties-list-clone d-none ml-0">
+                                                    <dt class="product-properties-name"></dt>
+                                                    <dd class="product-properties-value"></dd>
+                                                </dl>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <h6 class="font-weight-semibold">Tags</h6>
+                                            <div id="product-tags-list">
+                                                <dl class="product-gallery-data1 product-tags-list-clone d-none">
+                                                    <dt class="product-tags-name">name</dt>
+                                                </dl>
+
+                                            </div>
+                                        </div>
+
+                                    </div> 
+                                    <div class="product-gallery-rats">
+                                        <ul class="product-gallery-rating">
+                                            <li> 
+                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
+                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
+                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
+                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
+                                                <a href="#"><i class="fa fa-star-o text-warning"></i></a> 
+                                            </li>
+                                        </ul>
+                                        <div class="label-rating">793 reviews</div>
+                                        <div class="label-rating h5">Stock Notification Type <span class="product-stocknotytype text-primary ml-5"></span></div>
+                                    </div>
+                                    <div class="row">
+
+
+                                        <div class="col-4">
+                                            <dl class="product-gallery-quty mt-5 mb-0">
+                                                <h6>Package Height</h6>
+
+                                                <div class="form-group">
+                                                    <span class=" product-pack-height h4 text-primary">0</span> CM
+
+                                                </div>
+
+                                            </dl>
+                                        </div>
+                                        <div class="col-4">
+                                            <dl class="product-gallery-quty mt-5 mb-0">
+                                                <h6>Package Depth</h6>
+
+                                                <div class="form-group">
+                                                    <span class=" product-pack-depth h4 text-primary">0</span> CM
+
+                                                </div>
+
+                                            </dl>
+                                        </div>
+                                        <div class="col-4">
+                                            <dl class="product-gallery-quty mt-5 mb-0">
+                                                <h6>Package Width</h6>
+
+                                                <div class="form-group">
+                                                    <span class=" product-pack-width h4 text-primary">0</span> CM
+
+                                                </div>
+
+                                            </dl>
+                                        </div>
+                                    </div> 
+                                    <button class="btn btn-primary mt-1" id="EditProduct" > Edit Product </button> 
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row closed -->
+        <!-- row opened -->
+    </div>
+</div>

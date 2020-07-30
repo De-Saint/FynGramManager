@@ -1,0 +1,110 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="page">
+    <div class="">
+        <div class="col col-login mx-auto">
+            <div class="text-center"> <img src="../../../assets/images/brand/logo.png"
+                                           class="header-brand-img desktop-logo h-100 mb-5" alt="Dashlot logo">  </div>
+        </div>
+    </div> <!-- Container opened -->
+    <div class="container">
+        <div class="row ">
+            <div class="card">
+                <div class="card-body">
+                    <div class="item-box justify-content-center text-center">
+                        <div class=" text-center text-success mb-4">
+                            <i class="fa fa-handshake-o fa-2x text-success-shadow"></i>
+                        </div>
+                        <div class="item-box-wrap">
+                            <h5 class="mb-2 font-weight-normal">Seller's Terms and Conditions</h5>
+                            <p class="text-muted mb-0">Welcome To FynGram Seller's Terms and Conditions</p>
+                        </div>
+                    </div>  
+                </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4><b>Welcome to FynGram</b></h4>
+                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                            and I will give you a complete account of the system, and expound the actual teachings of the great
+                            explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+                            pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
+                            rationally encounter consequences</p>
+                    </div>
+                </div>
+            </div><!-- col end -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4><b>Using Our Services</b></h4>
+                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                            and I will give you a complete account of the system, and expound the actual teachings of the great
+                            explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+                            pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
+                            rationally encounter consequences</p>
+                    </div>
+                </div>
+            </div><!-- col end -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4><b>Privacy policy</b></h4>
+                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                            and I will give you a complete account of the system, and expound the actual teachings of the great
+                            explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+                            pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
+                            rationally encounter consequences</p>
+                    </div>
+                </div>
+            </div><!-- col end -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4><b>Copyright </b></h4>
+                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                            and I will give you a complete account of the system, and expound the actual teachings of the great
+                            explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+                            pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
+                            rationally encounter consequences</p>
+                    </div>
+                </div>
+            </div><!-- col end -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4><b>Terms and Conditions</b></h4>
+                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                            and I will give you a complete account of the system, and expound the actual teachings of the great
+                            explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+                            pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
+                            rationally encounter consequences</p>
+                        <ul>
+                            <li><i class="fa fa-angle-double-right"></i> ducimus qui blanditiis praesentium voluptatum deleniti
+                                atque corrupti quos dolores </li>
+                            <li><i class="fa fa-angle-double-right"></i> quas molestias excepturi sint occaecati cupiditate non
+                                provident</li>
+                            <li><i class="fa fa-angle-double-right"></i> Nam libero tempore, cum soluta nobis est eligendi optio
+                                cumque</li>
+                            <li><i class="fa fa-angle-double-right"></i> Temporibus autem quibusdam et aut officiis debitis aut
+                                rerum necessitatibus saepe eveniet ut et voluptates</li>
+                            <li><i class="fa fa-angle-double-right"></i> repudiandae sint et molestiae non recusandae itaque
+                                earum rerum hic tenetur a sapiente delectus</li>
+                            <li><i class="fa fa-angle-double-right"></i> ut aut reiciendis voluptatibus maiores alias
+                                consequatur aut perferendis doloribus asperiores repellat</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body border text-center">
+                        <div class="terms">
+                            <p>Welcome To FynGram?</p>
+                            <a class="btn btn-primary text-white">Ok</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- col end -->
+        </div>
+    </div>

@@ -1,0 +1,139 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of cashout requests.</small>
+            </div>
+            <div class="page-rightheader">
+                <div class="ml-3 ml-auto d-flex">
+                    <div class="mt-3 mt-md-0 mr-1">
+                        <div class="border-right mt-1 d-xl-block">
+                            <a href="#" class="btn btn-primary ml-0 ml-md-4 d-sm-block " data-toggle="modal"
+                               data-target="#new_cashout_request"><i
+                                    class="fa fa-money fa-fw mr-1"></i>Request CashOut</a>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div> 
+
+        <div class="row"> 
+            <!--<div class="col-md-12 col-lg-12 col-xl-12">-->
+                <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex no-block align-items-center">
+                                <div>
+                                    <h6 class="">Total Cashout Request(s)</h6>
+                                    <h3 class="m-0 TotalCashout">0</h3>
+                                </div>
+                                <div class="ml-auto"> <img class="w-7 h-7"
+                                                           src="../../../../assets/images/crypto-currencies/round-outline/Bitcoin.svg" alt="image"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex no-block align-items-center">
+                                <div>
+                                    <h6 class="">Total Pending Request(s)</h6>
+                                    <h3 class="m-0 PendingCashout">0</h3>
+                                </div>
+                                <div class="ml-auto"> <img class="w-7 h-7"
+                                                           src="../../../../assets/images/crypto-currencies/round-outline/Ethereum.svg" alt="image"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex no-block align-items-center">
+                                <div>
+                                    <h6 class="">Total Approved Request(s)</h6>
+                                    <h3 class="m-0 TotalApproved">0</h3>
+                                </div>
+                                <div class="ml-auto"> <img class="w-7 h-7"
+                                                           src="../../../../assets/images/crypto-currencies/round-outline/Ripple.svg" alt="image"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex no-block align-items-center">
+                                <div>
+                                    <h6 class="">Total Rejected Request(s)</h6>
+                                    <h3 class="m-0 TotalRejected">0</h3>
+                                </div>
+                                <div class="ml-auto"> <img class="w-7 h-7"
+                                                           src="../../../../assets/images/crypto-currencies/round-outline/Ripple.svg" alt="image"> </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            <!--</div>-->
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">All CashOut Request(s) </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table card-table table-striped text-nowrap table-bordered border-top">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Bank Name</th>
+                                        <th>Acct Number</th>
+                                        <th>Acct Type</th>
+                                        <th>Amount</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Status</th>
+                                        <th>Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cashoutList">
+                                    <tr class="cash-clone d-none">
+                                        <td class="cashsn">#12450</td>
+                                        <td class="cashusername">Buy</td>
+                                        <td class="cashbankname"> 0.37218</td>
+                                        <td class="cashacctnumber"> 0.42173</td>
+                                        <td class="cashaccttype"> 0.42173</td>
+                                        <td class="cashamount">52681.13</td>
+                                        <td class=""><span class="cashdate badge badge-primary">date</span></td>
+                                        <td class=""><span class="cashtime badge badge-primary">date</span></td>
+                                        <td><span class="cashstatus">status</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-success btn-sm btn-approve-cashout"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Approve"  ><i class="fa fa-check-circle"></i></button>
+                                            <button type="button" class="btn btn-outline-danger btn-sm btn-cancel-cashout"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Reject" ><i class="fa fa-times-circle"></i></button>
+                                            <button type="button" class="btn btn-outline-danger btn-sm btn-delete-cashout d-none"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" ><i class="fa fa-trash-o"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

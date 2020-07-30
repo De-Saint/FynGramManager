@@ -1,0 +1,17 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="page">
+    <!-- PAGE-CONTENT OPEN -->
+    <div class="page-content error-page">
+        <div class="container text-center"> <img src="../../../assets/images/svg/error.svg" alt="error"
+                                                 class="w-50 floating">
+            <h3 class="h2 mt-4 mb-5">Oops! Session timeout  for Inactivity 
+                <br>
+                Or 
+                <br>
+                The Page Not Found</h3> 
+            <a class="btn btn-outline-primary" href="${pageContext.request.contextPath}/LinksServlet?type=LogOut">
+                Back To Home 
+            </a>
+        </div>
+    </div> <!-- PAGE-CONTENT OPEN CLOSED -->

@@ -1,0 +1,214 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of all registered sellers..</small>
+            </div>
+            <div class="page-rightheader">
+                <div class="ml-3 ml-auto d-flex">
+                    <div class="d-flex  mt-xl-0 mt-lg-4 mt-4 mt-md-4"> 
+                        <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#new_seller_type">Create New Seller Type</button> 
+                        <a href="${pageContext.request.contextPath}/LinksServlet?type=Register" class="btn btn-outline-primary">Create New Seller</a> 
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Page-header closed -->
+        <div class="row"> 
+            <div class="col-xl-6 col-lg-12 col-md-12 h-100">
+                <div class="row mb-5"> 
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="card overflow-hidden">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <p class="mb-2 h6">Total Sellers</p>
+                                                <h2 class="mb-1 TotalSellers">0</h2>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="card overflow-hidden">
+                                    <div class="card-body bg-secondary">
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <p class="mb-2 h6">Total Seller Types</p>
+                                                <h2 class="mb-1 TotalSellerTypes">0</h2>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="card overflow-hidden">
+                                    <div class="card-body bg-primary">
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <p class="mb-2 h6">Total Activated</p>
+                                                <h2 class="mb-1 TotalActivated">0</h2>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="card overflow-hidden">
+                                    <div class="card-body bg-danger">
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <p class="mb-2 h6">Total Expired</p>
+                                                <h2 class="mb-1 TotalExpired">0</h2>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="card overflow-hidden">
+                                    <div class="card-body bg-success">
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <p class="mb-2 h6">Total Paid</p>
+                                                <h2 class="mb-1 TotalPaid">0</h2>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="card overflow-hidden">
+                                    <div class="card-body bg-pink">
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <p class="mb-2 h6">Total Pending</p>
+                                                <h2 class="mb-1 TotalPending">0</h2>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xl-6 col-lg-12 h-100">
+                <div class="card res-tabs responsible-tabs">
+                    <div class="card-header">
+                        <h3 class="card-title">Seller Types</h3>
+                    </div>
+                    <div class="card-body p-0 mb-5 my-custom-scrollbar" id="SellerTypeList">
+                        <div class="seller-clone d-none" id="tab-1">
+                            <div class="list d-flex align-items-center border-bottom p-2 pl-5 pr-5 mt-4"> 
+                                <button class="btn btn-sm btn-outline-danger btn-delete-sellertype"    data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></button>
+                                <div class="wrapper w-100 ml-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mt-1 mb-0 font-weight-semibold fs-20 seller-type-name">Brand</p><small
+                                            class="ml-auto fs-25 mb-0 font-weight-semibold text-primary btn-sellertyp-number"    data-toggle="tooltip" data-placement="top" title="" data-original-title="Number of Sellers" seller-type-seller-count>0</small>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center"> <span
+                                            class="text-success fs-14">Admin Transaction Percentage </span> 
+                                        <small class="ml-auto fs-18 mb-0 font-weight-semibold text-primary seller-type-adminpercent">0</small>%
+                                        <button class="btn btn-sm btn-outline-dark ml-8 btn-edit-percent"   data-toggle="modal" data-target="#new_seller_type"><i class="fa fa-pencil-square-o"></i></button>
+                                        <!--<button class="btn btn-sm btn-outline-dark ml-8 btn-edit-percent"    data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="fa fa-pencil-square-o"></i></button>-->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>  
+        </div>   
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="input-group"> 
+                                    <input type="text" class="form-control br-tl-3  br-bl-3 searchsellertext" placeholder="Search Sellers...">
+                                    <div class="input-group-append "> 
+                                        <button type="button" class="btn btn-primary br-tr-3  br-br-3 searchsellerbtn"> Search </button> 
+                                        <button type="button" class="btn btn-primary br-tr-3 ml-1 br-br-3 clearsellerbtn"> Clear </button> 
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- row opened -->
+        <div class="row" id="AllSellers">
+            <div class="col-xl-3 col-lg-6 col-md-12 seller-clone d-none">
+                <div class="card box-widget widget-user2">
+                    <div class="ribbon-model seller-image">
+                        <div class="wrap"> 
+                            <span class="ribbon6 seller-status">Ribbon</span> 
+                        </div>
+                    </div>
+                    <div class="widget-user-header2 text-center bg-primary ">
+                        <span class="fs-20 font-weight-bold seller-typename">Home</span> (<span class="seller-subtype">Test</span>)
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="item-user pro-user">
+                            <h4 class="pro-user-username mt-1 mb-1 seller-name">Name</h4>
+                            <h6 class="pro-user-desc font-weight-normal text-muted "><span class="seller-type">Type</span></h6>
+                            <button class="btn btn-primary btn-sm btn-seller-details" data-toggle="tooltip" data-placement="top" title="" data-original-title="Details"><i class="fa fa-info-circle"></i></button> 
+                            <button class="btn btn-danger btn-sm btn-seller-delete" disabled data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></button>
+                            <button  class="btn btn-success btn-sm btn-seller-approve d-none" data-toggle="tooltip" data-placement="top" title="" data-original-title="Activate"><i class="fa fa-check-circle-o"></i></button>
+                            <div class="item-user-icons mt-2"> 
+                                <i class="fa fa-phone mr-2"></i><span class="seller-phone">09038474874</span>    
+                            </div>
+                        </div>
+                        <div class="text-center mb-0"> 
+                            <i class="fa fa-envelope-open mr-2"></i><span class="seller-email">email@yahoo.com</span> 
+                        </div>
+                    </div>
+                    <div class="card-footer p-0">
+                        <div class="row">
+                            <div class="col-sm-6 border-right ">
+                                <div class="description-block">
+                                    <h5 class="description-header seller-walletbalance">0</h5><span class="text-muted">Wallet</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="description-block">
+                                    <h5 class="description-header  seller-totalproduct">0</h5><span class="text-muted">Products</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- row closed -->
+    </div>
+</div>
+<!-- App-content closed -->

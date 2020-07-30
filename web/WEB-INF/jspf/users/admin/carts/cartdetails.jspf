@@ -1,0 +1,81 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+       <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the product details of a particular cart </small>
+            </div>
+
+        </div> 
+        
+        
+        <div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Cart Product Details</h3>
+                
+            </div>
+            <div class="card-body">
+                <div class="row ">
+                    <div class="col-lg-6 ">
+                        <p class="h3">Customer</p>
+                        <address class="fs-15 cart-d-uname"> 
+                            Street Address
+                        </address>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p class="h3">Amount</p>
+                        <address class="fs-15 cart-d-amount"> 
+                        </address>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="mb-1 mt-5"><span class="font-weight-semibold">Cart Date : </span> <span class="cart-d-date"> Jun 23, 2019</span></p>
+                    <p class="mb-1"><span class="font-weight-semibold">Cart Status : </span><span class="cart-d-status">status</span></p>
+                </div>
+                <div class="table-responsive push">
+                    <table class="table table-bordered table-hover">
+                        <tbody class="cart_productlist">
+                            <tr>
+                                <th class="text-center ">SN</th>
+                                <th>Image</th>
+                                <th>Product</th>
+                                <th class="text-right">Unit</th>
+                                <th class="text-center">Quantity</th>
+                                <th class="text-right">Amount</th>
+                                <th class="text-right">Seller</th>
+                            </tr>
+                            <tr  class="cartproductclone d-none">
+                                <td class="text-center cart-p-sn">1</td>
+                                <td class="text-center">
+                                    <img class="cart-p-image w-7 h-25" alt="image" >
+                                </td>
+                                <td>
+                                    <p class="font-w600 mb-1 cart-p-name">Digital Watch</p>
+                                    <div class="text-muted d-none d-sm-block cart-p-desc">Mens Black digital watch</div>
+                                </td>
+                                <td class="text-center cart-p-price">1</td>
+                                <td class="text-right cart-p-cart-quantity">$34.00</td>
+                                <td class="text-right cart-p-cart-price">$34.00</td>
+                                <td class="text-right cart-p-cart-seller">$34.00</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+<!--                <p class="text-muted text-center">Thank you very much for doing business with us. We look forward to
+                    working with you again!</p>-->
+            </div>
+        </div>
+    </div>
+</div>
+        
+    </div>
+</div> 
+<!-- App-content closed -->

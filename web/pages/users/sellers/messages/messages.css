@@ -1,0 +1,15 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 15, 2020, 10:15:09 PM
+    Author     : Pinky
+*/
+
+.table td, .table th {
+    padding: .2rem !important;
+    vertical-align: top;
+    border-top: none;
+}

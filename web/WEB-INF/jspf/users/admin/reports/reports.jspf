@@ -1,0 +1,147 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of statistical data.</small>
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card overflow-hidden">
+                    <div class="card-header">
+                        <h3 class="card-title">Statistics</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-xl-4">
+                                <ul class="nav nav-pills flex-column" id="myTab-4" role="tablist">
+                                    <li class="nav-item"> 
+                                        <a class="nav-link active" id="quantities-tab-4" data-toggle="tab" href="#quantities" role="tab" aria-controls="quantities" aria-selected="true">Available quantities</a> 
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link" id="categories-tab4" data-toggle="tab" href="#categories" role="tab" aria-controls="categories" aria-selected="false">Best categories</a> 
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link" id="customers-tab4" data-toggle="tab"  href="#customers" role="tab" aria-controls="customers"  aria-selected="false">Best customers</a> 
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link" id="suppliers-tab4" data-toggle="tab"  href="#suppliers" role="tab" aria-controls="suppliers"  aria-selected="false">Best suppliers</a> 
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link" id="products-tab4" data-toggle="tab"  href="#products" role="tab" aria-controls="products"  aria-selected="false">Best-selling products</a> 
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link" id="purchased-tab4" data-toggle="tab"  href="#purchased" role="tab" aria-controls="purchased"  aria-selected="false">Products never purchased</a> 
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link" id="guests-tab4" data-toggle="tab"  href="#guests" role="tab" aria-controls="guests"  aria-selected="false">Guests and Visitors </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-xl-8">
+                                <div class="tab-content border p-3" id="myTab3Content">
+                                    <div class="tab-pane fade show active p-0" id="quantities" role="tabpanel"
+                                         aria-labelledby="quantities-tab4"> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                                        magnam aliquam quaerat voluptatem. Nemo enim ipsam voluptatem quia voluptas sit
+                                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                                        amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                                        labore et dolore magnam aliquam quaerat voluptatem. </div>
+                                    <div class="tab-pane fade p-0" id="categories" role="tabpanel" aria-labelledby="categories-tab4">
+                                        No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                                        those who do not know how to pursue pleasure rationally encounter consequences that are
+                                        extremely painful. Nor again is there anyone who loves or pursues or desires to obtain
+                                        pain of itself, because it is pain, but because occasionally circumstances occur in
+                                        which toil and pain can procure him some great pleasure. No one rejects, dislikes, or
+                                        avoids pleasure itself, because it is pleasure, but because those who do not know how to
+                                        pursue pleasure rationally encounter consequences that are extremely painful. Nor again
+                                        is there anyone who loves or pursues or desires to obtain pain of itself, because it is
+                                        pain, but because occasionally circumstances occur in which toil and pain can procure
+                                        him some great pleasure. </div>
+                                    <div class="tab-pane fade p-0" id="customers" role="tabpanel" aria-labelledby="customers-tab4">
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                        voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                        occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                                        mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+                                        expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                        nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                                        est, omnis dolor repellendus. At vero eos et accusamus et iusto odio dignissimos ducimus
+                                        qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                        molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                                        officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+                                        facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                                        optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                                        voluptas assumenda est, omnis dolor repellendus. 
+                                    </div>
+                                    <div class="tab-pane fade p-0" id="suppliers" role="tabpanel" aria-labelledby="suppliers-tab4">
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                        voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                        occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                                        mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+                                        expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                        nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                                        est, omnis dolor repellendus. At vero eos et accusamus et iusto odio dignissimos ducimus
+                                        qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                        molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                                        officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+                                        facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                                        optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                                        voluptas assumenda est, omnis dolor repellendus. 
+                                    </div>
+                                    <div class="tab-pane fade p-0" id="products" role="tabpanel" aria-labelledby="products-tab4">
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                        voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                        occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                                        mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+                                        expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                        nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                                        est, omnis dolor repellendus. At vero eos et accusamus et iusto odio dignissimos ducimus
+                                        qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                        molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                                        officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+                                        facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                                        optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                                        voluptas assumenda est, omnis dolor repellendus. 
+                                    </div>
+                                    <div class="tab-pane fade p-0" id="purchased" role="tabpanel" aria-labelledby="purchased-tab4">
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                        voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                        occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                                        mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+                                        expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                        nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                                        est, omnis dolor repellendus. At vero eos et accusamus et iusto odio dignissimos ducimus
+                                        qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                        molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                                        officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+                                        facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                                        optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                                        voluptas assumenda est, omnis dolor repellendus. 
+                                    </div>
+                                    <div class="tab-pane fade p-0" id="guests" role="tabpanel" aria-labelledby="guests-tab4">
+                                        This page gives you statistics on visitors to your shop and the number of times they visit. The larger the number, 
+                                        the more popular your shop is. The graph helps you understand the behavior of your visitors. Basically, you 
+                                        will see how many visits your shop gets, and you can compare it to the number of visitors (FynGram can
+                                        recognize when the same person visits your shop multiple times, hence why the number of 
+                                        visits will be much higher than the number of visitors). The greater the difference between the two 
+                                        numbers, the more you are succeeding in creating a faithful base of core customers.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

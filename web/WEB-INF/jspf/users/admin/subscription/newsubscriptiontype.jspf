@@ -1,0 +1,47 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="modal-dialog">
+    <div class="modal-content shadow border-0">
+        <div class="modal-header bg-primary">
+            <h5 class="modal-title" id="newsubscriptiontype">Create New Subscription Type</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body p-0">
+            <div class="mb-0">
+                <div class="card-body px-lg-5 py-lg-5">
+                    <form name="newSubscriptionTypeForm" id="newSubscriptionTypeForm">
+                        <div class="form-group mb-3">
+                            <label>Name</label>
+                            <div class="input-group input-group-alternative">
+
+                                <input class="form-control" id="newSubTypeName"   placeholder="New Subscription Type Name - Quarterly" type="text">
+
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Enter New Subscription Type Description</label>
+                            <div class="input-group input-group-alternative">
+
+                                <textarea class="form-control" rows="4" id="newSubTypeDesc" placeholder="New Subscription Type Description - 3 months Subscription" ></textarea>
+
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Duration (In Months)</label>
+                            <div class="input-group input-group-alternative">
+
+                                <input class="form-control" id="newSubTypeDuration"   placeholder="Specify New Subscription Type Duration In Months" type="text">
+
+                            </div>
+                        </div>
+                        <div class="text-center"> 
+                            <button type="submit"class="btn btn-primary my-4">Submit</button> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

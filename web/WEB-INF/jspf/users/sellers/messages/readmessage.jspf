@@ -1,0 +1,58 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of a message.</small>
+            </div>
+            <div class="page-rightheader">
+               
+            </div>
+        </div> 
+
+
+
+        <div class="row">
+            <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Message Details </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="email-media">
+                            <div class="mt-0 d-sm-flex"> 
+                                <!--<img class="mr-2 rounded-circle" src="../../../../assets/images/users/2.jpg"  alt="avatar">-->
+                                <div class="media-body">
+                                    <div class="float-right d-none d-md-flex fs-15"> 
+                                        <small class="mr-3 msg-date-time">Sep 13 , 2019 12:45 pm</small> 
+                                    </div>
+                                    <div class="media-title text-dark font-weight-bold mt-3"> <span class="msg-from-username">Alica Nestle</span> 
+                                        <span class="text-muted msg-from-useremail">( alicnestle@gmail.com )</span>
+                                    </div>
+                                    <!--<span class="msg-subject">Subject</span>-->
+                                    <p class="mb-0">To: <br><span class="msg-to-username">Adam Cotter</span> <span class="msg-to-useremail text-muted">( adamcotter@gmail.com )</span> </p>
+                                    <small class="mr-2 d-md-none" msg-date-time>Dec 13 , 2018 12:45 pm</small> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eamil-body mt-5">
+                            <p class="msg-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                            
+
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-danger mt-1 mb-1 btn-delete-msg" href="#"> <i class="fa fa-trash"></i> Delete </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> 

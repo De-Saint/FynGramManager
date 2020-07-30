@@ -1,0 +1,40 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="modal-dialog">
+    <div class="modal-content shadow border-0">
+        <div class="modal-header bg-primary">
+            <h5 class="modal-title" id="pay_subscription">Pay Subscription Fees</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body p-0">
+            <div class="mb-0">
+                <div class="card-body px-lg-5 py-lg-5">
+                    <form name="subscriptionForm" id="subscriptionForm">
+                         <div class="alert alert-primary"> 
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button> <strong>Information</strong>
+                                <hr class="message-inner-separator">
+                                <p>You are paying the sum of <span class="SubscriptionFeesAmount font-weight-bold fs-20"></span> because you selected <span class="SellerTypeName font-weight-bold fs-20"></span> Seller and <span class="SubscriptionName font-weight-bold fs-20"></span> Subscription.</p>
+                            </div>
+                        <div class="form-group mb-3">
+                            <label class="text-center">Amount</label>
+                            <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend"> 
+                                    <span class="input-group-text p-0 w-7">
+                                        <i class="fa fa-money mx-auto text-muted fs-18"></i>
+                                    </span>
+                                </div> 
+                                <input class="form-control" id="subcriptionAmount" readonly="" placeholder="Amount" type="number">
+                            </div>
+                        </div>
+                        <div class="text-center"> 
+                            <button type="submit" class="btn btn-primary my-4">Submit</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

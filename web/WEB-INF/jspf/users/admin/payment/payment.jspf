@@ -1,0 +1,101 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of all payments on the system.</small>
+            </div>
+
+        </div> 
+        <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Payments</h6>
+                                <h3 class="m-0 payTotalCount">0</h3>
+                            </div>
+                            <div class="ml-auto"> <img class="w-7 h-7"
+                                                       src="../../../../assets/images/crypto-currencies/round-outline/Bitcoin.svg" alt="image"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Wallet Funding</h6>
+                                <h3 class="m-0 payTotalFWCount">0</h3>
+                            </div>
+                            <div class="ml-auto"> <img class="w-7 h-7"
+                                                       src="../../../../assets/images/crypto-currencies/round-outline/Ethereum.svg" alt="image"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Subscriptions Fees Payment</h6>
+                                <h3 class="m-0 payTotalSFCount">0</h3>
+                            </div>
+                            <div class="ml-auto"> <img class="w-7 h-7"
+                                                       src="../../../../assets/images/crypto-currencies/round-outline/Ripple.svg" alt="image"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Recent Payments </div>
+                        
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table card-table table-striped text-nowrap table-bordered border-top">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Payment Type</th>
+                                        <th>Transaction Code</th>
+                                        <th>Amount</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Option</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="PaymentList">
+                                    <tr class="pay-clone d-none">
+                                        <td class="pay-sn">#12450</td>
+                                        <td class="font-weight-bold pay-username">Buy</td>
+                                        <td class="pay-paytype" > 0.37218</td>
+                                        <td class="pay-tcode"> 0.42173</td>
+                                        <td class="pay-amount">52681.13</td>
+                                        <td class="pay-date">$ 5273.15</td>
+                                        <td class="pay-time">0.1</td>
+                                        <td><button class="btn btn-danger btn-sm btn-pay-delete">Delete</button></td>
+                                     </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->

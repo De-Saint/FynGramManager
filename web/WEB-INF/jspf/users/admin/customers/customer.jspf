@@ -1,0 +1,109 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the details of all registered customers.</small>
+            </div>
+            <div class="page-rightheader">
+                <div class="ml-3 ml-auto d-flex">
+                    <div class="d-flex  mt-xl-0 mt-lg-4 mt-4 mt-md-4"> <button type="button" class="btn btn-outline-primary"
+                                                                               data-toggle="modal" data-target="#new_customer">Create New Customer</button> </div>
+                </div>
+            </div>
+        </div> <!-- Page-header closed -->
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                <div class="card overflow-hidden">
+                    <div class="card-body bg-primary-transparent">
+                        <div class="d-flex">
+                            <div class="">
+                                <p class="mb-2 h6">Total Customers</p>
+                                <h2 class="mb-1 TotalCustomers">0</h2>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                <div class="card overflow-hidden">
+                    <div class="card-body bg-secondary-transparent">
+                        <div class="d-flex">
+                            <div class="">
+                                <p class="mb-2 h6">Total Active Customers</p>
+                                <h2 class="mb-1 TotalActiveCustomers">0</h2>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                <div class="card overflow-hidden">
+                    <div class="card-body bg-warning-transparent">
+                        <div class="d-flex">
+                            <div class="">
+                                <p class="mb-2 h6">Total Inactive Customers</p>
+                                <h2 class="mb-1 TotalInactiveCustomers">0</h2>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- row opened -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="input-group"> 
+                                    <input type="text" class="form-control br-tl-3  br-bl-3 searchcustomertext" placeholder="Search Customer...">
+                                    <div class="input-group-append "> 
+                                        <button type="button" class="btn btn-primary br-tr-3  br-br-3 searchcustomerbtn"><i class="fa fa-search"></i> Search </button> 
+                                        <button type="button" class="btn btn-primary br-tr-3 ml-1  br-br-3 clearcustomerbtn"><i class="fa fa-close"> </i> Clear </button> 
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row closed -->
+        <!-- row opened -->
+        <div class="row" id="AllCustomers">
+            <div class="col-xl-3 cust-clone d-none">
+                <div class="card">
+                    <div class="card-body text-center"> 
+                        <span class="avatar avatar-xxl brround cover-image default-shadow cust-uimage"  style="background: rgba(0, 0, 0, 0) repeat scroll center center;"></span>
+                        <h4 class="h4 mb-1 mt-3 cust-uname">Petey Cruiser</h4>
+                        <p class="mb-4 mt-1 cust-utype">App Developer</p>
+                        <p class="mb-0 text-info cust-uemail ">Petey_Cruiser@gmail.com</p>
+                        <div class="d-flex mx-auto align-items-center justify-content-center text-center">
+                            <h6 class="text-muted d-flex mb-0 fw-400 mr-3"><i class="fa fa-male mr-2"></i><span class="cust-ugender">Female</span></h6>
+                            <h6 class="text-muted fw-400 mt-2"><i class="fa fa-phone mr-2 "></i><span class="cust-uphone">07067483120</span></h6>
+                        </div>
+
+                        <div class="justify-content-center text-center mt-3 d-flex"> 
+                            <a href="#" class="btn btn-info pr-3 mr-5 btn-cust-details"    data-toggle="tooltip" data-placement="top" title="Details" data-original-title="Details" > <i class="fa fa-info-circle"></i></a> 
+                            <a href="#" class="btn btn-danger pl-3 pl-3 btn-cust-delete"    data-toggle="tooltip" data-placement="top" title="Delete" data-original-title="Delete" ><i class="fa fa-trash"></i> </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row closed -->
+    </div>
+</div>
+<!-- App-content closed -->

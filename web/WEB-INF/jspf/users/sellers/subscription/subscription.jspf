@@ -1,0 +1,81 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows subscription details</small>
+            </div>
+            <div class="page-rightheader">
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-lg-12">
+            <div class="card overflow-hidden">
+                <div class="card-body bg-primary">
+                    <div class="d-flex">
+                        <div class="">
+                            <p class="mb-2 h6">Total Subscriptions</p>
+                            <h2 class="mb-1 ">0</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> 
+
+
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Subscription(s) </div>
+
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive-lg">
+                        <table class="table table-responsive-lg table-striped  table-bordered border-top">
+                            <thead>
+                                <tr>
+                                    <th>SN</th>
+                                    <th>Seller Name</th>
+                                    <th>Seller Type</th>
+                                    <th>Subscription Type</th>
+                                    <th>Amount</th>
+                                    <th>Starting Date</th>
+                                    <th>Due/Expiry Date</th>
+                                    <th>Time</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="SubscriptionList">
+                                <tr class="sub-clone d-none">
+                                    <td class="sub-sn">#12450</td>
+                                    <td class="text-success sub-name">Buy</td>
+                                    <td class="sub-sellertype"> 0.42173</td>
+                                    <td class="sub-subtype"> 0.37218</td>
+                                    <td class="sub-amount">52681.13</td>
+                                    <td class="sub-startdate">$ 5273.15</td>
+                                    <td class="sub-expiredate">0.1</td>
+                                    <td class="sub-time">31-05-2019 02:12:34</td>
+                                    <td><span class="sub-status">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

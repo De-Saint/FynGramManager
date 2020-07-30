@@ -1,0 +1,179 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!-- App-content opened -->
+<div class="app-content">
+    <div class="section">
+        <!-- Page-header opened -->
+        <div class="page-header">
+            <div class="page-leftheader">
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page gives you the form to create new Discount Code.</small>
+            </div>
+        </div> 
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Create Discount Code/Coupon Code</div>
+
+                    </div>
+                    <form name="discountForm" id="discountForm">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Discount Details</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-horizontal">
+                                                <div class="form-group"> 
+                                                    <label>Enter The Deduction Name</label> <span class="text-red font-weight-bold"> *</span>
+                                                    <input type="text" class="form-control" id="dcodeName" required placeholder="Name"> 
+                                                </div>
+                                                <div class="form-group"> 
+                                                    <label>Provide a brief Description</label> <span class="text-red font-weight-bold"> *</span>
+                                                    <textarea class="form-control" rows="2" id="dcodeDescription" required placeholder="Description"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0 ">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Deduction Details</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div>
+                                                <div class="">
+                                                    <div class="form-group mb-3">
+                                                        <label>Select The Deduction Type</label> <span class="text-red font-weight-bold"> *</span>
+                                                        <div class="input-group input-group-alternative">
+                                                            <select class="form-control select2 w-100  select-search select-clear" required id="dcodeDeductionType">
+                                                                <option selected="selected">Select The Deduction Type</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group"> <label for="">Enter the Deduction Value</label> <span class="text-red font-weight-bold"> *</span>
+                                                        <input type="text"  data-type="currency" class="form-control" required  id="dcodeDeductionValue" placeholder="Enter either the percentage number or Amount"> 
+                                                    </div>
+                                                </div>
+                                                <small class="displaytext text-red text-center ">Either the Amount or the Percentage specified will be deducted from the Order Amount at CheckOut</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Apply Discount</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form-group mb-3">
+                                                <label>Apply Discount To</label> <span class="text-red font-weight-bold"> *</span>
+                                                <div class="input-group input-group-alternative">
+                                                    <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear"  required="true" id="dcodeObject" >
+                                                        <option selected="selected">Select Apply To</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group ">
+                                                <label>Starting Date</label> <span class="text-red font-weight-bold"> *</span>
+                                                <div class="input-group">
+                                                    <span  class="input-group-prepend"> 
+                                                        <button class="btn btn-white text-dark" type="button">From:</button>
+                                                    </span>
+                                                    <input class="form-control" type="text" name="dcodeStartDate"  required id="dcodeStartDate">
+                                                    <span  class="input-group-append"> 
+                                                        <button class="btn btn-white text-dark" type="button"><i class="fa fa-calendar"></i></button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group ">
+                                                <label>Expiry Date</label> <span class="text-red font-weight-bold"> *</span>
+                                                <div class="input-group">
+                                                    <span  class="input-group-prepend"> 
+                                                        <button class="btn btn-white text-dark" type="button">To:</button>
+                                                    </span>
+                                                    <input class="form-control" type="text" name="dcodeExpiryDate"   required id="dcodeExpiryDate">
+                                                    <span  class="input-group-append"> 
+                                                        <button class="btn btn-white text-dark" type="button"><i class="fa fa-calendar"></i></button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                                    <div class="card  box-shadow-0 ">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Discount Code Type</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div>
+                                                <div class="">
+                                                    <div class="form-group mb-3">
+                                                        <label>Select The Discount Code Type</label> <span class="text-red font-weight-bold"> *</span>
+                                                        <div class="input-group input-group-alternative">
+                                                            <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear"   required id="dcodeType" >
+                                                                <option selected="selected">Select Discount Code Type</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group d-none forSingleCustomer"> 
+                                                        <label class="form-label">Search the Single Customer</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="searchsinglecustomertxt" placeholder="Search by name or email or or phone or wallet number..."> 
+                                                            <span  class="input-group-append"> 
+                                                                <button class="btn btn-primary"  id="searchsinglecustomerbtn" type="button"><i class="fa fa-search"></i></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group  d-none forSingleCustomerResult">
+                                                        <label>Single Customer Details</label>
+                                                        <div class="media mt-0 pt-0 mb-5"> 
+                                                            <div class="media-body ">
+                                                                <span class="dcode-bid dcodeTotalPerCustomer d-none"></span>
+                                                                <h5 class="mt-0 mb-0 dcode-bname">Load name</h5>
+                                                                <span class="fs-14 text-muted dcode-bemail">Load Email</span>
+                                                            </div> <span class="badge badge-primary-light fs-12 dcode-phone" >Load Phone</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group"> 
+                                                        <label>Total Available for each Customer or for the Single customer</label> <span class="text-red font-weight-bold"> *</span>
+                                                        <input type="number" class="form-control" id="dcodeTotalPerCustomer"  required="true" value="1" placeholder="Total Available"> 
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                                    <div class="card box-shadow-0 mb-0"> 
+                                        <div class="card-body text-center">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> 
+<!-- App-content closed -->
