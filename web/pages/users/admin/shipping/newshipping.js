@@ -11,11 +11,11 @@ $(document).ready(function () {
     newShippingFunctions();
 });
 
-function GetShippingID(){
+function GetShippingID() {
     return shippingid = localStorage.getItem("shippingid");
 }
-function GetShippingOption(){
-     return shippingoption = localStorage.getItem("shipoption");
+function GetShippingOption() {
+    return shippingoption = localStorage.getItem("shipoption");
 }
 
 function newShippingFunctions() {
@@ -37,9 +37,11 @@ function newShippingBtnEvents() {
         var add_ship_admin_percent = $("#add_ship_admin_percent").val();
         var add_ship_interval = $("#add_ship_interval").val();
         var add_ship_name = $("#add_ship_name").val();
+        var add_ship_phone = $("#add_ship_phone").val();
+        var add_ship_email = $("#add_ship_email").val();
         shippingoption = GetShippingOption();
         shippingid = GetShippingID();
-        var data = [add_ship_name, add_ship_interval, add_ship_admin_percent, add_ship_seller_percent, shippingoption, shippingid];
+        var data = [add_ship_name, add_ship_interval, add_ship_admin_percent, add_ship_seller_percent, shippingoption, add_ship_phone, add_ship_email, shippingid];
         showLoader();
         GetData("Shipping", "NewShippingAddress", "LoadNewShippingAddress", data);
         e.preventDefault();

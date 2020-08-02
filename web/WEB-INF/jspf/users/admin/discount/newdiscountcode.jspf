@@ -35,7 +35,7 @@
                                                 </div>
                                                 <div class="form-group"> 
                                                     <label>Provide a brief Description</label> <span class="text-red font-weight-bold"> *</span>
-                                                    <textarea class="form-control" rows="2" id="dcodeDescription" required placeholder="Description"></textarea>
+                                                    <textarea class="form-control" rows="5" maxlength="100" id="dcodeDescription" required placeholder="Description"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -58,11 +58,22 @@
 
                                                         </div>
                                                     </div>
-                                                    <div class="form-group"> <label for="">Enter the Deduction Value</label> <span class="text-red font-weight-bold"> *</span>
+                                                    <div class="form-group"> <label for="">Enter the Deduction Value </label> <span class="text-red font-weight-bold"> *</span>
                                                         <input type="text"  data-type="currency" class="form-control" required  id="dcodeDeductionValue" placeholder="Enter either the percentage number or Amount"> 
+                                                        <span class="displaytext fs-10 text-red text-center mt-0 ">Either the Amount or the Percentage specified will be deducted from the Order Amount at CheckOut</span>
                                                     </div>
+                                                    <div class="form-group">
+                                                        <label>Split Deduction Value with the Sellers</label> <span class="text-red font-weight-bold"> *</span>
+                                                        <div class="input-group input-group-alternative">
+                                                            <select class="form-control select2  select-search select-clear" required id="splitDeductionValue" >
+                                                                <option value="1">Yes</option>
+                                                                <option value="0">No</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+
                                                 </div>
-                                                <small class="displaytext text-red text-center ">Either the Amount or the Percentage specified will be deducted from the Order Amount at CheckOut</small>
                                             </div>
                                         </div>
                                     </div>

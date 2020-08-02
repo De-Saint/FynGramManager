@@ -30,17 +30,23 @@
                                         </div>
                                     </div>
                                     <div class="form-group row"> 
+                                        <label class="col-md-3 col-form-label text-right font-weight-bold">Phone</label>
+                                        <div class="col-md-9"> 
+                                            <input type="text" id="add_ship_phone" required placeholder="Phone Number" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row"> 
+                                        <label class="col-md-3 col-form-label text-right font-weight-bold">Email</label>
+                                        <div class="col-md-9"> 
+                                            <input type="text" id="add_ship_email" required placeholder="Email Address" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row"> 
                                         <label class="col-md-3 col-form-label text-right font-weight-bold">Delivery Interval</label>
                                         <div class="col-md-9">
                                             <textarea cols="3" maxlength="100" required id="add_ship_interval" name="" class="form-control" placeholder="Would take 4 Business days to deliver to any location"></textarea> 
                                         </div>
                                     </div>
-<!--                                    <div class="form-group row"> 
-                                        <label class="col-md-3 col-form-label text-right font-weight-bold">Shipping Fess</label>
-                                        <div class="col-md-9">
-                                            <input type="text" required  class="form-control" id="add_ship_fees"   data-type="currency" placeholder="Shipping Fees 2,000" >
-                                        </div>
-                                    </div>-->
                                     <div class="form-group row"> 
                                         <label class="col-md-3 col-form-label text-right font-weight-bold">FynGram Shipping Fees Percentage</label>
                                         <div class="col-md-9"> 
@@ -64,7 +70,7 @@
                                                         %
                                                     </span>
                                                 </div> 
-                                                <input class="form-control" required type="number" placeholder="60" id="add_ship_seller_percent" name="number"> 
+                                                <input class="form-control" readonly="true" required type="number" placeholder="60" id="add_ship_seller_percent" name="number"> 
                                             </div>
                                         </div>
                                     </div>

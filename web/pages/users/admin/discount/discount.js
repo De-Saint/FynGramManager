@@ -58,6 +58,7 @@ function discountBtnEvents() {
             dcodeDeductionValue = dcodeDeductionValue.replace(",", "");
         }
         var dcodeObject = $("#dcodeObject").val();
+        var splitDeductionValue = $("#splitDeductionValue").val();
         var dcodeStartDate = $("#dcodeStartDate").val();
         var dcodeExpiryDate = $("#dcodeExpiryDate").val();
         var dcodeType = $("#dcodeType").val();
@@ -77,7 +78,7 @@ function discountBtnEvents() {
                     if (dcodeCustomerUserID === "" || dcodeCustomerUserID === undefined) {
                         dcodeCustomerUserID = 0;
                     }
-                    var data = [dcodeName, dcodeDescription, dcodeDeductionType, dcodeDeductionValue, dcodeObject, dcodeStartDate, dcodeExpiryDate, dcodeType, dcodeCustomerUserID, dcodeTotalPerCustomer];
+                    var data = [dcodeName, dcodeDescription, dcodeDeductionType, dcodeDeductionValue, dcodeObject, dcodeStartDate, dcodeExpiryDate, dcodeType, dcodeCustomerUserID, dcodeTotalPerCustomer, splitDeductionValue];
                     showLoader();
                     GetData("Discount", "NewDiscountCode", "LoadDiscountCodeInfo", data);
                 }
@@ -183,6 +184,7 @@ function DisplayDiscountTypes(data) {
 }
 
 function DisplayDeductionTypes(data) {
+    console.log(data);
     hideLoader();
     var cs = $("#dcodeDeductionType");
     cs.empty();
@@ -361,6 +363,8 @@ function DisplayDiscountCodes(data) {
         $(".TotalDiscountCode").text(count);
         $(".TotalAllCustomers").text(TotalAllCustomers);
         $(".TotalAllSingleCustomers").text(TotalAllSingleCustomers);
+    } else {
+
     }
 }
 
@@ -368,6 +372,11 @@ function DisplayDiscountCodeDetails(data) {
     $(".dcode-desc").text(data["description"]);
     $(".dcode-for").text(data["DiscountObjectName"]);
     $(".dcode-dedtype").text(data["DiscountDeductionTypeName"]);
+    if (data["split_deduction_value"] === "0") {
+        $(".dcode-splitdvalue").text("No");
+    } else if (data["split_deduction_value"] === "1") {
+        $(".dcode-splitdvalue").text("Yes");
+    }
     var dedtype = data["discount_deduction_type_id"];
     if (dedtype === "2" || dedtype === 2) {
         $(".dcode-dedvalue").text(PriceFormat(data["deduction_value"]));

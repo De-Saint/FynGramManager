@@ -29,6 +29,10 @@
                                     <td class="bold dcode-dedvalue"></td>
                                 </tr>
                                 <tr class="">
+                                    <td class="bold">Split Deduction Value</td>
+                                    <td class="bold dcode-splitdvalue"></td>
+                                </tr>
+                                <tr class="">
                                     <td class="bold">Total Created</td>
                                     <td class="bold dcode-totalcreated ">Debit</span></td>
                                 </tr>
