@@ -19,7 +19,7 @@ function LoginBtnEvents() {
         var EmailAddress = $("#fgemail").val();
         var Password = $("#fgpass").val();
          sessionid = verifyUser();
-        var data = [EmailAddress, Password, sessionid, "FGManager"];
+        var data = [EmailAddress, Password, sessionid, "FynGramManager"];
         showLoader();
         GetData("User", "Login", "LoadLogin", data);
         e.preventDefault();

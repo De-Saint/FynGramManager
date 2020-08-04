@@ -116,7 +116,7 @@ function DisplayAllShopCarts(data, parent) {
                         GetData("Cart", "DeleteCart", "LoadDeletCart", result["id"]);
                     }
                 });
-               
+
             });
             newchild.appendTo(parent).show();
         });
@@ -125,14 +125,14 @@ function DisplayAllShopCarts(data, parent) {
         childclone.hide();
 
     } else {
-        var row = $("<div />").appendTo(parent);
-        $("<div />", {class: "ml-9 text-center newclone text-primary", text: "No Result Found"}).appendTo(row);
+        var row = $("<tr />").appendTo(parent);
+        $("<td />", {class: "ml-9 text-center newclone text-primary", colspan: "6", text: "No Result Found"}).appendTo(row);
 
     }
 }
 
 function DisplayDeletCart(data, parent) {
-     hideLoader();
+    hideLoader();
     var resp = data[3];
     if (resp.status === "success") {
         swal({

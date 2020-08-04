@@ -4,105 +4,374 @@
 <div class="app-content">
     <div class="section">
         <!-- Page-header opened -->
+        <!-- Page-header opened -->
         <div class="page-header">
             <div class="page-leftheader">
-                <h4 class="page-title mb-0">Hi, welcome back!</h4> <small class="text-muted mt-0">Ecommerce
-                    dashboard template.</small>
+                <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
+                <small class="text-muted mt-0">This page shows the product details of a particular order </small>
             </div>
 
         </div> 
-        
-        
         <div class="row">
-    <div class="col-xl-12">
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">#INV-287</h3>
-                <div class="card-options"> <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i
-                            class="fe fe-chevron-up"></i></a> <a href="#" class="card-options-fullscreen"
-                        data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a> <a href="#"
-                        class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a> </div>
-            </div>
-            <div class="card-body">
-                <div class="row ">
-                    <div class="col-lg-6 ">
-                        <p class="h3">Client Inc</p>
-                        <address class="fs-15"> Street Address<br>State, City<br>Region, Postal Code<br>ltd@example.com
-                        </address>
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-12">
+                <div class="card ">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Order Reference</h6>
+                                        <h5 class="m-0 order_reference">0</h5>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-file-o fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Date</h6>
+                                        <h4 class="m-0 order_booked_date">0</h4>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-calendar fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Amount</h6>
+                                        <h4 class="m-0 order_seller_amount">0</h4>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-money fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Products</h6>
+                                        <h4 class="m-0 order_p_count">0</h4>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-cart-plus fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-12 ml-5"><div class=" ">Order Message: <span class="order_note"></span></div></div>
                     </div>
-                    <div class="col-lg-6 text-right">
-                        <p class="h3">Invoice To</p>
-                        <address class="fs-15"> Street Address<br>State, City<br>Region, Postal Code<br>ctr@example.com
-                        </address>
-                    </div>
                 </div>
-                <div class="">
-                    <p class="mb-1 mt-5"><span class="font-weight-semibold">Order Date : </span> Jun 23, 2019</p>
-                    <p class="mb-1"><span class="font-weight-semibold">Order Status : </span>Pending</p>
-                    <p><span class="font-weight-semibold">Order ID : </span>#123456</p>
-                </div>
-                <div class="table-responsive push">
-                    <table class="table table-bordered table-hover">
-                        <tbody>
-                            <tr>
-                                <th class="text-center "></th>
-                                <th>Product</th>
-                                <th class="text-center">Qnt</th>
-                                <th class="text-right">Unit</th>
-                                <th class="text-right">Amount</th>
-                            </tr>
-                            <tr>
-                                <td class="text-center">1</td>
-                                <td>
-                                    <p class="font-w600 mb-1">Digital Watch</p>
-                                    <div class="text-muted d-none d-sm-block">Mens Black digital watch</div>
-                                </td>
-                                <td class="text-center">1</td>
-                                <td class="text-right">$34.00</td>
-                                <td class="text-right">$34.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">2</td>
-                                <td>
-                                    <p class="font-w600 mb-1">Women bag</p>
-                                    <div class="text-muted d-none d-sm-block">Red Cotton bag for women</div>
-                                </td>
-                                <td class="text-center">2</td>
-                                <td class="text-right">31.00</td>
-                                <td class="text-right">$62.000</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">3</td>
-                                <td>
-                                    <p class="font-w600 mb-1">Mens shirt</p>
-                                    <div class="text-muted d-none d-sm-block">Casual shirt for men</div>
-                                </td>
-                                <td class="text-center">3</td>
-                                <td class="text-right">$35.00</td>
-                                <td class="text-right">$105.00</td>
-                            </tr>
-                            <tr>
-                                <td colspan="4" class="font-w600 text-right">Subtotal</td>
-                                <td class="text-right">$205.00</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" class="text-right"> <button type="button" class="btn btn-primary"><i
-                                            class="si si-wallet"></i> Pay Invoice</button> <button type="button"
-                                        class="btn btn-success" onclick="javascript:window.print();"><i
-                                            class="si si-paper-plane"></i> Send Invoice</button> <button type="button"
-                                        class="btn btn-info" onclick="javascript:window.print();"><i
-                                            class="si si-printer"></i> Print Invoice</button> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="text-muted text-center">Thank you very much for doing business with us. We look forward to
-                    working with you again!</p>
+
             </div>
         </div>
-    </div>
-</div>
-        
+
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="card ">
+                    <div class="card-header">
+                        <h3 class="card-title">Shipping Method Details</h3>
+
+                    </div>
+                    <div class="card-body table-wrapper-scroll-y my-custom-scrollbar">
+                        <small class="col-sm-6 col-md-12 col-lg-6 col-xl-12 text-danger text-center shippingNote2 d-none">Note: Ensure you assign a shipping method before changing the status to shipped</small>
+
+                        <div class="row ">
+                            <div class="col-lg-10 ">
+                                <p class=""><select class="form-control select-sm" id="ordershipmethod">
+                                        <option value="two">two</option>
+                                    </select></p>
+
+                                <address class="fs-15 font-weight-bold"> 
+                                    Assigned Shipping Method
+                                </address>
+                                <address class="fs-15"> 
+                                    Name: <span class="assign-ship-meth-name">Not yet assigned</span> 
+                                </address>
+                                <address class="fs-15"> 
+                                    Email: <span class="assign-ship-meth-email">Not yet assigned</span> 
+                                </address>
+                                <address class="fs-15"> 
+                                    Phone: <span class="assign-ship-meth-phone">Not yet assigned</span> 
+                                </address>
+
+                            </div>
+                            <div class="col-lg-2 text-right">
+                                <p class="h3"><button class="btn btn-outline-primary btn-sm" id="AssignOrderShippingMethod">Assign</button></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Status Details   </h3><span class="order_status badge ml-9"> Status</span>
+
+                    </div>
+                    <div class="card-body table-wrapper-scroll-y my-custom-scrollbar">
+                        <small class="col-sm-6 col-md-12 col-lg-6 col-xl-12 text-danger text-center d-none shippingNote1">Note: Confirm the order, then assign a shipping method.</small>
+
+                        <div class="row ">
+                            <div class="col-lg-9 ">
+                                <p class=""><select class="form-control select-sm" id="orderstatuses">
+                                        <option value="two">two</option>
+                                    </select></p>
+                                <address class="fs-15 font-weight-bold"> 
+                                    Status History
+                                </address>
+                                <div class="order-status-history">
+                                    <address class="fs-15 order-status-history-clone d-none"> 
+                                        <span class="status-hist-sn mr-2">#1</span>
+                                        <span class="status-hist-name mr-2 badge">0</span>
+                                        <span class="status-hist-date">0</span>
+                                        <span class="status-hist-time">0</span>
+                                    </address>
+
+                                </div>
+                                   
+                            </div>
+                            <div class="col-lg-3 text-right">
+                                <p class="h3"><button class="btn btn-outline-primary btn-sm UpdateOrderStatusBtn">Update Status</button></p>
+
+                            </div>
+                            
+                            <div class="">
+                            <p class="mb-1 mt-5"><span class="font-weight-semibold">(Confirm => Ship => Deliver) </span> <span class=""> (Confirm/Cancel => Ship/Cancel)</span></p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Customer Details</h3>
+
+                    </div>
+                    <div class="card-body table-wrapper-scroll-y my-custom-scrollbar">
+                        <div class="row ">
+                            <div class="col-lg-9 ">
+                                <p class="h4 customer-d-name">name</p>
+                                <address class="fs-15"> 
+                                    Email: <span class="customer-d-email font-weight-semibold"></span>
+                                </address>
+                                <address class="fs-15"> 
+                                    Phone: <span class="customer-d-phone font-weight-semibold"></span>
+                                </address>
+                                <address class="fs-15 "> 
+                                    Registered Date: <span class="customer-date-reg font-weight-semibold"></span>
+                                </address>
+                                <div class="">
+                                    <p class="mb-1 mt-5"><span class="font-weight-semibold">Delivery Type:</span> <span class="order-ship-type">Address Type</span></p>
+                                    <p class="mb-1"><span class="font-weight-semibold">Address : </span><span class="order-ship-address">34 sjfdf lk jdf lslfj lddlfj lsdf fjlsdf dlfkjd jdsf lfd l</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="h3"><button class="btn btn-outline-primary btn-sm viewCustomer">View Profile</button></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Seller Details</h3>
+
+                    </div>
+                    <div class="card-body table-wrapper-scroll-y my-custom-scrollbar">
+                        <div class="row ">
+                            <div class="col-lg-9 ">
+                                <p class="h4 seller-d-name">name</p>
+                                <address class="fs-15"> 
+                                    Email:  <span class="seller-d-email font-weight-semibold"></span>
+                                </address>
+                                <address class="fs-15"> 
+                                    Phone:  <span class="seller-d-phone font-weight-semibold"></span>
+                                </address>
+                                <address class="fs-15 "> 
+                                    Packaging Info:  <span class="seller-d-packinfo-from font-weight-semibold"></span> to <span class="seller-d-packinfo-to font-weight-semibold"></span>
+                                </address>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="h3"><button class="btn btn-outline-primary btn-sm viewSeller">View Profile</button></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Invoice  Details</h3>
+
+                    </div>
+                    <div class="card-body table-wrapper-scroll-y my-custom-scrollbar2">
+                        <div class="row ">
+                            <div class="col-lg-6 ">
+                                <address class="fs-15"> 
+                                    Number: <span class="invoice-number font-weight-semibold"></span>
+                                </address>
+                                <address class="fs-15"> 
+                                    Date: <span class="invoice-date font-weight-semibold"></span>
+                                </address>
+                                <address class="fs-15 "> 
+                                    Time: <span class="invoice-time font-weight-semibold"></span>
+                                </address>
+                            </div>
+
+                        </div>
+                        <div class="">
+                            <p class="mb-1 mt-5"><span class="font-weight-semibold">Total Paid : </span> <span class="invoice-amount"> 0</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Payment Details</h3>
+
+                    </div>
+                    <div class="card-body table-wrapper-scroll-y my-custom-scrollbar2">
+                        <div class="row ">
+                            <div class="col-lg-12">
+                                <address class="fs-15">
+                                    Type: <span class="payment-type font-weight-semibold"></span>
+                                </address>
+                                <address class="fs-15">
+                                    Reference Code:  <span class="payment-ref-code font-weight-semibold"></span>
+                                </address>
+                                <address class="fs-15">
+                                    Order Reference:  <span class="order_reference font-weight-semibold"></span>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="mb-1 mt-5"><span class="font-weight-semibold ">Order Shipping/Delivery Fees: </span> <span class="order_shipping_fees fs-15"> 0</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-12">
+                <div class="card ">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Discount Code</h6>
+                                        <h4 class="m-0 order_discount_code">0</h4>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-gift fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Discount Deduction Type</h6>
+                                        <h4 class="m-0 order_discount-deduction-type">0</h4>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-gift fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Amount</h6>
+                                        <h4 class="m-0 order-discount-deduction-amount">0</h4>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-money fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Order Product Details</h3>
+
+                    </div>
+                    <div class="card-body">
+
+                        <div class="table-responsive push">
+                            <table class="table table-bordered table-hover">
+                                <thead class="">
+                                <th class="text-center ">SN</th>
+                                <th>Image</th>
+                                <th>Product</th>
+                                <th class="text-right">Unit</th>
+                                <th class="text-center">Quantity</th>
+                                <th class="text-right">Amount</th>
+                                <th class="text-right">Seller</th>
+                                </thead>
+                                <tbody class="hstory_productlist">
+                                    <tr  class="historyproductclone d-none">
+                                        <td class="text-center cart-p-sn">1</td>
+                                        <td class="text-center">
+                                            <img class="order-p-image" style="width: 5em; height: 5em;" alt="image" >
+                                        </td>
+                                        <td>
+                                            <p class="font-w600 mb-1 order-p-name">Digital Watch</p>
+                                            <!--<td><span class="trans-desc d-block text-truncate" title="" style="width: 180px; min-width: 30px; cursor: pointer;" >view</span></td>-->
+
+                                            <div class="text-muted d-none d-sm-block d-block text-truncate order-p-desc" title="" style="width: 150PX; min-width: 30px;">Mens Black digital watch</div>
+                                        </td>
+                                        <td class="text-center order-p-price">1</td>
+                                        <td class="text-right order-p-order-quantity">$34.00</td>
+                                        <td class="text-right order-p-order-price">$34.00</td>
+                                        <td class="text-right order-p-order-seller">$34.00</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-danger text-center OrderDeleteBtn d-none">Delete Order</button>
+        </div>
+
     </div>
 </div> 
 <!-- App-content closed -->

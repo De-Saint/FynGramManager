@@ -27,6 +27,7 @@
         <link href="../../../../assets/css/default.css" rel="stylesheet"> <!-- Bootstrap-daterangepicker css -->
         <link rel="stylesheet" href="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.css">
         <!-- Bootstrap-datepicker css -->
+        <link href="order_details.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.css"> <!-- Sidemenu css-->
         <link rel="stylesheet" href="../../../../assets/plugins/sidemenu/sidemenu.css"> <!-- Sidemenu-responsive-tabs css -->
         <link href="../../../../assets/plugins/sidemenu-responsive-tabs/css/sidemenu-responsive-tabs.css" rel="stylesheet">
@@ -35,8 +36,11 @@
         <link href="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet"> <!-- Select2 Plugin -->
         <link href="../../../../assets/css/icons.css" rel="stylesheet"> <!-- Rightsidebar css -->
         <link href="../../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet"> <!-- Nice-select css  -->
+        <link rel="stylesheet" href="../../../../assets/plugins/multipleselect/multiple-select.css">
+        <link href="../../../../assets/plugins/select2/select2.min.css" rel="stylesheet">
         <!-- Color-palette css-->
         <link rel="stylesheet" href="../../../../assets/css/skins.css">
+        <link href="../../../../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
 
         <meta http-equiv="imagetoolbar" content="no">
 
@@ -64,13 +68,16 @@
         <script src="../../../../assets/plugins/sidebar/sidebar.js"></script>
         <script src="../../../../assets/plugins/chart/chart.min.js"></script>
         <script src="../../../../assets/plugins/echarts/echarts.js"></script>
+        <script src="../../../../assets/plugins/multipleselect/multiple-select.js"></script>
+        <script src="../../../../assets/plugins/multipleselect/multi-select.js"></script>
         <script src="../../../../assets/plugins/select2/select2.full.min.js"></script>
         <script src="../../../../assets/js/select2.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="../../../../assets/js/custom.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>
-        <script src="../../../../assets/js/appscripts/order.js"></script>
+        <script src="../../../../assets/js/appscripts/order_details.js"></script>
+        <script src="../../../../assets/plugins/sweet-alert/sweetalert.min.js"></script>
     </body>
 
 </html>

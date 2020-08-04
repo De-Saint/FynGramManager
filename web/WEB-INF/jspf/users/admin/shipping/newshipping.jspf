@@ -56,7 +56,7 @@
                                                         %
                                                     </span>
                                                 </div> 
-                                                <input class="form-control"required type="number" placeholder="40" id="add_ship_admin_percent" name="number">
+                                                <input class="form-control" required type="text" maxlength="2" id="add_ship_admin_percent" name="number">
                                             </div>
 
                                         </div>
@@ -70,7 +70,7 @@
                                                         %
                                                     </span>
                                                 </div> 
-                                                <input class="form-control" readonly="true" required type="number" placeholder="60" id="add_ship_seller_percent" name="number"> 
+                                                <input class="form-control" readonly="true" required type="number"  id="add_ship_method_percent" name="number"> 
                                             </div>
                                         </div>
                                     </div>

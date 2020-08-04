@@ -54,11 +54,11 @@
                             <tr  class="cartproductclone d-none">
                                 <td class="text-center cart-p-sn">1</td>
                                 <td class="text-center">
-                                    <img class="cart-p-image w-7 h-25" alt="image" >
+                                    <img class="cart-p-image" style="width: 10em; height: 7em;" alt="image" >
                                 </td>
                                 <td>
                                     <p class="font-w600 mb-1 cart-p-name">Digital Watch</p>
-                                    <div class="text-muted d-none d-sm-block cart-p-desc">Mens Black digital watch</div>
+                                    <div class="text-muted d-none d-sm-block cart-p-desc text-justify" style="width: 25em;">Mens Black digital watch</div>
                                 </td>
                                 <td class="text-center cart-p-price">1</td>
                                 <td class="text-right cart-p-cart-quantity">$34.00</td>

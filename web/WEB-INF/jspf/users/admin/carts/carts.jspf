@@ -48,10 +48,9 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="card-title">Shopping Carts </div>
-                        <div class="card-options"> <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i
-                                    class="fe fe-chevron-up"></i></a> <a href="#" class="card-options-fullscreen"
-                                                                 data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a> <a href="#"
-                                                                                                class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a> </div>
+                         <div class="card-options"> 
+                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a> 
+                        </div>                                                 
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -61,11 +60,11 @@
                                         <th>SN</th>
                                         <th>Name</th>
                                         <th>Amount</th>
+                                        <th>Shipping Fees</th>
                                         <th>Discount</th>
                                         <th>Value</th>
                                         <th>Total Amount</th>
                                         <th>Shipping Type</th>
-                                        <th>Fees</th>
                                         <th>Status</th>
                                         <th>Date</th>
                                         <th>Count</th>
@@ -77,11 +76,11 @@
                                         <td class="cart-sn">#12450</td>
                                         <td class="cart-name">Buy</td>
                                         <td class="cart-amount">$ 5273.15</td>
+                                        <td class="cart-ship-fees"></td>
                                         <td class="cart-discount"></td>
                                         <td class="cart-discount-value"></td>
                                         <td class="cart-total-amount">52681.13</td>
                                         <td class="cart-ship-type">0.1</td>
-                                        <td class="cart-ship-fees"></td>
                                         <td><span class="badge cart-status badge-pill">Completed</span></td>
                                         <td class="cart-date-time"></td>
                                         <td class="cart-product-count"></td>

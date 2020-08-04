@@ -139,7 +139,7 @@ function DisplayAllCustomers(data) {
 function DisplayCustomerDetails(data) {
     console.log(data);
     $(".customer-uname").text(data.UserName);
-    $(".customer-upendingBalance").text(PriceFormat(data.WalletDetails.MainBalance));
+    $(".customer-upendingBalance").text(PriceFormat(data.WalletDetails.PendingBalance));
     $(".customer-umainBalance").text(PriceFormat(data.WalletDetails.MainBalance));
     $(".customer-uwalletNumber").text(data.WalletDetails.wallet_number);
     $(".customer-uFirstName").text(data.firstname);

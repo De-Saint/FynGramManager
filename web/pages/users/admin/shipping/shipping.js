@@ -117,6 +117,8 @@ function DisplayShippings(data, parent) {
             newchild.find(".shipping-ship-meth-percent").text(result["shipping_method_percentage"]);
             newchild.find(".shipping-admin-percent").text(result["admin_shipping_percentage"]);
             newchild.find(".shipping-date-added").text(result["date_added"]);
+            newchild.find(".shipping-email").text(result["email"]);
+            newchild.find(".shipping-phone").text(result["phone"]);
 
             var deletebtn = newchild.find(".btn-shipping-delete");
             var editbtn = newchild.find(".btn-shipping-edit");
@@ -124,6 +126,8 @@ function DisplayShippings(data, parent) {
             editbtn.click(function () {
                 localStorage.setItem("shipoption", "edit");
                 localStorage.setItem("shippingid", result["id"]);
+                var details = result["name"] + "#" + result["shipping_method_percentage"] + "#" + result["delivery_interval"] + "#" + result["email"] + "#" + result["phone"] + "#" + result["admin_shipping_percentage"];
+                localStorage.setItem("shippingdet", details);
                 window.location = extension + "LinksServlet?type=AdminNewShipping";
             });
             deletebtn.click(function () {

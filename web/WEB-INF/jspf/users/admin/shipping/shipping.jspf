@@ -119,6 +119,8 @@
                                         <tr>
                                             <th>SN</th>
                                             <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
                                             <th>Delivery Interval</th>
                                             <th>Total Earnings</th>
                                             <th>Number of Deliveries</th>
@@ -132,6 +134,8 @@
                                         <tr class="shipping-clone d-none">
                                             <td class="shipping-sn">1</td>
                                             <td class="shipping-name"></td>
+                                            <td class="shipping-email"></td>
+                                            <td class="shipping-phone"></td>
                                             <td class="shipping-deli-interval">$ 10,133,400,000</td>
                                             <td class="shipping-total-earns">Bitcoin</td>
                                             <td class="shipping-numb-of-deliveries">$ 10513.00</td>

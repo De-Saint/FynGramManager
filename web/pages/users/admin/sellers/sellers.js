@@ -244,7 +244,7 @@ function DisplayAllSellers(data) {
 function DisplaySellerDetails(data) {
     console.log(data);
     $(".seller-uname").text(data.UserName);
-    $(".seller-upendingBalance").text(PriceFormat(data.WalletDetails.MainBalance));
+    $(".seller-upendingBalance").text(PriceFormat(data.WalletDetails.PendingBalance));
     $(".seller-umainBalance").text(PriceFormat(data.WalletDetails.MainBalance));
     $(".seller-uwalletNumber").text(data.WalletDetails.wallet_number);
     $(".seller-uFirstName").text(data.firstname);

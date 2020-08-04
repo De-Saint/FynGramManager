@@ -30,8 +30,13 @@ function GeneralAppFunctions() {
         GetData("User", "GetUserDetails", "LoadUserDetails", sessionid);
     }
 
+    UpdateOrderStatus();
 }
 
+function UpdateOrderStatus() {
+    GetData("Order", "UpdateSellerPayment", "LoadUpdateSellerPayment");
+    setTimeout(UpdateOrderStatus, 7200000 );//2 hours 
+}
 function GenralBtnEvents() {
 
     $(".CallLogOut").click(function () {
@@ -542,6 +547,37 @@ function linkToFunction(action, params) {
         {
             var parent = $(".ShippingFeesList");
             DisplayShippingFeesOptions(params, parent);
+            break;
+        }
+        case "LoadOrders":
+        {
+            var parent = $(".OrderList");
+            DisplayOrders(params, parent);
+            break;
+        }
+        case "LoadOrderDetails":
+        {
+            DisplayOrderDetails(params);
+            break;
+        }
+        case "LoadOrderStatus":
+        {
+            DisplayOrderStatus(params);
+            break;
+        }
+        case "LoadOrderShippingMethods":
+        {
+            DisplayOrderShippingMethods(params);
+            break;
+        }
+        case "LoadUpdateOrderStatus":
+        {
+            DisplayUpdateOrderStatus(params);
+            break;
+        }
+        case "LoadUpdateSellerPayment":
+        {
+//            DisplayUpdateOrderStatus(params);
             break;
         }
 
