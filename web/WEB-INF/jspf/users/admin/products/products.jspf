@@ -264,7 +264,10 @@
                                                     </td>
                                                     <td class="prod-sellername">Home Accessories</td>
                                                     <td class="prod-rootcategory">Home Accessories</td>
-                                                    <td class="prod-quantity">$33</td>
+                                                    <td class="">
+                                                        <span class="prod-quantity mr-3"></span>
+                                                          <button type="button" class="btn btn-outline-warning mt-1 btn-sm restockbtn"  data-toggle="tooltip" data-placement="top" title="Restock"><i class="fa fa-recycle fa-fw"></i></button>
+                                                    </td>
                                                     <td class="prod-price">$33</td>
                                                     <td><span class="badge  badge-md prod-status">Sold</span></td>
                                                     <td><span class="badge  badge-md prod-active">Sold</span></td>

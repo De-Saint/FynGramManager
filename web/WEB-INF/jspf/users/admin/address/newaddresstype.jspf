@@ -3,7 +3,7 @@
 <div class="modal-dialog">
     <div class="modal-content shadow border-0">
         <div class="modal-header bg-primary">
-            <h5 class="modal-title" id="payments_details">New Address Type</h5>
+            <h5 class="modal-title" id="">New Address Type</h5>
             <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
             </button>
@@ -11,42 +11,21 @@
         <div class="modal-body p-0">
             <div class="mb-0">
                 <div class="card-body px-lg-5 py-lg-5">
-                    <form>
+                    <form name="NewAddressTypeForm" id="NewAddressTypeForm">
                         <div class="form-group mb-3">
                             <div
                                 class="input-group input-group-alternative">
                                 <div class="input-group-prepend"> <span
                                         class="input-group-text p-0 w-7"><i
-                                            class="fa fa-envelope-o mx-auto text-muted fs-18"></i></span>
-                                </div> <input class="form-control"
-                                              placeholder="Email" type="email">
+                                            class="fa fa-file mx-auto text-muted fs-18"></i></span>
+                                </div> <input class="form-control" id="newAddressTypeName" placeholder="New Address Type Name - Home" required="" type="text">
                             </div>
                         </div>
                         <div class="form-group">
-                            <div
-                                class="input-group input-group-alternative">
-                                <div class="input-group-prepend"> <span
-                                        class="input-group-text p-0 w-7"><i
-                                            class="fa fa-unlock-alt mx-auto text-muted fs-18"></i></span>
-                                </div> <input class="form-control"
-                                              placeholder="Password"
-                                              type="password">
-                            </div>
+                            <input class="form-control" id="newAddressTypeID" value="0"  placeholder="" type="hidden">
                         </div>
-                        <div
-                            class="custom-control custom-control-alternative custom-checkbox">
-                            <label
-                                class="custom-control custom-checkbox">
-                                <input type="checkbox"
-                                       class="custom-control-input"
-                                       id="customCheckLogin1"
-                                       name="example-checkbox2"
-                                       value="option2"> <span
-                                       class="custom-control-label">Remember
-                                    me</span> </label> </div>
-                        <div class="text-center"> <button type="button"
-                                                          class="btn btn-primary my-4">Sign
-                                in</button> </div>
+                       
+                        <div class="text-center"> <button type="submit"  class="btn btn-primary my-4">Submit</button> </div>
                     </form>
                 </div>
             </div>

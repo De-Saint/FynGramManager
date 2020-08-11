@@ -85,7 +85,7 @@
                         <div class="d-flex">
                             <div class="">
                                 <p class="mb-2 h6">Total Subscriptions</p>
-                                <h2 class="mb-1 ">0</h2>
+                                <h2 class="mb-1 total_subscriptions_count ">0</h2>
 
                             </div>
                         </div>

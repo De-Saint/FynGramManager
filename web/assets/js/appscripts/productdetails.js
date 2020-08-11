@@ -24,9 +24,7 @@ function productDetailsFunctions() {
     } else {
         sessiontype = GetSessionType();
     }
-//    $('.carousel').carousel({
-//        interval: 2000
-//    });
+
 
     productDetailsPageFunctions();
 }
@@ -34,10 +32,19 @@ function productDetailsFunctions() {
 
 function productDetailsBtnEvents() {
     $("#EditProduct").click(function () {
-        productid = GetProductID();
-        localStorage.setItem("productid", productid);
-        localStorage.setItem("option", "editproduct");
-        window.location = extension + "LinksServlet?type=SellerAddProduct";
+        var sessiontype = GetSessionType();
+        if (sessiontype === "Admin") {
+            productid = GetProductID();
+            localStorage.setItem("productid", productid);
+            localStorage.setItem("option", "editproduct");
+            window.location = extension + "LinksServlet?type=AdminAddProduct";
+        } else if (sessiontype === "Seller") {
+            productid = GetProductID();
+            localStorage.setItem("productid", productid);
+            localStorage.setItem("option", "editproduct");
+            window.location = extension + "LinksServlet?type=SellerAddProduct";
+        }
+
     });
 
 }

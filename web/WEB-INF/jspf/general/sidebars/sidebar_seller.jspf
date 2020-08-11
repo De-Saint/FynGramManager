@@ -235,7 +235,7 @@
                                             <a href="/FynGramShop/pages/shop/aboutus/aboutus.jsp" class="slide-item" target="blank">About Us</a>
                                             <a href="/FynGramShop/pages/shop/contact/contact.jsp" class="slide-item" target="blank">Contact Us</a>
                                             <a href="/FynGramShop/pages/shop/services/services.jsp" class="slide-item" target="blank">Services</a>
-                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=Terms"  class="slide-item" target="blank">Supplier - Terms</a> 
+                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=Terms"  class="slide-item" target="blank">Seller - Terms</a> 
                                             <a  href="${pageContext.request.contextPath}/LinksServlet?type=LogOut" class="slide-item text-danger CallLogOut1">Sign Out</a> 
                                         </div>
                                     </div>

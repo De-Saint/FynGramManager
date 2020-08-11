@@ -39,6 +39,7 @@
         <link href="../../../../assets/plugins/jquery-countdown/countdown.css" rel="stylesheet"> <!-- Font icons css-->
         <link href="../../../../assets/css/icons.css" rel="stylesheet"> <!-- Rightsidebar css -->
         <link href="../../../../assets/plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet"> 
+        <link href="../../../../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
         <!-- Color-palette css-->
         <link rel="stylesheet" href="../../../../assets/css/skins.css">
 
@@ -70,6 +71,7 @@
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>
     <script src="sellers.js" type="text/javascript"></script>
+        <script src="../../../../assets/plugins/sweet-alert/sweetalert.min.js"></script>
 
     </body>
 

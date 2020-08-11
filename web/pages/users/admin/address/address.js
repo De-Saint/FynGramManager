@@ -25,7 +25,17 @@ function addressFunctions() {
 
 
 function  addressBtnEvents() {
-
+    $("form[name=NewAddressTypeForm]").submit(function (e) {
+        var addtypeName = $("#newAddressTypeName").val();
+        var addtypeID = $("#newAddressTypeID").val();
+        var data = [addtypeName, addtypeID];
+        showLoader();
+        $("#new-address-type").modal("hide");
+        GetData("Address", "NewAddressType", "LoadAddressTypeOption", data);
+        $("#newAddressTypeName").val("");
+        $("#newAddressTypeID").val(0);
+        e.preventDefault();
+    });
 }
 function  addressSetActiveLink() {
     $("#id-carrier-svg").addClass("resp-tab-active");
@@ -34,20 +44,18 @@ function  addressSetActiveLink() {
 }
 
 function addressPageFunction() {
-//    alert("heye");
     showLoader();
+    GetData("Address", "GetAddresses", "LoadAddresses", "");
     GetData("Address", "GetAddressTypes", "LoadGetAddressTypes", "");
 }
 
-function DisplayGetAddressTypes(data, parent) {
-    console.log(data);
+function DisplayGetAddressTypes(data) {
+     var parent = $(".addresstypeList");
     hideLoader();
     parent.find(".newclone").remove();
     if (data !== "none") {
         var ids = data[0];
         var details = data[1];
-        var totalcount = data[2];
-        var discountcount = 0;
         var count = 0;
         var childclone = parent.find(".addresstype-clone").removeClass("d-none");
         $.each(ids, function (index, id) {
@@ -59,20 +67,20 @@ function DisplayGetAddressTypes(data, parent) {
             newchild.find(".addresstype-sn").text(count);
             newchild.find(".addresstype-name").text(result["name"]);
 
-            
-            var deletebtn = newchild.find(".btn-shipping-f-delete");
-            var editbtn = newchild.find(".btn-shipping-f-edit");
+
+            var deletebtn = newchild.find(".address_type_delete_btn");
+            var editbtn = newchild.find(".address_type_edit_btn");
             DisplayToolTip(deletebtn);
             DisplayToolTip(editbtn);
             editbtn.click(function () {
-                $("#new_shipping_fees").modal("show");
-                $("#new_shipping_fees #newShippingID").val(result["id"]);
-                $("#new_shipping_fees #newShippingAmt").val(result["delivery_fees"]);
+                $("#new-address-type").modal("show");
+                $("#new-address-type #newAddressTypeID").val(result["id"]);
+                $("#new-address-type #newAddressTypeName").val(result["name"]);
             });
             deletebtn.click(function () {
                 swal({
-                    title: 'Shipping Fees',
-                    text: "Are you sure you want to delete this shipping fees and the details?",
+                    title: 'Address Type',
+                    text: "Are you sure you want to delete this address type?",
                     type: 'warning',
                     showCancelButton: true,
                     closeOnConfirm: false,
@@ -81,7 +89,7 @@ function DisplayGetAddressTypes(data, parent) {
                 }, function (dismiss) {
                     if (dismiss) {
                         showLoader();
-                        GetData("Shipping", "DeleteShippingFees", "LoadShippingFeesOptions", result["id"]);
+                        GetData("Address", "DeleteAddressType", "LoadAddressTypeOption", result["id"]);
                     }
                 });
 
@@ -89,13 +97,82 @@ function DisplayGetAddressTypes(data, parent) {
 
             newchild.appendTo(parent).show();
         });
-        $(".cart_total_count").text(NumberFormat(totalcount));
-        $(".cart_total_discount_count").text(NumberFormat(discountcount));
+        $(".Total_Address_Types").text(NumberFormat(count));
         childclone.hide();
 
     } else {
-        var row = $("<div />").appendTo(parent);
-        $("<div />", {class: "ml-9 text-center newclone text-primary", text: "No Result Found"}).appendTo(row);
+        var row = $("<tr />").appendTo(parent);
+        $("<td />", {class: "ml-9 text-center newclone text-primary", colspan: "6", text: "No Result Found"}).appendTo(row);
 
+    }
+}
+
+function DisplayAddresses(data) {
+    hideLoader();
+    console.log(data);
+    var parent = $(".AddressList");
+    parent.find(".newclone").remove();
+    if (data !== "none") {
+        var ids = data[0];
+        var details = data[1];
+        var count = 0;
+        var childclone = parent.find(".addresslist-clone").removeClass("d-none");
+        $.each(ids, function (index, id) {
+            count++;
+            var result = details[id];
+            var newchild = childclone.clone();
+            newchild.addClass("addresslist-clone");
+            newchild.addClass("newclone");
+            newchild.find(".address-sn").text(count);
+            newchild.find(".address-username").text(result["addressusername"]);
+            newchild.find(".address-type").text(result["addresstypename"]);
+            newchild.find(".address-address").text(result["full_address"]);
+            if (result["default_address"] === "0") {
+                newchild.find(".address-default").text("Yes").addClass("badge badge-success");
+            } else {
+                newchild.find(".address-default").text("No").addClass("badge badge-primary");
+            }
+            newchild.find(".address-phone").text(result["phone"]);
+            newchild.find(".address-date").text(result["date"]);
+
+
+            newchild.appendTo(parent).show();
+        });
+        $(".Totaladdress").text(NumberFormat(count));
+        childclone.hide();
+
+    } else {
+        var row = $("<tr />").appendTo(parent);
+        $("<td />", {class: "ml-9 text-center newclone text-primary", colspan: "7", text: "No Result Found"}).appendTo(row);
+
+    }
+}
+
+function DisplayAddressTypeOption(data) {
+    var resp = data[2];
+    hideLoader();
+    if (resp.status === "success") {
+        swal({
+            title: 'Address Types',
+            text: resp.msg,
+            type: 'success',
+            showCancelButton: false,
+            closeOnConfirm: true,
+            confirmButtonText: ' Continue!',
+            buttonsStyling: true
+        }, function (dismiss) {
+            DisplayGetAddressTypes(data);
+        });
+    } else if (resp.status === "error") {
+        swal({
+            title: "Address Types",
+            text: resp.msg,
+            type: "error",
+            confirmButtonText: 'Ok',
+            showCancelButton: false,
+            onClose: function () {
+
+            }
+        });
     }
 }

@@ -154,7 +154,7 @@ function addProductBtnEvents() {
         var shippingwidth = $("#addprod-shippingwidth").val();
 
         option = GetProductOption();
-        productid = GetProductID;
+        productid = GetProductID();
         var data = [option, sessionid, name, desc, refnumber, upcbarcode, prodcondition, sellingprice, costprice, quantity, quantitymin, selectedcatids, selectedproperties, unit,
             unitvalue, tags, stocknotification, stockmin, shippingheight, shippingdepth, shippingwidth, productid];
         showLoader();

@@ -38,6 +38,7 @@
         <link href="../../../../assets/plugins/select2/select2.min.css" rel="stylesheet"> <!-- News ticker css -->
         <link href="../../../../assets/css/icons.css" rel="stylesheet"> <!-- Rightsidebar css -->
         <link href="../../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet"> 
+        <link href="../../../../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
         <!-- Color-palette css-->
         <link rel="stylesheet" href="../../../../assets/css/skins.css">
 
@@ -69,7 +70,8 @@
         <script src="../../../../assets/js/custom.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>
-        <script src="../../../../assets/js/appscripts/messages.js"></script>
+        <script src="../../../../assets/js/appscripts/messages.js"></script>>
+        <script src="../../../../assets/plugins/sweet-alert/sweetalert.min.js"></script>
 
     </body>
 

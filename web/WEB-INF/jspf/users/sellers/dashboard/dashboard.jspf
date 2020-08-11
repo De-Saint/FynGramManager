@@ -9,7 +9,7 @@
                 <h4 class="page-title mb-0">Hi <span class="UserName">FG</span></h4> 
                 <small class="text-muted mt-0">This page shows a detail overview of activities.</small>
             </div>
-            <span class="fs18 text-primary font-weight-semibold d-none forActivatedSellers">You have 45 Days to your next Subscription.</span>
+            <!--<span class="fs18 text-primary font-weight-semibold d-none forActivatedSellers">You have 45 Days to your next Subscription.</span>-->
             <div class="page-rightheader">
                 <div class="ml-3 ml-auto d-flex">
                     <div class="mt-3 mt-md-0">
@@ -24,7 +24,7 @@
         </div> <!-- Page-header closed -->
         <!-- Banner opened -->
         <div class="">
-            <div class="card-body ">
+<!--            <div class="card-body ">
                 <div class="best-ticker bn-effect-scroll bn-direction-ltr newsticker1 ForPendingSeller border-danger"
                      style="height: 40px; line-height: 38px; border-radius: 2px; border-width: 1px;">
                     <div class="bn-label bg-danger">Subscription Update</div>
@@ -54,12 +54,12 @@
                                 class="bn-action bn-pause"></span></button> <button><span class="bn-arrow bn-next"></span></button> <a
                             href="#" class="card-options-remove p-3" data-toggle="card-remove"><i class="fe fe-x "></i></a> </div>
                 </div>
-            </div>
+            </div>-->
             <div class="card big-deal onsale">
                 <div class="card-body p-4 text-white">
                     <div class="row">
                         <div class="col-xl-8 col-lg-12 col-md-12">
-                            <div class="d-sm-flex"> <img class="UserImage" alt="" style="width: 10em; height: 10em;">
+                            <div class="d-sm-flex"> <img class="UserImage" alt="" style="width: 6em; height: 6em;">
                                 <div class="ml-4">
                                     <h3 class="text-uppercase mb-0 mt-1">WELCOME TO FYNGRAM ADMIN PANEL</h3>
                                     <p class="mt-2 mb-0">Perform all the functions assigned to you, as a Seller on this platform</p>
@@ -97,7 +97,7 @@
                                         <div class="card-body">
                                             <h6 class="mb-3">Total Profit</h6>
                                             <h2 class="text-right mb-5"><i
-                                                    class="ti-wallet text-success fa-lg text-success-shadow float-left"></i><span>$3,746</span>
+                                                    class="ti-wallet text-success fa-lg text-success-shadow float-left"></i><span>&#8358;3,746</span>
                                             </h2>
                                             <h6 class="font-weight-normal fs-14 text-muted">Today Profit<span
                                                     class="float-right">20%</span></h6>
@@ -139,10 +139,10 @@
                                         <div class="card-body">
                                             <h6 class="mb-3">Invoice</h6>
                                             <h2 class="text-right mb-5"><i
-                                                    class="ti-receipt text-warning text-warning-shadow fa-lg float-left"></i><span>$3,746</span>
+                                                    class="ti-receipt text-warning text-warning-shadow fa-lg float-left"></i><span>&#8358;3,746</span>
                                             </h2>
                                             <h6 class="font-weight-normal fs-14 text-muted">This Month<span
-                                                    class="float-right">$5,624</span></h6>
+                                                    class="float-right">&#8358;5,624</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -181,10 +181,10 @@
                                         <div class="card-body">
                                             <h6 class="mb-3">Revenue</h6>
                                             <h2 class="text-right mb-5"><i
-                                                    class="ti-bar-chart-alt text-info  text-info-shadow fa-lg float-left"></i><span>$52,347</span>
+                                                    class="ti-bar-chart-alt text-info  text-info-shadow fa-lg float-left"></i><span>&#8358;52,347</span>
                                             </h2>
                                             <h6 class="font-weight-normal fs-14 text-muted">Total Revenue<span
-                                                    class="float-right">$2,534</span></h6>
+                                                    class="float-right">&#8358;2,534</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +195,7 @@
                                         <div class="card-body">
                                             <h6 class="mb-3">Total Profit</h6>
                                             <h2 class="text-right mb-5"><i
-                                                    class="ti-wallet text-success fa-lg text-success-shadow float-left"></i><span>$3,746</span>
+                                                    class="ti-wallet text-success fa-lg text-success-shadow float-left"></i><span>&#8358;3,746</span>
                                             </h2>
                                             <h6 class="font-weight-normal fs-14 text-muted">Today Profit<span
                                                     class="float-right">20%</span></h6>
@@ -237,10 +237,10 @@
                                         <div class="card-body">
                                             <h6 class="mb-3">Invoice</h6>
                                             <h2 class="text-right mb-5"><i
-                                                    class="ti-receipt text-warning text-warning-shadow fa-lg float-left"></i><span>$3,746</span>
+                                                    class="ti-receipt text-warning text-warning-shadow fa-lg float-left"></i><span>&#8358;3,746</span>
                                             </h2>
                                             <h6 class="font-weight-normal fs-14 text-muted">This Month<span
-                                                    class="float-right">$5,624</span></h6>
+                                                    class="float-right">&#8358;5,624</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -279,10 +279,10 @@
                                         <div class="card-body">
                                             <h6 class="mb-3">Revenue</h6>
                                             <h2 class="text-right mb-5"><i
-                                                    class="ti-bar-chart-alt text-info  text-info-shadow fa-lg float-left"></i><span>$52,347</span>
+                                                    class="ti-bar-chart-alt text-info  text-info-shadow fa-lg float-left"></i><span>&#8358;52,347</span>
                                             </h2>
                                             <h6 class="font-weight-normal fs-14 text-muted">Total Revenue<span
-                                                    class="float-right">$2,534</span></h6>
+                                                    class="float-right">&#8358;2,534</span></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -293,7 +293,7 @@
                                         <div class="card-body">
                                             <h6 class="mb-3">Total Profit</h6>
                                             <h2 class="text-right mb-5"><i
-                                                    class="ti-wallet text-success fa-lg text-success-shadow float-left"></i><span>$3,746</span>
+                                                    class="ti-wallet text-success fa-lg text-success-shadow float-left"></i><span>&#8358;3,746</span>
                                             </h2>
                                             <h6 class="font-weight-normal fs-14 text-muted">Today Profit<span
                                                     class="float-right">20%</span></h6>
@@ -406,7 +406,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <p class="mb-1">Transactions</p>
-                                    <h3 class="mb-0">$8457</h3>
+                                    <h3 class="mb-0">&#8358;8457</h3>
                                     <div class="d-flex">
                                         <p class="text-success mr-1">+85%</p>
                                         <p class="text-muted">Last 3 months</p>
@@ -449,7 +449,7 @@
                                                 </div>
                                             </div>
                                             <div class="ml-auto">
-                                                <h5 class="mb-0 mt-0">$48,908</h5>
+                                                <h5 class="mb-0 mt-0">&#8358;48,908</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -465,7 +465,7 @@
                                                     <span class="badge badge-danger-light">Mobile</span> </div>
                                             </div>
                                             <div class="ml-auto">
-                                                <h5 class="mb-0 mt-0">$32,146</h5>
+                                                <h5 class="mb-0 mt-0">&#8358;32,146</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -481,7 +481,7 @@
                                                     <span class="badge badge-warning-light">mobile</span> </div>
                                             </div>
                                             <div class="ml-auto">
-                                                <h5 class="mb-0 mt-0">$15,128</h5>
+                                                <h5 class="mb-0 mt-0">&#8358;15,128</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -498,7 +498,7 @@
                                                 </div>
                                             </div>
                                             <div class="ml-auto">
-                                                <h5 class="mb-0 mt-0">$24,527</h5>
+                                                <h5 class="mb-0 mt-0">&#8358;24,527</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -514,7 +514,7 @@
                                                     <span class="badge badge-info-light">Beauty</span> </div>
                                             </div>
                                             <div class="ml-auto">
-                                                <h5 class="mb-0 mt-0">$13,625</h5>
+                                                <h5 class="mb-0 mt-0">&#8358;13,625</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -625,7 +625,7 @@
                                             class="text-muted fs-14">Brown jacket , Winter Wear</small>
                                     </div>
                                     <div class="price ml-auto">
-                                        <h4 class="font-weight-medium">$145.00</h4> <span
+                                        <h4 class="font-weight-medium">&#8358;145.00</h4> <span
                                             class="rated-products-ratings"> <i
                                                 class="fa fa-star text-warning"></i> <i
                                                 class="fa fa-star text-warning"></i> <i
@@ -645,7 +645,7 @@
                                             class="text-muted fs-14">Homewear, Furinture </small>
                                     </div>
                                     <div class="price ml-auto">
-                                        <h4 class="font-weight-medium">$35.00</h4> <span
+                                        <h4 class="font-weight-medium">&#8358;35.00</h4> <span
                                             class="rated-products-ratings"> <i
                                                 class="fa fa-star text-warning"></i> <i
                                                 class="fa fa-star text-warning"></i> <i
@@ -666,7 +666,7 @@
                                             class="text-muted fs-14">Accessories, Dial Analogue</small>
                                     </div>
                                     <div class="price ml-auto">
-                                        <h4 class="font-weight-medium">$58.00</h4> <span
+                                        <h4 class="font-weight-medium">&#8358;58.00</h4> <span
                                             class="rated-products-ratings"> <i
                                                 class="fa fa-star text-warning"></i> <i
                                                 class="fa fa-star text-warning"></i> <i
@@ -686,7 +686,7 @@
                                             class="text-muted fs-14">Accessories, handbag</small>
                                     </div>
                                     <div class="price ml-auto">
-                                        <h4 class="font-weight-medium">$65.00</h4> <span
+                                        <h4 class="font-weight-medium">&#8358;65.00</h4> <span
                                             class="rated-products-ratings"> <i
                                                 class="fa fa-star text-warning"></i> <i
                                                 class="fa fa-star text-warning"></i> <i
@@ -706,7 +706,7 @@
                                             class="text-muted fs-14">Electronics, Beats</small>
                                     </div>
                                     <div class="price ml-auto">
-                                        <h4 class="font-weight-medium">$65.00</h4> <span
+                                        <h4 class="font-weight-medium">&#8358;65.00</h4> <span
                                             class="rated-products-ratings"> <i
                                                 class="fa fa-star text-warning"></i> <i
                                                 class="fa fa-star text-warning"></i> <i
@@ -1932,7 +1932,7 @@
                                 <div class="col-xl-5 col-lg-6 col-md-12">
                                     <div class="widget">
                                         <h6 class="mb-2">Revenue</h6>
-                                        <h3 class="font-weight-semibold">$834,452<span
+                                        <h3 class="font-weight-semibold">&#8358;834,452<span
                                                 class="text-success  fs-14 ml-3">( + 12 % )</span></h3>
                                     </div>
                                     <div class="overflow-hidden">
@@ -2099,7 +2099,7 @@
                                             <td>18</td>
                                             <td>05</td>
                                             <td>112</td>
-                                            <td>$ 2,356</td>
+                                            <td>&#8358; 2,356</td>
                                             <td><i class="fa fa-check mr-1 text-success"></i> In Stock</td>
                                         </tr>
                                         <tr>
@@ -2109,7 +2109,7 @@
                                             <td>10</td>
                                             <td>04</td>
                                             <td>210</td>
-                                            <td>$ 3,522</td>
+                                            <td>&#8358; 3,522</td>
                                             <td><i class="fa fa-check text-success"></i> In Stock</td>
                                         </tr>
                                         <tr>
@@ -2119,7 +2119,7 @@
                                             <td>15</td>
                                             <td>05</td>
                                             <td>215</td>
-                                            <td>$ 5,362</td>
+                                            <td>&#8358; 5,362</td>
                                             <td><i class="fa fa-check text-success"></i> In Stock</td>
                                         </tr>
                                         <tr>
@@ -2129,7 +2129,7 @@
                                             <td>21</td>
                                             <td>07</td>
                                             <td>102</td>
-                                            <td>$ 1,326</td>
+                                            <td>&#8358; 1,326</td>
                                             <td><i class="fa fa-check text-success"></i> In Stock</td>
                                         </tr>
                                         <tr>
@@ -2139,7 +2139,7 @@
                                             <td>34</td>
                                             <td>10</td>
                                             <td>325</td>
-                                            <td>$ 5,234</td>
+                                            <td>&#8358; 5,234</td>
                                             <td><i class="fa fa-check text-success"></i> In Stock</td>
                                         </tr>
                                         <tr>
@@ -2149,7 +2149,7 @@
                                             <td>11</td>
                                             <td>04</td>
                                             <td>0</td>
-                                            <td>$ 3,256</td>
+                                            <td>&#8358; 3,256</td>
                                             <td> <i class="fa fa-exclamation-triangle text-warning"></i> Out of
                                                 stock </td>
                                         </tr>
@@ -2160,7 +2160,7 @@
                                             <td>60</td>
                                             <td>10</td>
                                             <td>0</td>
-                                            <td>$ 7,652</td>
+                                            <td>&#8358; 7,652</td>
                                             <td> <i class="fa fa-exclamation-triangle text-danger"></i> Out of
                                                 stock </td>
                                         </tr>

@@ -26,15 +26,15 @@ function msgFunctions() {
 
 
 function msgBtnEvents() {
-     $("#searchuserbtn").click(function () {
+    $("#searchuserbtn").click(function () {
         var txt = $("#searchusertxt").val();
         if (txt.length > 2) {
             showLoader();
             GetData("User", "GetSearchUserDetails", "LoadSearchResultDetails", txt);
         }
     });
-    
-    
+
+
     $(".btn-delete-msg").click(function () {
         swal({
             title: 'Delete Message',
@@ -47,7 +47,7 @@ function msgBtnEvents() {
         }, function (dismiss) {
             if (dismiss) {
                 showLoader();
-                 var data = [sessionid, messageid];
+                var data = [sessionid, messageid];
                 GetData("Messages", "DeleteMessage", "LoadDeleteMessage", data);
             }
         });
@@ -85,24 +85,27 @@ function DisplayMessages(data, parent) {
     hideLoader();
     parent.find(".newclone").remove();
     if (data !== "none") {
-         var ids = data[0];
+        var ids = data[0];
         var result = data[1];
         var totalcount = data[2];
-        
-        
         var childclone = parent.find(".msg-clone").removeClass("d-none");
         var count = 0;
         $.each(ids, function (index, id) {
             count++;
-             var details = result[id];
+            var details = result[id];
             var newchild = childclone.clone();
             newchild.removeClass("dcode-clone");
             newchild.find(".dcode-sn").text(count);
             newchild.find(".msg-sender").text(details["SenderName"]);
             var detailsbtn = newchild.find(".msg-subject").text(details["subject"]).click(function () {
-                window.location = extension + "LinksServlet?type=SellerReadMessage&messageid=" + id;
+                var sessiontype = GetSessionType();
+                if (sessiontype === "Admin") {
+                    window.location = extension + "LinksServlet?type=AdminReadMessage&messageid=" + id;
+                } else if (sessiontype === "Seller") {
+                    window.location = extension + "LinksServlet?type=SellerReadMessage&messageid=" + id;
+                }
             });
-             newchild.addClass("newclone");
+            newchild.addClass("newclone");
             detailsbtn.hover(function () {
                 detailsbtn.addClass("text-primary");
             }, function () {
@@ -156,8 +159,8 @@ function DisplayDeleteMessage(data) {
     }
 }
 
-function DisplaySearchResultDetails(resp){
-      hideLoader();
+function DisplaySearchResultDetails(resp) {
+    hideLoader();
     if (resp.Beneficiaryid !== "0") {
         $(".searchresult").removeClass("d-none");
         $(".result-bid").text(resp.Beneficiaryid);

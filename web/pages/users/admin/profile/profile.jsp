@@ -53,12 +53,11 @@
         <link rel="stylesheet" href="../../../../assets/plugins/multi/multi.min.css"> <!-- Rightsidebar css -->
         <link href="../../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet"> <!-- Nice-select css  -->   
         <link href="../../../../assets/plugins/select2/select2.min.css" rel="stylesheet" type="text/css"/>
-     
-        <!--<link href="../../../../assets/plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">  Switcher css -->
-        <!-- Color-palette css-->
-        <link rel="stylesheet" href="../../../../assets/css/skins.css">
 
         <link href="../../../../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
+     
+        <!-- Color-palette css-->
+        <link rel="stylesheet" href="../../../../assets/css/skins.css">
         <meta http-equiv="imagetoolbar" content="no">
 
     </head>

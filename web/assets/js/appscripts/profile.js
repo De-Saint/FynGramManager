@@ -7,7 +7,6 @@ var extension = '../../../../';
 var sessiontype, sessionid;
 $(document).ready(function () {
     profileFunctions();
-    alert('heye');
 });
 
 

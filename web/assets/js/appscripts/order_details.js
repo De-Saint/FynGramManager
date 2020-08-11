@@ -47,13 +47,26 @@ function orderDetailsBtnEvents() {
     $(".UpdateOrderStatusBtn").click(function () {
         orderid = GetOrderID();
         var statusid = $("#orderstatuses").val();
-        showLoader();
-        var data = [orderid, statusid, sessionid];
-        GetData("Order", "UpdateOrderStatus", "LoadUpdateOrderStatus", data);
+        swal({
+            title: 'Order',
+            text: "You are about to change the status of this order. Do you wish to continue?",
+            type: 'warning',
+            showCancelButton: true,
+            closeOnConfirm: false,
+            confirmButtonText: ' Ok!',
+            buttonsStyling: true
+        }, function (dismiss) {
+            if (dismiss) {
+                showLoader();
+                var data = [orderid, statusid, sessionid];
+                GetData("Order", "UpdateOrderStatus", "LoadUpdateOrderStatus", data);
+            }
+        });
+
     });
     $(".OrderDeleteBtn").click(function () {
         orderid = GetOrderID();
-        alert(orderid);
+//        alert(orderid);
     });
 }
 function orderDetailsSetActiveLink() {
@@ -86,7 +99,7 @@ function DisplayOrderDetails(data) {
     $(".order-ship-address").text(data.OrderDetails.ShippingAddressDetails.full_address);
     $(".order_note").text(data.OrderDetails.message);
 
-    if ($.isEmptyObject(data.OrderDetails.DiscountCode)) {
+    if (!$.isEmptyObject(data.OrderDetails.DiscountCode)) {
         $(".order_discount_code").text(data.OrderDetails.DiscountCode);
         $(".order_discount-deduction-type").text(data.OrderDetails.DiscountDeductionType);
         $(".order-discount-deduction-amount").text(PriceFormat(data.OrderDetails.discount_amount));
@@ -112,7 +125,7 @@ function DisplayOrderDetails(data) {
     var customerdata = data.OrderDetails.CustomerDetails;
     DisplayCustomerDetails(customerdata);
 
-   
+
 
 
 
@@ -134,7 +147,7 @@ function DisplayOrderDetails(data) {
     if (orderstatus === "Delivered" || orderstatus === "Cancelled") {
         $(".OrderDeleteBtn").removeClass("d-none");
     }
- var shippingmethoddata = data.OrderDetails.ShippingMethodDetails;
+    var shippingmethoddata = data.OrderDetails.ShippingMethodDetails;
     DisplayShippingMethodDetails(shippingmethoddata);
 
 }

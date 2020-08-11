@@ -10,12 +10,7 @@ and open the template in the editor.
 
 .my-custom-scrollbar {
     position: relative;
-    height: 310px;
-    overflow: auto;
-}
-.my-custom-scrollbar2 {
-    position: relative;
-    height: 200px;
+    height: 300px;
     overflow: auto;
 }
 .table-wrapper-scroll-y {

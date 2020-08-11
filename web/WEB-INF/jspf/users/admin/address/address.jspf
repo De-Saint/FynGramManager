@@ -21,26 +21,12 @@
 
         <div class="row">
             <div class="col-sm-6 col-md-12 col-lg-6 col-xl-6">
-                <!--                <div class="col-sm-6 col-md-12 col-lg-6 col-xl-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="d-flex no-block align-items-center">
-                                                <div>
-                                                    <h6 class="">Total Address Types</h6>
-                                                    <h3 class="m-0">3.763674</h3>
-                                                </div>
-                                                <div class="ml-auto"> <img class="w-7 h-7"
-                                                                           src="../../../../assets/images/crypto-currencies/round-outline/Ethereum.svg" alt="image"> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>-->
                 <div class="col-xl-12 col-lg-6 col-md-12">
                     <div class="card">
                         <div class="card-body iconfont text-left">
                             <h6 class="mb-3">Total Addresses</h6>
-                            <h3 class="mb-1 font-weight-semibold TotalShippingAdded ">0</h3>
-                            <p class="mb-2 mt-3 text-muted">Shipping Method Info</p>
+                            <h3 class="mb-1 font-weight-semibold Totaladdress ">0</h3>
+                            <p class="mb-2 mt-3 text-muted">All Users Address Info</p>
                             <div class="progress h-1 mb-2">
                                 <div class="progress-bar bg-primary w-100" role="progressbar"></div>
                             </div> <small class="mb-0">Overview<span class="float-right text-muted">100%</span></small>
@@ -51,7 +37,7 @@
                     <div class="card">
                         <div class="card-body iconfont text-left">
                             <h6 class="mb-3">Total Address Types</h6>
-                            <h3 class="mb-1 font-weight-semibold TotalShippingAdded ">0</h3>
+                            <h3 class="mb-1 font-weight-semibold Total_Address_Types ">0</h3>
                             <p class="mb-2 mt-3 text-muted">Shipping Method Info</p>
                             <div class="progress h-1 mb-2">
                                 <div class="progress-bar bg-primary w-100" role="progressbar"></div>
@@ -65,10 +51,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="card-title">Address Types</div>
-                        <div class="card-options"> <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i
-                                    class="fe fe-chevron-up"></i></a> <a href="#" class="card-options-fullscreen"
-                                                                 data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a> <a href="#"
-                                                                                                class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a> </div>
+                        <div class="card-options">  </div>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
@@ -85,8 +68,8 @@
                                         <td class="addresstype-sn">#12450</td>
                                         <td class="addresstype-name">Buy</td>
                                         <td>
-                                            <button type="button" class="btn btn-outline-primary btn-sm mt-1"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"  ><i class="fa fa-pencil"></i> Edit</button>
-                                            <button type="button" class="btn btn-outline-danger mt-1 btn-sm"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" ><i class="fa fa-trash"></i>Delete</button>
+                                            <button type="button" class="btn btn-outline-primary address_type_edit_btn btn-sm mt-1"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"  ><i class="fa fa-pencil"></i> Edit</button>
+                                            <button type="button" class="btn btn-outline-danger address_type_delete_btn mt-1 btn-sm"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" ><i class="fa fa-trash"></i>Delete</button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -101,10 +84,6 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="card-title">Addresses</div>
-                        <div class="card-options"> <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i
-                                    class="fe fe-chevron-up"></i></a> <a href="#" class="card-options-fullscreen"
-                                                                 data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a> <a href="#"
-                                                                                                class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a> </div>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -112,88 +91,23 @@
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Usage</th>
-                                        <th>Remaining</th>
-                                        <th>Price</th>
-                                        <th>USD</th>
-                                        <th>Fee (%)</th>
-                                        <th>Status</th>
+                                        <th>UserName</th>
+                                        <th>Type</th>
+                                        <th>Address</th>
+                                        <th>Is Default</th>
+                                        <th>Phone</th>
                                         <th>Date</th>
-                                        <th>Details</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>#12450</td>
-                                        <td class="text-success">Buy</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.37218</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.42173</td>
-                                        <td>52681.13</td>
-                                        <td>$ 5273.15</td>
-                                        <td>0.1</td>
-                                        <td><span class="badge badge-success-light badge-pill">Completed</span></td>
-                                        <td>31-05-2019 02:12:34</td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-primary btn-sm mt-1"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"  ><i class="fa fa-pencil"></i></button>
-                                            <button type="button" class="btn btn-outline-danger mt-1 btn-sm"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" ><i class="fa fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>#12451</td>
-                                        <td class="text-danger">Sell</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 1.47364</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.36472</td>
-                                        <td>73647.15</td>
-                                        <td>$ 2637.37</td>
-                                        <td>0.1</td>
-                                        <td><span class="badge badge-warning-light badge-pill">Pending</span></td>
-                                        <td>02-06-2019 07:14:32</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>#12452</td>
-                                        <td class="text-danger">Sell</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.63736</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.73748</td>
-                                        <td>72637.02</td>
-                                        <td>$ 6345.16</td>
-                                        <td>0.1</td>
-                                        <td><span class="badge badge-danger-light badge-pill">Cancelled</span></td>
-                                        <td>05-06-2019 12:57:12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#12453</td>
-                                        <td class="text-success">Buy</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.63647</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.83643</td>
-                                        <td>83748.19</td>
-                                        <td>$ 23836.09</td>
-                                        <td>0.1</td>
-                                        <td><span class="badge badge-success-light badge-pill">Completed</span></td>
-                                        <td>15-07-2019 10:43:17</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#12454</td>
-                                        <td class="text-success">Buy</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.76263</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.72563</td>
-                                        <td>32635.32</td>
-                                        <td>$ 7235.25</td>
-                                        <td>0.1</td>
-                                        <td><span class="badge badge-success-light badge-pill">Completed</span></td>
-                                        <td>22-07-2019 11:44:45</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#12455</td>
-                                        <td class="text-danger">Sell</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.46263</td>
-                                        <td><i class="cc BTC-alt text-warning"></i> 0.27363</td>
-                                        <td>28937.22</td>
-                                        <td>$ 4853.15</td>
-                                        <td>0.1</td>
-                                        <td><span class="badge badge-info-light badge-pill">In Process</span></td>
-                                        <td>30-07-2019 08:23:15</td>
+                                <tbody class="AddressList">
+                                    <tr class="addresslist-clone d-none">
+                                        <td class="address-sn"></td>
+                                        <td class="address-username">Buy</td>
+                                        <td class="address-type" > 0.37218</td>
+                                        <td class="address-address" > 0.37218</td>
+                                        <td > <span class="address-default"></span> </td>
+                                        <td class="address-phone">52681.13</td>
+                                        <td class="address-date">$ 5273.15</td>
                                     </tr>
                                 </tbody>
                             </table>

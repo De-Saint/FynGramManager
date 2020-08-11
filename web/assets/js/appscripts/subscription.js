@@ -203,6 +203,7 @@ function DisplaySubscriptions(data) {
             newchild.appendTo(parent);
         });
         childclone.hide();
+        $(".total_subscriptions_count").text(count);
     } else {
         var row = $("<div />").appendTo(parent);
         $("<div />", {class: "ml-9 text-center new-clone text-primary", text: "No Result Found"}).appendTo(row);

@@ -175,7 +175,10 @@
                                                     </td>
                                                     <td class="prod-sellername">Home Accessories</td>
                                                     <td class="prod-rootcategory">Home Accessories</td>
-                                                    <td class="prod-quantity">$33</td>
+                                                      <td class="">
+                                                        <span class="prod-quantity mr-3"></span>
+                                                         <button type="button" class="btn btn-outline-warning mt-1 btn-sm restockbtn"  data-toggle="tooltip" data-placement="top" title="Restock"><i class="fa fa-recycle fa-fw"></i></button>
+                                                    </td>
                                                     <td class="prod-price">$33</td>
                                                     <td><span class="badge  badge-md prod-status">Sold</span></td>
                                                     <td><span class="badge  badge-md prod-active">Sold</span></td>
@@ -184,9 +187,6 @@
                                                             <button type="button" class="btn btn-primary btn-sm  dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Options </button>
                                                             <div class="dropdown-menu" x-placement="bottom-start">
                                                                 <a class="dropdown-item btn-prod-details text-primary" style="cursor: pointer" ><i class="fa fa-info-circle"></i>  Details</a> 
-                                                                <a class="dropdown-item btn-prod-activate text-success d-none" style="cursor: pointer" ><i class="fa fa-check-circle-o"></i>  Activate</a> 
-                                                                <a class="dropdown-item btn-prod-reject text-cyan d-none"  style="cursor: pointer"><i class="fa fa-times-circle-o"></i>  Reject </a> 
-                                                                <a class="dropdown-item btn-prod-deactivate text-secondary d-none"  style="cursor: pointer"><i class="fa fa-close"></i>  Deactivate</a> 
                                                                 <a class="dropdown-item btn-prod-delete text-red d-none"  style="cursor: pointer"><i class="fa fa-trash-o"></i>  Delete</a> 
                                                             </div>
                                                         </div> </td>
@@ -199,12 +199,9 @@
                                     <div class="col-sm-12 col-md-6">
 
                                         <div class="dataTables_info" id="example_info" role="status" aria-live="polite">
-                                            <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Tick or Select the products you want to <span class='text-danger'> Activate/Deactivate/Reject/Delete in Bulk.</span> </a></p> " data-original-title="" title="">?</span>
+                                            <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Tick or Select the products you want to <span class='text-danger'> Delete in Bulk.</span> </a></p> " data-original-title="" title="">?</span>
                                             <select name="example_length" aria-controls="example" id="productoption" class="custom-select form-control col-3">
                                                 <option selected="selected">Select Action</option>
-                                                <option class="btn-activate" value="Activated">Activate</option>
-                                                <option class="btn-reject" value="Rejected">Reject</option>
-                                                <option class="btn-deactivate" value="Deactivated">Deactivate</option>
                                                 <option class="btn-delete" value="Deleted">Delete</option>
                                             </select>
                                             <button class="btn btn-primary btn-sm mb-2 mb-xl-0 text-white btn-prod-bulk-action" data-toggle="tooltip" data-original-title="Bulk Action">

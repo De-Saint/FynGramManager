@@ -24,7 +24,7 @@
                     <div class="d-flex">
                         <div class="">
                             <p class="mb-2 h6">Total Subscriptions</p>
-                            <h2 class="mb-1 ">0</h2>
+                            <h2 class="mb-1 total_subscriptions_count ">0</h2>
 
                         </div>
                     </div>
@@ -48,7 +48,6 @@
                             <thead>
                                 <tr>
                                     <th>SN</th>
-                                    <th>Seller Name</th>
                                     <th>Seller Type</th>
                                     <th>Subscription Type</th>
                                     <th>Amount</th>
@@ -61,7 +60,6 @@
                             <tbody id="SubscriptionList">
                                 <tr class="sub-clone d-none">
                                     <td class="sub-sn">#12450</td>
-                                    <td class="text-success sub-name">Buy</td>
                                     <td class="sub-sellertype"> 0.42173</td>
                                     <td class="sub-subtype"> 0.37218</td>
                                     <td class="sub-amount">52681.13</td>

@@ -33,10 +33,16 @@ function productBtnEvents() {
     $(".btn-sp").click(function () {
         productSearchOptions();
     });
-    
+
     $(".btn-add-product").click(function () {
-        localStorage.setItem("option", "addproduct");
-        window.location = extension + "LinksServlet?type=SellerAddProduct";
+        var sessiontype = GetSessionType();
+        if (sessiontype === "Admin") {
+            localStorage.setItem("option", "addproduct");
+            window.location = extension + "LinksServlet?type=AdminAddProduct";
+        } else if (sessiontype === "Seller") {
+            localStorage.setItem("option", "addproduct");
+            window.location = extension + "LinksServlet?type=SellerAddProduct";
+        }
     });
 
 
@@ -122,6 +128,15 @@ function productBtnEvents() {
         showLoader();
         $("#newproductunit").modal("hide");
         GetData("Products", "ProcessProductUnit", "LoadProductInfo", data);
+        e.preventDefault();
+    });
+    $("form[name=reStockForm]").submit(function (e) {
+        var newQuantity = $("#newQuantity").val();
+        showLoader();
+        $("#restock").modal("hide");
+        productid = GetProductID();
+        var data = [productid, newQuantity, sessionid];
+        GetData("Products", "ProductRestock", "LoadProductRestock", data);
         e.preventDefault();
     });
 }
@@ -226,7 +241,6 @@ function productSearchOptions() {
         GetData("Products", "GetProductsByQuantity", "LoadProducts", dataqty);
     } else if (datacat !== "") {
         showLoader();
-        alert(datacat + " cat");
         GetData("Products", "GetProductsByCategoryID", "LoadProducts", datacat);
     } else if (dataseller !== "") {
         showLoader();
@@ -303,10 +317,21 @@ function DisplayProducts(data) {
             }
 
             newchild.find(".btn-prod-details").click(function () {
-                localStorage.setItem("productid", ProductID);
-                window.location = extension + "LinksServlet?type=SellerProductDetails";
+                var sessiontype = GetSessionType();
+                if (sessiontype === "Admin") {
+                    localStorage.setItem("productid", ProductID);
+                    window.location = extension + "LinksServlet?type=AdminProductDetails";
+                } else if (sessiontype === "Seller") {
+                    localStorage.setItem("productid", ProductID);
+                    window.location = extension + "LinksServlet?type=SellerProductDetails";
+                }
             });
-
+            var restockbtn = newchild.find(".restockbtn").click(function () {
+                localStorage.setItem("productid", ProductID);
+                $("#restock #newQuantity").val(details["QuantityDetails"].total_quantity);
+                $("#restock").modal("show");
+            });
+            DisplayToolTip(restockbtn);
 
             newchild.find(".btn-prod-deactivate").click(function () {
                 ProcessProductStatus(ProductID, "Deactivated", "Product has been deactivated. Please contact the Admin", "Deactivate", "Are you sure you want to Deactivate this product? This product would no longer be shown on the Front Store", "Single", "");
@@ -322,13 +347,14 @@ function DisplayProducts(data) {
             newchild.find(".btn-prod-delete").click(function () {
                 ProcessProductStatus(ProductID, "Deleted", "Product has been rejected. Please contact the Admin", "Delete", "Are you sure you want to Delete this product?", "Single", "");
             });
-
             newchild.appendTo(parent).show();
         });
         childclone.hide();
         $(".TotalProducts").text(count);
         $(".TotalApproved").text(totalapproved);
         $(".TotalUnapproved").text(totalunapproved);
+    }else{
+        
     }
 }
 
@@ -501,4 +527,34 @@ function DisplayAllProductCategories(data) {
 
         });
     }
+}
+
+function DisplayProductRestock(data){
+    hideLoader();
+    var resp = data[2];
+     if (resp.status === "success") {
+        swal({
+            title: 'Product',
+            text: resp.msg,
+            type: 'success',
+            showCancelButton: false,
+            closeOnConfirm: true,
+            confirmButtonText: 'Ok!',
+            buttonsStyling: true
+        }, function (dismiss) {
+           DisplayProducts(data);
+        });
+    } else if (resp.status === "error") {
+        swal({
+            title: "Product",
+            text: resp.msg,
+            type: "error",
+            confirmButtonText: 'Ok',
+            showCancelButton: false,
+            onClose: function () {
+
+            }
+        });
+    }
+    
 }

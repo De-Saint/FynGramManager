@@ -71,7 +71,6 @@ function GenralBtnEvents() {
 }
 
 function DisplayUserDetails(resp) {
-//    console.log(resp);
     if (resp.UserType === "Seller") {
         if (resp.status === "Pending") {
             $(".ForPendingSeller").removeClass("d-none");
@@ -474,8 +473,12 @@ function linkToFunction(action, params) {
         }
         case "LoadGetAddressTypes":
         {
-            var parent = $(".addresstypeList");
-            DisplayGetAddressTypes(params, parent);
+            DisplayGetAddressTypes(params);
+            break;
+        }
+        case "LoadAddresses":
+        {
+            DisplayAddresses(params);
             break;
         }
         case "LoadStates":
@@ -580,7 +583,41 @@ function linkToFunction(action, params) {
 //            DisplayUpdateOrderStatus(params);
             break;
         }
-
+        case "LoadStockMovement":
+        {
+            DisplayStockMovement(params);
+            break;
+        }
+        case "LoadProductRestock":
+        {
+            DisplayProductRestock(params);
+            break;
+        }
+        case "LoadAddressTypeOption":
+        {
+            DisplayAddressTypeOption(params);
+            break;
+        }
+        case "LoadCompaints":
+        {
+            DisplayComplaints(params);
+            break;
+        }
+        case "LoadComplaintOption":
+        {
+            DisplayComplaintOption(params);
+            break;
+        }
+        case "LoadNewFeatureRequest":
+        {
+            DisplayNewFeatureRequest(params);
+            break;
+        }
+        case "LoadNewFeatureOption":
+        {
+            DisplayNewFeatureOption(params);
+            break;
+        }
 
 
     }

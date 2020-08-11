@@ -79,11 +79,11 @@
         <script src="../../../../assets/plugins/select2/select2.full.min.js"></script>
         <script src="../../../../assets/js/select2.js"></script>
 
-        <script src="../../../../assets/plugins/sweet-alert/sweetalert.min.js"></script>
         <script src="../../../../assets/js/custom.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>
         <script src="../../../../assets/js/appscripts/products.js"></script>
+        <script src="../../../../assets/plugins/sweet-alert/sweetalert.min.js"></script>
 
     </body>
 

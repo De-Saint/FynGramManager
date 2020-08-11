@@ -82,8 +82,15 @@ function DisplayOrders(data, parent) {
             }
             var detailsbtn = newchild.find(".btn-order-details");
             detailsbtn.click(function () {
-                localStorage.setItem("orderid", result["OrderID"]);
-                window.location = extension + "LinksServlet?type=AdminOrderDetails";
+                 var sessiontype = GetSessionType();
+                 
+                if (sessiontype === "Admin") {
+                     localStorage.setItem("orderid", result["OrderID"]);
+                    window.location = extension + "LinksServlet?type=AdminOrderDetails";
+                } else if (sessiontype === "Seller") {
+                     localStorage.setItem("orderid", result["OrderID"]);
+                    window.location = extension + "LinksServlet?type=SellerOrderDetails";
+                }
             });
             newchild.appendTo(parent).show();
         });

@@ -6,6 +6,7 @@
 
 
 var extension = '../../../../';
+var sessionid;
 $(document).ready(function () {
     shippingFunctions();
 });
@@ -111,8 +112,7 @@ function DisplayShippings(data, parent) {
             newchild.find(".shipping-sn").text(count);
             newchild.find(".shipping-name").text(result["name"]);
             newchild.find(".shipping-deli-interval").text(result["delivery_interval"]);
-
-            newchild.find(".shipping-total-earns").text(PriceFormat(parseFloat(result["total_earning"])));
+            newchild.find(".shipping-total-earns").text(PriceFormat(parseFloat(result["total_earnings"])));
             newchild.find(".shipping-numb-of-deliveries").text(result["number_of_delivery"]);
             newchild.find(".shipping-ship-meth-percent").text(result["shipping_method_percentage"]);
             newchild.find(".shipping-admin-percent").text(result["admin_shipping_percentage"]);

@@ -35,6 +35,7 @@
         <link href="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet"> <!-- Select2 Plugin -->
         <link href="../../../../assets/css/icons.css" rel="stylesheet"> <!-- Rightsidebar css -->
         <link href="../../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet"> <!-- Nice-select css  -->
+        <link href="../../../../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
         <!-- Color-palette css-->
         <link rel="stylesheet" href="../../../../assets/css/skins.css">
 
@@ -70,7 +71,8 @@
         <script src="../../../../assets/js/custom.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>
-        <script src="../../../../assets/js/appscripts/order.js"></script>
+        <script src="../../../../assets/js/appscripts/order_details.js"></script>
+        <script src="../../../../assets/plugins/sweet-alert/sweetalert.min.js"></script>
     </body>
 
 </html>

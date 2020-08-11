@@ -1,34 +1,35 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 <div class="modal-dialog">
-        <div class="modal-content">
-             <div class="modal-header bg-primary">
-                <h5 class="modal-title" id="payments_details">Restock </h5>
-                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
+    <div class="modal-content">
+        <div class="modal-header bg-primary">
+            <h5 class="modal-title" id="">Restock </h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <form name="reStockForm" id="reStockForm">
+                        <div class="form-group mb-3">
+                            <label class="text-center">New Quantity</label>
+                            <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend"> 
+                                    <span class="input-group-text p-0 w-7">
+                                        <i class="fa fa-refresh mx-auto text-muted fs-18"></i>
+                                    </span>
+                                </div> 
+                                <input class="form-control"  id="newQuantity" placeholder="Enter the New Quantity" type="number"  >
+                            </div>
+                        </div>
+                        <div class="text-center"> 
+                            <button type="submit" class="btn btn-primary my-4">Submit</button> 
+                        </div>
+                    </form> </div>
             </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the who loves toil and pain can procureor sit aspernatur system.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure desires to obtain pain.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat aut odit voluptatem.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer justify-content-end">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
+
         </div>
     </div>
+</div>
 
