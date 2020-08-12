@@ -70,11 +70,7 @@ function walletPageFunctions() {
 
 function payWithPaystack(userID, paymentamount, email, actualamount, PaymentType) {
     var userDetail;
-//    if (username) {
-//        userDetail = username;
-//    } else {
     userDetail = email;
-//    }
     var handler = PaystackPop.setup({
         key: 'pk_test_b3685f824518679567d6356e2636fc184878e833',
         email: email,
@@ -120,11 +116,13 @@ function DisplayGetWalletDetails(resp) {
         $(".MainBalance").text(PriceFormat(resp.MainBalance));
         $(".PendingBalance").text(PriceFormat(resp.PendingBalance));
         $(".walletPin").text(resp.wallet_pin);
+        
         $(".TotalCustomerBalance").text(PriceFormat(resp.TotalCustomerBalance));
-        $(".TotalAmountInAllAccounts").text(PriceFormat(resp.TotalAmountInAllAccounts));
         $(".TotalSellerBalance").text(PriceFormat(resp.TotalSellerBalance));
+        
+        $(".TotalMainWallets").text(PriceFormat(resp.TotalMainWallets));
+        $(".TotalPendingWallets").text(PriceFormat(resp.TotalPendingWallets));
     }
-//    alert(JSON.stringify(resp));
 }
 function DisplayValidatePaystackPayment(resp) {
     hideLoader();
@@ -153,5 +151,4 @@ function DisplayValidatePaystackPayment(resp) {
             }
         });
     }
-//    alert(JSON.stringify(resp));
 }

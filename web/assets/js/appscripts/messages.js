@@ -5,14 +5,12 @@
  */
 
 var extension = '../../../../';
-var sessiontype, sessionid, messageid;
+var sessiontype, sessionid, messageid, messageoption;
 $(document).ready(function () {
     msgFunctions();
 });
 
-
 function msgFunctions() {
-    messageid = $("#messageid").val();
     msgBtnEvents();
     msgSetActiveLink();
     sessionid = verifyUser();
@@ -35,31 +33,13 @@ function msgBtnEvents() {
     });
 
 
-    $(".btn-delete-msg").click(function () {
-        swal({
-            title: 'Delete Message',
-            text: "Are you sure you want to deleted this message?",
-            type: 'warning',
-            showCancelButton: true,
-            closeOnConfirm: false,
-            confirmButtonText: ' Ok!',
-            buttonsStyling: true
-        }, function (dismiss) {
-            if (dismiss) {
-                showLoader();
-                var data = [sessionid, messageid];
-                GetData("Messages", "DeleteMessage", "LoadDeleteMessage", data);
-            }
-        });
-    });
-
     $("form[name=newMessageForm]").submit(function (e) {
         var toUserID = $(".toUserID").text();
         var msgSubject = $("#msgSubject").val();
         var msgBody = $("#msgBody").val();
         var data = [toUserID, msgSubject, msgBody, sessionid];
         showLoader();
-        GetData("Messages", "NewMessage", "LoadDeleteMessage", data);
+        GetData("Messages", "NewMessage", "LoadNewMessage", data);
         e.preventDefault();
     });
 }
@@ -73,11 +53,6 @@ function msgPageFunctions() {
     showLoader();
     var data = [sessionid, "All"];
     GetData("Messages", "GetMessages", "LoadMessages", data);
-    if (messageid === null || messageid === "null" || messageid === undefined || messageid === "undefined") {
-    } else {
-        showLoader();
-        GetData("Messages", "GetMessageDetails", "LoadMessageDetails", messageid);
-    }
 }
 
 
@@ -100,9 +75,11 @@ function DisplayMessages(data, parent) {
             var detailsbtn = newchild.find(".msg-subject").text(details["subject"]).click(function () {
                 var sessiontype = GetSessionType();
                 if (sessiontype === "Admin") {
-                    window.location = extension + "LinksServlet?type=AdminReadMessage&messageid=" + id;
+                    localStorage.setItem("messageid", details["msgid"]);
+                    window.location = extension + "LinksServlet?type=AdminReadMessage";
                 } else if (sessiontype === "Seller") {
-                    window.location = extension + "LinksServlet?type=SellerReadMessage&messageid=" + id;
+                    localStorage.setItem("messageid", details["msgid"]);
+                    window.location = extension + "LinksServlet?type=SellerReadMessage";
                 }
             });
             newchild.addClass("newclone");
@@ -120,45 +97,6 @@ function DisplayMessages(data, parent) {
     }
 }
 
-function DisplayMessageDetails(resp) {
-    $(".msg-date-time").text(resp["date"] + " - " + resp["time"]);
-    $(".msg-from-username").text(resp["SenderName"]);
-    $(".msg-to-username").text(resp["RecieverName"]);
-    $(".msg-from-useremail").text(resp["SenderEmail"]);
-    $(".msg-to-useremail").text(resp["RecieverEmail"]);
-    $(".msg-subject").text(resp["subject"]);
-    $(".msg-body").text(resp["body"]);
-}
-
-function DisplayDeleteMessage(data) {
-    hideLoader();
-    var resp = data[2];
-    if (resp.status === "success") {
-        swal({
-            title: 'Message',
-            text: resp.msg,
-            type: 'success',
-            showCancelButton: false,
-            closeOnConfirm: false,
-            confirmButtonText: ' Ok!',
-            buttonsStyling: true
-        }, function (dismiss) {
-            window.location = extension + "LinksServlet?type=SellerMessages";
-        });
-    } else if (resp.status === "error") {
-        swal({
-            title: "Message",
-            text: resp.msg,
-            type: "error",
-            confirmButtonText: 'Try Again',
-            showCancelButton: false,
-            onClose: function () {
-
-            }
-        });
-    }
-}
-
 function DisplaySearchResultDetails(resp) {
     hideLoader();
     if (resp.Beneficiaryid !== "0") {
@@ -173,6 +111,34 @@ function DisplaySearchResultDetails(resp) {
         $(".result-bemail").text("");
         $(".result-bphone").text("");
         ErrorNoty("No record was found. Please try something else");
+    }
+}
+
+function DisplayNewMessage(resp) {
+    hideLoader();
+    if (resp.status === "success") {
+        swal({
+            title: 'Message',
+            text: resp.msg,
+            type: 'success',
+            showCancelButton: false,
+            closeOnConfirm: true,
+            confirmButtonText: ' Ok!',
+            buttonsStyling: true
+        }, function (dismiss) {
+            window.location = extension + "LinksServlet?type=AdminMessages";
+        });
+    } else if (resp.status === "error") {
+        swal({
+            title: "Message",
+            text: resp.msg,
+            type: "error",
+            confirmButtonText: 'Try Again',
+            showCancelButton: false,
+            onClose: function () {
+
+            }
+        });
     }
 }
 

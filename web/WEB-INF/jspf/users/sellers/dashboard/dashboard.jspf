@@ -9,12 +9,11 @@
                 <h4 class="page-title mb-0">Hi <span class="UserName">FG</span></h4> 
                 <small class="text-muted mt-0">This page shows a detail overview of activities.</small>
             </div>
-            <!--<span class="fs18 text-primary font-weight-semibold d-none forActivatedSellers">You have 45 Days to your next Subscription.</span>-->
             <div class="page-rightheader">
                 <div class="ml-3 ml-auto d-flex">
                     <div class="mt-3 mt-md-0">
                         <div class="border-right mt-1 d-xl-block"> 
-                            <button type="button" class="btn btn-primary btn_pay-subscrition d-none ForPendingSeller" data-toggle="modal" data-target="#pay_subscription">Pay Subscription Fees</button> 
+                            <button type="button" class="btn btn-primary btn_pay-subscription d-none ForPendingSeller" data-toggle="modal" data-target="#pay_subscription">Pay Subscription Fees</button> 
                             <button type="button" class="btn btn-success btn_renew_subscription d-none forActivatedSellers" data-toggle="modal" data-target="#pay_subscription">Renew Subscription</button> 
                         </div>
                     </div>
@@ -24,8 +23,8 @@
         </div> <!-- Page-header closed -->
         <!-- Banner opened -->
         <div class="">
-<!--            <div class="card-body ">
-                <div class="best-ticker bn-effect-scroll bn-direction-ltr newsticker1 ForPendingSeller border-danger"
+            <div class="mb-3 ForPendingSeller">
+                <div class="best-ticker bn-effect-scroll bn-direction-ltr newsticker1  border-danger "
                      style="height: 40px; line-height: 38px; border-radius: 2px; border-width: 1px;">
                     <div class="bn-label bg-danger">Subscription Update</div>
                     <div class="bn-news" style="left: 64.9333px; right: 158px;">
@@ -36,11 +35,45 @@
                             <li><a href="javascript:void(0)">Click on the pay subscription fees button, </a></li>
                         </ul>
                     </div>
-                    <div class="bn-controls"> <button><span class="bn-arrow bn-prev"></span></button> <button><span
-                                class="bn-action bn-pause"></span></button> <button><span class="bn-arrow bn-next"></span></button> <a
-                            href="#" class="card-options-remove p-3" data-toggle="card-remove"><i class="fe fe-x "></i></a> </div>
+                    <div class="bn-controls"> 
+                        <button>
+                            <span class="bn-arrow bn-prev"></span>
+                        </button> `
+                        <button>
+                            <span class="bn-action bn-pause"></span>
+                        </button> 
+                        <button>
+                            <span class="bn-arrow bn-next"></span>
+                        </button> 
+                    </div>
                 </div>
-                <div class="best-ticker bn-effect-scroll bn-direction-ltr newsticker1 forPaidSellers"  style="height: 40px; line-height: 38px; border-radius: 2px; border-width: 1px;">
+            </div>
+            <div class="card big-deal onsale">
+                <div class="card-body p-4 text-white">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-12 col-md-12">
+                            <div class="d-sm-flex"> <img class="UserImage" alt="" style="width: 5em; height: 5em;">
+                                <div class="ml-4">
+                                    <h3 class="text-uppercase mb-0 mt-1">WELCOME TO FYNGRAM ADMIN PANEL</h3>
+                                    <p class="mt-2 mb-0">Perform all the functions assigned to you, as a Seller on this platform</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12 d-none d-md-block col-md-12">
+                            <div id="launch_date-1" class="ecommerce-counter is-countdown">
+                                <ul class="countdown">
+                                    <li><span class="number"  id="HHours">22</span><span class="time">Hours</span></li>
+                                    <li><span class="number" id="MMinutes">46</span><span class="time">Minutes</span></li>
+                                    <li><span class="number" id="SSeconds">7</span><span class="time">Seconds</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forPaidSellers mb-3">
+                <div class="best-ticker bn-effect-scroll bn-direction-ltr newsticker1"  style="height: 40px; line-height: 38px; border-radius: 2px; border-width: 1px;">
                     <div class="bn-label bg-success">Payment Update</div>
                     <div class="bn-news" style="left: 64.9333px; right: 158px;">
                         <ul style="width: 2264.37px; margin-left: -21px;">
@@ -50,40 +83,23 @@
                             <li><a href="javascript:void(0)">Please, wait for notification of confirmation,</a></li>
                         </ul>
                     </div>
-                    <div class="bn-controls"> <button><span class="bn-arrow bn-prev"></span></button> <button><span
-                                class="bn-action bn-pause"></span></button> <button><span class="bn-arrow bn-next"></span></button> <a
-                            href="#" class="card-options-remove p-3" data-toggle="card-remove"><i class="fe fe-x "></i></a> </div>
-                </div>
-            </div>-->
-            <div class="card big-deal onsale">
-                <div class="card-body p-4 text-white">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-12 col-md-12">
-                            <div class="d-sm-flex"> <img class="UserImage" alt="" style="width: 6em; height: 6em;">
-                                <div class="ml-4">
-                                    <h3 class="text-uppercase mb-0 mt-1">WELCOME TO FYNGRAM ADMIN PANEL</h3>
-                                    <p class="mt-2 mb-0">Perform all the functions assigned to you, as a Seller on this platform</p>
+                    <div class="bn-controls"> 
+                        <button>
+                            <span class="bn-arrow bn-prev"></span>
+                        </button> 
+                        <button>
+                            <span class="bn-action bn-pause"></span>
+                        </button> 
+                        <button>
+                            <span class="bn-arrow bn-next"></span>
+                        </button> 
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-12 d-none d-md-block col-md-12">
-                            <div id="launch_date-1" class="ecommerce-counter is-countdown">
-                                <ul class="countdown">
-                                    <li><span class="number">160</span><span class="time">Days</span></li>
-                                    <li><span class="number">22</span><span class="time">Hours</span></li>
-                                    <li><span class="number">46</span><span class="time">Minutes</span></li>
-                                    <li><span class="number">7</span><span class="time">Seconds</span></li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div> <!-- Banner closed -->
 
-        <div class="forActivatedSellers">
-
+        <div class="forActivatedSellers d-none">
             <!-- Row opened -->
             <div class="">
                 <div id="small-categories-2" class="owl-carousel owl-carousel-icons2 owl-loaded owl-drag"

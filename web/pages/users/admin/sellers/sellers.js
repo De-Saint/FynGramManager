@@ -104,7 +104,7 @@ function DisplayGetSellerTypes(data) {
                     text: "Are you sure you want to deleted this record?",
                     type: 'warning',
                     showCancelButton: true,
-                    closeOnConfirm: false,
+                    closeOnConfirm: true,
                     confirmButtonText: ' Ok!',
                     buttonsStyling: true
                 }, function (dismiss) {
@@ -135,7 +135,7 @@ function DisplaySellerInfo(resp) {
             text: resp.msg,
             type: 'success',
             showCancelButton: false,
-            closeOnConfirm: false,
+            closeOnConfirm: true,
             confirmButtonText: 'Ok!',
             buttonsStyling: true
         }, function (dismiss) {

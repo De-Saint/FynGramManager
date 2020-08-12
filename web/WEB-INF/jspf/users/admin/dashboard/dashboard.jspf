@@ -19,7 +19,7 @@
                 <div class="card-body p-4 text-white">
                     <div class="row">
                         <div class="col-xl-8 col-lg-12 col-md-12">
-                            <div class="d-sm-flex"> <img class="UserImage" alt="" style="width: 6em; height: 6em;">
+                            <div class="d-sm-flex"> <img class="UserImage" alt="" style="width: 5em; height: 5em;">
                                 <div class="ml-4">
                                     <h3 class="text-uppercase mb-0 mt-1">WELCOME TO FYNGRAM ADMIN PANEL</h3>
                                     <p class="mt-2 mb-0">Perform all the functions here!!!</p>
@@ -30,10 +30,9 @@
                         <div class="col-xl-4 col-lg-12 d-none d-md-block col-md-12">
                             <div id="launch_date-1" class="ecommerce-counter is-countdown">
                                 <ul class="countdown">
-                                    <li><span class="number">160</span><span class="time">Days</span></li>
-                                    <li><span class="number">22</span><span class="time">Hours</span></li>
-                                    <li><span class="number">46</span><span class="time">Minutes</span></li>
-                                    <li><span class="number">7</span><span class="time">Seconds</span></li>
+                                    <li><span class="number"  id="HHours">22</span><span class="time">Hours</span></li>
+                                    <li><span class="number" id="MMinutes">46</span><span class="time">Minutes</span></li>
+                                    <li><span class="number" id="SSeconds">7</span><span class="time">Seconds</span></li>
                                 </ul>
                             </div>
                         </div>

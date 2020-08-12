@@ -105,7 +105,7 @@ function DisplayAllCustomers(data) {
                 offlinecount++;
             }
             if (details["ImageText"] === "none") {
-                $(".cust-uimage").css("background-image", "url('" + extension + "assets/images/brand/logo.png')");
+                $(".cust-uimage").css("background-image", "url('" + extension + "assets/images/no-image.png')");
                 $(".cust-uimage").css("background-repeat", "repeat");
                 $(".cust-uimage").css("background-position", "center center");
             } else if (details["ImageText"] !== "none") {
@@ -168,7 +168,7 @@ function DisplayCustomerDetails(data) {
     $(".customer-utransactions").text(data.transactioncount);
     $(".customer-udiscountcodes").text(data.discountcodecount);
     if (data.ImageText === "none") {
-        var image_url = extension + "assets/images/brand/logo.png";
+        var image_url = extension + "assets/images/no-image.png";
         $(".customer-uimage").attr("src", image_url);
     } else if (data.ImageText !== "none") {
         $(".customer-uimage").attr("src", "data:image/png;base64," + data.ImageText);

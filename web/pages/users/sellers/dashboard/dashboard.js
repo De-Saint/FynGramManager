@@ -29,6 +29,24 @@ function dashBoardBtnEvents() {
         dashboardPayWithPaystack(newPaymentAmount, email, subcriptionAmount, "Subscription Fees");
         e.preventDefault();
     });
+    startTime();
+}
+
+function startTime() {
+    var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+    document.getElementById('HHours').innerHTML = h;
+    document.getElementById('MMinutes').innerHTML = m;
+    document.getElementById('SSeconds').innerHTML = s;
+    t = setTimeout(function () {
+        startTime();
+    }, 500);
+}
+
+function checkTime(i) {
+    return (i < 10) ? "0" + i : i;
 }
 function dashBoardSetActiveLink() {
     $("#id-dashboard-svg").addClass("resp-tab-active");
@@ -51,7 +69,6 @@ function dashBoardPageFunctions() {
 
 function dashboardPayWithPaystack(paymentamount, email, actualamount, PaymentType) {
     var userDetail = localStorage.getItem("UserName");
-
     var handler = PaystackPop.setup({
         key: 'pk_test_b3685f824518679567d6356e2636fc184878e833',
         email: email,
@@ -104,8 +121,8 @@ function DisplaySubscriptionFeesPayment(data) {
             confirmButtonText: ' Ok!',
             buttonsStyling: true
         }, function (dismiss) {
-           var userdata = data.userdata;
-           DisplayUserDetails(userdata);
+            var userdata = data.userdata;
+            DisplayUserDetails(userdata);
         });
     } else if (resp.status === "error") {
         swal({

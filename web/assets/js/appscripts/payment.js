@@ -92,7 +92,7 @@ function DeletePayment(paymentid) {
         confirmButtonText: 'Delete!',
         cancelButtonText: 'Cancel!',
         showLoaderOnConfirm: true,
-        closeOnConfirm: false,
+        closeOnConfirm: true,
         confirmButtonClass: 'btn btn-success',
         cancelButtonClass: 'btn btn-warning',
         buttonsStyling: false

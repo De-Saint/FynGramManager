@@ -21,31 +21,30 @@ function dashBoardFunctions() {
 
 
 function dashBoardBtnEvents() {
-    $("form[name=subscriptionForm]").submit(function (e) {
-        alert("hey");
-        var subcriptionAmount = $("#subcriptionAmount").val();
-        alert(subcriptionAmount);
-        var newPaymentAmount = CalculatePercentage(subcriptionAmount);
-        $("#pay_subscription").modal("hide");
-        var email = "admin@fyngram.com";
-//        payWithPaystack(sessionid, newPaymentAmount, email, fundwalletAmount, "Fund Wallet");
-//        e.preventDefault();
-    });
+     startTime();
 }
 function dashBoardSetActiveLink() {
     $("#id-dashboard-svg").addClass("resp-tab-active");
     $("#id-dashboard-side").addClass("resp-tab-content-active");
     $("#id-dashboard-dash").addClass("active");
 }
-
-function CalculatePercentage(userAmt) {
-    var addedPerc = (parseInt(userAmt) * parseFloat(0.02));
-    var newAmt = parseInt(userAmt) + parseInt(addedPerc);
-    if (parseInt(userAmt) >= parseInt(2500)) {
-        newAmt = parseInt(userAmt) + parseInt(100);
-    }
-    return newAmt;
+function startTime() {
+    var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+    document.getElementById('HHours').innerHTML = h;
+    document.getElementById('MMinutes').innerHTML = m;
+    document.getElementById('SSeconds').innerHTML = s;
+    t = setTimeout(function () {
+        startTime();
+    }, 500);
 }
+
+function checkTime(i) {
+    return (i < 10) ? "0" + i : i;
+}
+
 function dashBoardPageFunctions() {
 
 }

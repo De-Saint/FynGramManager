@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-danger mt-1 mb-1 btn-delete-msg" href="#"> <i class="fa fa-trash"></i> Delete </a> 
+                        <button class="btn btn-danger mt-1 mb-1 btn-delete-msg"> <i class="fa fa-trash"></i> Delete </button> 
                     </div>
                 </div>
             </div>

@@ -110,19 +110,19 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>Transaction Name</th>
-                                        <th>Transaction Type</th>
+                                        <!--<th>Transaction Type</th>-->
                                         <th>Transaction Reference</th>
                                         <th>Amount</th>
                                         <th>Date</th>
                                         <th>Time</th>
-                                        <th>Details</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody id="TransactionList">
                                     <tr class="tnxclone d-none">
                                         <td class="tnx-count"></td>
                                         <td class="tnx-name">Buy</td>
-                                        <td class="tnx-type">Buy</td>
+                                        <!--<td class="tnx-type">Buy</td>-->
                                         <td class="tnx-reference"> 0.37218</td>
                                         <td class="tnx-amount"></td>
                                         <td class="tnx-date">52681.13</td>

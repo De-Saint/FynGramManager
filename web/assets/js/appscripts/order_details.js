@@ -99,14 +99,16 @@ function DisplayOrderDetails(data) {
     $(".order-ship-address").text(data.OrderDetails.ShippingAddressDetails.full_address);
     $(".order_note").text(data.OrderDetails.message);
 
-    if (!$.isEmptyObject(data.OrderDetails.DiscountCode)) {
-        $(".order_discount_code").text(data.OrderDetails.DiscountCode);
-        $(".order_discount-deduction-type").text(data.OrderDetails.DiscountDeductionType);
-        $(".order-discount-deduction-amount").text(PriceFormat(data.OrderDetails.discount_amount));
-    } else {
+    if (data.OrderDetails.DiscountCode === "none") {
         $(".order_discount_code").text("N/A");
         $(".order_discount-deduction-type").text("N/A");
         $(".order-discount-deduction-amount").text("N/A");
+    } else {
+//        alert($.isEmptyObject(data.OrderDetails.DiscountCode)+"no test");
+        
+        $(".order_discount_code").text(data.OrderDetails.DiscountCode);
+        $(".order_discount-deduction-type").text(data.OrderDetails.DiscountDeductionType);
+        $(".order-discount-deduction-amount").text(PriceFormat(data.OrderDetails.discount_amount));
     }
 
 
@@ -193,7 +195,7 @@ function DisplayOrderHistoryProducts(data) {
             newchild.addClass("new-clone");
             newchild.find(".order-p-sn").text("#" + count);
             newchild.find(".order-p-name").text(details.ProductDetails.InfoDetails.name);
-            newchild.find(".order-p-desc").text(details.ProductDetails.InfoDetails.description);
+            var descbtn = newchild.find(".order-p-desc").text(details.ProductDetails.InfoDetails.description);
             newchild.find(".order-p-price").text(PriceFormat(details.ProductDetails.PriceDetails.selling_price));
             newchild.find(".order-p-order-quantity").text(details.quantity);
             var amount = parseInt(details.quantity) * parseFloat(details.ProductDetails.PriceDetails.selling_price);
@@ -206,6 +208,12 @@ function DisplayOrderHistoryProducts(data) {
             } else if (details.ProductDetails.FirstImage !== "0" || details.ProductDetails.FirstImage !== 0) {
                 newchild.find(".order-p-image").attr("src", "data:image/png;base64," + details.ProductDetails.FirstImage);
             }
+//             descbtn.hover(function () {
+//                descbtn.addClass("text-primary");
+//            }, function () {
+//                descbtn.removeClass("text-primary");
+//            });
+            
             newchild.appendTo(parent).show();
         });
         childclone.hide();

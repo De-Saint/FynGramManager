@@ -35,7 +35,7 @@ function GeneralAppFunctions() {
 
 function UpdateOrderStatus() {
     GetData("Order", "UpdateSellerPayment", "LoadUpdateSellerPayment");
-    setTimeout(UpdateOrderStatus, 7200000 );//2 hours 
+    setTimeout(UpdateOrderStatus, 7200000);//2 hours 
 }
 function GenralBtnEvents() {
 
@@ -103,10 +103,11 @@ function DisplayUserDetails(resp) {
     $(".uPhone").text(resp.phone);
     $(".uGender").text(resp.gender);
     $(".uTPin").text(resp.TransactionPin);
-    $(".SubscriptionFeesAmount").text(PriceFormat(resp.SubscriptionFeesAmount));
-    $("#subcriptionAmount").val(resp.SubscriptionFeesAmount);
-    $(".SubscriptionName").text(resp.SubscriptionName);
-    $(".SellerTypeName").text(resp.SellerTypeName);
+    $("#pay_subscription .SubscriptionFeesAmount").text(PriceFormat(resp.SubscriptionFeesAmount));
+    $("#pay_subscription #subcriptionAmount").val(resp.SubscriptionFeesAmount);
+    $("#pay_subscription .SubscriptionName").text(resp.SubscriptionName);
+    $("#pay_subscription .SellerTypeName").text(resp.SellerTypeName);
+
 
     if (resp.ImageText === "none") {
         var image_url = extension + "assets/images/no-image.png";
@@ -616,6 +617,11 @@ function linkToFunction(action, params) {
         case "LoadNewFeatureOption":
         {
             DisplayNewFeatureOption(params);
+            break;
+        }
+        case "LoadNewMessage":
+        {
+            DisplayNewMessage(params);
             break;
         }
 

@@ -71,7 +71,7 @@
         <script src="../../../../assets/js/custom.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>       
-        <script src="../../../../assets/js/appscripts/messages.js"></script>
+        <script src="../../../../assets/js/appscripts/message_details.js"></script>
         <script src="../../../../assets/plugins/notify/js/notifIt.js"></script>
         <script src="../../../../assets/plugins/notify/js/jquery.growl.js"></script>
         <script src="../../../../assets/plugins/sweet-alert/sweetalert.min.js"></script>
