@@ -100,19 +100,19 @@
 		return false;
 	});
 	
-	// ______________Rating Stars
-	var ratingOptions = {
-		selectors: {
-			starsSelector: '.rating-stars',
-			starSelector: '.rating-star',
-			starActiveClass: 'is--active',
-			starHoverClass: 'is--hover',
-			starNoHoverClass: 'is--no-hover',
-			targetFormElementSelector: '.rating-value'
-		}
-	};
-	$(".rating-stars").ratingStars(ratingOptions);
-	
+//	// ______________Rating Stars
+//	var ratingOptions = {
+//		selectors: {
+//			starsSelector: '.rating-stars',
+//			starSelector: '.rating-star',
+//			starActiveClass: 'is--active',
+//			starHoverClass: 'is--hover',
+//			starNoHoverClass: 'is--no-hover',
+//			targetFormElementSelector: '.rating-value'
+//		}
+//	};
+//	$(".rating-stars").ratingStars(ratingOptions);
+//	
 	
 	// ______________Search
 	$('body, .navbar-collapse form[role="search"] button[type="reset"]').on('click keyup', function(event) {

@@ -18,14 +18,14 @@ function RegisterFunctions() {
 
 function registerBtnEvents() {
     //accordion-wizard
-    var options = {
-        mode: 'wizard',
-        autoButtonsNextClass: 'btn btn-primary float-right',
-        autoButtonsPrevClass: 'btn btn-info',
-        stepNumberClass: 'badge badge-pill badge-primary mr-1'
-    };
+//    var options = {
+//        mode: 'edit',
+//        autoButtonsNextClass: 'btn btn-primary float-right',
+//        autoButtonsPrevClass: 'btn btn-info',
+//        stepNumberClass: 'badge badge-pill badge-primary mr-1'
+//    };
 
-    $("#form").accWizard(options);
+//    $("#sellerRegisterForm").accWizard(options);
     $("form[name=sellerRegisterForm]").submit(function (e) {
         var gender = $("input[name=sell-gender]:checked").val();
         var firstname = $("#sell-firstname").val();

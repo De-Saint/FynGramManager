@@ -90,7 +90,7 @@
     }
 
     function saveCookie() {        
-        var expires = "expires=01/01/2099"
+        var expires = "expires=01/01/2099";
         document.cookie = "cookiesAccepted=true; " + expires + "; path=/";
     }
  
