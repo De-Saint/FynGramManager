@@ -5,7 +5,6 @@
  */
 var extension = '../../../../';
 $(document).ready(function () {
-
     cashoutFunctions();
 });
 

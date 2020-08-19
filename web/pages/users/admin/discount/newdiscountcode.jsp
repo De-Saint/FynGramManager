@@ -63,7 +63,6 @@
         <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
         <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
         <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
-        <script src="../../../../assets/plugins/rating/jquery.rating-stars.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="../../../../assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
         <script src="../../../../assets/plugins/jquery-nice-select/js/nice-select.js"></script>

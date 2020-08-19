@@ -4,7 +4,7 @@
     <div class="">
         <div class="col col-login mx-auto">
             <div class="text-center"> <img src="../../../assets/images/brand/logo.png"
-                    class="header-brand-img desktop-logo  h-100 mb-5" alt="Dashlot logo"> </div>
+                    class="header-brand-img desktop-logo  h-100 mb-5" alt="fyngram logo"> </div>
         </div>
     </div>
     <div class="container">
@@ -19,10 +19,9 @@
                                 <div class="card-title text-center mb-5">Forgot Password</div>
                                 <div class="form-group"> <input type="email" class="form-control" placeholder="Email">
                                 </div>
-                                <div class="form-footer mt-1"> <a href="index.html"
-                                        class="btn btn-success btn-block">Send</a> </div>
-                                <div class="text-center text-muted mt-3 "> Forget it, <a href="login.html">send me
-                                        back</a> to the sign in screen. </div>
+                                <div class="form-footer mt-1"> <a  href="javascript:void(0)" class="btn btn-success btn-block">Send</a> </div>
+                                <div class="text-center text-muted mt-3 "> Forget it, <a  href="${pageContext.request.contextPath}/LinksServlet?&type=Login">
+                                        Back to the Login.</a> </div>
                             </div>
                         </div>
                     </div>

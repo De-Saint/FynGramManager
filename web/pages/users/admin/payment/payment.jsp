@@ -52,7 +52,6 @@
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
         <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
         <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
-        <script src="../../../../assets/plugins/rating/jquery.rating-stars.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="../../../../assets/plugins/sidemenu/sidemenu.js"></script>
         <script src="../../../../assets/plugins/sidemenu-responsive-tabs/js/sidemenu-responsive-tabs.js"></script>
@@ -66,6 +65,7 @@
         <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
         <script src="../../../../assets/js/custom.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
+        <script src="../../../../assets/js/appscript.js"></script>
         <script src="../../../../assets/js/appscripts/payment.js"></script>
         <script src="../../../../assets/plugins/sweet-alert/sweetalert.min.js"></script>
 

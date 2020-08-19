@@ -11,14 +11,6 @@
                 <small class="text-muted mt-0">This page shows the details of selected product.</small>
             </div> 
             <div class="page-rightheader ">
-                <!--                <div class="d-flex mt-4 mt-xl-0 mt-lg-0">
-                                    <div class="media mr-2 mt-0">
-                                        <div class="media-body"> 
-                                            <a href="#" class="btn btn-primary  ml-0 ml-md-4 d-none d-sm-block">
-                                                Add Product</a>
-                                        </div> media-body 
-                                    </div> media  
-                                </div>-->
             </div>
         </div> 
         <!-- Page-header closed -->

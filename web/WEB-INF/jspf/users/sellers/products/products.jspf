@@ -116,8 +116,8 @@
                                                     </select>
                                                 </div>
                                                 <div class="col-xl-1 col-lg-2 col-md-12 mb-0"> 
-                                                    <button href="#" class="br-tl-md-0 br-bl-md-0 btn btn-sm btn-primary fs-16 btn-sp"  data-toggle="tooltip" data-original-title="Search">Search</button> 
-                                                    <button href="#" class="br-tl-md-0 br-bl-md-0 mt-1 btn btn-sm btn-outline-primary fs-12 btn-cp"  data-toggle="tooltip" data-original-title="Clear"><i class="fa fa-close"></i>Clear</button> 
+                                                    <button class="br-tl-md-0 br-bl-md-0 btn btn-sm btn-primary fs-16 btn-sp"  data-toggle="tooltip" data-original-title="Search">Search</button> 
+                                                    <button class="br-tl-md-0 br-bl-md-0 mt-1 btn btn-sm btn-outline-primary fs-12 btn-cp"  data-toggle="tooltip" data-original-title="Clear"><i class="fa fa-close"></i>Clear</button> 
                                                 </div>
                                             </div>
                                         </div>

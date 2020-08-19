@@ -11,7 +11,7 @@
             </div>
             <div class="page-rightheader">
                 <div class="d-flex  mt-4 mt-xl-0 mt-lg-0">
-                    <!-- media --> <a href="#" class="btn btn-danger ml-0 ml-md-4 d-none d-sm-block " data-toggle="modal"
+                    <!-- media --> <a href="javascript:void(0)" class="btn btn-danger ml-0 ml-md-4 d-none d-sm-block " data-toggle="modal"
                                       data-target="#new-address-type"><i
                             class="fa fa-money fa-fw mr-1"></i>Add Address Type</a>
                 </div>

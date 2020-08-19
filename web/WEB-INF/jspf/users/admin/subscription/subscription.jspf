@@ -21,11 +21,6 @@
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newsubscriptiontype">Create Subscription Type</button> 
                         </div>
                     </div>
-                    <div class="mt-3 mt-md-0">
-                        <div class="border-right mt-1 d-xl-block"> 
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newsubscriptiontype">Pay Subscription Fees</button> 
-                        </div>
-                    </div>
                 </div> 
 
             </div>

@@ -59,7 +59,6 @@
         <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
         <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
         <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
-        <script src="../../../../assets/plugins/rating/jquery.rating-stars.js"></script>
         <script src="../../../../assets/plugins/clipboard/clipboard.min.js"></script>
         <script src="../../../../assets/plugins/clipboard/clipboard.js"></script>
         <script src="../../../../assets/plugins/prism/prism.js"></script>

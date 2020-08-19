@@ -60,7 +60,6 @@
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
         <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
         <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
-        <script src="../../../../assets/plugins/rating/jquery.rating-stars.js"></script>
         <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
         <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
 

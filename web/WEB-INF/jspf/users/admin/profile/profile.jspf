@@ -24,7 +24,7 @@
                                         <div class="user-wrap mt-lg-0">
                                             <h4 class="UserName">Loading Name</h4>
                                             <h6 class="text-muted mb-3 font-weight-normal"><span class="UserType font-weight-bold"></span></h6> 
-                                            <a href="javascript:void(0)"   data-toggle="modal" data-target="#addimage" class="btn btn-primary mt-1 mb-1"><i class="fa fa-camera"></i> Change Image</a>
+                                            <button href="javascript:void(0)"   data-toggle="modal" data-target="#addimage" class="btn btn-primary mt-1 mb-1"><i class="fa fa-camera"></i> Change Image</button>
 
                                         </div>
                                     </div>
@@ -33,7 +33,7 @@
                                     <div class="row ml-3  ml-auto mt-lg-0">
                                         <div class="col-xl-6 mt-3 mt-xl-0">
                                             <div class="border-right pr-2 mt-xl-3 mt-lg-0 d-xl-block">
-                                                <a  href="javascript:void(0)"  data-toggle="modal" data-target="#addbankdetails" class="btn btn-primary mt-1 mb-1"><i class="fa fa-bank mr-1"></i> Add Bank Details</a>
+                                                <button href="javascript:void(0)"  data-toggle="modal" data-target="#addbankdetails" class="btn btn-primary mt-1 mb-1"><i class="fa fa-bank mr-1"></i> Add Bank Details</button>
                                             </div>
                                         </div>
                                     </div>

@@ -71,7 +71,6 @@
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
         <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
         <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
-        <script src="../../../../assets/plugins/rating/jquery.rating-stars.js"></script>
         <script src="../../../../assets/plugins/time-picker/jquery.timepicker.js"></script>
         <script src="../../../../assets/plugins/fileuploads/js/dropify.js"></script>
         <script src="../../../../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>

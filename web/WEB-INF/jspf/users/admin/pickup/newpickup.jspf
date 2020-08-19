@@ -36,8 +36,7 @@
                         <div class="form-group"> <label class="form-label">Website</label> <input class="form-control"
                                                   
                     </div>
-                    <div class="card-footer"> <a href="#" class="btn btn-success mt-1">Save</a> <a href="#"
-                                                                                                   class="btn btn-danger mt-1">Cancel</a> </div>
+                    <div class="card-footer"> <a href="#" class="btn btn-success mt-1">Save</a> <a href="#" class="btn btn-danger mt-1">Cancel</a> </div>
                 </div>
             </div>
         </div>             

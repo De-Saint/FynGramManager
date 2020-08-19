@@ -29,8 +29,8 @@
                                     <div class="user-wrap mt-0">
                                         <h4 class="mb-2 seller-uname">Robert Stewart</h4>
                                         <h6 class="text-muted mb-3 fw-400">Member Since: <span class="seller-uDateJoined"></span> <span class="seller-uTimeJoined"></span></h6>
-                                        <a href="#" class="btn mt-1 mb-1 seller-sellertype"><i class="fa fa-envelope mr-1"></i> Send A Message</a>
-                                        <a href="#" class="btn mt-1 mb-1 seller-substype"><i class="fa fa-envelope mr-1"></i> Send A Message</a>
+                                        <button  class="btn mt-1 mb-1 seller-sellertype"><i class="fa fa-envelope mr-1"></i> Send A Message</button>
+                                        <button  class="btn mt-1 mb-1 seller-substype"><i class="fa fa-envelope mr-1"></i> Send A Message</button>
                                     </div>
                                 </div>
                             </div>

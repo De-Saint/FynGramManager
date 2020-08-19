@@ -67,7 +67,6 @@
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
         <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
         <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
-        <script src="../../../../assets/plugins/rating/jquery.rating-stars.js"></script>
 
         <script src="../../../../assets/plugins/fancy-file-uploader/jquery.ui.widget.js"></script>
 	<script src="../../../../assets/plugins/fancy-file-uploader/jquery.fileupload.js"></script>

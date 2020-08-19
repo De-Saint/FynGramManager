@@ -4,7 +4,7 @@
 <div class="header-main header sticky">
     <div class="app-header header top-header navbar-collapse ">
         <div class="container-fluid">
-            <div class="d-flex"> <a class="header-brand" href="#"> 
+            <div class="d-flex"> <a class="header-brand" href="javascript:void(0)"> 
                     <img
                         src="../../../../assets/images/brand/logo.png" class="header-brand-img desktop-logo "
                         alt="Dashlot logo"> 
@@ -44,7 +44,7 @@
                                 <p class="dropdown-title-text subtext mb-0 pb-0 fs-13">You have 4 new
                                     notifications</p>
                             </div>
-                            <div class="drop-notify ps"> <a href="#"
+                            <div class="drop-notify ps"> <a href="javascript:void(0)"
                                                             class="dropdown-item d-flex pb-3 pl-4 pr-2 border-bottom">
                                     <div class="notifyimg bg-success-transparent text-success-shadow"><i
                                             class="fa fa-calendar fs-18 text-success"></i></div>
@@ -86,7 +86,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="dropdown-divider mb-0"></div> <a href="#"
+                            <div class="dropdown-divider mb-0"></div> <a href="javascript:void(0)"
                                                                          class="dropdown-item text-center br-br-6 br-bl-6">See all Messages</a>
                         </div>
                     </div><!-- Notification -->
@@ -169,7 +169,7 @@
                         </div>
                     </div><!-- Message-box -->
 
-                    <div class="dropdown drop-profile"> <a class="nav-link pr-0 leading-none" href="#"
+                    <div class="dropdown drop-profile"> <a class="nav-link pr-0 leading-none" href="javascript:void(0)"
                                                            data-toggle="dropdown" aria-expanded="false">
                             <div class="profile-details mt-1"> <span
                                     class="mr-3 mb-0  fs-15 font-weight-semibold UserName">FG</span> <small

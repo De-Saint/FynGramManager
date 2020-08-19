@@ -4,7 +4,7 @@
 <footer class="footer-main leftmenu-footer">
     <div class="container">
         <div class="  mt-2 mb-2 text-center"> Copyright &copy; <script>  document.write(new Date().getFullYear());</script>
-            <a href="#" class="fs-14 text-primary">FynGram</a> All rights reserved. 
+            <a  href="javascript:void(0)" class="fs-14 text-primary">FynGram</a> All rights reserved. 
         </div>
     </div>
     <!-- Back to top --> 
