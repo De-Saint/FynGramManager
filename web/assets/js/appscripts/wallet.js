@@ -122,6 +122,8 @@ function DisplayGetWalletDetails(resp) {
         
         $(".TotalMainWallets").text(PriceFormat(resp.TotalMainWallets));
         $(".TotalPendingWallets").text(PriceFormat(resp.TotalPendingWallets));
+        
+        $(".TotalCarrierBalance").text(PriceFormat(resp.TotalShippingEarnings));
     }
 }
 function DisplayValidatePaystackPayment(resp) {
