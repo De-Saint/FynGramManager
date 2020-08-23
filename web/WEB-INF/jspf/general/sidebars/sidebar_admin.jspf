@@ -127,7 +127,7 @@
                                             <h5 class="mt-3 mb-4">Users</h5> 
                                             <a href="${pageContext.request.contextPath}/LinksServlet?type=AdminSellers" class="slide-item" id="id-user-sellers">Sellers</a> 
                                             <a href="${pageContext.request.contextPath}/LinksServlet?type=AdminCustomers" class="slide-item" id="id-user-customers">Customers</a> 
-                                            <!--<a href="${pageContext.request.contextPath}/LinksServlet?type=AdminGuests" class="slide-item" id="id-user-guests">Guests</a>--> 
+                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=AdminGuests" class="slide-item" id="id-user-guests">Guests</a> 
                                             <a href="${pageContext.request.contextPath}/LinksServlet?type=AdminComplaints" class="slide-item" id="id-user-complaints">Complaints</a> 
                                             <a  href="${pageContext.request.contextPath}/LinksServlet?type=AdminNewFeatures" class="slide-item" id="id-user-features">New Features Request</a>
                                         </div>

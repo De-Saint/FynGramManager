@@ -10,13 +10,13 @@
 	  useBothWheelAxes:true,
 	  suppressScrollX:true,
 	});
-	const ps5 = new PerfectScrollbar('.drop-scroll', {
-	  useBothWheelAxes:true,
-	  suppressScrollX:true,
-	});
-	const ps6 = new PerfectScrollbar('.drop-notify', {
-	  useBothWheelAxes:true,
-	  suppressScrollX:true,
-	});
+//	const ps5 = new PerfectScrollbar('.drop-scroll', {
+//	  useBothWheelAxes:true,
+//	  suppressScrollX:true,
+//	});
+//	const ps6 = new PerfectScrollbar('.drop-notify', {
+//	  useBothWheelAxes:true,
+//	  suppressScrollX:true,
+//	});
 	
 })(jQuery);

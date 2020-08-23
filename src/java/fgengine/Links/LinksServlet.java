@@ -52,10 +52,6 @@ public class LinksServlet extends HttpServlet {
                     response.sendRedirect("pages/general/timeout/timeout.jsp");
                     break;
                 }
-                case "Terms": {
-                    response.sendRedirect("pages/general/terms/terms.jsp");
-                    break;
-                }
                 case "Recovery": {
                     response.sendRedirect("pages/general/recovery/recovery.jsp");
                     break;

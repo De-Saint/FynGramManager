@@ -9,7 +9,9 @@
                 <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
                 <small class="text-muted mt-0">This page shows the details of the placed orders.</small>
             </div>
-
+            <div class="page-rightheader">
+               
+            </div>
         </div> 
         <div class="row">
             <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
@@ -58,7 +60,7 @@
                 </div>
             </div>
         </div>
-          <div class="row">
+        <div class="row">
             <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
                 <div class="card">
                     <div class="card-body bg-primary-transparent">
@@ -105,6 +107,61 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-12">
+                <div class="card ">
+                    <div class="card-header">
+                        Cancel Order Rules
+                        <small class="ml-3 text-primary-shadow">If you want the customers to pay a percentage, if they cancel an order.</small>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Update Cancel Rule</h6>
+                                        <div class="d-flex  mt-xl-0 mt-lg-4 mt-4 mt-md-4"> 
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#cancel_order_rule">Update Cancel Rule</button> 
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-cogs fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Enforce Rule</h6>
+                                        <h4 class="m-0 order-cancel-rule">No</h4>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-cog fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Amount</h6>
+                                        <h4 class="m-0 order-cancel-rule-amount">0</h4>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-money fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-xl-12">
                 <div class="card">

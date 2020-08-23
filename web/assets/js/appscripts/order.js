@@ -27,6 +27,16 @@ function orderFunctions() {
 
 function orderBtnEvents() {
 
+    $("form[name=cancelOrderRuleForm]").submit(function (e) {
+        var cancelRule = $("#cancelRule").val();
+        var cancelAmount = $("#cancelAmount").val();
+        var data = [cancelAmount, cancelRule];
+        showLoader();
+        $("#cancel_order_rule").modal("hide");
+        GetData("Order", "UpdateEnforceCancelFees", "LoadUpdateEnforceCancelFees", data);
+        e.preventDefault();
+    });
+
 }
 function orderSetActiveLink() {
     $("#id-shop-svg").addClass("resp-tab-active");
@@ -38,6 +48,7 @@ function orderSetActiveLink() {
 function orderPageFunctions() {
     showLoader();
     GetData("Order", "GetOrders", "LoadOrders", sessionid);
+    GetData("Order", "GetOrderCancelRule", "LoadOrderCancelRule", "");
 }
 
 function DisplayOrders(data, parent) {
@@ -68,7 +79,7 @@ function DisplayOrders(data, parent) {
             newchild.find(".order-payment").text(result["PaymentDetails"].payment_method);
             newchild.find(".order-status").text(result["StatusDetails"].name).addClass("badge-" + result["StatusDetails"].color);
             newchild.find(".order-bookeddate-time").text(result["booking_date"] + " " + result["booking_time"]);
-           
+
             if (result["StatusDetails"].name === "Awaiting Confirmation") {
                 awaitingcount++;
             } else if (result["StatusDetails"].name === "Confirmed") {
@@ -82,13 +93,13 @@ function DisplayOrders(data, parent) {
             }
             var detailsbtn = newchild.find(".btn-order-details");
             detailsbtn.click(function () {
-                 var sessiontype = GetSessionType();
-                 
+                var sessiontype = GetSessionType();
+
                 if (sessiontype === "Admin") {
-                     localStorage.setItem("orderid", result["OrderID"]);
+                    localStorage.setItem("orderid", result["OrderID"]);
                     window.location = extension + "LinksServlet?type=AdminOrderDetails";
                 } else if (sessiontype === "Seller") {
-                     localStorage.setItem("orderid", result["OrderID"]);
+                    localStorage.setItem("orderid", result["OrderID"]);
                     window.location = extension + "LinksServlet?type=SellerOrderDetails";
                 }
             });
@@ -104,7 +115,51 @@ function DisplayOrders(data, parent) {
 
     } else {
         var row = $("<tr />").appendTo(parent);
-        $("<td />", {class: "text-center newclone text-primary", colspan:"9", text: "No Result Found"}).appendTo(row);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "9", text: "No Result Found"}).appendTo(row);
 
     }
+}
+
+function DisplayOrderCancelRule(data) {
+    console.log(data.rules);
+    if (data.rules) {
+        $(".order-cancel-rule-amount").text(PriceFormat(parseFloat(data.rules.percent)));
+        if (parseInt(data.rules.enforce_rule) === 1) {
+            $(".order-cancel-rule").text("Yes").addClass("text-primary");
+        } else {
+            $(".order-cancel-rule").text("No").addClass("text-success");
+        }
+    }
+}
+
+
+function DisplayUpdateEnforceCancelFees(data) {
+    console.log(data.rules);
+    var resp = data.result;
+    hideLoader();
+    if (resp.status === "success") {
+        swal({
+            title: 'Order Cancellation Rule',
+            text: resp.msg,
+            type: 'success',
+            showCancelButton: false,
+            closeOnConfirm: true,
+            confirmButtonText: ' Ok!',
+            buttonsStyling: true
+        }, function (dismiss) {
+            DisplayOrderCancelRule(data);
+        });
+    } else if (resp.status === "error") {
+        swal({
+            title: "Order Cancellation Rule",
+            text: resp.msg,
+            type: "error",
+            confirmButtonText: 'Ok',
+            showCancelButton: false,
+            onClose: function () {
+
+            }
+        });
+    }
+
 }

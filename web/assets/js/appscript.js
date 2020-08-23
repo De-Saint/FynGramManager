@@ -624,6 +624,16 @@ function linkToFunction(action, params) {
             DisplayNewMessage(params);
             break;
         }
+        case "LoadOrderCancelRule":
+        {
+            DisplayOrderCancelRule(params);
+            break;
+        }
+        case "LoadUpdateEnforceCancelFees":
+        {
+            DisplayUpdateEnforceCancelFees(params);
+            break;
+        }
 
 
     }

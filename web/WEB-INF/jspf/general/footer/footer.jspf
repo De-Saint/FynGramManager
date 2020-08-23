@@ -89,4 +89,7 @@
 <div class="modal fade" id="pay_subscription">
     <%@include file="../../users/sellers/subscription/pay_subscription.jspf" %>
 </div>
+<div class="modal fade" id="cancel_order_rule">
+    <%@include file="../../users/admin/order/order_rule.jspf" %>
+</div>
 

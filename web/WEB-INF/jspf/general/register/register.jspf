@@ -176,7 +176,7 @@
                                                         <div class="checkbox">
                                                             <div class="custom-checkbox custom-control"> 
                                                                 <input type="checkbox" required data-checkboxes="mygroup" class="custom-control-input" checked="" id="terms"> 
-                                                                <label for="checkbox-2" class="custom-control-label mt-1">I have read and agreed to FynGram <a href="${pageContext.request.contextPath}/LinksServlet?&type=Terms">Terms and Conditions For Sellers</a></label> 
+                                                                <label for="checkbox-2" class="custom-control-label mt-1">I have read and agreed to FynGram <a href="/FynGramShop/pages/shop/terms/terms.jsp" target="_blank">Terms and Conditions For Sellers</a></label> 
                                                             </div>
                                                         </div>
                                                     </div>

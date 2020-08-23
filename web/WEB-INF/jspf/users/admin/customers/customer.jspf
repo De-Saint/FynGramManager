@@ -9,12 +9,12 @@
                 <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
                 <small class="text-muted mt-0">This page shows the details of all registered customers.</small>
             </div>
-            <div class="page-rightheader">
+<!--            <div class="page-rightheader">
                 <div class="ml-3 ml-auto d-flex">
                     <div class="d-flex  mt-xl-0 mt-lg-4 mt-4 mt-md-4"> <button type="button" class="btn btn-outline-primary"
                                                                                data-toggle="modal" data-target="#new_customer">Create New Customer</button> </div>
                 </div>
-            </div>
+            </div>-->
         </div> <!-- Page-header closed -->
 
         <div class="row">
