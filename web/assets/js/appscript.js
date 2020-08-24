@@ -634,6 +634,21 @@ function linkToFunction(action, params) {
             DisplayUpdateEnforceCancelFees(params);
             break;
         }
+        case "LoadUserReviews":
+        {
+            DisplayUserReviews(params);
+            break;
+        }
+        case "LoadDeleteReview":
+        {
+            DisplayDeleteReview(params);
+            break;
+        }
+        case "LoadAllGuests":
+        {
+            DisplayAllGuests(params);
+            break;
+        }
 
 
     }

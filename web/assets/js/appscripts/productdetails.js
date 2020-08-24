@@ -64,6 +64,7 @@ function productDetailsPageFunctions() {
 }
 
 function DisplayProductDetails(data) {
+    console.log(data);
     hideLoader();
     $(".product-name").text(data["InfoDetails"].name);
     $(".product-desc").text(data["InfoDetails"].description);
@@ -117,6 +118,10 @@ function DisplayProductDetails(data) {
     var ImageDetails = data["ImageDetails"];
     DisplayProdDetImages(ImageDetails);
     $(".product-image").attr("src", "data:image/png;base64," + data["FirstImage"]);
+
+
+    $(".product-average-review").text(data["RatingDetails"].AverageRatings);
+    $(".product-reviews").text(data["RatingDetails"].NumberOfRatings);
 
 }
 

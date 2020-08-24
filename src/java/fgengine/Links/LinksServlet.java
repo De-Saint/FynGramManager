@@ -264,10 +264,6 @@ public class LinksServlet extends HttpServlet {
                     response.sendRedirect("pages/users/admin/reviews/reviews.jsp");
                     break;
                 }
-                case "SellerReviews": {
-                    response.sendRedirect("pages/users/sellers/reviews/reviews.jsp");
-                    break;
-                }
                 case "AdminNewFeatures": {
                     response.sendRedirect("pages/users/admin/newfeatures/newfeatures.jsp");
                     break;

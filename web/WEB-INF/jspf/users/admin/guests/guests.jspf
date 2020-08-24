@@ -10,122 +10,35 @@
                 <small class="text-muted mt-0">This page shows the details of all guests or visitors on the system..</small>
             </div>
             <div class="page-rightheader">
-                <div class="ml-3 ml-auto d-flex">
-                    <div class="d-flex  mt-xl-0 mt-lg-4 mt-4 mt-md-4"> <button type="button" class="btn btn-secondary"
-                                                                               data-toggle="modal" data-target="#new_customer">Create New Customer</button> </div>
-                </div>
+                
             </div>
         </div> <!-- Page-header closed -->
 
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <div class="card overflow-hidden">
                     <div class="card-body bg-primary-transparent">
                         <div class="d-flex">
                             <div class="">
-                                <p class="mb-2 h6">Total Guest</p>
-                                <h2 class="mb-1 ">253</h2>
-                                <p class="mb-0 text-muted"><span class="text-success">(+0.35%)<i
-                                            class="fe fe-arrow-up text-success"></i></span>Increase</p>
+                                <p class="mb-2 h6">Total Guest/Visits</p>
+                                <h2 class="mb-1 guest-count">0</h2>
+                               
                             </div>
-                            <div class=" my-auto ml-auto">
-                                <div class="chart-wrapper text-center">
-                                    <div class="chartjs-size-monitor">
-                                        <div class="chartjs-size-monitor-expand">
-                                            <div class=""></div>
-                                        </div>
-                                        <div class="chartjs-size-monitor-shrink">
-                                            <div class=""></div>
-                                        </div>
-                                    </div> <canvas id="areaChart1"
-                                                   class="areaChart2 chartjs-render-monitor chart-dropshadow-primary overflow-hidden mx-auto"
-                                                   style="display: block; height: 80px; width: 80px;" width="160" height="160"></canvas>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <div class="card overflow-hidden">
-                    <div class="card-body bg-secondary">
+                    <div class="card-body bg-primary-tranparant">
                         <div class="d-flex">
                             <div class="">
-                                <p class="mb-2 h6 nowrap">Guest that Subscribes</p>
-                                <h2 class="mb-1 ">$365</h2>
-                                <p class="mb-0 text-muted"><span class="text-danger">(+0.54%)</span><i
-                                        class="fe fe-arrow-down text-danger"></i>Decrease</p>
+                                <p class="mb-2 h6 nowrap">Guest that subscribed to Newsletters</p>
+                                <h2 class="mb-1 guest-withemail-count">0</h2>
+                               
                             </div>
-                            <div class=" my-auto ml-auto">
-                                <div class="chart-wrapper">
-                                    <div class="chartjs-size-monitor">
-                                        <div class="chartjs-size-monitor-expand">
-                                            <div class=""></div>
-                                        </div>
-                                        <div class="chartjs-size-monitor-shrink">
-                                            <div class=""></div>
-                                        </div>
-                                    </div> <canvas id="areaChart2"
-                                                   class="areaChart2 chartjs-render-monitor chart-dropshadow-secondary overflow-hidden"
-                                                   style="display: block; height: 80px; width: 80px;" width="160" height="160"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
-                <div class="card overflow-hidden">
-                    <div class="card-body bg-primary-transparent">
-                        <div class="d-flex">
-                            <div class="">
-                                <p class="mb-2 h6">Sales</p>
-                                <h2 class="mb-1 ">15,89</h2>
-                                <p class="mb-0 text-muted"><span class="text-success">(+0.96%)<i
-                                            class="fe fe-arrow-up text-success"></i></span>Increase</p>
-                            </div>
-                            <div class="my-auto ml-auto">
-                                <div class="chart-wrapper">
-                                    <div class="chartjs-size-monitor">
-                                        <div class="chartjs-size-monitor-expand">
-                                            <div class=""></div>
-                                        </div>
-                                        <div class="chartjs-size-monitor-shrink">
-                                            <div class=""></div>
-                                        </div>
-                                    </div> <canvas id="areaChart3"
-                                                   class="areaChart3 chartjs-render-monitor chart-dropshadow-info overflow-hidden"
-                                                   style="display: block; height: 80px; width: 80px;" width="160" height="160"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
-                <div class="card overflow-hidden">
-                    <div class="card-body  bg-success">
-                        <div class="d-flex">
-                            <div class="">
-                                <p class="mb-2 h6">Running Projects</p>
-                                <h2 class="mb-1 ">25</h2>
-                                <p class="mb-0 text-muted"><span class="text-danger">(+0.42%)</span><i
-                                        class="fe fe-arrow-down text-danger"></i>Decrease</p>
-                            </div>
-                            <div class="my-auto ml-auto">
-                                <div class="chart-wrapper">
-                                    <div class="chartjs-size-monitor">
-                                        <div class="chartjs-size-monitor-expand">
-                                            <div class=""></div>
-                                        </div>
-                                        <div class="chartjs-size-monitor-shrink">
-                                            <div class=""></div>
-                                        </div>
-                                    </div> <canvas id="areaChart4"
-                                                   class="areaChart4 chartjs-render-monitor chart-dropshadow-success overflow-hidden"
-                                                   style="display: block; height: 80px; width: 80px;" width="160" height="160"></canvas>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -133,7 +46,7 @@
         </div>
 
         <!-- row opened -->
-        <div class="row">
+<!--        <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12">
                 <div class="card">
                     <div class="card-body">
@@ -149,137 +62,18 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- row closed -->
+        </div>  row closed -->
         <!-- row opened -->
-        <div class="row">
-            <div class="col-xl-4 col-lg-6 col-md-12">
+        <div class="row" id="GuestList">
+            <div class="col-xl-3 col-lg-6 col-md-12 guest-clone d-none">
                 <div class="card">
                     <div class="card-body text-center">
                         <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4"><i class="fa fa-envelope-o mr-2"></i>example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-12">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <div class="text-center mt-3 mb-0"> <img class="brround avatar-xxl w-9 h-9"
-                                                                 src="../../../../assets/images/users/5.jpg" alt="image"> </div>
-                        <div class="mb-1 mt-4 fs-20 font-weight-semibold">127.0.0.1</div>
-                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i>Lagos, Nigeria</div>
-                        <p class="mt-4 mb-4">example@example.com.</p>
+                                                                 src="../../../../assets/images/no-image.png" alt="image"> </div>
+                        <div class="mb-1 mt-4 fs-20 font-weight-semibold guest-ipaddress">127.0.0.1</div>
+                        <div class="text-primary fs-14"><i class="ti-location-pin mr-2"></i> <span class="guest-location">Lagos, Nigeria</span></div>
+                        <p class="mt-4 mb-4"><i class="fa fa-envelope-o mr-2 "></i><span class="guest-email">example@example.com</span></p>
+                        <p class="mt-4 mb-4"><i class="fa fa-calendar mr-2 "></i><span class="guest-date-time">12/77/0909</span></p>
 
                     </div>
                 </div>

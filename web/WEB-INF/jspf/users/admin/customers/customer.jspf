@@ -9,12 +9,6 @@
                 <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
                 <small class="text-muted mt-0">This page shows the details of all registered customers.</small>
             </div>
-<!--            <div class="page-rightheader">
-                <div class="ml-3 ml-auto d-flex">
-                    <div class="d-flex  mt-xl-0 mt-lg-4 mt-4 mt-md-4"> <button type="button" class="btn btn-outline-primary"
-                                                                               data-toggle="modal" data-target="#new_customer">Create New Customer</button> </div>
-                </div>
-            </div>-->
         </div> <!-- Page-header closed -->
 
         <div class="row">
@@ -87,7 +81,7 @@
             <div class="col-xl-3 cust-clone d-none">
                 <div class="card">
                     <div class="card-body text-center"> 
-                        <span class="avatar avatar-xxl brround cover-image default-shadow cust-uimage"  style="background: rgba(0, 0, 0, 0) repeat scroll center center;"></span>
+                        <span class="avatar avatar-xxl brround cover-image cust-uimage"  style="background: rgba(0, 0, 0, 0) repeat scroll center center;"></span>
                         <h4 class="h4 mb-1 mt-3 cust-uname">Petey Cruiser</h4>
                         <p class="mb-4 mt-1 cust-utype">App Developer</p>
                         <p class="mb-0 text-info cust-uemail ">Petey_Cruiser@gmail.com</p>

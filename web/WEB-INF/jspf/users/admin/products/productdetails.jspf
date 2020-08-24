@@ -142,11 +142,11 @@
                                         <div class="col-4">
                                             <dl class="product-gallery-quty mt-2 mb-0">
                                                 <h6 class="font-weight-semibold">Reference Number</h6>
-                                                <dd>
-                                                    <div class="form-group">
-                                                        <span class="font-weight-semibold h6 text-primary product-ref">0</span>
-                                                    </div>
-                                                </dd>
+                                                <!--<dd>-->
+                                                <div class="form-group">
+                                                    <span class="font-weight-semibold h6 text-primary product-ref text-wrap">0</span>
+                                                </div>
+                                                <!--</dd>-->
                                             </dl>
                                         </div>
                                         <div class="col-4">
@@ -216,17 +216,8 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-5">
-                                            <h6 class="font-weight-semibold">Properties</h6>
-                                            <div id="product-properties-list">
-                                                <dl class="product-gallery-data1 product-properties-list-clone d-none ml-0">
-                                                    <dt class="product-properties-name"></dt>
-                                                    <dd class="product-properties-value"></dd>
-                                                </dl>
 
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
+                                        <div class="col-8">
                                             <h6 class="font-weight-semibold">Tags</h6>
                                             <div id="product-tags-list">
                                                 <dl class="product-gallery-data1 product-tags-list-clone d-none">
@@ -237,17 +228,36 @@
                                         </div>
 
                                     </div> 
+                                    <div class="row mt-3">
+                                        <div class="col-8">
+                                            <h6 class="font-weight-semibold">Properties</h6>
+                                            <div id="product-properties-list">
+                                                <dl class="product-gallery-data1 product-properties-list-clone d-none ml-0">
+                                                    <dt class="product-properties-name"></dt>
+                                                    <dd class="product-properties-value"></dd>
+                                                </dl>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="font-weight-semibold">Reivew</h6>
+                                            <div id="product-properties-list">
+                                                <dl class="product-gallery-data1 ml-0">
+                                                    <dt class="">
+                                                        <a  href="javascript:void(0)"><i class="fa fa-star text-warning"></i></a>
+                                                        <span class="product-average-review">0</span> Reviews
+                                                    </dt>
+                                                    <dt class="">
+                                                        <a  href="javascript:void(0)"><i class="fa fa-user text-primary"></i></a>
+                                                        <span class="product-reviews">0</span> Reviewers
+                                                    </dt>
+                                                </dl>
+
+                                            </div>
+                                        </div>
+
+                                    </div> 
                                     <div class="product-gallery-rats">
-                                        <ul class="product-gallery-rating">
-                                            <li> 
-                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
-                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
-                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
-                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
-                                                <a href="#"><i class="fa fa-star-o text-warning"></i></a> 
-                                            </li>
-                                        </ul>
-                                        <div class="label-rating">793 reviews</div>
                                         <div class="label-rating h5">Stock Notification Type <span class="product-stocknotytype text-primary ml-5"></span></div>
                                     </div>
                                     <div class="row">

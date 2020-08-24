@@ -122,7 +122,6 @@
                                         <div class="tab-pane active " id="side31">
                                             <h5 class="mt-3 mb-4">Notifications</h5> 
                                             <a  href="${pageContext.request.contextPath}/LinksServlet?type=SellerMessages" class="slide-item"  id="id-notifications-messages">Messages</a> 
-                                            <a   href="${pageContext.request.contextPath}/LinksServlet?type=SellerReviews" class="slide-item" id="id-notifications-reiviews">Reviews</a> 
                                             <h5 class="fs-15 font-weight-semibold mt-5 mb-4 d-none">Overview
                                             </h5>
                                             <div class="row p-2 d-none"> 
@@ -156,12 +155,11 @@
                                             <h5 class="mt-3 mb-4">General</h5> 
                                             <a href="/FynGramShop/pages/shop/faq/faq.jsp" class="slide-item" target="blank">FAQ</a> 
                                             <a href="/FynGramShop/pages/shop/privacy/privacy.jsp" class="slide-item" target="blank">Privacy Policy</a> 
-                                            <a href="/FynGramShop/pages/shop/terms/terms.jsp"  class="slide-item" target="blank">Customer - Terms</a> 
+                                            <a href="/FynGramShop/pages/shop/terms/terms.jsp"  class="slide-item" target="blank">Terms</a> 
                                             <a href="/FynGramShop/pages/shop/support/support.jsp"  class="slide-item" target="blank">Supports</a> 
                                             <a href="/FynGramShop/pages/shop/aboutus/aboutus.jsp" class="slide-item" target="blank">About Us</a>
                                             <a href="/FynGramShop/pages/shop/contact/contact.jsp" class="slide-item" target="blank">Contact Us</a>
                                             <a href="/FynGramShop/pages/shop/services/services.jsp" class="slide-item" target="blank">Services</a>
-                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=Terms"  class="slide-item" target="blank">Seller - Terms</a> 
                                             <a  href="${pageContext.request.contextPath}/LinksServlet?type=LogOut" class="slide-item text-danger CallLogOut1">Sign Out</a> 
                                         </div>
                                     </div>
