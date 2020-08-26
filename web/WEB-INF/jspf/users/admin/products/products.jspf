@@ -146,6 +146,37 @@
 
 
         </div>
+        
+         <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-12">
+                <div class="card ">
+                    <div class="card-header">
+                        Product Actual Price
+                        <small class="ml-3 text-primary-shadow">Show Product Actual Price on the Shop during Promo.</small>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-12">
+                            <div class="card-body ">
+                                <div class="d-flex no-block align-items-center">
+                                    <div>
+                                        <h6 class="">Update </h6>
+                                        <div class="d-flex  mt-xl-0 mt-lg-4 mt-4 mt-md-4"> 
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#show_actual_price">Update</button> 
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto"> 
+                                        <div class="w-7 h-7" > <i class="fa fa-cogs fs-32 text-primary-shadow"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <!-- section-wrapper -->
         <div class="row">
             <div class="col-md-12 col-lg-12">

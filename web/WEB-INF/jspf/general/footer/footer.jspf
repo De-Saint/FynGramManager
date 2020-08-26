@@ -92,4 +92,7 @@
 <div class="modal fade" id="cancel_order_rule">
     <%@include file="../../users/admin/order/order_rule.jspf" %>
 </div>
+<div class="modal fade" id="show_actual_price">
+    <%@include file="../../users/admin/products/product_showprice.jspf" %>
+</div>
 

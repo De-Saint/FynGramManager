@@ -112,6 +112,13 @@ function productBtnEvents() {
         GetData("Products", "ProcessProductCondition", "LoadProductInfo", data);
         e.preventDefault();
     });
+    $("form[name=showPriceForm]").submit(function (e) {
+        var showOption = $("#showOption").val();
+        showLoader();
+        $("#show_actual_price").modal("hide");
+        GetData("Products", "ProcessProductActualPrice", "LoadProductInfo", showOption);
+        e.preventDefault();
+    });
 
     $("form[name=newUnitForm]").submit(function (e) {
         var newUnitName = $("#newUnitName").val();
@@ -353,8 +360,8 @@ function DisplayProducts(data) {
         $(".TotalProducts").text(count);
         $(".TotalApproved").text(totalapproved);
         $(".TotalUnapproved").text(totalunapproved);
-    }else{
-        
+    } else {
+
     }
 }
 
@@ -529,10 +536,10 @@ function DisplayAllProductCategories(data) {
     }
 }
 
-function DisplayProductRestock(data){
+function DisplayProductRestock(data) {
     hideLoader();
     var resp = data[2];
-     if (resp.status === "success") {
+    if (resp.status === "success") {
         swal({
             title: 'Product',
             text: resp.msg,
@@ -542,7 +549,7 @@ function DisplayProductRestock(data){
             confirmButtonText: 'Ok!',
             buttonsStyling: true
         }, function (dismiss) {
-           DisplayProducts(data);
+            DisplayProducts(data);
         });
     } else if (resp.status === "error") {
         swal({
@@ -556,5 +563,5 @@ function DisplayProductRestock(data){
             }
         });
     }
-    
+
 }
