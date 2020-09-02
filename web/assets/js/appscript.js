@@ -649,6 +649,16 @@ function linkToFunction(action, params) {
             DisplayAllGuests(params);
             break;
         }
+        case "LoadResetPassword":
+        {
+            DisplayResetPassword(params);
+            break;
+        }
+        case "LoadPasswordRecovery":
+        {
+            DisplayPasswordRecovery(params);
+            break;
+        }
 
 
     }

@@ -269,11 +269,6 @@ function DisplaySearchUserDetails(resp) {
 
 }
 
-function ErrorNoty(msg) {
-    $.growl.error({
-        message: msg
-    });
-}
 
 function DisplayDiscountCodeInfo(resp) {
     hideLoader();

@@ -104,7 +104,7 @@ function returnToTimeOutPage(extension) {
 function GetData(action, type, callfunction, data) {
     var path = window.location.pathname;
     var href = window.location.href;
-    var url = href.replace(path, '');
+    var url = href.replace(path, '').replace("#", '').replace("?", '');
     $.ajax({
         url: url + '/FynGramEngine/DispatcherSerlvet',
         type: 'GET',
