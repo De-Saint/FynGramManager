@@ -13,7 +13,8 @@
                 <div class="card">
                     <div class="row">
                         <div class="col-md-12 col-xl-6 col-lg-6 pr-0 d-none d-lg-block"> <img
-                                src="../../../assets/images/photos/login2.jpg" alt="img" class="br-tl-2 br-bl-2 "> </div>
+                                src="../../../assets/images/photos/login2.jpg" alt="img" class="br-tl-2 br-bl-2 "> 
+                        </div>
                         <div class="col-md-12 col-xl-6 col-lg-6 pl-0">
                             <form name="resetForm" class="resetpwd  ">
                                 <div class="card-body p-6 about-con pabout">
