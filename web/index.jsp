@@ -13,9 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta
-        content="FynGram - Manager Application"
-        name="description">
+    <meta content="FynGram - Manager Application"  name="description">
     <meta content="FynGram" name="author">
     <meta name="keywords" content="FynGram - Manager Application">
     <!-- Favicon-->
