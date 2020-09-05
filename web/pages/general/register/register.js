@@ -85,11 +85,8 @@ function DisplayGetSellerSellerTypes(data) {
 function DisplayRegisterSeller(resp) {
     hideLoader();
     if (resp.status === "success") {
-        SessionTokenManager(resp);
-        sessiontype = GetSessionType();
-        sessionid = verifyUser();
         swal({
-            title: 'Welcome to FynGram Manager App',
+            title: 'Register',
             text: resp.msg,
             type: 'success',
             showCancelButton: false,
@@ -97,11 +94,11 @@ function DisplayRegisterSeller(resp) {
             confirmButtonText: ' Continue!',
             buttonsStyling: true
         }, function (dismiss) {
-            window.location = extension + "LinksServlet?type=SellerDashboard";
+            window.location = extension + "LinksServlet?type=Validate";
         });
     } else if (resp.status === "error") {
         swal({
-            title: "Login",
+            title: "Register",
             text: resp.msg,
             type: "error",
             confirmButtonText: 'Ok',

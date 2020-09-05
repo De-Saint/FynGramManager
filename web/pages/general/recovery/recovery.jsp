@@ -46,8 +46,6 @@
 
     <body class="app h-100vh">
         <!-- Loader -->
-        <div id="loading" style="display: none;"> <img src="../../../assets/images/other/loader.svg" class="loader-img" alt="Loader"> 
-        </div> 
 
         <jsp:include page="../../../WEB-INF/static_pages/general/recovery/recovery.jsp"></jsp:include>
 

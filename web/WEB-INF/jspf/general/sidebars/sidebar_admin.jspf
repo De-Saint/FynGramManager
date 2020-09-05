@@ -19,7 +19,7 @@
                                         <div class="tab-pane active " id="side1">
                                             <h5 class="mt-3 mb-4">FynGram</h5> 
                                             <a class="slide-item" href="${pageContext.request.contextPath}/LinksServlet?type=AdminDashboard" id="id-dashboard-dash">Dashboard</a> 
-                                            <a class="slide-item" href="${pageContext.request.contextPath}/LinksServlet?type=AdminReport" id="id-dashboard-report">Statistics</a> 
+                                            <!--<a class="slide-item" href="${pageContext.request.contextPath}/LinksServlet?type=AdminReport" id="id-dashboard-report">Statistics</a>--> 
                                             <a class="slide-item" href="${pageContext.request.contextPath}/LinksServlet?type=AdminProfile"  id="id-dashboard-profile">Profile</a> 
 
                                             <h5 class="fs-15 font-weight-semibold mt-5 mb-4 d-none">Overview</h5>

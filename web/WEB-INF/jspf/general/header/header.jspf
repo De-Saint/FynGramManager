@@ -52,17 +52,17 @@
                                     <p class="mb-1 fs-13 text-white-50 uEmail">Jonathan@gmail.com</p>
                                 </div>
                             </div> 
-                            <a class="dropdown-item"  href="${pageContext.request.contextPath}/LinksServlet?type=AdminProducts"> 
+                            <a class="dropdown-item forActivatedSellers"  href="${pageContext.request.contextPath}/LinksServlet?type=AdminProducts"> 
                                 <i class="dropdown-icon mdi mdi-account-outline "></i> Products 
                             </a> 
-                            <a class="dropdown-item"  href="${pageContext.request.contextPath}/LinksServlet?type=AdminMessages"> 
+                            <a class="dropdown-item forActivatedSellers"  href="${pageContext.request.contextPath}/LinksServlet?type=AdminMessages"> 
                                 <i class="dropdown-icon  mdi mdi-settings"></i> Messages 
                             </a> 
-                            <a class="dropdown-item" href="${pageContext.request.contextPath}/LinksServlet?type=AdminOrders"> 
+                            <a class="dropdown-item forActivatedSellers" href="${pageContext.request.contextPath}/LinksServlet?type=AdminOrders"> 
                                 <span class="float-right"><span class="badge badge-success ordercount">6</span></span> 
                                 <i class="dropdown-icon mdi  mdi-message-outline"></i> Orders 
                             </a> 
-                            <a class="dropdown-item" href="${pageContext.request.contextPath}/LinksServlet?type=AdminWallet"> <i class="dropdown-icon mdi mdi-comment-check-outline"></i> Wallet </a>
+                            <a class="dropdown-item forActivatedSellers" href="${pageContext.request.contextPath}/LinksServlet?type=AdminWallet"> <i class="dropdown-icon mdi mdi-comment-check-outline"></i> Wallet </a>
                             <div class="dropdown-divider"></div> 
                             <button  class="dropdown-item mb-1 text-danger CallLogOut"> 
                                 <i class="dropdown-icon mdi  mdi-logout-variant text-danger"></i> Sign out 

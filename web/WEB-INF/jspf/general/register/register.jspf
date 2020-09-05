@@ -1,6 +1,6 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<div class="page">
+<div class="page mt-5">
     <div class="">
         <div class="col col-login mx-auto">
             <div class="text-center"> <img src="../../../assets/images/brand/logo.png"

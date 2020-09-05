@@ -56,6 +56,10 @@ public class LinksServlet extends HttpServlet {
                     response.sendRedirect("pages/general/recovery/recovery.jsp");
                     break;
                 }
+                case "Validate": {
+                    response.sendRedirect("pages/general/validate/validate.jsp");
+                    break;
+                }
                 case "AdminDashboard": {
                     response.sendRedirect("pages/users/admin/dashboard/dashboard.jsp");
                     break;

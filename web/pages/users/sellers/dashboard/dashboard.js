@@ -113,7 +113,7 @@ function DisplaySubscriptionFeesPayment(data) {
     hideLoader();
     if (resp.status === "success") {
         swal({
-            title: 'Pay Suscription Fees',
+            title: 'Suscription Fees',
             text: resp.msg,
             type: 'success',
             showCancelButton: false,
@@ -126,7 +126,7 @@ function DisplaySubscriptionFeesPayment(data) {
         });
     } else if (resp.status === "error") {
         swal({
-            title: "Pay Suscription Fees",
+            title: "Suscription Fees",
             text: resp.msg,
             type: "error",
             confirmButtonText: 'Try Again',

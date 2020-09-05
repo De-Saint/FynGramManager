@@ -659,6 +659,11 @@ function linkToFunction(action, params) {
             DisplayPasswordRecovery(params);
             break;
         }
+        case "LoadValidateAccount":
+        {
+            DisplayValidateAccount(params);
+            break;
+        }
 
 
     }
