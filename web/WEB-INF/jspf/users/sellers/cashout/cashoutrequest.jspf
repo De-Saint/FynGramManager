@@ -24,14 +24,14 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="text-center">Wallet Pin</label>
+                            <label class="text-center">FynPay Account Pin</label>
                             <div class="input-group input-group-alternative">
                                 <div class="input-group-prepend"> 
                                     <span class="input-group-text p-0 w-7">
                                         <i class="fa fa-key mx-auto text-muted fs-18"></i>
                                     </span>
                                 </div> 
-                                <input class="form-control" id="cashoutPin" placeholder="Wallet Pin" type="password">
+                                <input class="form-control" id="cashoutPin" placeholder="FynPay Account Pin" type="password">
                             </div>
                         </div>
 

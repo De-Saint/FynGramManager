@@ -3,7 +3,7 @@
 <div class="modal-dialog">
     <div class="modal-content shadow border-0">
         <div class="modal-header bg-primary">
-            <h5 class="modal-title" id="payments_details">Fund Wallet</h5>
+            <h5 class="modal-title" id="payments_details">Fund FynPay Account</h5>
             <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
             </button>
@@ -22,7 +22,7 @@
                             </div>
                         </div>
                         <div class="text-center"> 
-                            <button type="submit"class="btn btn-primary my-4">Fund Wallet</button> </div>
+                            <button type="submit"class="btn btn-primary my-4">Fund My FynPay Account</button> </div>
                     </form>
                 </div>
             </div>

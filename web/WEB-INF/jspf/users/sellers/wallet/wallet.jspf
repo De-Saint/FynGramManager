@@ -7,12 +7,12 @@
         <div class="page-header">
             <div class="page-leftheader">
                 <h4 class="page-title mb-0">Hi <span class="UserName">FG</span>, Welcome Back!</h4> 
-                <small class="text-muted mt-0">This page shows details of your Wallet.</small>
+                <small class="text-muted mt-0">This page shows details of your FynPay Account.</small>
             </div>
             <div class="page-rightheader">
                 <div class="d-flex  mt-4 mt-xl-0 mt-lg-0">
                     <!-- media --> <button  data-toggle="modal" data-target="#fundwallet"  class="btn btn-primary ml-0 ml-md-4  d-sm-block "><i
-                            class="fa fa-money  mr-1"></i>Fund Wallet</button>
+                            class="fa fa-money  mr-1"></i>Fund FynPay Account</button>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <div class="col-xl-6 col-lg-12 col-md-12">
                 <div class="card wallet">
                     <div class="card-body">
-                        <h4 class="card-title">Main Wallet</h4> <label>Wallet Number</label>
+                        <h4 class="card-title">Main Wallet</h4> <label>FynPay Account Number</label>
                         <div class="input-group mb-3">
                             <span class="input-group-addon bg-light">
                                 <i class="fa fa-money fs-21 mt-1"></i>
@@ -55,7 +55,7 @@
                                     <span class="">
                                         <i  class="fa fa-credit-card mr-2 mt-1 fs-16 text-muted"></i>
                                     </span>
-                                    <span class="fs-15 font-weight-normal text-muted mr-2 ">Wallet PIn </span> : 
+                                    <span class="fs-15 font-weight-normal text-muted mr-2 ">FynPay Account PIn </span> : 
                                     <span class="ml-auto h5 walletPin">0000</span> 
                                 </p>
                                 <p class="mb-0 d-flex"> 
@@ -74,7 +74,7 @@
             <div class="col-xl-6 col-lg-12 col-md-12" >
                 <div class="card wallet bg-dark-transparent">
                     <div class="card-body">
-                        <h4 class="card-title">Pending Wallet</h4> <label>Wallet Number</label>
+                        <h4 class="card-title">Pending FynPay Account</h4> <label>FynPay Account Number</label>
                         <div class="input-group mb-3">
                             <span class="input-group-addon bg-light">
                                 <i class="cc XRP-alt fs-21"></i>
@@ -90,7 +90,7 @@
                                     <span class="">
                                         <i class="fa fa-credit-card mr-2 mt-1 fs-16 text-muted"></i>
                                     </span>
-                                    <span class="fs-15 font-weight-normal text-muted  mr-2">Wallet Pin </span> :
+                                    <span class="fs-15 font-weight-normal text-muted  mr-2">FynPay Account Pin </span> :
                                     <span class="ml-auto h5 walletPin"> 0000</span>
                                 </p>
                                 <p class="mb-0 d-flex"> <span class="">

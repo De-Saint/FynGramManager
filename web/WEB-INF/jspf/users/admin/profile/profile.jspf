@@ -86,7 +86,7 @@
                                                         <td><strong>Gender :</strong> <span class="uGender"></span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><strong>Wallet Pin :</strong> <span class="uTPin"></span></td>
+                                                        <td><strong>FynPay Account Pin :</strong> <span class="uTPin"></span></td>
                                                     </tr>
                                                 </tbody>
                                             </table>

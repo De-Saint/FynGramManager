@@ -20,7 +20,7 @@
               content="FynGram - Manager Application">
         <!-- Favicon-->
         <link rel="icon" href="../../../assets/images/brand/favicon.png" type="image/x-icon"> <!-- Title -->
-        <title>FynGram Manager :: Register</title>
+        <title>FynGram Manager :: Seller Registration</title>
         <!-- Bootstrap css -->
         <link href="../../../assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet"> <!-- Style css -->
         <link href="../../../assets/css/style.css" rel="stylesheet"> <!-- Default css -->

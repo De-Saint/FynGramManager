@@ -105,7 +105,7 @@
                                                                                     <td><strong>Gender :</strong> <span class="customer-uGender"></span></td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><strong>Wallet Pin :</strong> <span class="customer-uTPin"></span></td>
+                                                                                    <td><strong>FynPay Account Pin :</strong> <span class="customer-uTPin"></span></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -146,7 +146,7 @@
                                                     <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                                                         <div class="card mb-xl-0 box-shadow-0">
                                                             <div class="card-body text-center">
-                                                                <p class=" mb-1 ">Wallet Number</p>
+                                                                <p class=" mb-1 ">FynPay Account Number</p>
                                                                 <h3 class="mb-1 customer-uwalletNumber">0</h3> 
                                                             </div>
                                                         </div>

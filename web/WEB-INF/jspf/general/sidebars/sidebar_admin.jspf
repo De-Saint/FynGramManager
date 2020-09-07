@@ -92,7 +92,7 @@
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="side-1">
                                             <h5 class="mt-3 mb-4">Accounts</h5> 
-                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=AdminWallet" class="slide-item" id="id-accounts-wallet">Wallet</a> 
+                                            <a href="${pageContext.request.contextPath}/LinksServlet?type=AdminWallet" class="slide-item" id="id-accounts-wallet">FynPay</a> 
                                             <a  href="${pageContext.request.contextPath}/LinksServlet?type=AdminTransactions" class="slide-item" id="id-accounts-transactions">Transactions</a>
                                             <a  href="${pageContext.request.contextPath}/LinksServlet?type=AdminPayments" class="slide-item" id="id-accounts-payments">Payments</a>
                                             <a  href="${pageContext.request.contextPath}/LinksServlet?type=AdminSubscription" class="slide-item" id="id-accounts-subscription">Subscriptions</a>

@@ -144,7 +144,7 @@
                                                     <div class="form-group d-none forSingleCustomer"> 
                                                         <label class="form-label">Search the Single Customer</label>
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" id="searchsinglecustomertxt" placeholder="Search by name or email or or phone or wallet number..."> 
+                                                            <input type="text" class="form-control" id="searchsinglecustomertxt" placeholder="Search by name or email or or phone or fynpay account number..."> 
                                                             <span  class="input-group-append"> 
                                                                 <button class="btn btn-primary"  id="searchsinglecustomerbtn" type="button"><i class="fa fa-search"></i></button>
                                                             </span>

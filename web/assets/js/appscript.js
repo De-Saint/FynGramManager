@@ -35,6 +35,7 @@ function GeneralAppFunctions() {
 
 function UpdateOrderStatus() {
     GetData("Order", "UpdateSellerPayment", "LoadUpdateSellerPayment");
+//    setTimeout(UpdateOrderStatus, 50000);//2 hours 
     setTimeout(UpdateOrderStatus, 7200000);//2 hours 
 }
 function GenralBtnEvents() {
