@@ -24,10 +24,13 @@ function walletFunctions() {
 function walletBtnEvents() {
     $("form[name=fundwalletForm]").submit(function (e) {
         var fundwalletAmount = $("#fundwalletAmount").val();
+        if (fundwalletAmount.includes(",")) {
+            fundwalletAmount = fundwalletAmount.replace(/,/g, "");
+        }
         var newPaymentAmount = CalculatePercentage(fundwalletAmount);
         $("#fundwallet").modal("hide");
-        var email = "admin@fyngram.com";
-        payWithPaystack(sessionid, newPaymentAmount, email, fundwalletAmount, "Fund Wallet");
+       var email = localStorage.getItem("uEmail");
+        payWithPaystackWallet(newPaymentAmount, email, fundwalletAmount, "Fund Wallet");
         e.preventDefault();
     });
 
@@ -68,11 +71,11 @@ function walletPageFunctions() {
     GetData("Wallet", "GetWalletDetails", "LoadGetWalletDetails", sessionid);
 }
 
-function payWithPaystack(userID, paymentamount, email, actualamount, PaymentType) {
+function payWithPaystackWallet(paymentamount, email, actualamount, PaymentType) {
     var userDetail;
     userDetail = email;
     var handler = PaystackPop.setup({
-        key: 'pk_test_b3685f824518679567d6356e2636fc184878e833',
+        key: 'pk_test_c819ab617f5085772d511e6e5cafc3785367cb78',
         email: email,
         amount: paymentamount + "00",
         ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
@@ -116,30 +119,31 @@ function DisplayGetWalletDetails(resp) {
         $(".MainBalance").text(PriceFormat(resp.MainBalance));
         $(".PendingBalance").text(PriceFormat(resp.PendingBalance));
         $(".walletPin").text(resp.wallet_pin);
-        
+
         $(".TotalCustomerBalance").text(PriceFormat(resp.TotalCustomerBalance));
         $(".TotalSellerBalance").text(PriceFormat(resp.TotalSellerBalance));
-        
+
         $(".TotalMainWallets").text(PriceFormat(resp.TotalMainWallets));
         $(".TotalPendingWallets").text(PriceFormat(resp.TotalPendingWallets));
-        
+        $(".TotalInAllWallets").text(PriceFormat(parseFloat(resp.TotalMainWallets) + parseFloat(resp.TotalPendingWallets)));
+
         $(".TotalCarrierBalance").text(PriceFormat(resp.TotalShippingEarnings));
     }
 }
-function DisplayValidatePaystackPayment(resp) {
+function DisplayValidatePaystackPayment(data) {
     hideLoader();
+    var resp = data.result;
     if (resp.status === "success") {
-        verifyUser();
         swal({
             title: 'Fund Wallet',
             text: resp.msg,
             type: 'success',
             showCancelButton: false,
-            closeOnConfirm: false,
+            closeOnConfirm: true,
             confirmButtonText: ' Ok!',
             buttonsStyling: true
         }, function (dismiss) {
-            window.location.reload();
+            DisplayGetWalletDetails(data.paymentdata);
         });
     } else if (resp.status === "error") {
         swal({

@@ -38,8 +38,6 @@
         <link href="category.css" rel="stylesheet" type="text/css"/>
         <link href="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet"> <!-- Select2 Plugin -->
         <link href="../../../../assets/plugins/select2/select2.min.css" rel="stylesheet"> <!-- News ticker css -->
-        <link href="../../../../assets/plugins/newsticker/breaking-news-ticker.css" rel="stylesheet"> <!-- Countdown css-->
-        <link href="../../../../assets/plugins/jquery-countdown/countdown.css" rel="stylesheet"> <!-- Font icons css-->
         <link href="../../../../assets/css/icons.css" rel="stylesheet"> <!-- Rightsidebar css -->
         <link href="../../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet"> <!-- Nice-select css  -->
         <link href="../../../../assets/plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet"> 
@@ -58,19 +56,14 @@
         <script src="../../../../assets/js/vendors/jquery-3.2.1.min.js"></script>
         <script src="../../../../assets/plugins/moment/moment.min.js"></script>
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
-        <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
-        <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="../../../../assets/plugins/sidemenu/sidemenu.js"></script>
         <script src="../../../../assets/plugins/sidemenu-responsive-tabs/js/sidemenu-responsive-tabs.js"></script>
         <script src="../../../../assets/js/left-menu.js"></script>
         <script src="../../../../assets/plugins/p-scroll/p-scroll.js"></script>
         <script src="../../../../assets/plugins/p-scroll/p-scroll-leftmenu.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
         <script src="../../../../assets/plugins/sidebar/sidebar.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
-        <!--<script src="../../../../assets/js/analytics.js"></script>-->
         <script src="../../../../assets/js/custom.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>

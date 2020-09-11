@@ -59,10 +59,8 @@
         <script src="../../../../assets/js/vendors/jquery-3.2.1.min.js"></script>
         <script src="../../../../assets/plugins/moment/moment.min.js"></script>
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
-        <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
         <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
         <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-        <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="../../../../assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
         <script src="../../../../assets/plugins/jquery-nice-select/js/nice-select.js"></script>

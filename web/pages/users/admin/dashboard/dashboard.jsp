@@ -32,16 +32,15 @@
         <link rel="stylesheet" href="../../../../assets/plugins/sidemenu/sidemenu.css"> <!-- Sidemenu-responsive-tabs css -->
         <link href="../../../../assets/plugins/sidemenu-responsive-tabs/css/sidemenu-responsive-tabs.css" rel="stylesheet">
         <!-- Owl Theme css-->
+        <link href="../../../../assets/plugins/jquery-countdown/countdown.css" rel="stylesheet"> <!-- Font icons css-->
         <link href="../../../../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet"> <!-- P-scroll css -->
         <link href="../../../../assets/plugins/p-scroll/p-scroll.css" rel="stylesheet" type="text/css">
         <!-- Custom scroll bar css -->
         <link href="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet"> <!-- Select2 Plugin -->
-        <link href="../../../../assets/plugins/select2/select2.min.css" rel="stylesheet"> <!-- News ticker css -->
+       
         <link href="../../../../assets/plugins/newsticker/breaking-news-ticker.css" rel="stylesheet"> <!-- Countdown css-->
-        <link href="../../../../assets/plugins/jquery-countdown/countdown.css" rel="stylesheet"> <!-- Font icons css-->
         <link href="../../../../assets/css/icons.css" rel="stylesheet"> <!-- Rightsidebar css -->
         <link href="../../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet"> <!-- Nice-select css  -->
-        <link href="../../../../assets/plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet"> 
         <link href="../../../../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
         <!-- Color-palette css-->
         <link rel="stylesheet" href="../../../../assets/css/skins.css">
@@ -58,8 +57,6 @@
         <script src="../../../../assets/js/vendors/jquery-3.2.1.min.js"></script>
         <script src="../../../../assets/plugins/moment/moment.min.js"></script>
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
-        <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
-        <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="../../../../assets/plugins/owl-carousel/owl.carousel.js"></script>
         <script src="../../../../assets/plugins/owl-carousel/owl-main.js"></script>
@@ -69,33 +66,13 @@
         <script src="../../../../assets/js/left-menu.js"></script>
         <script src="../../../../assets/plugins/p-scroll/p-scroll.js"></script>
         <script src="../../../../assets/plugins/p-scroll/p-scroll-leftmenu.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-        <script src="../../../../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
-        <script src="../../../../assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-        <script src="../../../../assets/plugins/jvectormap/gdp-data.js"></script>
-        <script src="../../../../assets/plugins/jvectormap/jquery-jvectormap-us-aea-en.js"></script>
-        <script src="../../../../assets/plugins/jvectormap/jquery-jvectormap-uk-mill-en.js"></script>
-        <script src="../../../../assets/plugins/jvectormap/jquery-jvectormap-au-mill.js"></script>
-        <script src="../../../../assets/plugins/jvectormap/jquery-jvectormap-ca-lcc.js"></script>
-        <script src="../../../../assets/js/vectormap.js"></script>
-        <div class="jvectormap-tip"></div>
         <script src="../../../../assets/plugins/sidebar/sidebar.js"></script>
         <script src="../../../../assets/plugins/chart/chart.min.js"></script>
-        <script src="../../../../assets/plugins/echarts/echarts.js"></script>
-        <script src="../../../../assets/plugins/select2/select2.full.min.js"></script>
-        <script src="../../../../assets/js/select2.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="../../../../assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
-        <script src="../../../../assets/plugins/jquery-nice-select/js/nice-select.js"></script>
-        <script src="../../../../assets/plugins/echarts/echarts.js"></script>
-        <script src="../../../../assets/plugins/flot/jquery.flot.js"></script>
-        <script src="../../../../assets/plugins/flot/jquery.flot.resize.js"></script>
-        <script src="../../../../assets/js/apexcharts.js"></script>
+
         <script src="../../../../assets/plugins/jquery-countdown/countdown.js"></script>
         <script src="../../../../assets/plugins/jquery-countdown/jquery.plugin.min.js"></script>
         <script src="../../../../assets/plugins/jquery-countdown/jquery.countdown.js"></script>
-        <script src="../../../../assets/js/ecommerce.js"></script>
         <script src="../../../../assets/js/custom.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>

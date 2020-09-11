@@ -3,7 +3,7 @@
 <div class="page">
     <!-- PAGE-CONTENT OPEN -->
     <div class="page-content error-page">
-        <div class="container text-center"> <img src="../../../assets/images/svg/error.svg" alt="error"
+        <div class="container text-center"> <img style="width: 150px; height: 150px;" src="../../../assets/images/svgs/happy.svg" alt="error"
                                                  class="w-50 floating">
             <h3 class="h2 mt-4 mb-5">Oops! Session timeout  for Inactivity 
                 <br>

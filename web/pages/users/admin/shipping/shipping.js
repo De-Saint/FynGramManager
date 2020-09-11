@@ -122,6 +122,7 @@ function DisplayShippings(data, parent) {
 
             var deletebtn = newchild.find(".btn-shipping-delete");
             var editbtn = newchild.find(".btn-shipping-edit");
+            var reset = newchild.find(".btn-shipping-reset");
 
             editbtn.click(function () {
                 localStorage.setItem("shipoption", "edit");
@@ -143,6 +144,23 @@ function DisplayShippings(data, parent) {
                     if (dismiss) {
                         showLoader();
                         GetData("Shipping", "DeleteShipping", "LoadDeleteShipping", result["id"]);
+                    }
+                });
+            });
+            
+             reset.click(function () {
+                swal({
+                    title: 'Shipping',
+                    text: "Do you want to reset the earnings of this shipping/carrier method?",
+                    type: 'warning',
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    confirmButtonText: ' Yes!',
+                    buttonsStyling: true
+                }, function (dismiss) {
+                    if (dismiss) {
+                        showLoader();
+                        GetData("Shipping", "ResetShipping", "LoadDeleteShipping", result["id"]);
                     }
                 });
 

@@ -39,6 +39,8 @@
         <link href="../../../assets/plugins/select2/select2.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../../../assets/css/skins.css">
         <link href="../../../assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
+        <link href="../../../assets/plugins/notify/css/jquery.growl.css" rel="stylesheet">
+        <link href="../../../assets/plugins/notify/css/notifIt.css" rel="stylesheet">
         <meta http-equiv="imagetoolbar" content="no">
 
         <meta http-equiv="imagetoolbar" content="no">
@@ -68,7 +70,9 @@
         <script src="../../../assets/js/helper.js" type="text/javascript"></script>
         <script src="../../../assets/js/appscript.js" type="text/javascript"></script>
         <script src="../../../assets/plugins/sweet-alert/sweetalert.min.js"></script>
-    <script src="register.js" type="text/javascript"></script>
+        <script src="register.js" type="text/javascript"></script>
+        <script src="../../../assets/plugins/notify/js/notifIt.js"></script>
+        <script src="../../../assets/plugins/notify/js/jquery.growl.js"></script>
     </body>
 
 </html>

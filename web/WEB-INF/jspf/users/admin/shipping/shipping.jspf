@@ -136,15 +136,16 @@
                                             <td class="shipping-name"></td>
                                             <td class="shipping-email"></td>
                                             <td class="shipping-phone"></td>
-                                            <td class="shipping-deli-interval">$ 10,133,400,000</td>
-                                            <td class="shipping-total-earns">Bitcoin</td>
-                                            <td class="shipping-numb-of-deliveries">$ 10513.00</td>
-                                            <td class="shipping-ship-meth-percent">$ 51,191,183,730</td>
-                                            <td class="shipping-admin-percent">$ 10,133,400,000</td>
+                                            <td class="shipping-deli-interval">0</td>
+                                            <td class="shipping-total-earns">0</td>
+                                            <td class="shipping-numb-of-deliveries">00</td>
+                                            <td class="shipping-ship-meth-percent">0</td>
+                                            <td class="shipping-admin-percent">0</td>
                                             <td class="shipping-date-added"></td>
                                             <td class="">
                                                 <div class="btn btn-primary btn-shipping-edit btn-sm">Edit</div>
                                                 <div class="btn btn-danger btn-shipping-delete btn-sm">Delete</div>
+                                                <div class="btn btn-warning btn-shipping-reset btn-sm">Reset</div>
                                             </td>
                                         </tr>
                                     </tbody>

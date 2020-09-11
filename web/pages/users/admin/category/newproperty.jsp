@@ -58,8 +58,6 @@
          <script src="../../../../assets/js/vendors/jquery-3.2.1.min.js"></script>
         <script src="../../../../assets/plugins/moment/moment.min.js"></script>
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
-        <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
-        <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
         <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
         <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
 
@@ -76,8 +74,6 @@
         <script src="../../../../assets/plugins/bootstrap-tagsinput/dist/typeahead.bundle.js"></script>
         <script src="../../../../assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
         
-        <script src="../../../../assets/plugins/multipleselect/multiple-select.js"></script>
-        <script src="../../../../assets/plugins/multipleselect/multi-select.js"></script>
         <script src="../../../../assets/plugins/select2/select2.full.min.js"></script>
         <script src="../../../../assets/js/select2.js"></script>
         <script src="../../../../assets/plugins/notify/js/notifIt.js"></script>

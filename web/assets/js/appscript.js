@@ -665,6 +665,46 @@ function linkToFunction(action, params) {
             DisplayValidateAccount(params);
             break;
         }
+        case "LoadDashBoardProducts":
+        {
+            DisplayDashBoardProducts(params);
+            break;
+        }
+        case "LoadDashBoardProducts1":
+        {
+            DisplayDashBoardProducts1(params);
+            break;
+        }
+        case "LoadDashBoardOrders":
+        {
+            DisplayDashBoardOrders(params);
+            break;
+        }
+        case "LoadDashBoardOrders1":
+        {
+            DisplayDashBoardOrders1(params);
+            break;
+        }
+        case "LoadDashBoardWalletDetails":
+        {
+            DisplayDashBoardWalletDetails(params);
+            break;
+        }
+        case "LoadDashBoardWalletDetails1":
+        {
+            DisplayDashBoardWalletDetails1(params);
+            break;
+        }
+        case "LoadDashBoardStats":
+        {
+            DisplayDashBoardStats(params);
+            break;
+        }
+        case "LoadDashBoardReports":
+        {
+            DisplayDashBoardReports(params);
+            break;
+        }
 
 
     }

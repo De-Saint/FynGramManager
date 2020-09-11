@@ -17,6 +17,7 @@ function RegisterFunctions() {
 
 
 function registerBtnEvents() {
+    $('#terms').prop('checked', false);
     //accordion-wizard
 //    var options = {
 //        mode: 'edit',
@@ -40,10 +41,15 @@ function registerBtnEvents() {
         var bizmaxshippingdays = $("#sell-maxbizshippingdays").val();
         var substype = $("#sell-substype").val();
         var sellertype = $("#sell-sellertype").val();
-        var data = [email, phone, password, gender, firstname, lastname, sellertype, substype,
-            bizname, bizemail, bizphone, bizminshippingdays, bizmaxshippingdays];
-        showLoader();
-        GetData("User", "RegisterSeller", "LoadRegisterSeller", data);
+        if ($('#terms').is(":checked")) {
+            var data = [email, phone, password, gender, firstname, lastname, sellertype, substype,
+                bizname, bizemail, bizphone, bizminshippingdays, bizmaxshippingdays];
+            showLoader();
+            GetData("User", "RegisterSeller", "LoadRegisterSeller", data);
+        } else {
+            ErrorNoty("Please, indicate that you have read and agreed to our Terms and Conditions.");
+            return false;
+        }
         e.preventDefault();
     });
 

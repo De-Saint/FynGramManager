@@ -285,7 +285,7 @@
                                                             <input type="checkbox" class="custom-control-input prod-id" name="prod-id" value="checkbox"> 
                                                             <span class="custom-control-label prod-sn">1</span></label></td>
                                                     <td class="sorting_1"> 
-                                                        <img src="../../../../assets/images/media/ecommerce/1.png"
+                                                        <img src="../../../../assets/images/no-image.png"
                                                              alt="img" class="h-7 w-7 prod-firstimage">
                                                         <p class="d-inline-block align-middle mb-0 ml-1"> <a href=""
                                                                                                              class="d-inline-block align-middle mb-0 product-name prod-name font-weight-semibold">Arm

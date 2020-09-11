@@ -41,8 +41,7 @@
                                 <h6 class="">Total Discount Codes</h6>
                                 <h3 class="m-0 TotalDiscountCode">0</h3>
                             </div>
-                            <div class="ml-auto"> <img class="w-7 h-7"
-                                                       src="../../../../assets/images/crypto-currencies/round-outline/Bitcoin.svg" alt="image"> </div>
+                            <div class="ml-auto"> <i class="fa fa-gift fa-3x"></i>  </div>
                         </div>
                     </div>
                 </div>
@@ -55,8 +54,7 @@
                                 <h6 class="">Total All Customers Discount Codes</h6>
                                 <h3 class="m-0 TotalAllCustomers">0</h3>
                             </div>
-                            <div class="ml-auto"> <img class="w-7 h-7"
-                                                       src="../../../../assets/images/crypto-currencies/round-outline/Ethereum.svg" alt="image"> </div>
+                            <div class="ml-auto"> <i class="fa fa-gift fa-3x"></i>  </div>
                         </div>
                     </div>
                 </div>
@@ -69,8 +67,7 @@
                                 <h6 class="">Total Single Customer Discount Codes</h6>
                                 <h3 class="m-0 TotalAllSingleCustomers">0</h3>
                             </div>
-                            <div class="ml-auto"> <img class="w-7 h-7"
-                                                       src="../../../../assets/images/crypto-currencies/round-outline/Ripple.svg" alt="image"> </div>
+                            <div class="ml-auto"><i class="fa fa-money fa-3x"></i>  </div>
                         </div>
                     </div>
                 </div>

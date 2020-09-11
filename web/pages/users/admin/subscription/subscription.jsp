@@ -27,11 +27,6 @@
         <link href="../../../../assets/css/default.css" rel="stylesheet"> <!-- Sidemenu css-->
         <link href="subscription.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="../../../../assets/plugins/sidemenu/sidemenu.css"> <!-- Owl-carousel css-->
-        <link href="../../../../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-        <!-- Bootstrap-daterangepicker css -->
-        <link rel="stylesheet" href="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.css">
-        <!-- Bootstrap-datepicker css -->
-        <link rel="stylesheet" href="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.css">
         <!-- Custom scroll bar css -->
         <link href="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet">
         <!-- Sidemenu-repsonsive-tabs  css -->
@@ -55,16 +50,7 @@
         <script src="../../../../assets/js/vendors/jquery-3.2.1.min.js"></script>
         <script src="../../../../assets/plugins/moment/moment.min.js"></script>
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
-        <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-        <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
-        <script src="../../../../assets/plugins/clipboard/clipboard.min.js"></script>
-        <script src="../../../../assets/plugins/clipboard/clipboard.js"></script>
-        <script src="../../../../assets/plugins/prism/prism.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="../../../../assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
-        <script src="../../../../assets/plugins/jquery-nice-select/js/nice-select.js"></script>
         <script src="../../../../assets/plugins/p-scroll/p-scroll.js"></script>
         <script src="../../../../assets/plugins/p-scroll/p-scroll-leftmenu.js"></script>
         <script src="../../../../assets/plugins/sidemenu/sidemenu.js"></script>

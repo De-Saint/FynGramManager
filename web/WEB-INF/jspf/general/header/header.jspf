@@ -5,14 +5,10 @@
     <div class="app-header header top-header navbar-collapse ">
         <div class="container-fluid">
             <div class="d-flex"> <a class="header-brand" href="javascript:void(0)"> 
-                    <img
-                        src="../../../../assets/images/brand/logo.png" class="header-brand-img desktop-logo "
-                        alt="Dashlot logo"> 
-                    <img src="../../../../assets/images/brand/logo1.png"
-                         class="header-brand-img desktop-logo-1 " alt="Dashlot logo"> 
-                    <img
-                        src="../../../../assets/images/brand/favicon.png" class="mobile-logo" alt="Dashlot logo">
-                    <img src="../../../../assets/images/brand/favicon1.png" class="mobile-logo-1" alt="Dashlot logo">
+                    <img src="../../../../assets/images/brand/logo.png" class="header-brand-img desktop-logo " alt=""> 
+                    <!--<img src="../assets/images/brand/logo1.png" class="header-brand-img desktop-logo-1 " alt="">--> 
+                    <img src="../../../../assets/images/brand/favicon.png" class="mobile-logo" alt="">
+                    <!--<img src="../assets/images/brand/favicon1.png" class="mobile-logo-1" alt="">-->
                 </a> <a href="#" data-toggle="sidebar" class="nav-link icon toggle"><i
                         class="fe fe-align-justify fs-20"></i></a>
                 <div class="d-flex header-left left-header">
@@ -33,8 +29,8 @@
                 </div>
                 <div class="d-flex header-right ml-auto">
                     <!-- Fullscreen -->
-                   
-                   
+
+
                     <div class="dropdown drop-profile"> <a class="nav-link pr-0 leading-none" href="javascript:void(0)"
                                                            data-toggle="dropdown" aria-expanded="false">
                             <div class="profile-details mt-1"> <span
@@ -48,8 +44,8 @@
                             <div class="user-profile bg-header-image border-bottom p-3">
                                 <div class="user-image text-center"> <img class="user-images UserImage"  alt="image"> </div>
                                 <div class="user-details text-center">
-                                    <h4 class="mb-0 UserName">Jonathan Mills</h4>
-                                    <p class="mb-1 fs-13 text-white-50 uEmail">Jonathan@gmail.com</p>
+                                    <h4 class="mb-0 UserName">Name</h4>
+                                    <p class="mb-1 fs-13 text-white-50 uEmail">email@gmail.com</p>
                                 </div>
                             </div> 
                             <a class="dropdown-item forActivatedSellers"  href="${pageContext.request.contextPath}/LinksServlet?type=AdminProducts"> 

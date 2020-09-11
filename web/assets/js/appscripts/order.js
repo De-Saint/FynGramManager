@@ -63,6 +63,8 @@ function DisplayOrders(data, parent) {
         var shippedcount = 0;
         var cancelledcount = 0;
         var deliveredcount = 0;
+        var disputecount = 0;
+        var settledcount = 0;
         var count = 0;
         var childclone = parent.find(".orderclone").removeClass("d-none");
         $.each(ids, function (index, id) {
@@ -90,6 +92,10 @@ function DisplayOrders(data, parent) {
                 shippedcount++;
             } else if (result["StatusDetails"].name === "Delivered") {
                 deliveredcount++;
+            } else if (result["StatusDetails"].name === "Settled") {
+                settledcount++;
+            } else if (result["StatusDetails"].name === "Dispute") {
+                disputecount++;
             }
             var detailsbtn = newchild.find(".btn-order-details");
             detailsbtn.click(function () {
@@ -111,6 +117,8 @@ function DisplayOrders(data, parent) {
         $(".order_shipped_count").text(NumberFormat(shippedcount));
         $(".order_cancelled_count").text(NumberFormat(cancelledcount));
         $(".order_delivered_count").text(NumberFormat(deliveredcount));
+        $(".order_settled_count").text(NumberFormat(settledcount));
+        $(".order_dispute_count").text(NumberFormat(disputecount));
         childclone.hide();
 
     } else {

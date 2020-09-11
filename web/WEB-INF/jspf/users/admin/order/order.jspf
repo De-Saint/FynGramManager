@@ -14,7 +14,7 @@
             </div>
         </div> 
         <div class="row">
-            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
                 <div class="card">
                     <div class="card-body bg-azure-lighter">
                         <div class="d-flex no-block align-items-center">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
                 <div class="card">
                     <div class="card-body bg-cyan-lighter">
                         <div class="d-flex no-block align-items-center">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex no-block align-items-center">
@@ -59,9 +59,24 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Disputed Order</h6>
+                                <h3 class="m-0 order_dispute_count">0</h3>
+                            </div>
+                            <div class="ml-auto"> 
+                                <div class="w-7 h-7" > <i class="fa fa-cart-plus fs-50 text-primary-shadow"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
                 <div class="card">
                     <div class="card-body bg-primary-transparent">
                         <div class="d-flex no-block align-items-center">
@@ -76,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
                 <div class="card">
                     <div class="card-body bg-danger-transparent">
                         <div class="d-flex no-block align-items-center">
@@ -91,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
                 <div class="card">
                     <div class="card-body bg-success-transparent">
                         <div class="d-flex no-block align-items-center">
@@ -106,7 +121,23 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body bg-success">
+                        <div class="d-flex no-block align-items-center">
+                            <div>
+                                <h6 class="">Total Settled</h6>
+                                <h3 class="m-0 order_settled_count">0</h3>
+                            </div>
+                            <div class="ml-auto"> 
+                                <div class="w-7 h-7" > <i class="fa fa-shopping-cart fs-50 text-primary-shadow"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
         <div class="row">
             <div class="col-sm-6 col-md-12 col-lg-6 col-xl-12">
                 <div class="card ">

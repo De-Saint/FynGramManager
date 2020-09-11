@@ -20,8 +20,7 @@
                                 <h6 class="">Total Stock Count</h6>
                                 <h3 class="m-0 stock-total-count">0</h3>
                             </div>
-                            <div class="ml-auto"> <img class="w-7 h-7"
-                                                       src="../../../../assets/images/crypto-currencies/round-outline/Bitcoin.svg" alt="image"> </div>
+                            <div class="ml-auto"> <i class="fa fa-address-book fa-3x"></i> </div>
                         </div>
                     </div>
                 </div>
@@ -34,8 +33,7 @@
                                 <h6 class="">Total Purchased</h6>
                                 <h3 class="m-0 stock-total-purchased">0</h3>
                             </div>
-                            <div class="ml-auto"> <img class="w-7 h-7"
-                                                       src="../../../../assets/images/crypto-currencies/round-outline/Ethereum.svg" alt="image"> </div>
+                            <div class="ml-auto">  <i class="fa fa-address-book fa-3x"></i></div>
                         </div>
                     </div>
                 </div>
@@ -48,8 +46,7 @@
                                 <h6 class="">Total Returned</h6>
                                 <h3 class="m-0 stock-total-returned">0</h3>
                             </div>
-                            <div class="ml-auto"> <img class="w-7 h-7"
-                                                       src="../../../../assets/images/crypto-currencies/round-outline/Ripple.svg" alt="image"> </div>
+                            <div class="ml-auto">  <i class="fa fa-address-book fa-3x"></i> </div>
                         </div>
                     </div>
                 </div>

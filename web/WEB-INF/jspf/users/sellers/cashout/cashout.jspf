@@ -33,8 +33,7 @@
                                     <h6 class="">Total Cashout Request(s)</h6>
                                     <h3 class="m-0 TotalCashout">0</h3>
                                 </div>
-                                <div class="ml-auto"> <img class="w-7 h-7"
-                                                           src="../../../../assets/images/crypto-currencies/round-outline/Bitcoin.svg" alt="image"> </div>
+                                <div class="ml-auto"> <i class="fa fa-money fa-3x"></i>  </div>
                             </div>
                         </div>
                     </div>
@@ -47,8 +46,7 @@
                                     <h6 class="">Total Pending Request(s)</h6>
                                     <h3 class="m-0 PendingCashout">0</h3>
                                 </div>
-                                <div class="ml-auto"> <img class="w-7 h-7"
-                                                           src="../../../../assets/images/crypto-currencies/round-outline/Ethereum.svg" alt="image"> </div>
+                                <div class="ml-auto"><i class="fa fa-money fa-3x"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -61,8 +59,7 @@
                                     <h6 class="">Total Approved Request(s)</h6>
                                     <h3 class="m-0 TotalApproved">0</h3>
                                 </div>
-                                <div class="ml-auto"> <img class="w-7 h-7"
-                                                           src="../../../../assets/images/crypto-currencies/round-outline/Ripple.svg" alt="image"> </div>
+                                <div class="ml-auto"> <i class="fa fa-money fa-3x"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -75,8 +72,7 @@
                                     <h6 class="">Total Rejected Request(s)</h6>
                                     <h3 class="m-0 TotalRejected">0</h3>
                                 </div>
-                                <div class="ml-auto"> <img class="w-7 h-7"
-                                                           src="../../../../assets/images/crypto-currencies/round-outline/Ripple.svg" alt="image"> </div>
+                                <div class="ml-auto"> <i class="fa fa-money fa-3x"></i>  </div>
                             </div>
                         </div>
                     </div> 
@@ -122,9 +118,7 @@
                                         <td class=""><span class="cashtime badge badge-primary">date</span></td>
                                         <td><span class="cashstatus">status</span></td>
                                         <td>
-                                            <button type="button" class="btn btn-outline-success btn-sm btn-approve-cashout"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Approve"  ><i class="fa fa-check-circle"></i></button>
-                                            <button type="button" class="btn btn-outline-danger btn-sm btn-cancel-cashout"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Reject" ><i class="fa fa-times-circle"></i></button>
-                                            <button type="button" class="btn btn-outline-danger btn-sm btn-delete-cashout d-none"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" ><i class="fa fa-trash-o"></i></button>
+                                             <button type="button" class="btn btn-outline-danger btn-sm btn-delete-cashout d-none"   data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" ><i class="fa fa-trash-o"></i></button>
                                         </td>
                                     </tr>
                                 </tbody>

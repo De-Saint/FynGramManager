@@ -35,7 +35,7 @@
             <div class="card-body">
                 <div class="inbox-body">
                     <div class="mail-option">
-                        <div class="btn-group hidden-phone"> <a data-toggle="dropdown" href="#" class="btn mini blue"
+<!--                        <div class="btn-group hidden-phone"> <a data-toggle="dropdown" href="#" class="btn mini blue"
                                 aria-expanded="false"> Message Options <i class="fa fa-angle-down "></i> </a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" class="mt-1 text-primary"><i class="fa fa-envelope-open"></i> Inbox</a></li>
@@ -44,11 +44,12 @@
                                 <li class="divider"></li>
                                 <li><a href="#" class="mb-1 text-danger"><i class="fa fa-trash"></i> Trash</a></li>
                             </ul>
+                        </div>-->
+                        <div class="btn-group"> 
+                            <!--<a href="#" class="btn mini"> <span>1-50 of 234</span> </a>--> 
                         </div>
-                        <div class="btn-group"> <a href="#" class="btn mini"> <span>1-50 of 234</span>
-                            </a> </div>
                         <ul class="unstyled inbox-pagination mt-3">
-                            <li><span>1-50 of 234</span></li>
+                            <!--<li><span>1-50 of 234</span></li>-->
                         </ul>
                     </div>
                     <div class="table-responsive">

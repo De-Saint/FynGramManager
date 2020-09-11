@@ -432,22 +432,7 @@
 		}
 	});
 	
-	
-	// ______________Chart-circle
-	if ($('.chart-circle').length) {
-		$('.chart-circle').each(function() {
-			let $this = $(this);
-			$this.circleProgress({
-				fill: {
-					color: $this.attr('data-color')
-				},
-				size: $this.height(),
-				startAngle: -Math.PI / 4 * 2,
-				emptyFill: '#ebebf1',
-				lineCap: ''
-			});
-		});
-	}
+
 	const DIV_CARD = 'div.card';
 	// ______________Tooltip
 	$('[data-toggle="tooltip"]').tooltip();

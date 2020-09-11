@@ -9,19 +9,18 @@
 <html dir="ltr" lang="en">
 
     <head>
-        <!-- Meta data -->
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta
-            content="Dashlot - Bootstrap Responsive Admin panel Dashboard Template Ui Kit &amp; Premium Dashboard Design Modern Flat HTML Template. This Template Includes 100 HTML Pages &amp; 40+ Plugins. No Need to do hard work for this template customization."
+            content="FynGram - Manager Application"
             name="description">
-        <meta content="Spruko Technologies Private Limited" name="author">
+        <meta content="FynGram" name="author">
         <meta name="keywords"
-              content="sellers template,bootstrap 4 templates,bootstrap admin template,bootstrap dashboard,bootstrap form template,premium,html5,admin dashboard template,admin panel template,bootstrap 4 admin template,bootstrap 4 dashboard,\nbootstrap admin dashboard,bootstrap dashboard template,dashboard bootstrap 4,dashboard ui kit,html admin template,html dashboard template,template admin bootstrap 4">
+              content="FynGram - Manager Application">
         <!-- Favicon-->
         <link rel="icon" href="../../../../assets/images/brand/favicon.png" type="image/x-icon"> <!-- Title -->
-        <title>FynGram Manager :: Dashboard</title>
+        <title>FynGram Manager :: CashOut</title>
         <!-- Bootstrap css -->
         <link href="../../../../assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet"> <!-- Style css -->
         <link href="../../../../assets/css/style.css" rel="stylesheet"> <!-- Default css -->
@@ -52,8 +51,6 @@
         <script src="../../../../assets/js/vendors/jquery-3.2.1.min.js"></script>
         <script src="../../../../assets/plugins/moment/moment.min.js"></script>
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
-        <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
-        <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="../../../../assets/plugins/sidemenu/sidemenu.js"></script>
         <script src="../../../../assets/plugins/sidemenu-responsive-tabs/js/sidemenu-responsive-tabs.js"></script>
@@ -63,8 +60,6 @@
         <script src="../../../../assets/plugins/sidebar/sidebar.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
 
-        <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
         <script src="../../../../assets/js/custom.js"></script>
         <script src="../../../../assets/js/helper.js"></script>
         <script src="../../../../assets/js/appscript.js"></script>

@@ -172,12 +172,11 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
+                                                    <div class="form-group mb-0 justify-content-end">
                                                         <div class="checkbox">
                                                             <div class="custom-checkbox custom-control"> 
-                                                                <input type="checkbox" required data-checkboxes="mygroup" class="custom-control-input" checked="" id="terms"> 
-                                                                <label for="checkbox-2" class="custom-control-label mt-1">I have read and agreed to FynGram <a href="/FynGramShop/pages/shop/terms/terms.jsp" target="_blank">Terms and Conditions For Sellers</a></label> 
-                                                            </div>
+                                                                <input type="checkbox" data-checkboxes="mygroup" name="terms"  class="custom-control-input" checked="false"  id="terms"> 
+                                                                <label for="terms" class="custom-control-label mt-1">I have read and agreed to FynGram <a href="/FynGramShop/pages/shop/terms/terms.jsp" class="text-primary" target="_blank">Term and Conditions</a> </label> </div>
                                                         </div>
                                                     </div>
                                                 </div> 

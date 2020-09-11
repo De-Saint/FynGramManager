@@ -24,7 +24,6 @@
         <link href="../../../../assets/css/style.css" rel="stylesheet"> <!-- Default css -->
         <link href="../../../../assets/css/default.css" rel="stylesheet"> <!-- Sidemenu css-->
         <link rel="stylesheet" href="../../../../assets/plugins/sidemenu/sidemenu.css"> <!-- Owl-carousel css-->
-        <link href="../../../../assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet"> <!-- Custom scroll bar css -->
         <link href="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet">
         
         <link href="../../../../assets/plugins/sidemenu-responsive-tabs/css/sidemenu-responsive-tabs.css" rel="stylesheet">
@@ -34,11 +33,6 @@
         <link href="../../../../assets/plugins/fileuploads/css/dropify.css" rel="stylesheet">
         <link href="../../../../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet">
         <!--Bootstrap-daterangepicker css-->
-        <link href="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-        <!--Bootstrap-datepicker css-->
-        <link href="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet">
-        <!--Bootstrap-timepicker css-->
-        <link href="../../../../assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
         <!-- File Upload css-->
         <link href="../../../../assets/plugins/fileuploads/css/dropify.css" rel="stylesheet">
         <link href="../../../../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet">
@@ -68,18 +62,11 @@
         <script src="../../../../assets/js/vendors/jquery-3.2.1.min.js"></script>
         <script src="../../../../assets/plugins/moment/moment.min.js"></script>
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
-        <script src="../../../../assets/js/vendors/jquery.sparkline.min.js"></script>
-        <script src="../../../../assets/js/vendors/circle-progress.min.js"></script>
-        <script src="../../../../assets/plugins/time-picker/jquery.timepicker.js"></script>
         <script src="../../../../assets/plugins/fileuploads/js/dropify.js"></script>
         <script src="../../../../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
         <script src="../../../../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
         <script src="../../../../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
         <script src="../../../../assets/plugins/fileuploads/js/fileupload.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
-        <script src="../../../../assets/plugins/bootstrap-timepicker/bootstrap-timepicker.js"></script>
 
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.js"></script>
