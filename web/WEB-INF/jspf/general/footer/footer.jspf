@@ -95,4 +95,7 @@
 <div class="modal fade" id="show_actual_price">
     <%@include file="../../users/admin/products/product_showprice.jspf" %>
 </div>
+<div class="modal fade" id="edit_details">
+    <%@include file="../../users/general/edit_profile.jspf" %>
+</div>
 

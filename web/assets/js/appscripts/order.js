@@ -131,7 +131,7 @@ function DisplayOrders(data, parent) {
 function DisplayOrderCancelRule(data) {
     console.log(data.rules);
     if (data.rules) {
-        $(".order-cancel-rule-amount").text(PriceFormat(parseFloat(data.rules.percent)));
+        $(".order-cancel-rule-amount").text(parseFloat(data.rules.percent));
         if (parseInt(data.rules.enforce_rule) === 1) {
             $(".order-cancel-rule").text("Yes").addClass("text-primary");
         } else {

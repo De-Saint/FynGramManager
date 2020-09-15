@@ -114,7 +114,7 @@ function DisplayTransactionDetails(data) {
 
 
 function DisplayTransactionTypes(data) {
-    hideLoader();
+//    hideLoader();
     var parent = $("#TTypeList");
     if (data) {
         var childclone = parent.find(".ttyclone");

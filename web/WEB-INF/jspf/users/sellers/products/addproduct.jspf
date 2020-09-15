@@ -38,7 +38,7 @@
                                                 </div>
                                                 <div class="form-group"> 
                                                     <label>Enter The Product Reference Number</label> 
-                                                    <input type="text" class="form-control" required id="addprod-refnumber" placeholder="Product Reference Number - AA00ZZ11"> 
+                                                    <input type="text" class="form-control" id="addprod-refnumber" placeholder="Product Reference Number - AA00ZZ11"> 
                                                 </div>
                                                 <div class="form-group"> 
                                                     <label>Enter The Product UPC Barcode</label> 

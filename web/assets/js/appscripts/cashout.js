@@ -113,6 +113,7 @@ function DisplayNewCashoutRequest(data, parent) {
             buttonsStyling: true
         }, function (dismiss) {
             DisplayCashoutRequests(data, parent);
+            window.location.reload();
         });
     } else if (resp.status === "error") {
         swal({
@@ -206,7 +207,7 @@ function ProcessCashOut(Option, cashoutID, part) {
         buttonsStyling: true
     }, function (dismiss) {
         if (dismiss) {
-            var data = [Option, cashoutID];
+            var data = [Option, cashoutID, sessionid];
             showLoader();
             GetData("CashOut", "ProcessCashOut", "LoadNewCashoutRequest", data);
         }

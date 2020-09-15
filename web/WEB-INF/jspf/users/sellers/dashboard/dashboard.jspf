@@ -13,8 +13,9 @@
                 <div class="ml-3 ml-auto d-flex">
                     <div class="mt-3 mt-md-0">
                         <div class="border-right mt-1 d-xl-block"> 
-                            <button type="button" class="btn btn-primary btn_pay-subscription d-none ForPendingSeller" data-toggle="modal" data-target="#pay_subscription">Pay Subscription Fees</button> 
-                            <button type="button" class="btn btn-success btn_renew_subscription d-none forActivatedSellers" data-toggle="modal" data-target="#pay_subscription">Renew Subscription</button> 
+                            <!--<button type="button" class="btn btn-primary btn_pay-subscription d-none ForPendingSeller" data-toggle="modal" data-target="#pay_subscription">Pay Subscription Fees</button>--> 
+                            <!--<button type="button" class="btn btn-success btn_renew_subscription d-none forActivatedSellers" data-toggle="modal" data-target="#pay_subscription">Renew Subscription</button>--> 
+                            <button type="button" class="btn btn-success btn_renew_subscription" data-toggle="modal" data-target="#pay_subscription">Pay Subscription</button> 
                         </div>
                     </div>
                 </div> 
@@ -23,7 +24,7 @@
         </div> <!-- Page-header closed -->
         <!-- Banner opened -->
         <div class="">
-            <div class="mb-3 ForPendingSeller">
+            <div class="mb-3 ForPendingSeller d-none">
                 <div class="best-ticker bn-effect-scroll bn-direction-ltr newsticker1  border-danger "
                      style="height: 40px; line-height: 38px; border-radius: 2px; border-width: 1px;">
                     <div class="bn-label bg-danger">Subscription Update</div>
@@ -72,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="forPaidSellers mb-3">
+            <div class="forPaidSellers mb-3 d-none">
                 <div class="best-ticker bn-effect-scroll bn-direction-ltr newsticker1"  style="height: 40px; line-height: 38px; border-radius: 2px; border-width: 1px;">
                     <div class="bn-label bg-success">Payment Update</div>
                     <div class="bn-news" style="left: 64.9333px; right: 158px;">
@@ -99,7 +100,8 @@
             </div>
         </div> <!-- Banner closed -->
 
-        <div class="forActivatedSellers d-none">
+        <!--<div class="forActivatedSellers d-none">-->
+        <div class="">
             <!-- Row opened -->
             <div class="">
                 <div id="small-categories-2" class="owl-carousel owl-carousel-icons2 owl-loaded owl-drag"
@@ -286,14 +288,14 @@
                                         </div>
                                         <div class="col-md-5 col-lg-6">
                                             <div class="mb-4">
-                                                <p class="mb-2">Delivered<span class="float-right text-muted order_delivered_count">90%</span>
+                                                <p class="mb-2">Delivered<span class="float-right text-muted order_delivered_count">0</span>
                                                 </p>
                                                 <div class="progress  progress-xs">
                                                     <div class="progress-bar bg-success w-90 " role="progressbar"></div>
                                                 </div>
                                             </div>
                                             <div class="mb-4">
-                                                <p class="mb-2">Awaiting Confirmation<span class="float-right text-muted order_awaiting_count">70%</span>
+                                                <p class="mb-2">Awaiting Confirmation<span class="float-right text-muted order_awaiting_count">0</span>
                                                 </p>
                                                 <div class="progress  progress-xs">
                                                     <div class="progress-bar bg-primary w-70" role="progressbar"></div>
@@ -301,34 +303,34 @@
                                             </div>
                                             <div class="mb-4">
                                                 <p class="mb-2">Cancelled<span
-                                                        class="float-right text-muted order_cancelled_count">65%</span></p>
+                                                        class="float-right text-muted order_cancelled_count">0</span></p>
                                                 <div class="progress  progress-xs">
                                                     <div class="progress-bar bg-danger w-65" role="progressbar"></div>
                                                 </div>
                                             </div>
                                             <div class="mb-2">
-                                                <p class="mb-2">Shipped<span class="float-right text-muted order_shipped_count">80%</span>
+                                                <p class="mb-2">Shipped<span class="float-right text-muted order_shipped_count">0</span>
                                                 </p>
                                                 <div class="progress  progress-xs">
                                                     <div class="progress-bar bg-info w-80" role="progressbar"></div>
                                                 </div>
                                             </div>
                                             <div class="mb-2">
-                                                <p class="mb-2">Confirmed<span class="float-right text-muted order_confirmed_count">80%</span>
+                                                <p class="mb-2">Confirmed<span class="float-right text-muted order_confirmed_count">0</span>
                                                 </p>
                                                 <div class="progress  progress-xs">
                                                     <div class="progress-bar bg-warning w-80" role="progressbar"></div>
                                                 </div>
                                             </div>
                                             <div class="mb-2">
-                                                <p class="mb-2">Settled<span class="float-right text-muted order_settled_count">50%</span>
+                                                <p class="mb-2">Settled<span class="float-right text-muted order_settled_count">0</span>
                                                 </p>
                                                 <div class="progress  progress-xs">
                                                     <div class="progress-bar bg-success w-80" role="progressbar"></div>
                                                 </div>
                                             </div>
                                             <div class="mb-2">
-                                                <p class="mb-2">Dispute<span class="float-right text-muted order_dispute_count">10%</span>
+                                                <p class="mb-2">Dispute<span class="float-right text-muted order_dispute_count">0</span>
                                                 </p>
                                                 <div class="progress  progress-xs">
                                                     <div class="progress-bar bg-danger w-80" role="progressbar"></div>

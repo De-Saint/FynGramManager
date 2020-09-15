@@ -325,14 +325,14 @@
                                     </div>
                                     <div class="col-md-5 col-lg-6">
                                         <div class="mb-4">
-                                            <p class="mb-2">Delivered<span class="float-right text-muted order_delivered_count">90%</span>
+                                            <p class="mb-2">Delivered<span class="float-right text-muted order_delivered_count">0</span>
                                             </p>
                                             <div class="progress  progress-xs">
                                                 <div class="progress-bar bg-success w-90 " role="progressbar"></div>
                                             </div>
                                         </div>
                                         <div class="mb-4">
-                                            <p class="mb-2">Awaiting Confirmation<span class="float-right text-muted order_awaiting_count">70%</span>
+                                            <p class="mb-2">Awaiting Confirmation<span class="float-right text-muted order_awaiting_count">0</span>
                                             </p>
                                             <div class="progress  progress-xs">
                                                 <div class="progress-bar bg-primary w-70" role="progressbar"></div>
@@ -340,34 +340,34 @@
                                         </div>
                                         <div class="mb-4">
                                             <p class="mb-2">Cancelled<span
-                                                    class="float-right text-muted order_cancelled_count">65%</span></p>
+                                                    class="float-right text-muted order_cancelled_count">0</span></p>
                                             <div class="progress  progress-xs">
                                                 <div class="progress-bar bg-danger w-65" role="progressbar"></div>
                                             </div>
                                         </div>
                                         <div class="mb-2">
-                                            <p class="mb-2">Shipped<span class="float-right text-muted order_shipped_count">80%</span>
+                                            <p class="mb-2">Shipped<span class="float-right text-muted order_shipped_count">0</span>
                                             </p>
                                             <div class="progress  progress-xs">
                                                 <div class="progress-bar bg-info w-80" role="progressbar"></div>
                                             </div>
                                         </div>
                                         <div class="mb-2">
-                                            <p class="mb-2">Confirmed<span class="float-right text-muted order_confirmed_count">80%</span>
+                                            <p class="mb-2">Confirmed<span class="float-right text-muted order_confirmed_count">0</span>
                                             </p>
                                             <div class="progress  progress-xs">
                                                 <div class="progress-bar bg-warning w-80" role="progressbar"></div>
                                             </div>
                                         </div>
                                         <div class="mb-2">
-                                            <p class="mb-2">Settled<span class="float-right text-muted order_settled_count">50%</span>
+                                            <p class="mb-2">Settled<span class="float-right text-muted order_settled_count">0</span>
                                             </p>
                                             <div class="progress  progress-xs">
                                                 <div class="progress-bar bg-success w-80" role="progressbar"></div>
                                             </div>
                                         </div>
                                         <div class="mb-2">
-                                            <p class="mb-2">Dispute<span class="float-right text-muted order_dispute_count">10%</span>
+                                            <p class="mb-2">Dispute<span class="float-right text-muted order_dispute_count">0</span>
                                             </p>
                                             <div class="progress  progress-xs">
                                                 <div class="progress-bar bg-danger w-80" role="progressbar"></div>

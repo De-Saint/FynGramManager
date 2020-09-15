@@ -223,7 +223,7 @@
                                             <a href="/FynGramShop/pages/shop/support/support.jsp"  class="slide-item" target="blank">Supports</a> 
                                             <a href="/FynGramShop/pages/shop/aboutus/aboutus.jsp" class="slide-item" target="blank">About Us</a>
                                             <a href="/FynGramShop/pages/shop/contact/contact.jsp" class="slide-item" target="blank">Contact Us</a>
-                                            <a href="/FynGramShop/pages/shop/services/services.jsp" class="slide-item" target="blank">Services</a>
+                                            <a href="/FynGramShop/pages/shop/services/services.jsp" class="slide-item" target="blank">Blog</a>
                                             <a  href="${pageContext.request.contextPath}/LinksServlet?type=LogOut" class="slide-item text-danger CallLogOut1">Sign Out</a> 
                                         </div>
                                     </div>

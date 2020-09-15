@@ -193,7 +193,7 @@ function DisplayAllCategories(data) {
 function DisplayProperties(data) {
 //    hideLoader();
     var parent = $("#PropList");
-    if (data) {
+    if (data !== "none") {
         var childclone = parent.find(".propclone").removeClass("d-none");
         var count = 0;
         $.each(data, function (id, details) {

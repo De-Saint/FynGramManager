@@ -18,7 +18,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12 col-lg-6 col-xl-3">
+            <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </div>  
-            <div class="col-md-12 col-lg-6 col-xl-3">
+            <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card ">
                     <div class="card-body">
                         <div class="row">
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div> 
-             <div class="col-md-12 col-lg-6 col-xl-3">
+             <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -62,34 +62,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-6 col-xl-3">
-                <div class="card ">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-7">
-                                <div class="card-title mb-2">All Carrier <br> Total Balances</div>
-                                <h4 class="mt-3 mb-2 text-primary TotalCarrierBalance">0</h4>
-
-                            </div>
-                            <div class="col-5 my-auto mt-auto">
-                                <img src="../../../../assets/images/brand/fynpay.png" alt="image" class="w-80">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
         
         
         
         <div class="row">
-            <div class="col-md-12 col-lg-6 col-xl-6">
+            <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8">
-                                <div class="card-title mb-2">Total In <br> All Main FynPay Account</div>
+                                <div class="card-title mb-2">Total In All Main<br> FynPay Account</div>
                                 <h4 class="mt-3 mb-2 text-primary TotalMainWallets">0</h4>
 
                             </div>
@@ -100,17 +85,33 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-6 col-xl-6">
+            <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card ">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8">
-                                <div class="card-title mb-2">Total In <br> All Pending FynPay Account</div>
+                                <div class="card-title mb-2">Total In All Pending <br>FynPay Account</div>
                                 <h4 class="mt-3 mb-2 text-primary TotalPendingWallets">0</h4>
 
                             </div>
                             <div class="col-4 my-auto mt-auto">
                                 <img src="../../../../assets/images/brand/fynpay.png" alt="image" class="w-65">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-4">
+                <div class="card ">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="card-title mb-2">All Logistics <br> Total Balances</div>
+                                <h4 class="mt-3 mb-2 text-primary TotalCarrierBalance">0</h4>
+
+                            </div>
+                            <div class="col-5 my-auto mt-auto">
+                                <img src="../../../../assets/images/brand/fynpay.png" alt="image" class="w-80">
                             </div>
                         </div>
                     </div>

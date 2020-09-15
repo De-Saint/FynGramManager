@@ -35,6 +35,7 @@
         <link href="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet"> <!-- Select2 Plugin -->
         <link href="../../../../assets/plugins/select2/select2.min.css" rel="stylesheet"> <!-- News ticker css -->
         <link href="../../../../assets/css/icons.css" rel="stylesheet"> <!-- Rightsidebar css -->
+        <link href="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet" type="text/css"/>
         <link href="../../../../assets/plugins/sidebar/sidebar.css" rel="stylesheet"> <!-- Nice-select css  -->
         <link href="../../../../assets/plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet"> 
         <!-- Color-palette css-->
@@ -54,6 +55,7 @@
         <script src="../../../../assets/plugins/moment/moment.min.js"></script>
         <script src="../../../../assets/js/vendors/bootstrap.bundle.min.js"></script>
         <script src="../../../../assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="../../../../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
         <script src="../../../../assets/plugins/sidemenu/sidemenu.js"></script>
         <script src="../../../../assets/plugins/sidemenu-responsive-tabs/js/sidemenu-responsive-tabs.js"></script>
         <script src="../../../../assets/js/left-menu.js"></script>

@@ -9,19 +9,18 @@
 <html dir="ltr" lang="en">
 
     <head>
-        <!-- Meta data -->
-        <meta charset="UTF-8">
+       <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta
-            content="Dashlot - Bootstrap Responsive Admin panel Dashboard Template Ui Kit &amp; Premium Dashboard Design Modern Flat HTML Template. This Template Includes 100 HTML Pages &amp; 40+ Plugins. No Need to do hard work for this template customization."
+            content="FynGram - Manager Application"
             name="description">
-        <meta content="Spruko Technologies Private Limited" name="author">
+        <meta content="FynGram" name="author">
         <meta name="keywords"
-              content="admin template,bootstrap 4 templates,bootstrap admin template,bootstrap dashboard,bootstrap form template,premium,html5,admin dashboard template,admin panel template,bootstrap 4 admin template,bootstrap 4 dashboard,\nbootstrap admin dashboard,bootstrap dashboard template,dashboard bootstrap 4,dashboard ui kit,html admin template,html dashboard template,template admin bootstrap 4">
+              content="FynGram - Manager Application">
         <!-- Favicon-->
         <link rel="icon" href="../../../../assets/images/brand/favicon.png" type="image/x-icon"> <!-- Title -->
-        <title>Dashlot – Bootstrap 4 Multipurpose HTML, CSS, Jquery Admin Dashboard UIKit HTML Template Mega Pack</title>
+        <title>FynGram Manager :: Cashout</title>
         <!-- Bootstrap css -->
         <link href="../../../../assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet"> <!-- Style css -->
         <link href="../../../../assets/css/style.css" rel="stylesheet"> <!-- Default css -->

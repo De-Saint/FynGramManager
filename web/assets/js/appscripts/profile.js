@@ -24,7 +24,46 @@ function profileFunctions() {
 
 
 function profileBtnEvents() {
+    
+    
+    $("form[name=editForm]").submit(function (e) {
+        var uLastName = $("#edit-lastname").val();
+        var uFirstName = $("#edit-firstname").val();
+        var uPhone = $("#edit-phone").val();
+        var uOldPass = $("#edit-password").val();
+        var uNewPass = $("#edit-password1").val();
+        if (uLastName) {
+            if (uFirstName) {
+                if (uPhone) {
+                    if (uOldPass) {
+                        if (uNewPass) {
+                            sessionid = verifyUser();
+                            var data = [sessionid, uLastName, uFirstName, 1, uPhone, uOldPass, uNewPass];
+//                            alert(data);
+                            showLoader();
+                            GetData("User", "UpdateProfile", "LoadBankDetailsInfo", data);
+                        } else {
+                            ErrorNoty("Please, enter the new password");
+                        }
+                    } else {
+                        ErrorNoty("Please, provide your current password");
+                    }
+                } else {
+                    ErrorNoty("Please, enter your new phone number");
+                }
 
+            } else {
+                ErrorNoty("Please, provide your firstname");
+            }
+
+        } else {
+            ErrorNoty("Please, provide your lastname");
+        }
+
+        e.preventDefault();
+    });
+    
+    
     $("form[name=addImageForm]").submit(function (e) {
         var input = document.querySelector('input[type=file]');
         $("#addimage").modal("hide");
@@ -74,8 +113,8 @@ function profileBtnEvents() {
             GetData("CashOut", "DeleteBankDetails", "LoadBankDetailsInfo", bdbkid);
         }
     });
-    
-     $(".btn-add-busstop").click(function () {
+
+    $(".btn-add-busstop").click(function () {
         var newStateVal = $(".txt-add-busstop").val();
         // Set the value, creating a new option if necessary
         if ($("#busstops").find("option[value='" + newStateVal + "']").length) {
@@ -118,9 +157,7 @@ function profileBtnEvents() {
         var add_addressline = $("#add_addressline").val();
         var add_makedefault = $("#add_makedefault").val();
         var add_phone_line = $("#add_phone_line").val();
-        var data = [sessionid, addresstypes, states, lgas, towns, busstops, streets, add_closeto, add_postal_code, add_addressline, add_makedefault, add_phone_line];
-        alert(data);
-        //        
+        var data = [sessionid, addresstypes, states, lgas, towns, busstops, streets, add_closeto, add_postal_code, add_addressline, add_makedefault, add_phone_line];     
         showLoader();
         $("#add_address").modal("hide");
         GetData("Address", "AddNewAddress", "LoadBankDetailsInfo", data);

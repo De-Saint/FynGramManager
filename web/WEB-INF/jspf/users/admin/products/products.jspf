@@ -331,12 +331,19 @@
                                             </select>
                                             <button class="btn btn-primary btn-sm mb-2 mb-xl-0 text-white btn-prod-bulk-action" data-toggle="tooltip" data-original-title="Bulk Action">
                                                 Bulk Action
-                                            </button><span class="ml-7"> Showing 1 to 10 of 16 entries</span>
+                                            </button><span class="ml-7 d-none"> Showing 1 to 10 of 16 entries</span>
                                         </div> 
+                                        
 
                                     </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <div class="dataTables_paginate paging_simple_numbers " id="example_paginate">
+                                    <div class="col-sm-12 col-md-6">
+<!--                                        <div class="dataTables_info" id="" role="status" aria-live="polite">
+                                            
+                                            <button class="btn btn-primary btn-sm mb-2 mb-xl-0 text-white SelectAll" data-toggle="tooltip" data-original-title="Bulk Action">
+                                                Bulk Action
+                                            </button>
+                                        </div> -->
+<!--                                        <div class="dataTables_paginate paging_simple_numbers " id="example_paginate">
                                             <ul class="pagination justify-content-center text-center">
                                                 <li class="paginate_button page-item previous disabled" id="example_previous"><a
                                                         href="#" aria-controls="example" data-dt-idx="0" tabindex="0"
@@ -349,10 +356,10 @@
                                                                                                                 aria-controls="example" data-dt-idx="3" tabindex="0"
                                                                                                                 class="page-link">Next</a></li>
                                             </ul>
-                                        </div>
+                                        </div>-->
                                     </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <div class="form-row" id="example_length">
+                                    <!--<div class="col-sm-12 col-md-3">-->
+<!--                                        <div class="form-row" id="example_length">
                                             <label class="col-form-label col-6">Items Per Page: </label>
 
                                             <select name="example_length" aria-controls="example" class="custom-select custom-select-sm form-control form-control-sm col-6">
@@ -361,8 +368,8 @@
                                                 <option value="50">50</option>
                                                 <option value="100">100</option>
                                             </select>
-                                        </div>
-                                    </div>
+                                        </div>-->
+                                    <!--</div>-->
                                 </div>
                             </div>
                         </div>

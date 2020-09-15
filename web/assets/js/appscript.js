@@ -69,24 +69,26 @@ function GenralBtnEvents() {
         });
 
     });
+
+
 }
 
 function DisplayUserDetails(resp) {
     if (resp.UserType === "Seller") {
-        if (resp.status === "Pending") {
-            $(".ForPendingSeller").removeClass("d-none");
-            $(".forPaidSellers").addClass("d-none");
-            $(".forActivatedSellers").addClass("d-none");
-        } else if (resp.status === "Paid") {
-            $(".ForPendingSeller").addClass("d-none");
-            $(".forPaidSellers").removeClass("d-none");
-            $(".forActivatedSellers").addClass("d-none");
-        } else if (resp.status === "Activated") {
-            $(".ForPendingSeller").addClass("d-none");
-            $(".forPaidSellers").addClass("d-none");
-            $(".forActivatedSellers").removeClass("d-none");
-        }
-        $(".addressdetails").text(resp.AddressDetails.full_address);
+//        if (resp.status === "Pending") {
+//            $(".ForPendingSeller").removeClass("d-none");
+//            $(".forPaidSellers").addClass("d-none");
+//            $(".forActivatedSellers").addClass("d-none");
+//        } else if (resp.status === "Paid") {
+//            $(".ForPendingSeller").addClass("d-none");
+//            $(".forPaidSellers").removeClass("d-none");
+//            $(".forActivatedSellers").addClass("d-none");
+//        } else if (resp.status === "Activated") {
+//            $(".ForPendingSeller").addClass("d-none");
+//            $(".forPaidSellers").addClass("d-none");
+//            $(".forActivatedSellers").removeClass("d-none");
+//        }
+//        $(".addressdetails").text(resp.AddressDetails.full_address);
     }
     $(".UserType").text(resp.UserType);
     $(".UserName").text(resp.UserName);
@@ -108,7 +110,9 @@ function DisplayUserDetails(resp) {
     $("#pay_subscription #subcriptionAmount").val(resp.SubscriptionFeesAmount);
     $("#pay_subscription .SubscriptionName").text(resp.SubscriptionName);
     $("#pay_subscription .SellerTypeName").text(resp.SellerTypeName);
-
+    $("#edit_details #edit-phone").val(resp.phone);
+    $("#edit_details #edit-firstname").val(resp.firstname);
+    $("#edit_details #edit-lastname").val(resp.lastname);
 
     if (resp.ImageText === "none") {
         var image_url = extension + "assets/images/no-image.png";

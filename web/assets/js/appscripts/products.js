@@ -44,7 +44,12 @@ function productBtnEvents() {
             window.location = extension + "LinksServlet?type=SellerAddProduct";
         }
     });
+    $(".SelectAll").click(function () {
 
+//         $('input:checkbox').prop('checked', this.checked);   
+        $('input[name="prod-id"]').not(this).prop('checked', this.checked);
+//        alert($('input[name="prod-id"]:checked'));
+    });
 
     $(".btn-cp").click(function () {
         $("#s-pstatus").val("2");
@@ -414,7 +419,7 @@ function DisplayUnits(data) {
             DisplayToolTip(btnedit);
             var btndelete = newchild.find(".btn-prounit-delete").click(function () {
                 swal({
-                    title: 'Product',
+                    title: 'Product Unit',
                     text: "Are you sure you want to delete this product unit?",
                     type: 'warning',
                     showCancelButton: true,
@@ -465,7 +470,7 @@ function  DisplayProductConditions(data) {
 
             var btndelete = newchild.find(".btn-prodcond-delete").click(function () {
                 swal({
-                    title: 'Product',
+                    title: 'Product Condition',
                     text: "Are you sure you want to delete this product condition?",
                     type: 'warning',
                     showCancelButton: true,
@@ -493,7 +498,7 @@ function DisplayProductInfo(resp) {
     hideLoader();
     if (resp.status === "success") {
         swal({
-            title: 'Product',
+            title: 'Update',
             text: resp.msg,
             type: 'success',
             showCancelButton: false,
@@ -505,7 +510,7 @@ function DisplayProductInfo(resp) {
         });
     } else if (resp.status === "error") {
         swal({
-            title: "Product",
+            title: "Update",
             text: resp.msg,
             type: "error",
             confirmButtonText: 'Ok',
@@ -541,7 +546,7 @@ function DisplayProductRestock(data) {
     var resp = data[2];
     if (resp.status === "success") {
         swal({
-            title: 'Product',
+            title: 'Restock',
             text: resp.msg,
             type: 'success',
             showCancelButton: false,
@@ -553,7 +558,7 @@ function DisplayProductRestock(data) {
         });
     } else if (resp.status === "error") {
         swal({
-            title: "Product",
+            title: "Restock",
             text: resp.msg,
             type: "error",
             confirmButtonText: 'Ok',

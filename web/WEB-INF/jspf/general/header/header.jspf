@@ -49,16 +49,17 @@
                                 </div>
                             </div> 
                             <a class="dropdown-item forActivatedSellers"  href="${pageContext.request.contextPath}/LinksServlet?type=AdminProducts"> 
-                                <i class="dropdown-icon mdi mdi-account-outline "></i> Products 
+                                <i class="dropdown-icon mdi mdi-gift "></i> Products 
                             </a> 
                             <a class="dropdown-item forActivatedSellers"  href="${pageContext.request.contextPath}/LinksServlet?type=AdminMessages"> 
-                                <i class="dropdown-icon  mdi mdi-settings"></i> Messages 
+                                <i class="dropdown-icon  mdi mdi-message-outline"></i> Messages 
                             </a> 
                             <a class="dropdown-item forActivatedSellers" href="${pageContext.request.contextPath}/LinksServlet?type=AdminOrders"> 
-                                <span class="float-right"><span class="badge badge-success ordercount">6</span></span> 
-                                <i class="dropdown-icon mdi  mdi-message-outline"></i> Orders 
+                                <span class="float-right"><span class="badge badge-success ordercount"></span></span> 
+                                <i class="dropdown-icon mdi  mdi-shopping"></i> Orders 
                             </a> 
-                            <a class="dropdown-item forActivatedSellers" href="${pageContext.request.contextPath}/LinksServlet?type=AdminWallet"> <i class="dropdown-icon mdi mdi-comment-check-outline"></i> FynPay </a>
+                            <a class="dropdown-item forActivatedSellers" href="${pageContext.request.contextPath}/LinksServlet?type=AdminWallet">
+                                <i class="dropdown-icon mdi mdi-wallet"></i> FynPay </a>
                             <div class="dropdown-divider"></div> 
                             <button  class="dropdown-item mb-1 text-danger CallLogOut"> 
                                 <i class="dropdown-icon mdi  mdi-logout-variant text-danger"></i> Sign out 

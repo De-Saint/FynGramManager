@@ -21,10 +21,10 @@
                                 <div class="d-flex no-block align-items-center">
                                     <div>
                                         <h6 class="">Order Reference</h6>
-                                        <h5 class="m-0 order_reference">0</h5>
+                                        <h4 class="m-0 order_reference">0</h4>
                                     </div>
                                     <div class="ml-auto"> 
-                                        <div class="w-7 h-7" > <i class="fa fa-file-o fs-32 text-primary-shadow"></i> </div>
+                                        <div class="w-7 h-7" > <i class="fa fa-file-o fs-20 text-primary-shadow"></i> </div>
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@
                                         <h4 class="m-0 order_booked_date">0</h4>
                                     </div>
                                     <div class="ml-auto"> 
-                                        <div class="w-7 h-7" > <i class="fa fa-calendar fs-32 text-primary-shadow"></i> </div>
+                                        <div class="w-7 h-7" > <i class="fa fa-calendar fs-20 text-primary-shadow"></i> </div>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                                         <h4 class="m-0 order_seller_amount">0</h4>
                                     </div>
                                     <div class="ml-auto"> 
-                                        <div class="w-7 h-7" > <i class="fa fa-money fs-32 text-primary-shadow"></i> </div>
+                                        <div class="w-7 h-7" > <i class="fa fa-money fs-20 text-primary-shadow"></i> </div>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                         <h4 class="m-0 order_p_count">0</h4>
                                     </div>
                                     <div class="ml-auto"> 
-                                        <div class="w-7 h-7" > <i class="fa fa-cart-plus fs-32 text-primary-shadow"></i> </div>
+                                        <div class="w-7 h-7" > <i class="fa fa-cart-plus fs-20 text-primary-shadow"></i> </div>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@
                                 </address>
                                 <div class="">
                                     <p class="mb-1 mt-5"><span class="font-weight-semibold">Delivery Type:</span> <span class="order-ship-type">Address Type</span></p>
-                                    <p class="mb-1"><span class="font-weight-semibold">Address : </span><span class="order-ship-address">34 sjfdf lk jdf lslfj lddlfj lsdf fjlsdf dlfkjd jdsf lfd l</span></p>
+                                    <p class="mb-1"><span class="font-weight-semibold">Address : </span><span class="order-ship-address">34 address l</span></p>
                                 </div>
                             </div>
                             <div class="col-lg-3">

@@ -23,7 +23,7 @@
                                 <h3 class="m-0 order_total_count">0</h3>
                             </div>
                             <div class="ml-auto"> 
-                                <div class="w-7 h-7" > <i class="fa fa-cart-arrow-down fs-50 text-primary-shadow"></i> </div>
+                                <div class="w-7 h-7" > <i class="fa fa-cart-arrow-down fs-32 text-primary-shadow"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                                 <h3 class="m-0 order_awaiting_count">0</h3>
                             </div>
                             <div class="ml-auto"> 
-                                <div class="w-7 h-7" > <i class="fa fa-shopping-basket fs-50 text-primary-shadow"></i> </div>
+                                <div class="w-7 h-7" > <i class="fa fa-hand-paper-o fs-32 text-primary-shadow"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                                 <h3 class="m-0 order_confirmed_count">0</h3>
                             </div>
                             <div class="ml-auto"> 
-                                <div class="w-7 h-7" > <i class="fa fa-cart-plus fs-50 text-primary-shadow"></i> </div>
+                                <div class="w-7 h-7" > <i class="fa fa-handshake-o fs-32 text-primary-shadow"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                                 <h3 class="m-0 order_dispute_count">0</h3>
                             </div>
                             <div class="ml-auto"> 
-                                <div class="w-7 h-7" > <i class="fa fa-cart-plus fs-50 text-primary-shadow"></i> </div>
+                                <div class="w-7 h-7" > <i class="fa fa-exclamation-triangle fs-32 text-primary-shadow"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                                 <h3 class="m-0 order_shipped_count">0</h3>
                             </div>
                             <div class="ml-auto"> 
-                                <div class="w-7 h-7" > <i class="fa fa-shopping-basket fs-50 text-primary-shadow"></i> </div>
+                                <div class="w-7 h-7" > <i class="fa fa-truck fs-32 text-primary-shadow"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                                 <h3 class="m-0 order_cancelled_count">0</h3>
                             </div>
                             <div class="ml-auto"> 
-                                <div class="w-7 h-7" > <i class="fa fa-shopping-bag fs-50 text-primary-shadow"></i> </div>
+                                <div class="w-7 h-7" > <i class="fa fa-times-circle fs-32 text-primary-shadow"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                                 <h3 class="m-0 order_delivered_count">0</h3>
                             </div>
                             <div class="ml-auto"> 
-                                <div class="w-7 h-7" > <i class="fa fa-shopping-cart fs-50 text-primary-shadow"></i> </div>
+                                <div class="w-7 h-7" > <i class="fa fa-car fs-32 text-primary-shadow"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                                 <h3 class="m-0 order_settled_count">0</h3>
                             </div>
                             <div class="ml-auto"> 
-                                <div class="w-7 h-7" > <i class="fa fa-shopping-cart fs-50 text-primary-shadow"></i> </div>
+                                <div class="w-7 h-7" > <i class="fa fa-check-circle fs-32 text-primary-shadow"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -178,8 +178,8 @@
                             <div class="card-body ">
                                 <div class="d-flex no-block align-items-center">
                                     <div>
-                                        <h6 class="">Amount</h6>
-                                        <h4 class="m-0 order-cancel-rule-amount">0</h4>
+                                        <h6 class="">Amount in Percentage</h6>
+                                        <h4 class="m-0 "><span class="order-cancel-rule-amount"></span>%</h4>
                                     </div>
                                     <div class="ml-auto"> 
                                         <div class="w-7 h-7" > <i class="fa fa-money fs-32 text-primary-shadow"></i> </div>
@@ -212,7 +212,7 @@
                                         <th>Customer</th>
                                         <th>Amount</th>
                                         <th>Seller</th>
-                                        <th>Payment</th>
+                                        <th>Payment Mth</th>
                                         <th>Status</th>
                                         <th>Booked Date</th>
                                         <th>Details</th>

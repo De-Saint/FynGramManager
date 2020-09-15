@@ -4,7 +4,7 @@
     <div class="">
         <div class="col col-login mx-auto">
             <div class="text-center"> <img src="../../../assets/images/brand/logo.png"
-                                           class="header-brand-img desktop-logo h-100 mb-5" alt="Dashlot logo">  </div>
+                                           class="header-brand-img desktop-logo h-100 mb-5" alt="Fyngram logo">  </div>
         </div>
     </div> <!-- Container opened -->
     <div class="container">
@@ -31,7 +31,7 @@
                                                                 </label>
                                                                 <label class="custom-control custom-radio">
                                                                     <input type="radio" class="custom-control-input" required name="sell-gender" value="Female">
-                                                                    <span class="custom-control-label">Mrs.</span>
+                                                                    <span class="custom-control-label">Mrs./Miss</span>
                                                                 </label>
                                                             </div>
                                                         </div>

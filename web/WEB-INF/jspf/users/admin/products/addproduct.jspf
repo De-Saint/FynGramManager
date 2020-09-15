@@ -38,7 +38,7 @@
                                                 </div>
                                                 <div class="form-group"> 
                                                     <label>Enter The Product Reference Number</label> 
-                                                    <input type="text" class="form-control" required id="addprod-refnumber" placeholder="Product Reference Number - AA00ZZ11"> 
+                                                    <input type="text" class="form-control" id="addprod-refnumber" placeholder="Product Reference Number - AA00ZZ11"> 
                                                 </div>
                                                 <div class="form-group"> 
                                                     <label>Enter The Product UPC Barcode</label> 
@@ -48,7 +48,6 @@
                                                     <label>Select Product Condition <span class="text-red font-weight-bold">*</span></label> 
                                                     <select class="form-control select2-show-search w-100"  required id="addprod-prodcondition"
                                                             data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
-
                                                     </select>
                                                 </div>
                                             </div>
@@ -91,9 +90,7 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
 
                                 <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
 

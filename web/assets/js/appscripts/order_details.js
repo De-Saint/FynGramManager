@@ -258,6 +258,7 @@ function DisplayInvoiceDetails(data) {
 }
 
 function DisplayShippingMethodDetails(data) {
+    console.log(data);
     if (!$.isEmptyObject(data)) {
         $(".assign-ship-meth-name").text(data.name);
         $(".assign-ship-meth-email").text(data.email);
