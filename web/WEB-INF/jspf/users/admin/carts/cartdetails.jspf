@@ -26,7 +26,10 @@
                     <div class="col-lg-6 ">
                         <p class="h3">Customer</p>
                         <address class="fs-15 cart-d-uname"> 
-                            Street Address
+                            Name
+                        </address>
+                        <address class="fs-15 cart-d-phone"> 
+                            Phone
                         </address>
                     </div>
                     <div class="col-lg-6 text-right">

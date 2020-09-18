@@ -12,10 +12,10 @@ $(document).ready(function () {
 });
 
 function GetCartID() {
-    return cart = localStorage.getItem("cartid");
+    return cartid = localStorage.getItem("cartid");
 }
 function GetCartData() {
-    return cartid = localStorage.getItem("cart");
+    return cart = localStorage.getItem("cart");
 }
 
 function cartDetailsFunctions() {
@@ -86,5 +86,6 @@ function DisplayCartProductDetails(data) {
     $(".cart-d-status").text(cart.split("-")[1]);
     $(".cart-d-uname").text(cart.split("-")[2]);
     $(".cart-d-amount").text(PriceFormat(parseFloat(cart.split("-")[3])));
+    $(".cart-d-phone").text(cart.split("-")[4]);
 
 }

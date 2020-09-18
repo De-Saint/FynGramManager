@@ -92,9 +92,9 @@ function DisplayAllShopCarts(data, parent) {
             var deletebtn = newchild.find(".btn-cart-delete");
             var detailsbtn = newchild.find(".btn-cart-details");
 
-            detailsbtn.click(function () {
+            detailsbtn.click(function () {//
                 localStorage.setItem("cartid", result["id"]);
-                var cartdata = result["date"] + "-" + result["status"] + "-" + result["cartUsername"] + "-" + result["total_amount"];
+                var cartdata = result["date"] + "-" + result["status"] + "-" + result["cartUsername"] + "-" + result["total_amount"]  + "-" + result["cartPhone"] ;
                 localStorage.setItem("cart", cartdata);
                 window.location = extension + "LinksServlet?type=AdminCartDetails";
             });

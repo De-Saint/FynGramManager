@@ -75,6 +75,12 @@ function GenralBtnEvents() {
 
 function DisplayUserDetails(resp) {
     if (resp.UserType === "Seller") {
+         $(".uBizName").text(resp.business_name);
+         $(".uBizEmail").text(resp.business_email);
+         $(".uBizPhone").text(resp.business_phone);
+         $(".uBizCacnumber").text(resp.cac_number);
+         $(".uBizMinShipDate").text(resp.shipping_days_min + " Days");
+         $(".uBizMaxShipDate").text(resp.shipping_days_max + " Days");
 //        if (resp.status === "Pending") {
 //            $(".ForPendingSeller").removeClass("d-none");
 //            $(".forPaidSellers").addClass("d-none");
@@ -88,12 +94,13 @@ function DisplayUserDetails(resp) {
 //            $(".forPaidSellers").addClass("d-none");
 //            $(".forActivatedSellers").removeClass("d-none");
 //        }
-//        $(".addressdetails").text(resp.AddressDetails.full_address);
+        $(".addressdetails").text(resp.AddressDetails.full_address);
     }
     $(".UserType").text(resp.UserType);
     $(".UserName").text(resp.UserName);
     localStorage.setItem("UserName", resp.UserName);
     $(".uFirstName").text(resp.firstname);
+    $(".uTitle").text(resp.title);
     $(".uLastName").text(resp.lastname);
     $(".uDateJoined").text(resp.date);
     if (resp.newsletter === 1 || resp.newsletter === "1") {

@@ -73,6 +73,9 @@
                                             <table class="table row table-borderless w-100 m-0 border">
                                                 <tbody class="col-lg-6 p-0">
                                                     <tr>
+                                                        <td><strong>Title :</strong> <span class="uTitle"></span></td>
+                                                    </tr>
+                                                     <tr>
                                                         <td><strong>First Name :</strong> <span class="uFirstName"></span></td>
                                                     </tr>
                                                     <tr>
@@ -84,6 +87,7 @@
                                                     <tr>
                                                         <td><strong>Newsletter :</strong> <span class="uNewsletter"></span></td>
                                                     </tr>
+                                                   
                                                 </tbody>
                                                 <tbody class="col-lg-6 p-0">
                                                     <tr>
@@ -97,6 +101,35 @@
                                                     </tr>
                                                     <tr>
                                                         <td><strong>FynPay Account Pin :</strong> <span class="uTPin"></span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                          <div class="table-responsive mb-5">
+                                            <table class="table row table-borderless w-100 m-0 border">
+                                                <tbody class="col-lg-6 p-0">
+                                                    
+                                                    <tr>
+                                                        <td><strong>Business Name :</strong> <span class="uBizName"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Business Email  :</strong> <span class="uBizEmail"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Business Phone :</strong> <span class="uBizPhone"></span></td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody class="col-lg-6 p-0">
+                                                   
+                                                    <tr>
+                                                        <td><strong>Business CAC Number :</strong> <span class="uBizCacnumber"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Minimum Shipping Date :</strong> <span class="uBizMinShipDate"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>Maximum Shipping Date :</strong> <span class="uBizMaxShipDate"></span></td>
                                                     </tr>
                                                 </tbody>
                                             </table>

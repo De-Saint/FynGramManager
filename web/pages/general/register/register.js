@@ -29,6 +29,7 @@ function registerBtnEvents() {
 //    $("#sellerRegisterForm").accWizard(options);
     $("form[name=sellerRegisterForm]").submit(function (e) {
         var gender = $("input[name=sell-gender]:checked").val();
+        var title = $("input[name=sell-title]:checked").val();
         var firstname = $("#sell-firstname").val();
         var lastname = $("#sell-lastname").val();
         var email = $("#sell-email").val();
@@ -39,11 +40,12 @@ function registerBtnEvents() {
         var bizphone = $("#sell-bizphone").val();
         var bizminshippingdays = $("#sell-minbizshippingdays").val();
         var bizmaxshippingdays = $("#sell-maxbizshippingdays").val();
-        var substype = $("#sell-substype").val();
-        var sellertype = $("#sell-sellertype").val();
+        var substype = 1;// $("#sell-substype").val();
+        var sellertype = 1;// $("#sell-sellertype").val();
+        var cacnumber =  $("#sell-bizcacnumber").val();
         if ($('#terms').is(":checked")) {
             var data = [email, phone, password, gender, firstname, lastname, sellertype, substype,
-                bizname, bizemail, bizphone, bizminshippingdays, bizmaxshippingdays];
+                bizname, bizemail, bizphone, bizminshippingdays, bizmaxshippingdays, title, cacnumber];
             showLoader();
             GetData("User", "RegisterSeller", "LoadRegisterSeller", data);
         } else {
@@ -57,9 +59,9 @@ function registerBtnEvents() {
 
 
 function registerPageFunctions() {
-    showLoader();
-    GetData("Subscription", "GetSubscriptionTypes", "LoadGetSubscriptionTypes", "");
-    GetData("Subscription", "GetSellerTypes", "LoadGetSellerSellerTypes", "");
+//    showLoader();
+//    GetData("Subscription", "GetSubscriptionTypes", "LoadGetSubscriptionTypes", "");
+//    GetData("Subscription", "GetSellerTypes", "LoadGetSellerSellerTypes", "");
 }
 
 function DisplayGetSubscriptionTypes(data) {

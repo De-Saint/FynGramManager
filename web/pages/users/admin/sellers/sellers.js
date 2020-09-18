@@ -247,6 +247,7 @@ function DisplaySellerDetails(data) {
     $(".seller-upendingBalance").text(PriceFormat(data.WalletDetails.PendingBalance));
     $(".seller-umainBalance").text(PriceFormat(data.WalletDetails.MainBalance));
     $(".seller-uwalletNumber").text(data.WalletDetails.wallet_number);
+    $(".seller-uTitle").text(data.title);
     $(".seller-uFirstName").text(data.firstname);
     $(".seller-uLastName").text(data.lastname);
     $(".seller-uDateJoined").text(data.date);

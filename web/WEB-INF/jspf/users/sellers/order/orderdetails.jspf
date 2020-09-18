@@ -145,19 +145,19 @@
                         <div class="row ">
                             <div class="col-lg-9 ">
                                 <p class="h4 customer-d-name">name</p>
-                                <address class="fs-15"> 
+<!--                                <address class="fs-15"> 
                                     Email: <span class="customer-d-email font-weight-semibold"></span>
-                                </address>
-                                <address class="fs-15"> 
+                                </address>-->
+<!--                                <address class="fs-15"> 
                                     Phone: <span class="customer-d-phone font-weight-semibold"></span>
-                                </address>
-                                <address class="fs-15 "> 
+                                </address>-->
+<!--                                <address class="fs-15 "> 
                                     Registered Date: <span class="customer-date-reg font-weight-semibold"></span>
-                                </address>
-                                <div class="">
+                                </address>-->
+<!--                                <div class="">
                                     <p class="mb-1 mt-5"><span class="font-weight-semibold">Delivery Type:</span> <span class="order-ship-type">Address Type</span></p>
                                     <p class="mb-1"><span class="font-weight-semibold">Address : </span><span class="order-ship-address">34 sjfdf lk jdf lslfj lddlfj lsdf fjlsdf dlfkjd jdsf lfd l</span></p>
-                                </div>
+                                </div>-->
                             </div>
                             
                         </div>

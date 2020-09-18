@@ -87,7 +87,7 @@
                                             <div class="form-group mb-3">
                                                 <label>Apply Discount To</label> <span class="text-red font-weight-bold"> *</span>
                                                 <div class="input-group input-group-alternative">
-                                                    <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear"  required="true" id="dcodeObject" >
+                                                    <select class="form-control select2 select-search select-clear"  required="true" id="dcodeObject" >
                                                         <option selected="selected">Select Apply To</option>
                                                     </select>
 
@@ -134,7 +134,7 @@
                                                     <div class="form-group mb-3">
                                                         <label>Select The Discount Code Type</label> <span class="text-red font-weight-bold"> *</span>
                                                         <div class="input-group input-group-alternative">
-                                                            <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear"   required id="dcodeType" >
+                                                            <select class="form-control select2  select-search select-clear"   required id="dcodeType" >
                                                                 <option selected="selected">Select Discount Code Type</option>
                                                             </select>
 

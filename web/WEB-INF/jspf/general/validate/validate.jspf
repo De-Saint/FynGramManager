@@ -29,6 +29,7 @@
                                             Back to the Login.</a> </div>
                                 </div>
                             </form>
+                            <div class="px-2">If, you did not receive an email, you can  <a href="${pageContext.request.contextPath}/LinksServlet?type=Login" class="text-success">login</a> and validate your account later.</div>
                         </div>
                     </div>
                 </div>

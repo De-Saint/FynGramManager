@@ -22,20 +22,25 @@
                                             <div >
                                                 <div class="my-3">
                                                     <div class="form-group form-row mt-2">
-                                                        <div class="col-sm-3"> <label>Gender <span class="text-red font-weight-bold">*</span></label> </div>
+                                                        <div class="col-sm-3"> <label>Title <span class="text-red font-weight-bold">*</span></label> </div>
                                                         <div class="col-sm-9">
                                                             <div class="custom-controls row pl-4">
                                                                 <label class="custom-control custom-radio">
-                                                                    <input type="radio" class="custom-control-input" required name="sell-gender" value="Male" checked="true">
+                                                                    <input type="radio" class="custom-control-input" required name="sell-title" value="Mr" checked="true">
                                                                     <span class="custom-control-label mr-2">Mr.</span>
                                                                 </label>
                                                                 <label class="custom-control custom-radio">
-                                                                    <input type="radio" class="custom-control-input" required name="sell-gender" value="Female">
-                                                                    <span class="custom-control-label">Mrs./Miss</span>
+                                                                    <input type="radio" class="custom-control-input" required name="sell-title" value="Mrs">
+                                                                    <span class="custom-control-label mr-2">Mrs.</span>
+                                                                </label>
+                                                                <label class="custom-control custom-radio">
+                                                                    <input type="radio" class="custom-control-input" required name="sell-title" value="Miss">
+                                                                    <span class="custom-control-label">Miss.</span>
                                                                 </label>
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                     <div class="form-group form-row"> 
                                                         <div class="col-sm-3"> 
                                                             <label>First Name <span class="text-red font-weight-bold">*</span></label> 
@@ -52,7 +57,21 @@
                                                             <input type="text" name="lastname" placeholder="LastName" id="sell-lastname" required class="form-control"> 
                                                         </div>
                                                     </div>
-
+                                                    <div class="form-group form-row mt-2">
+                                                        <div class="col-sm-3"> <label>Gender <span class="text-red font-weight-bold">*</span></label> </div>
+                                                        <div class="col-sm-9">
+                                                            <div class="custom-controls row pl-4">
+                                                                <label class="custom-control custom-radio">
+                                                                    <input type="radio" class="custom-control-input" required name="sell-gender" value="Male" checked="true">
+                                                                    <span class="custom-control-label mr-2">Male</span>
+                                                                </label>
+                                                                <label class="custom-control custom-radio">
+                                                                    <input type="radio" class="custom-control-input" required name="sell-gender" value="Female">
+                                                                    <span class="custom-control-label">Female</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div> 
                                             </div>
                                         </div>
@@ -116,6 +135,14 @@
                                                             <input type="tel" name="bizphone" placeholder="Business Phone" required  id="sell-bizphone" class="form-control">  
                                                         </div>
                                                     </div>
+                                                    <div class="form-group form-row"> 
+                                                        <div class="col-sm-3"> 
+                                                            <label>Business CAC Number <small class="text-success">Optional</small></label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" name="bizcacnumber" placeholder="Business CAC Number"  id="sell-bizcacnumber" class="form-control">  
+                                                        </div>
+                                                    </div>
                                                 </div> 
 
                                             </div>
@@ -146,46 +173,53 @@
 
                                             </div>
                                         </div>
-                                        <div class="list-group-item py-3" >
-                                            <h5 class="mb-0" >Business Type</h5>
-                                            <div >
-                                                <div class="my-3">
-                                                    <div class="form-group form-row"> 
-                                                        <div class="col-sm-3"> 
-                                                            <label>Select Seller Type <span class="text-red font-weight-bold">*</span></label> 
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <select class="form-control select2-show-search"  required id="sell-sellertype"  style="width: 520px;"
-                                                                    data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
-
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group form-row"> 
-                                                        <div class="col-sm-3"> 
-                                                            <label>Select Payment Plan <span class="text-red font-weight-bold">*</span></label> 
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <select class="form-control select2-show-search" required id="sell-substype"  style="width: 520px;"
-                                                                    data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
-
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group mb-0 justify-content-end">
-                                                        <div class="checkbox">
-                                                            <div class="custom-checkbox custom-control"> 
-                                                                <input type="checkbox" data-checkboxes="mygroup" name="terms"  class="custom-control-input" checked="false"  id="terms"> 
-                                                                <label for="terms" class="custom-control-label mt-1">I have read and agreed to FynGram <a href="/FynGramShop/pages/shop/terms/terms.jsp" class="text-primary" target="_blank">Term and Conditions</a> </label> </div>
-                                                        </div>
-                                                    </div>
-                                                </div> 
-
-                                            </div>
-                                        </div>
+                                        <!--                                        <div class="list-group-item py-3"  >
+                                                                                    <h5 class="mb-0" >Business Type</h5>
+                                                                                    <div >
+                                                                                        <div class="my-3">
+                                                                                            <div class="form-group form-row"> 
+                                                                                                <div class="col-sm-3"> 
+                                                                                                    <label>Select Seller Type <span class="text-red font-weight-bold">*</span></label> 
+                                                                                                </div>
+                                                                                                <div class="col-sm-9">
+                                                                                                    <select class="form-control select2-show-search"  required id="sell-sellertype"  style="width: 520px;"
+                                                                                                            data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+                                        
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="form-group form-row"> 
+                                                                                                <div class="col-sm-3"> 
+                                                                                                    <label>Select Payment Plan <span class="text-red font-weight-bold">*</span></label> 
+                                                                                                </div>
+                                                                                                <div class="col-sm-9">
+                                                                                                    <select class="form-control select2-show-search" required id="sell-substype"  style="width: 520px;"
+                                                                                                            data-placeholder="Choose one (with searchbox)" tabindex="-1" aria-hidden="true">
+                                        
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="form-group mb-0 justify-content-end">
+                                                                                                <div class="checkbox">
+                                                                                                    <div class="custom-checkbox custom-control"> 
+                                                                                                        <input type="checkbox" data-checkboxes="mygroup" name="terms"  class="custom-control-input" checked="false"  id="terms"> 
+                                                                                                        <label for="terms" class="custom-control-label mt-1">I have read and agreed to FynGram <a href="/FynGramShop/pages/shop/terms/terms.jsp" class="text-primary" target="_blank">Term and Conditions</a> </label> </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div> 
+                                        
+                                                                                    </div>
+                                                                                </div>-->
                                     </div>
 
-                                    <div class="text-center mt-2">
+                                    <div class="text-center mt-3 mb-2">
+                                        <div class="form-group mb-2 justify-content-end">
+                                            <div class="checkbox">
+                                                <div class="custom-checkbox custom-control ml-7"> 
+                                                    <input type="checkbox" data-checkboxes="mygroup" name="terms"  class="custom-control-input" checked="false"  id="terms"> 
+                                                    <label for="terms" class="custom-control-label mt-1">I have read and agreed to FynGram <a href="/FynGramShop/pages/shop/terms/terms.jsp" class="text-primary" target="_blank">Term and Conditions</a> </label> </div>
+                                            </div>
+                                        </div>
                                         <button type="submit" class="btn btn-primary text-center">Submit</button> 
                                     </div>
                                 </form>

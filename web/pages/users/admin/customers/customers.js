@@ -105,7 +105,8 @@ function DisplayAllCustomers(data) {
                 offlinecount++;
             }
             if (details["ImageText"] === "none") {
-                $(".cust-uimage").css("background-image", "url('" + extension + "assets/images/no-image.png')");
+                
+                $(".cust-uimage").css("background-image", "url('" + extension + "/assets/images/no-image.png')");
                 $(".cust-uimage").css("background-repeat", "repeat");
                 $(".cust-uimage").css("background-position", "center center");
             } else if (details["ImageText"] !== "none") {
@@ -143,6 +144,7 @@ function DisplayCustomerDetails(data) {
     $(".customer-umainBalance").text(PriceFormat(data.WalletDetails.MainBalance));
     $(".customer-uwalletNumber").text(data.WalletDetails.wallet_number);
     $(".customer-uFirstName").text(data.firstname);
+    $(".customer-uTitle").text(data.title);
     $(".customer-uLastName").text(data.lastname);
     $(".customer-uDateJoined").text(data.date);
     $(".customer-uTimeJoined").text(data.time);

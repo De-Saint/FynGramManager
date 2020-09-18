@@ -15,7 +15,7 @@
                         <div class="form-group mb-3">
                             <label>Select The Seller Type</label>
                             <div class="input-group input-group-alternative">
-                                <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear" id="SubAmtSellerTypes" tabindex="-1" aria-hidden="true">
+                                <select class="form-control select2 select-search select-clear" id="SubAmtSellerTypes" tabindex="-1" aria-hidden="true">
                                     <option selected="selected">Select Seller Type</option>
                                 </select>
 
@@ -24,7 +24,7 @@
                         <div class="form-group mb-3">
                             <label>Select The Subscription Type</label>
                             <div class="input-group input-group-alternative">
-                                <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear" id="SubAmtSubcriptionTypes" tabindex="-1" aria-hidden="true">
+                                <select class="form-control select2  select-search select-clear" id="SubAmtSubcriptionTypes" tabindex="-1" aria-hidden="true">
                                     <option selected="selected">Select Subscription Type</option>
                                 </select>
 

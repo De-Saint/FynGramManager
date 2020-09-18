@@ -27,7 +27,7 @@
                                         <img class="avatar h-9 w-9 brround customer-uimage"  alt="img"> 
                                     </div>
                                     <div class="user-wrap mt-0">
-                                        <h4 class="mb-2 customer-uname">Robert Stewart</h4>
+                                        <h4 class="mb-2 customer-uname">Name</h4>
                                         <h6 class="text-muted mb-3 fw-400">Member Since: <span class="customer-uDateJoined"></span> <span class="customer-uTimeJoined"></span></h6>
                                         <!--<a href="#" class="btn btn-outline-primary mt-1 mb-1"><i class="fa fa-envelope mr-1"></i> Send A Message</a>-->
                                     </div>
@@ -82,6 +82,9 @@
                                                                         <table class="table row table-borderless w-100 m-0 border">
                                                                             <tbody class="col-lg-6 p-0">
                                                                                 <tr>
+                                                                                    <td><strong>Title :</strong> <span class="customer-uTitle"></span></td>
+                                                                                </tr>
+                                                                                 <tr>
                                                                                     <td><strong>First Name :</strong> <span class="customer-uFirstName"></span></td>
                                                                                 </tr>
                                                                                 <tr>

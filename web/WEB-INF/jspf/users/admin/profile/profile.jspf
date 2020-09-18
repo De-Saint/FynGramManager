@@ -68,6 +68,9 @@
                                             <table class="table row table-borderless w-100 m-0 border">
                                                 <tbody class="col-lg-6 p-0">
                                                     <tr>
+                                                        <td><strong>Title :</strong> <span class="uTitle"></span></td>
+                                                    </tr>
+                                                     <tr>
                                                         <td><strong>First Name :</strong> <span class="uFirstName"></span></td>
                                                     </tr>
                                                     <tr>

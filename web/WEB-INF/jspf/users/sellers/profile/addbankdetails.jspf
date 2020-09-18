@@ -15,7 +15,7 @@
                         <div class="form-group mb-3">
                             <label>Select The Bank</label>
                             <div class="input-group input-group-alternative">
-                                <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear" required="true" id="bkBankID" tabindex="-1" aria-hidden="true">
+                                <select class="form-control select2  select-search select-clear" required="true" id="bkBankID" tabindex="-1" aria-hidden="true">
                                     <option selected="selected">Select The Bank</option>
                                 </select>
 
@@ -24,7 +24,7 @@
                         <div class="form-group mb-3">
                             <label>Select Account Type</label>
                             <div class="input-group input-group-alternative">
-                                <select class="form-control select2 w-100 select2-hidden-accessible select-search select-clear" required="true" id="bkAcctType" tabindex="-1" aria-hidden="true">
+                                <select class="form-control select2  select-search select-clear" required="true" id="bkAcctType" tabindex="-1" aria-hidden="true">
                                     <option selected="selected" value="0">Select Account Type</option>
                                     <option value="Savings">Savings</option>
                                     <option value="Current">Current</option>

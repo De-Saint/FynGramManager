@@ -39,7 +39,6 @@ function profileBtnEvents() {
                         if (uNewPass) {
                             sessionid = verifyUser();
                             var data = [sessionid, uLastName, uFirstName, 1, uPhone, uOldPass, uNewPass];
-//                            alert(data);
                             showLoader();
                             GetData("User", "UpdateProfile", "LoadBankDetailsInfo", data);
                         } else {

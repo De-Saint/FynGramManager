@@ -27,7 +27,7 @@
                                         <img class="h-9 w-9 brround seller-uimage"  alt="img"> 
                                     </div>
                                     <div class="user-wrap mt-0">
-                                        <h4 class="mb-2 seller-uname">Robert Stewart</h4>
+                                        <h4 class="mb-2 seller-uname">Name</h4>
                                         <h6 class="text-muted mb-3 fw-400">Member Since: <span class="seller-uDateJoined"></span> <span class="seller-uTimeJoined"></span></h6>
                                         <button  class="btn mt-1 mb-1 seller-sellertype"><i class="fa fa-envelope mr-1"></i> Send A Message</button>
                                         <button  class="btn mt-1 mb-1 seller-substype"><i class="fa fa-envelope mr-1"></i> Send A Message</button>
@@ -95,6 +95,9 @@
                                                                         <div class="table-responsive mb-5">
                                                                             <table class="table row table-borderless w-100 m-0 border">
                                                                                 <tbody class="col-lg-6 p-0">
+                                                                                    <tr>
+                                                                                        <td><strong>Title :</strong> <span class="seller-uTitle"></span></td>
+                                                                                    </tr>
                                                                                     <tr>
                                                                                         <td><strong>First Name :</strong> <span class="seller-uFirstName"></span></td>
                                                                                     </tr>
