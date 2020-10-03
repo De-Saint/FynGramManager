@@ -15,7 +15,8 @@
                         <div class="border-right mt-1 d-xl-block"> 
                             <!--<button type="button" class="btn btn-primary btn_pay-subscription d-none ForPendingSeller" data-toggle="modal" data-target="#pay_subscription">Pay Subscription Fees</button>--> 
                             <!--<button type="button" class="btn btn-success btn_renew_subscription d-none forActivatedSellers" data-toggle="modal" data-target="#pay_subscription">Renew Subscription</button>--> 
-                            <button type="button" class="btn btn-success btn_renew_subscription" data-toggle="modal" data-target="#pay_subscription">Pay Subscription</button> 
+                            <!--<button type="button" class="btn btn-success btn_renew_subscription" data-toggle="modal" data-target="#pay_subscription">Pay Subscription</button>--> 
+                            <button type="button" class="btn btn-primary btn-add-product">Add New Product</button> 
                         </div>
                     </div>
                 </div> 

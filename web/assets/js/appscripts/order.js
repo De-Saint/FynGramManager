@@ -94,13 +94,29 @@ function DisplayOrders(data, parent) {
                 deliveredcount++;
             } else if (result["StatusDetails"].name === "Settled") {
                 settledcount++;
+                var deletebtn = newchild.find(".btn-order-delete").removeClass("d-none");
+                deletebtn.click(function () {
+                    swal({
+                        title: 'Order',
+                        text: "Delete this Order. Do you wish to continue?",
+                        type: 'warning',
+                        showCancelButton: true,
+                        closeOnConfirm: false,
+                        confirmButtonText: ' Ok!',
+                        buttonsStyling: true
+                    }, function (dismiss) {
+                        if (dismiss) {
+                            showLoader();
+                            GetData("Order", "DeleteOrder", "LoadDeleteOrder", result["OrderID"]);
+                        }
+                    });
+                });
             } else if (result["StatusDetails"].name === "Dispute") {
                 disputecount++;
             }
             var detailsbtn = newchild.find(".btn-order-details");
             detailsbtn.click(function () {
                 var sessiontype = GetSessionType();
-
                 if (sessiontype === "Admin") {
                     localStorage.setItem("orderid", result["OrderID"]);
                     window.location = extension + "LinksServlet?type=AdminOrderDetails";
@@ -109,6 +125,8 @@ function DisplayOrders(data, parent) {
                     window.location = extension + "LinksServlet?type=SellerOrderDetails";
                 }
             });
+
+
             newchild.appendTo(parent).show();
         });
         $(".order_total_count").text(NumberFormat(totalcount));
@@ -160,6 +178,36 @@ function DisplayUpdateEnforceCancelFees(data) {
     } else if (resp.status === "error") {
         swal({
             title: "Order Cancellation Rule",
+            text: resp.msg,
+            type: "error",
+            confirmButtonText: 'Ok',
+            showCancelButton: false,
+            onClose: function () {
+
+            }
+        });
+    }
+
+}
+
+function DisplayDeleteOrder(resp) {
+    console.log(resp);
+    hideLoader();
+    if (resp.status === "success") {
+        swal({
+            title: 'Delete Order',
+            text: resp.msg,
+            type: 'success',
+            showCancelButton: false,
+            closeOnConfirm: true,
+            confirmButtonText: ' Ok!',
+            buttonsStyling: true
+        }, function (dismiss) {
+            window.location.reload();
+        });
+    } else if (resp.status === "error") {
+        swal({
+            title: "Delete Order",
             text: resp.msg,
             type: "error",
             confirmButtonText: 'Ok',

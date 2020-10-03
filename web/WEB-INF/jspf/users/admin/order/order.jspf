@@ -229,7 +229,8 @@
                                         <td class=""><span class="badge order-status badge-pill">Completed</span></td>
                                         <td class="order-bookeddate-time"></td>
                                         <td> 
-                                            <button  class="btn btn-primary btn-sm ml-0 ml-md-4  btn-order-details mr-1 "> <i class="fa fa-info-circle"></i> Details</button>
+                                            <button  class="btn btn-primary btn-sm ml-0  btn-order-details mr-1 ">Details</button>
+                                            <button  class="btn btn-danger btn-sm btn-order-delete d-none">Delete</button>
                                         </td>
                                     </tr>
                                 </tbody>

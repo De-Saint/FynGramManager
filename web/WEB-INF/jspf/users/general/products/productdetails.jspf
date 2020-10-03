@@ -248,14 +248,10 @@
                                         <ul class="product-gallery-rating">
                                             <li> 
                                                 <a href="#"><i class="fa fa-star text-warning"></i></a> 
-                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
-                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
-                                                <a href="#"><i class="fa fa-star text-warning"></i></a> 
-                                                <a href="#"><i class="fa fa-star-o text-warning"></i></a> 
                                             </li>
                                         </ul>
-                                        <div class="label-rating">793 reviews</div>
-                                        <div class="label-rating h5">Stock Notification Type <span class="product-stocknotytype text-primary ml-5"></span></div>
+                                        <div class="label-rating"><span class="product-reviews"></span> Reviews (<span class="product-ratings"></span>)</div>
+                                        <div class="label-rating">Stock Notification Type <span class="product-stocknotytype text-primary ml-5"></span></div>
                                     </div>
                                     <div class="row">
 

@@ -34,16 +34,7 @@ function productBtnEvents() {
         productSearchOptions();
     });
 
-    $(".btn-add-product").click(function () {
-        var sessiontype = GetSessionType();
-        if (sessiontype === "Admin") {
-            localStorage.setItem("option", "addproduct");
-            window.location = extension + "LinksServlet?type=AdminAddProduct";
-        } else if (sessiontype === "Seller") {
-            localStorage.setItem("option", "addproduct");
-            window.location = extension + "LinksServlet?type=SellerAddProduct";
-        }
-    });
+   
     $(".SelectAll").click(function () {
 
 //         $('input:checkbox').prop('checked', this.checked);   
@@ -268,6 +259,7 @@ function productSearchOptions() {
 
 
 function DisplayProducts(data) {
+    console.log(data);
     hideLoader();
     var parent = $("#ProductList");
     parent.find(".new-clone").remove();

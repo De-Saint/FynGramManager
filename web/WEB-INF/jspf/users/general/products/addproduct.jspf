@@ -19,7 +19,7 @@
 
                     </div>
                     <div class="card-body">
-                        <form name="newProductForm" id="newProductForm" class="notcreated">
+                        <form name="newProductForm" class="notcreated">
                             <div class="row">
                                 <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
                                     <div class="card  box-shadow-0">
@@ -37,11 +37,11 @@
                                                     <textarea class="form-control" maxlength="200" rows="2" id="addprod-desc" required placeholder="Description"></textarea>
                                                 </div>
                                                 <div class="form-group"> 
-                                                    <label>Enter The Product Reference Number</label> 
+                                                    <label>Enter The Product Reference Number <small class="text-success font-weight-medium">Optional</small></label> 
                                                     <input type="text" class="form-control" id="addprod-refnumber" placeholder="Product Reference Number - AA00ZZ11"> 
                                                 </div>
                                                 <div class="form-group"> 
-                                                    <label>Enter The Product UPC Barcode</label> 
+                                                    <label>Enter The Product UPC Barcode <small class="text-success font-weight-medium">Optional</small></label> 
                                                     <input type="text" class="form-control" id="addprod-upcbarcode" placeholder="Product UPC Barcode"> 
                                                 </div>
                                                 <div class="form-group"> 
@@ -219,7 +219,9 @@
                                         <div class="card-body">
                                             <div class="form-group">
                                                 <div class="form-group"> 
-                                                    <label>Select Stock Notification Type<span class="text-red font-weight-bold">*</span>
+                                                    <label>Select Stock Notification Type
+                                                        <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>Please, select the option on how to be nofitied when your product is out-of-stock.</a></p> " data-original-title="" title="">?</span>
+                                                        <span class="text-red font-weight-bold">*</span>
 
                                                     </label> 
                                                     <select class="form-control select2-show-search" required id="addprod-stocknotification"

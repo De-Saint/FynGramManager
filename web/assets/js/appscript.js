@@ -8,7 +8,7 @@ var extension = "";
 function performActions() {
     var path = getCurrentPath();
     sessionid = verifyUser();
-    GenralBtnEvents();
+    GeneralBtnEvents();
     GeneralAppFunctions();
     var loader_img = "assets/images/other/loader.svg";
     if (path.includes("pages/general")) {
@@ -38,7 +38,7 @@ function UpdateOrderStatus() {
 //    setTimeout(UpdateOrderStatus, 50000);//2 hours 
     setTimeout(UpdateOrderStatus, 7200000);//2 hours 
 }
-function GenralBtnEvents() {
+function GeneralBtnEvents() {
 
     $(".CallLogOut").click(function () {
         localStorage.clear();
@@ -69,18 +69,27 @@ function GenralBtnEvents() {
         });
 
     });
-
+    $(".btn-add-product").click(function () {
+        var sessiontype = GetSessionType();
+        if (sessiontype === "Admin") {
+            localStorage.setItem("option", "addproduct");
+            window.location = extension + "LinksServlet?type=AdminAddProduct";
+        } else if (sessiontype === "Seller") {
+            localStorage.setItem("option", "addproduct");
+            window.location = extension + "LinksServlet?type=SellerAddProduct";
+        }
+    });
 
 }
 
 function DisplayUserDetails(resp) {
     if (resp.UserType === "Seller") {
-         $(".uBizName").text(resp.business_name);
-         $(".uBizEmail").text(resp.business_email);
-         $(".uBizPhone").text(resp.business_phone);
-         $(".uBizCacnumber").text(resp.cac_number);
-         $(".uBizMinShipDate").text(resp.shipping_days_min + " Days");
-         $(".uBizMaxShipDate").text(resp.shipping_days_max + " Days");
+        $(".uBizName").text(resp.business_name);
+        $(".uBizEmail").text(resp.business_email);
+        $(".uBizPhone").text(resp.business_phone);
+        $(".uBizCacnumber").text(resp.cac_number);
+        $(".uBizMinShipDate").text(resp.shipping_days_min + " Days");
+        $(".uBizMaxShipDate").text(resp.shipping_days_max + " Days");
 //        if (resp.status === "Pending") {
 //            $(".ForPendingSeller").removeClass("d-none");
 //            $(".forPaidSellers").addClass("d-none");
@@ -714,6 +723,11 @@ function linkToFunction(action, params) {
         case "LoadDashBoardReports":
         {
             DisplayDashBoardReports(params);
+            break;
+        }
+        case "LoadDeleteOrder":
+        {
+            DisplayDeleteOrder(params);
             break;
         }
 

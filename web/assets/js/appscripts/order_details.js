@@ -64,10 +64,7 @@ function orderDetailsBtnEvents() {
         });
 
     });
-    $(".OrderDeleteBtn").click(function () {
-        orderid = GetOrderID();
-//        alert(orderid);
-    });
+    
 }
 function orderDetailsSetActiveLink() {
     $("#id-shop-svg").addClass("resp-tab-active");
@@ -105,7 +102,7 @@ function DisplayOrderDetails(data) {
         $(".order-discount-deduction-amount").text("N/A");
     } else {
 //        alert($.isEmptyObject(data.OrderDetails.DiscountCode)+"no test");
-        
+
         $(".order_discount_code").text(data.OrderDetails.DiscountCode);
         $(".order_discount-deduction-type").text(data.OrderDetails.DiscountDeductionType);
         $(".order-discount-deduction-amount").text(PriceFormat(data.OrderDetails.discount_amount));
@@ -213,7 +210,7 @@ function DisplayOrderHistoryProducts(data) {
 //            }, function () {
 //                descbtn.removeClass("text-primary");
 //            });
-            
+
             newchild.appendTo(parent).show();
         });
         childclone.hide();

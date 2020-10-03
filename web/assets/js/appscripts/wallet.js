@@ -75,7 +75,8 @@ function payWithPaystackWallet(paymentamount, email, actualamount, PaymentType) 
     var userDetail;
     userDetail = email;
     var handler = PaystackPop.setup({
-        key: 'pk_test_c819ab617f5085772d511e6e5cafc3785367cb78',
+        key: 'pk_live_7bc21edb14ba7fe0400a3b71a126c2305171d37a',
+//        key: 'pk_test_c819ab617f5085772d511e6e5cafc3785367cb78',
         email: email,
         amount: paymentamount + "00",
         ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you

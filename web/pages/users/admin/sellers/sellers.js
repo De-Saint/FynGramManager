@@ -207,7 +207,20 @@ function DisplayAllSellers(data) {
             });
             DisplayToolTip(btnsellerdetails);
             var btnsellerdelete = newchild.find(".btn-seller-delete").click(function () {
-
+                swal({
+                    title: 'Delete Seller',
+                    text: "Are you sure you want to delete " + details["UserName"] + "? This action is irreversible. Other customers and sellers activity tied to " + details["UserName"] + " will also be deleted.",
+                    type: 'warning',
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    confirmButtonText: ' Ok!',
+                    buttonsStyling: true
+                }, function (dismiss) {
+                    if (dismiss) {
+                        showLoader();
+                        GetData("User", "DeleteSeller", "LoadSellerInfo", id);
+                    }
+                });
             });
             DisplayToolTip(btnsellerdelete);
             var btnsellerapprove = newchild.find(".btn-seller-approve").click(function () {
@@ -272,10 +285,10 @@ function DisplaySellerDetails(data) {
     $(".seller-uaddressdetails").text(data.AddressDetails.full_address);
     $(".seller-uaddrestype").text(data.AddressDetails.addresstypename);
     $(".seller-usubsstartdate").text(data.SubscriptionDetails.start_date);
-    if(data.SubscriptionDetails.amount){
-         $(".seller-usubsamount").text(PriceFormat(data.SubscriptionDetails.amount));
+    if (data.SubscriptionDetails.amount) {
+        $(".seller-usubsamount").text(PriceFormat(data.SubscriptionDetails.amount));
     }
-   
+
     $(".seller-usubsexpirydata").text(data.SubscriptionDetails.end_date);
     if (data.status === "Pending") {
         $(".seller-ustatus").text(data.status).addClass("btn-outline-secondary");

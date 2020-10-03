@@ -68,7 +68,6 @@ function customerSetActiveLink() {
 function customerPageFunctions() {
     showLoader();
     GetData("User", "GetAllCustomers", "LoadAllCustomers", "");
-
     if (customeruserid === null || customeruserid === "null" || customeruserid === undefined || customeruserid === "undefined") {
     } else {
         showLoader();
@@ -105,7 +104,6 @@ function DisplayAllCustomers(data) {
                 offlinecount++;
             }
             if (details["ImageText"] === "none") {
-                
                 $(".cust-uimage").css("background-image", "url('" + extension + "/assets/images/no-image.png')");
                 $(".cust-uimage").css("background-repeat", "repeat");
                 $(".cust-uimage").css("background-position", "center center");
@@ -121,7 +119,20 @@ function DisplayAllCustomers(data) {
             });
             DisplayToolTip(btncustdetails);
             var btncustdelete = newchild.find(".btn-cust-delete").click(function () {
-
+                swal({
+                    title: 'Delete Customer',
+                    text: "Are you sure you want to delete " + details["UserName"] + "? This action is irreversible. Other customers and sellers activity tied to " + details["UserName"] + " will also be deleted.",
+                    type: 'error',
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    confirmButtonText: ' Ok!',
+                    buttonsStyling: true
+                }, function (dismiss) {
+                    if (dismiss) {
+                        showLoader();
+                        GetData("User", "DeleteCustomer", "LoadRegisterCustomer", id);
+                    }
+                });
             });
             DisplayToolTip(btncustdelete);
             newchild.appendTo(parent).show();

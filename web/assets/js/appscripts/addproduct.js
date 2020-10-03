@@ -417,5 +417,6 @@ function DisplayAddProductDetails(data) {
     $("#addprod-shippingwidth").val(data.ShippingPackageDetails.package_width);
     $("#addprod-shippingheight").val(data.ShippingPackageDetails.package_height);
     $("#addprod-shippingdepth").val(data.ShippingPackageDetails.package_depth);
+     $("#addprod-tags").tagsinput('add', data.InfoDetails.name);
 
 }

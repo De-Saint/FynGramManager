@@ -341,10 +341,6 @@
                 </div>
             </div>
         </div>
-        <div class="text-center">
-            <button class="btn btn-danger text-center OrderDeleteBtn d-none">Delete Order</button>
-        </div>
-
     </div>
 </div> 
 <!-- App-content closed -->

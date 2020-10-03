@@ -11,7 +11,7 @@
         <%@include file="../../../../jspf/general/header/header.jspf" %>
         <%@include file="../../../../jspf/general/sidebars/sidebar_admin.jspf" %>
         <%@include file="../../../../jspf/general/loader/loader.jspf" %>
-        <%@include file="../../../../jspf/users/admin/products/addproduct.jspf" %>
+        <%@include file="../../../../jspf/users/general/products/addproduct.jspf" %>
 
     </div>
     <%@include file="../../../../jspf/general/footer/footer.jspf" %>

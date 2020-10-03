@@ -181,7 +181,7 @@
                             <h4 class="pro-user-username mt-1 mb-1 seller-name">Name</h4>
                             <h6 class="pro-user-desc font-weight-normal text-muted "><span class="seller-type">Type</span></h6>
                             <button class="btn btn-primary btn-sm btn-seller-details" data-toggle="tooltip" data-placement="top" title="" data-original-title="Details"><i class="fa fa-info-circle"></i></button> 
-                            <button class="btn btn-danger btn-sm btn-seller-delete" disabled data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></button>
+                            <button class="btn btn-danger btn-sm btn-seller-delete" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="fa fa-trash-o"></i></button>
                             <button  class="btn btn-success btn-sm btn-seller-approve d-none" data-toggle="tooltip" data-placement="top" title="" data-original-title="Activate"><i class="fa fa-check-circle-o"></i></button>
                             <div class="item-user-icons mt-2"> 
                                 <i class="fa fa-phone mr-2"></i><span class="seller-phone">09038474874</span>    

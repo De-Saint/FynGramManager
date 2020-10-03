@@ -82,7 +82,12 @@ function DisplayProductDetails(data) {
     $(".product-time-added").text(data["time"]);
     $(".product-condition").text(data["CondionDetails"].name).addClass("text-primary h4");
     $(".product-note").text(data["SellerDetails"].note);
+    
     $(".product-stocknotytype").text(data["StockDetails"].StockNotificationName);
+    
+    $(".product-reviews").text(data["RatingDetails"].NumberOfRatings);
+    $(".product-ratings").text(data["RatingDetails"].AverageRatings);
+    
     $(".product-pack-depth").text(data["ShippingPackageDetails"].package_depth);
     $(".product-pack-height").text(data["ShippingPackageDetails"].package_height);
     $(".product-pack-width").text(data["ShippingPackageDetails"].package_width);
