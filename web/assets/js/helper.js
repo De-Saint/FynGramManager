@@ -213,15 +213,20 @@ function ConvertImageToBase64(file, objectid, objecttype) {
     if (!file.files.length) {
         return false;
     }
-
+// var url = href.replace(path, '').replace("#", '').replace("?", '');
+//    $.ajax({
+//        url: url + '/FynGramEngine/DispatcherSerlvet',
     reader.onload = function () {
         var base64Image = reader.result.toString();
         console.log(base64Image);
         var data = base64Image.replace(/^data:image\/(png|jpg);base64,/, "");
         showLoader();
         var newData = objectid + "-" + objecttype + "-" + data;
+        var path = window.location.pathname;
+        var href = window.location.href;
+        var url = href.replace(path, '').replace("#", '').replace("?", '');
         $.ajax({
-            url: 'http://localhost:8080/FynGramEngine/WImageServlet',
+            url: url + '/FynGramEngine/WImageServlet',
             data: newData,
             type: "POST",
             processData: false,
