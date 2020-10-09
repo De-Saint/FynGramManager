@@ -262,7 +262,6 @@ function DisplayBankDetails(data) {
     } else {
         $("#bankdetails").addClass("d-none");
     }
-
 }
 
 function DisplayAddressTypes(data) {
@@ -277,7 +276,6 @@ function DisplayAddressTypes(data) {
         $.each(ids, function (index, id) {
             var details = result[id];
             cs.append($('<option/>').val(details["id"]).text(details["name"]));
-
         });
     }
 }
@@ -385,7 +383,6 @@ function DisplayStreets(data) {
         $.each(ids, function (index, id) {
             var details = result[id];
             cs.append($('<option/>').val(details["id"]).text(details["name"]));
-
         });
         cs.change('select2:select', function () {
             $(".add_street").addClass("d-none");

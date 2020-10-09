@@ -24,7 +24,6 @@ function productFunctions() {
     } else {
         sessiontype = GetSessionType();
     }
-
     productPageFunctions();
 }
 
@@ -382,7 +381,6 @@ function ProcessProductStatus(ProductID, Status, Note, StatusText, infoText, Opt
 
 
 function DisplayUnits(data) {
-//    hideLoader();
     var parent = $("#ProductUnitList");
     if (data === "none") {
         parent.text("No Results Found");
@@ -434,7 +432,6 @@ function DisplayUnits(data) {
 }
 
 function  DisplayProductConditions(data) {
-//    hideLoader();
     var parent = $("#ProdConditionList");
     if (data === "none") {
         parent.text("No Results");

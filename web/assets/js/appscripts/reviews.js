@@ -79,7 +79,7 @@ function DisplayUserReviews(data) {
             var btndelete = newchild.find(".review-btn-delete").click(function () {
                 swal({
                     title: 'Review',
-                    text: "Are you sure you want to delete this review?",
+                    text: "Are you sure you want to delete this record?",
                     type: 'warning',
                     showCancelButton: true,
                     closeOnConfirm: false,
