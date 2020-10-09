@@ -201,7 +201,7 @@ function DisplayProductConditions(data) {
     hideLoader();
     var cs = $("#addprod-prodcondition");
     if (data === "none") {
-        cs.text("No Result");
+        cs.text("No Results");
     } else {
         var ids = data[0];
         var result = data[1];
@@ -210,7 +210,6 @@ function DisplayProductConditions(data) {
         $.each(ids, function (index, id) {
             var details = result[id];
             cs.append($('<option/>').val(details["id"]).text(details["name"]));
-
         });
     }
 }
@@ -219,7 +218,7 @@ function DisplayStockNotifications(data) {
     hideLoader();
     var cs = $("#addprod-stocknotification");
     if (data === "none") {
-        cs.text("No Result");
+        cs.text("No Results");
     } else {
         var ids = data[0];
         var result = data[1];
@@ -228,7 +227,6 @@ function DisplayStockNotifications(data) {
         $.each(ids, function (index, id) {
             var details = result[id];
             cs.append($('<option/>').val(details["id"]).text(details["name"]));
-
         });
     }
 
@@ -238,7 +236,7 @@ function DisplayUnits(data) {
     hideLoader();
     var cs = $("#addprod-unit");
     if (data === "none") {
-        cs.text("No Result");
+        cs.text("No Results");
     } else {
         var ids = data[0];
         var result = data[1];
@@ -247,7 +245,6 @@ function DisplayUnits(data) {
         $.each(ids, function (index, id) {
             var details = result[id];
             cs.append($('<option/>').val(details["id"]).text(details["name"]));
-
         });
     }
 }
@@ -259,7 +256,7 @@ function DisplayAllProperties(data) {
     var CatList = data[0];
     var TopCatSubs = data[1];
     if (data === "none") {
-        parent.text("No Result");
+        parent.text("No Results");
     } else {
         var childclone = parent.find(".addprod-prop-clone");
         $.each(TopCatSubs, function (id, subs) {
@@ -295,7 +292,7 @@ function DisplayAllLevelCategories(data) {
     var CatIDs = data[1];
     var SubCatIDs = data[2];
     if (data === "none") {
-        parent.text("No Result");
+        parent.text("No Results");
     } else {
 //-------------------TOp Categery Start----------------------//
         var childclone = parent.find(".addprod-category-clone");
@@ -417,6 +414,6 @@ function DisplayAddProductDetails(data) {
     $("#addprod-shippingwidth").val(data.ShippingPackageDetails.package_width);
     $("#addprod-shippingheight").val(data.ShippingPackageDetails.package_height);
     $("#addprod-shippingdepth").val(data.ShippingPackageDetails.package_depth);
-     $("#addprod-tags").tagsinput('add', data.InfoDetails.name);
+    $("#addprod-tags").tagsinput('add', data.InfoDetails.name);
 
 }

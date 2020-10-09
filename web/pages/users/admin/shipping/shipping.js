@@ -170,8 +170,9 @@ function DisplayShippings(data, parent) {
         childclone.hide();
 
     } else {
-        var row = $("<div />").appendTo(parent);
-        $("<div />", {class: "ml-9 text-center newclone text-primary", text: "No Result Found"}).appendTo(row);
+        var row = $("<tr />").appendTo(parent);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "11", text: "No Results Found"}).appendTo(row);
+        
 
     }
 }
@@ -272,7 +273,7 @@ function DisplayShippingFees(data, parent) {
 
     } else {
         var row = $("<div />").appendTo(parent);
-        $("<div />", {class: "ml-9 text-center newclone text-primary", text: "No Result Found"}).appendTo(row);
+        $("<div />", {class: "ml-9 text-center newclone text-primary", text: "No Results Found"}).appendTo(row);
 
     }
 }

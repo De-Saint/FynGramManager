@@ -40,12 +40,12 @@ function reviewPageFunctions() {
 }
 
 function DisplayUserReviews(data) {
-
     hideLoader();
     var reviewParent = $("#reviewsList");
     reviewParent.find(".new-clone").remove();
     if (data === "none") {
-        reviewParent.text("No Result");
+        var row = $("<div />").appendTo(reviewParent);
+        $("<div />", {class: "text-center newclone text-primary", text: "No Results Found"}).appendTo(row);
     } else {
         var childclone = reviewParent.find(".review-clone");
         var count = 0;
@@ -88,10 +88,10 @@ function DisplayUserReviews(data) {
                 }, function (dismiss) {
                     if (dismiss) {
                         showLoader();
-                GetData("Review", "DeleteReview", "LoadDeleteReview", details["id"]);
+                        GetData("Review", "DeleteReview", "LoadDeleteReview", details["id"]);
                     }
                 });
-                
+
             });
             DisplayToolTip(btndelete);
             newchild.appendTo(reviewParent).show();
@@ -103,10 +103,10 @@ function DisplayUserReviews(data) {
 
 }
 
-function DisplayDeleteReview(data){
+function DisplayDeleteReview(data) {
     hideLoader();
     var resp = data.result;
-     if (resp.status === "success") {
+    if (resp.status === "success") {
         swal({
             title: 'Review',
             text: resp.msg,
@@ -116,7 +116,7 @@ function DisplayDeleteReview(data){
             confirmButtonText: 'Ok!',
             buttonsStyling: true
         }, function (dismiss) {
-           DisplayUserReviews(data.reviewdata);
+            DisplayUserReviews(data.reviewdata);
         });
     } else if (resp.status === "error") {
         swal({
@@ -130,6 +130,6 @@ function DisplayDeleteReview(data){
             }
         });
     }
-    
+
 }
 

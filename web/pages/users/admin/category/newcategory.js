@@ -266,7 +266,7 @@ function DisplayCategoryAllProperties(data) {
     var CatList = data[0];
     var TopCatSubs = data[1];
     if (data === "none") {
-        parent.text("No Result");
+        parent.text("No Results Found");
     } else {
         var childclone = parent.find(".addprod-prop-clone");
         $.each(TopCatSubs, function (id, subs) {

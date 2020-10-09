@@ -92,7 +92,7 @@ function DisplayRecentTransactions(data, parent) {
 
     } else {
         var row = $("<tr />").appendTo(parent);
-        $("<td />", {class: "text-center newclone text-primary", colspan:"7", text: "No Result Found"}).appendTo(row);
+        $("<td />", {class: "text-center newclone text-primary", colspan:"7", text: "No Results Found"}).appendTo(row);
 
     }
 }

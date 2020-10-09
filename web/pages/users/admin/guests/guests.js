@@ -77,7 +77,7 @@ function DisplayAllGuests(data) {
 
     } else {
         var row = $("<div />").appendTo(parent);
-        $("<div />", {class: "ml-9 w-100 text-center newclone font-weight-bold text-primary", text: "No Result Found "}).appendTo(row);
+        $("<div />", {class: "ml-9 w-100 text-center newclone font-weight-bold text-primary", text: "No Results Found "}).appendTo(row);
 
     }
 

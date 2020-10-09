@@ -55,7 +55,7 @@ function DisplayTwoLevelsCategories(data) {
     var CatList = data[0];
     var TopCatSubs = data[1];
     if (data === "none") {
-        parent.text("No Result");
+        parent.text("No Results Found");
     } else {
         var childclone = parent.find(".allcat-clone");
         $.each(TopCatSubs, function (id, subs) {
@@ -310,7 +310,7 @@ function DisplayCatDetails(data) {
     var CatList = catpropdata.catList;
     var TopCatSubs = catpropdata.RootCatParIDs;
     if (data === "none") {
-        parent.text("No Result");
+        parent.text("No Results Found");
     } else {
         var childclone = parent.find(".cat-det-proplist-clone");
         $.each(TopCatSubs, function (id, subs) {

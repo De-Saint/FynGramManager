@@ -52,7 +52,7 @@
                                             <h6 class="">Total Debit</h6>
                                             <h3 class="m-0 transTotalDrCount">0</h3>
                                         </div>
-                                        <div class="ml-auto"> <i class="fa fa-credit-card-alt fa-3x"></i> </div>
+                                        <div class="ml-auto"> <i class="fa fa-money fa-3x"></i> </div>
                                     </div>
                                 </div>
                             </div>

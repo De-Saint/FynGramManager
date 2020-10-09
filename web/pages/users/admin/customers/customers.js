@@ -142,7 +142,7 @@ function DisplayAllCustomers(data) {
         $(".TotalInactiveCustomers").text(offlinecount);
     } else {
         var row = $("<div />").appendTo(parent);
-        $("<div />", {class: "ml-9 w-100 text-center newclone font-weight-bold text-primary", text: "No Result Found Clear Search"}).appendTo(row);
+        $("<div />", {class: "ml-9 w-100 text-center newclone font-weight-bold text-primary", text: "No Results Found Clear Search"}).appendTo(row);
     }
 
 }

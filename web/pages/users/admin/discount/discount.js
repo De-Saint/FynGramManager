@@ -358,7 +358,8 @@ function DisplayDiscountCodes(data) {
         $(".TotalAllCustomers").text(TotalAllCustomers);
         $(".TotalAllSingleCustomers").text(TotalAllSingleCustomers);
     } else {
-
+        var row = $("<tr />").appendTo(parent);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "8", text: "No Results Found"}).appendTo(row);
     }
 }
 

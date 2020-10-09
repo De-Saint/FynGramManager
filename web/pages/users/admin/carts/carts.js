@@ -125,7 +125,7 @@ function DisplayAllShopCarts(data, parent) {
 
     } else {
         var row = $("<tr />").appendTo(parent);
-        $("<td />", {class: "ml-9 text-center newclone text-primary", colspan: "12", text: "No Result Found"}).appendTo(row);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "12", text: "No Results Found"}).appendTo(row);
 
     }
 }

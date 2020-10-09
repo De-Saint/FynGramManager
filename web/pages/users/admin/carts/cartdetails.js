@@ -52,7 +52,7 @@ function DisplayCartProductDetails(data) {
     var parent = $(".cart_productlist");
     parent.find(".new-clone").remove();
     if (proddata === "none") {
-        parent.text("No Result");
+        parent.text("No Results Found");
     } else {
         var childclone = parent.find(".cartproductclone");
         var count = 0;

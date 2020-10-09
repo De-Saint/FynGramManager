@@ -123,7 +123,8 @@ function DisplayGetSellerTypes(data) {
         childclone.hide();
     } else {
         var row = $("<div />").appendTo(parent);
-        $("<div />", {class: "ml-9 w-100 text-center newclone font-weight-bold text-primary", text: "No Result Found"}).appendTo(row);
+        $("<div />", {class: "text-center newclone text-primary", text: "No Results Found"}).appendTo(row);
+
     }
 }
 function DisplaySellerInfo(resp) {
@@ -158,7 +159,7 @@ function DisplayAllSellers(data) {
     hideLoader();
     var parent = $("#AllSellers");
     parent.find(".newclone").remove();
-    if (data !== "none") {
+    if (data === "none") {
         var childclone = parent.find(".seller-clone");
         var count = 0;
         var activatedcount = 0;
@@ -249,7 +250,7 @@ function DisplayAllSellers(data) {
         $(".TotalPending").text(pendingcount);
     } else {
         var row = $("<div />").appendTo(parent);
-        $("<div />", {class: "ml-9 w-100 text-center newclone font-weight-bold text-primary", text: "No Result Found Clear Search"}).appendTo(row);
+        $("<div />", {class: "ml-4 text-center newclone text-primary", text: "No Results Found Clear Search"}).appendTo(row);
     }
 }
 

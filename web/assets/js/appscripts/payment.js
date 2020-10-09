@@ -78,7 +78,8 @@ function DisplayGetPayments(data, parent) {
         $(".payTotalSFCount").text(sfCount);
         childclone.hide();
     } else {
-//        $("<li />", {class: "wide center clone-child", text: "No Result", colspan: "7"}).appendTo(parent);
+        var row = $("<tr />").appendTo(parent);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "8", text: "No Results Found"}).appendTo(row);
     }
 
 }

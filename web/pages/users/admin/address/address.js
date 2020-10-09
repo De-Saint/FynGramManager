@@ -102,7 +102,7 @@ function DisplayGetAddressTypes(data) {
 
     } else {
         var row = $("<tr />").appendTo(parent);
-        $("<td />", {class: "ml-9 text-center newclone text-primary", colspan: "6", text: "No Result Found"}).appendTo(row);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "6", text: "No Results Found"}).appendTo(row);
 
     }
 }
@@ -142,7 +142,7 @@ function DisplayAddresses(data) {
 
     } else {
         var row = $("<tr />").appendTo(parent);
-        $("<td />", {class: "ml-9 text-center newclone text-primary", colspan: "7", text: "No Result Found"}).appendTo(row);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "7", text: "No Results Found"}).appendTo(row);
 
     }
 }

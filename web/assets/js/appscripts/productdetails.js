@@ -132,7 +132,7 @@ function DisplayProductDetails(data) {
 function DisplayProdDetTags(data) {
     var TagDetails = $("#product-tags-list");
     if (data === "none") {
-        TagDetails.text("No Result");
+        TagDetails.text("No Results");
     } else {
         var childclone = TagDetails.find(".product-tags-list-clone");
         var count = 0;
@@ -151,7 +151,7 @@ function DisplayProdDetTags(data) {
 function DisplayProdDetCats(data) {
     var CategoryDetails = $("#product-categories-list");
     if (data === "none") {
-        CategoryDetails.text("No Result");
+        CategoryDetails.text("No Results");
     } else {
         var childclone = CategoryDetails.find(".product-categories-list-clone");
         var count = 0;
@@ -170,7 +170,7 @@ function DisplayProdDetCats(data) {
 function DisplayProdDetProps(data) {
     var PropertyParent = $("#product-properties-list");
     if (data === "none") {
-        PropertyParent.text("No Result");
+        PropertyParent.text("No Results");
     } else {
         var childclone = PropertyParent.find(".product-properties-list-clone");
         var count = 0;

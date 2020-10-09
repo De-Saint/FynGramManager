@@ -227,7 +227,7 @@ function DisplayDashBoardProducts1(data) {
         childclone.hide();
     } else {
         var row = $("<tr />").appendTo(parent);
-        $("<td />", {class: "text-center newclone text-primary", colspan: "9", text: "No Result Found"}).appendTo(row);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "9", text: "No Results Found"}).appendTo(row);
 
     }
 }
@@ -301,7 +301,7 @@ function DisplayDashBoardOrders1(data) {
 
     } else {
         var row = $("<tr />").appendTo(parent);
-        $("<td />", {class: "text-center newclone text-primary", colspan: "9", text: "No Result Found"}).appendTo(row);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "9", text: "No Results Found"}).appendTo(row);
 
     }
 }

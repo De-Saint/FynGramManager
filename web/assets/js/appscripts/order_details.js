@@ -153,7 +153,7 @@ function DisplayStatusHistoryDetails(data) {
     var parent = $(".order-status-history");
     parent.find(".new-clone").remove();
     if (data === "none") {
-        parent.text("No Result");
+        parent.text("No Results");
     } else {
         var childclone = parent.find(".order-status-history-clone");
         var count = 0;
@@ -178,7 +178,7 @@ function DisplayOrderHistoryProducts(data) {
     var parent = $(".hstory_productlist");
     parent.find(".new-clone").remove();
     if (data === "none") {
-        parent.text("No Result");
+        parent.text("No Results");
     } else {
         var childclone = parent.find(".historyproductclone");
         var count = 0;
@@ -266,7 +266,7 @@ function DisplayShippingMethodDetails(data) {
 function DisplayOrderStatus(data) {
     var cs = $("#orderstatuses");
     if (data === "none") {
-        cs.text("No Result");
+        cs.text("No Results");
     } else {
         var ids = data[0];
         var result = data[1];
@@ -282,7 +282,7 @@ function DisplayOrderStatus(data) {
 function DisplayOrderShippingMethods(data) {
     var cs = $("#ordershipmethod");
     if (data === "none") {
-        cs.text("No Result");
+        cs.text("No Results");
     } else {
         var ids = data[0];
         var result = data[1];

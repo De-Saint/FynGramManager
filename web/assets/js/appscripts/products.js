@@ -385,7 +385,7 @@ function DisplayUnits(data) {
 //    hideLoader();
     var parent = $("#ProductUnitList");
     if (data === "none") {
-        parent.text("No Result");
+        parent.text("No Results Found");
     } else {
         var childclone = parent.find(".produnitclone");
         var ids = data[0];
@@ -437,7 +437,7 @@ function  DisplayProductConditions(data) {
 //    hideLoader();
     var parent = $("#ProdConditionList");
     if (data === "none") {
-        parent.text("No Result");
+        parent.text("No Results");
     } else {
         var childclone = parent.find(".prodconditionclone");
         var ids = data[0];
@@ -516,7 +516,7 @@ function DisplayProductInfo(resp) {
 function DisplayAllProductCategories(data) {
     var cs = $("#s-pcat");
     if (data === "none") {
-        cs.text("No Result");
+        cs.text("No Results Found");
         $("#s-pcat").prop("disabled", true);
     } else {
         $("#s-pcat").prop("disabled", false);

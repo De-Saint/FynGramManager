@@ -193,6 +193,9 @@ function DisplayCashoutRequests(data, parent) {
         $(".PendingCashout").text(pendcount);
         $(".TotalApproved").text(approvecount);
         $(".TotalRejected").text(rejectcount);
+    } else {
+        var row = $("<tr />").appendTo(parent);
+        $("<td />", {class: "text-center newclone text-primary", colspan: "10", text: "No Results Found"}).appendTo(row);
     }
 }
 
