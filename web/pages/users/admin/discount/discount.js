@@ -184,7 +184,6 @@ function DisplayDiscountTypes(data) {
 }
 
 function DisplayDeductionTypes(data) {
-    console.log(data);
     hideLoader();
     var cs = $("#dcodeDeductionType");
     cs.empty();

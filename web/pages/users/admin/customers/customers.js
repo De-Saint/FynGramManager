@@ -77,7 +77,6 @@ function customerPageFunctions() {
 
 
 function DisplayAllCustomers(data) {
-    console.log(data);
     hideLoader();
     var parent = $("#AllCustomers");
     parent.find(".newclone").remove();
@@ -149,7 +148,6 @@ function DisplayAllCustomers(data) {
 }
 
 function DisplayCustomerDetails(data) {
-    console.log(data);
     $(".customer-uname").text(data.UserName);
     $(".customer-upendingBalance").text(PriceFormat(data.WalletDetails.PendingBalance));
     $(".customer-umainBalance").text(PriceFormat(data.WalletDetails.MainBalance));

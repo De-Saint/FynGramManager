@@ -301,7 +301,6 @@ function DisplayParentProperties(data) {
 }
 
 function DisplayCatDetails(data) {
-    console.log(data.PropertyDetails);
     $(".cat-list-name").text(data.name);
     $(".cat-list-description").text(data.description);
 

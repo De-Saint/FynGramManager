@@ -53,8 +53,6 @@ function dashBoardPageFunctions() {
 }
 
 function DisplayDashBoardReports(data) {
-    console.log(data);
-
     $(".total_subscriptions").text(NumberFormat(data.subscription_count));
     $(".total_customer").text(NumberFormat(data.customer_count));
     $(".total_orders").text(NumberFormat(data.order_count));

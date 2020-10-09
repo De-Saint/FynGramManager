@@ -109,7 +109,6 @@ function DisplayGetAddressTypes(data) {
 
 function DisplayAddresses(data) {
     hideLoader();
-    console.log(data);
     var parent = $(".AddressList");
     parent.find(".newclone").remove();
     if (data !== "none") {

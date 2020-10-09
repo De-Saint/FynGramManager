@@ -56,7 +56,6 @@ function DisplayAllGuests(data) {
         $.each(ids, function (index, id) {
             count++;
             var result = details[id];
-            console.log(result);
             var newchild = childclone.clone();
             newchild.addClass("guest-clone");
             newchild.addClass("newclone");

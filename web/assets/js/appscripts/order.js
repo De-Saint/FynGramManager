@@ -147,7 +147,6 @@ function DisplayOrders(data, parent) {
 }
 
 function DisplayOrderCancelRule(data) {
-    console.log(data.rules);
     if (data.rules) {
         $(".order-cancel-rule-amount").text(parseFloat(data.rules.percent));
         if (parseInt(data.rules.enforce_rule) === 1) {
@@ -160,7 +159,6 @@ function DisplayOrderCancelRule(data) {
 
 
 function DisplayUpdateEnforceCancelFees(data) {
-    console.log(data.rules);
     var resp = data.result;
     hideLoader();
     if (resp.status === "success") {
@@ -191,7 +189,6 @@ function DisplayUpdateEnforceCancelFees(data) {
 }
 
 function DisplayDeleteOrder(resp) {
-    console.log(resp);
     hideLoader();
     if (resp.status === "success") {
         swal({

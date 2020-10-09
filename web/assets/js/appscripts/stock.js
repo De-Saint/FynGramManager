@@ -34,7 +34,6 @@ function stockSetActiveLink() {
     $("#id-shop-stock").addClass("active");
 }
 function DisplayStockMovement(data) {
-    console.log(data);
     hideLoader();
     var parent = $(".StockList");
     parent.find(".newclone").remove();

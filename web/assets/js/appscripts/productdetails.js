@@ -64,7 +64,6 @@ function productDetailsPageFunctions() {
 }
 
 function DisplayProductDetails(data) {
-    console.log(data);
     hideLoader();
     $(".product-name").text(data["InfoDetails"].name);
     $(".product-desc").text(data["InfoDetails"].description);

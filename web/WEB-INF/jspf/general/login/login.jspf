@@ -15,7 +15,7 @@
                         <form name="loginForm" id="">
                             <div class="row">
                                 <div class="col-md-12 col-lg-7 pr-0 d-none d-lg-block"> <img
-                                        src="assets/images/photos/login.jpg" alt="img" class="br-tl-2 br-bl-2 ">
+                                        src="assets/images/photos/newimage.jpg" alt="img" class="br-tl-2 br-bl-2 mt-9">
                                 </div>
 
                                 <div class="col-md-12 col-lg-5 pl-0 ">

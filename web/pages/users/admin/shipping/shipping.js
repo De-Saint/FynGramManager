@@ -94,7 +94,6 @@ function shippingPageFunctions() {
 
 
 function DisplayShippings(data, parent) {
-    console.log(data);
     hideLoader();
     parent.find(".newclone").remove();
     if (data !== "none") {
@@ -208,7 +207,6 @@ function DisplayDeleteShipping(data, parent) {
 
 
 function DisplayShippingFees(data, parent) {
-    console.log(data);
     hideLoader();
     parent.find(".newclone").remove();
     if (data !== "none") {

@@ -41,7 +41,6 @@ function cartPageFunctions() {
 
 function DisplayAllShopCarts(data, parent) {
     hideLoader();
-    console.log(data);
     parent.find(".newclone").remove();
     if (data !== "none") {
         var ids = data[0];

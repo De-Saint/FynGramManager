@@ -77,7 +77,6 @@ function dashBoardPageFunctions() {
 }
 
 function DisplayDashBoardStats(data) {
-    console.log(data);
 
     $(".total_subscriptions").text(NumberFormat(data.subscription_count));
     $(".total_orders").text(NumberFormat(data.order_count));

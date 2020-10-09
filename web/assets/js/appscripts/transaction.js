@@ -136,7 +136,6 @@ function DisplayTransactionTypes(data) {
 
 
 function DisplayDeleteTransaction(data, parent) {
-    console.log(data);
     var resp = data[2];
     if (resp.status === "success") {
         SuccessNoty(resp.msg);

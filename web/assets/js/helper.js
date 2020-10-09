@@ -218,7 +218,6 @@ function ConvertImageToBase64(file, objectid, objecttype) {
 //        url: url + '/FynGramEngine/DispatcherSerlvet',
     reader.onload = function () {
         var base64Image = reader.result.toString();
-        console.log(base64Image);
         var data = base64Image.replace(/^data:image\/(png|jpg);base64,/, "");
         showLoader();
         var newData = objectid + "-" + objecttype + "-" + data;

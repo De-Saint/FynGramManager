@@ -52,7 +52,6 @@ function DisplayUserReviews(data) {
         $.each(data, function (index, details) {
             var newchild = childclone.clone();
             count++;
-            console.log(details["date"]);
             newchild.removeClass("review-clone");
             newchild.removeClass("d-none");
 

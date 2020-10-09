@@ -78,7 +78,6 @@ function sellerPageFunctions() {
 
 
 function DisplayGetSellerTypes(data) {
-    console.log(data);
     hideLoader();
     var parent = $("#SellerTypeList");
     if (data !== "none") {
@@ -255,7 +254,6 @@ function DisplayAllSellers(data) {
 }
 
 function DisplaySellerDetails(data) {
-    console.log(data);
     $(".seller-uname").text(data.UserName);
     $(".seller-upendingBalance").text(PriceFormat(data.WalletDetails.PendingBalance));
     $(".seller-umainBalance").text(PriceFormat(data.WalletDetails.MainBalance));

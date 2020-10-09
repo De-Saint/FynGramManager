@@ -128,7 +128,6 @@ function DisplayPropProperties(data) {
 }
 
 function DisplayPropertyDetails(data) {
-    console.log(data.isroot_property);
     hideLoader();
      $("#newprop-name").val(data.name);
     if (data.isroot_property === "1" || data.isroot_property === 1) {

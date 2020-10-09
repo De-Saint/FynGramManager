@@ -116,7 +116,6 @@
 	
 	// ______________Search
 	$('body, .navbar-collapse form[role="search"] button[type="reset"]').on('click keyup', function(event) {
-		console.log(event.currentTarget);
 		if (event.which == 27 && $('.navbar-collapse form[role="search"]').hasClass('active') ||
 		$(event.currentTarget).attr('type') == 'reset') {
 		closeSearch();

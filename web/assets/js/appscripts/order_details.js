@@ -85,7 +85,6 @@ function orderDetailsPageFunctions() {
 
 
 function DisplayOrderDetails(data) {
-    console.log(data.OrderDetails);
     hideLoader();
     $(".order_seller_amount").text(PriceFormat(data.OrderDetails.seller_amount));
     $(".order_booked_date").text(data.OrderDetails.booking_date);
@@ -255,7 +254,6 @@ function DisplayInvoiceDetails(data) {
 }
 
 function DisplayShippingMethodDetails(data) {
-    console.log(data);
     if (!$.isEmptyObject(data)) {
         $(".assign-ship-meth-name").text(data.name);
         $(".assign-ship-meth-email").text(data.email);
@@ -300,7 +298,6 @@ function DisplayOrderShippingMethods(data) {
 }
 
 function DisplayUpdateOrderStatus(data) {
-    console.log(data);
     var resp = data.result;
     hideLoader();
     if (resp.status === "success") {

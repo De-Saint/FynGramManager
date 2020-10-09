@@ -38,7 +38,7 @@ function productBtnEvents() {
     $(".SelectAll").click(function () {
 
 //         $('input:checkbox').prop('checked', this.checked);   
-        $('input[name="prod-id"]').not(this).prop('checked', this.checked);
+//        $('input[name="prod-id"]').not(this).prop('checked', this.checked);
 //        alert($('input[name="prod-id"]:checked'));
     });
 
@@ -75,7 +75,7 @@ function productBtnEvents() {
         var Note = "";
         var StatusText = "";
         if (Status === "Deleted") {
-            otherText = "Are you sure you want to Delete the selected products? Only Activated Products will NOT  be Deleted";
+            otherText = "Are you sure you want to Delete the selected products? Activated Products will NOT be Deleted";
             StatusText = "Delete";
         } else if (Status === "Deactivated") {
             otherText = "Are you sure you want to Deactivate the selected products? Only Activated Products would be Deactivated and the selected products will no longer be shown on the Front Store";
@@ -259,7 +259,6 @@ function productSearchOptions() {
 
 
 function DisplayProducts(data) {
-    console.log(data);
     hideLoader();
     var parent = $("#ProductList");
     parent.find(".new-clone").remove();
@@ -349,7 +348,7 @@ function DisplayProducts(data) {
                 ProcessProductStatus(ProductID, "Rejected", "Product has been rejected. Please contact the Admin", "Reject", "Are you sure you want to Reject this product?", "Single", "");
             });
             newchild.find(".btn-prod-delete").click(function () {
-                ProcessProductStatus(ProductID, "Deleted", "Product has been rejected. Please contact the Admin", "Delete", "Are you sure you want to Delete this product?", "Single", "");
+                ProcessProductStatus(ProductID, "Deleted", "Product has been deleted. Please contact the Admin", "Delete", "Are you sure you want to Delete this product?", "Single", "");
             });
             newchild.appendTo(parent).show();
         });

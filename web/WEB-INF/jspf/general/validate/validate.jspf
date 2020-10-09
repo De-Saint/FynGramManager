@@ -13,11 +13,11 @@
                 <div class="card">
                     <div class="row">
                         <div class="col-md-12 col-xl-6 col-lg-6 pr-0 d-none d-lg-block"> <img
-                                src="../../../assets/images/photos/login2.jpg" alt="img" class="br-tl-2 br-bl-2 "> 
+                                src="../../../assets/images/photos/newimage.jpg" alt="img" class="br-tl-2 br-bl-2 mt-5 "> 
                         </div>
                         <div class="col-md-12 col-xl-6 col-lg-6 pl-0">
                             <form name="verificationForm" class="resetpwd  ">
-                                <div class="card-body p-6 about-con pabout">
+                                <div class="card-body about-con pabout">
                                     <div class="card-title text-center mb-5">Enter The Email Verification Code</div>
                                     <div class="form-group"> 
                                         <input type="text" id="verifyCode" class="form-control" placeholder="Verification Code">
@@ -25,11 +25,11 @@
                                     <div class="form-footer mt-1"> 
                                         <button type="submit" class="btn btn-success btn-block">Submit</button> 
                                     </div>
-                                    <div class="text-center text-muted mt-3 "> Forget it, <a  href="${pageContext.request.contextPath}/LinksServlet?&type=Login">
-                                            Back to the Login.</a> </div>
+<!--                                    <div class="text-center text-muted mt-3 "> Forget it, <a  href="${pageContext.request.contextPath}/LinksServlet?&type=Login">
+                                            Back to the Login.</a> </div>-->
                                 </div>
                             </form>
-                            <div class="px-2">If, you did not receive an email, you can  <a href="${pageContext.request.contextPath}/LinksServlet?type=Login" class="text-success">login</a> and validate your account later.</div>
+                                    <div class="">Validate your account and add new product. If, you did not receive an email, you can  <a href="${pageContext.request.contextPath}/LinksServlet?type=Login" class="text-primary">login and add new product</a> and validate your account later.</div>
                         </div>
                     </div>
                 </div>

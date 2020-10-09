@@ -25,6 +25,15 @@ function validateBtnEvents() {
     });
 
 
+    $(".addproduct").click(function () {
+        var sessiontype = GetSessionType();
+        alert(sessiontype);
+        if (sessiontype === "Seller") {
+            localStorage.setItem("option", "addproduct");
+            window.location = extension + "LinksServlet?type=SellerAddProduct";
+        }
+
+    });
 }
 
 
@@ -38,12 +47,18 @@ function DisplayValidateAccount(resp) {
             title: 'Welcome to FynGram Manager App',
             text: resp.msg,
             type: 'success',
-            showCancelButton: false,
+            showCancelButton: true,
             closeOnConfirm: false,
-            confirmButtonText: ' Continue!',
+            confirmButtonText: 'Add Product',
+            cancelButtonText: 'Goto DashBoard',
             buttonsStyling: true
         }, function (dismiss) {
-            window.location = extension + "LinksServlet?type=SellerDashboard";
+            if (dismiss) {
+                localStorage.setItem("option", "addproduct");
+                window.location = extension + "LinksServlet?type=SellerAddProduct";
+            } else {
+                window.location = extension + "LinksServlet?type=SellerDashboard";
+            }
         });
     } else if (resp.status === "error") {
         swal({
