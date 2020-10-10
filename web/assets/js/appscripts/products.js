@@ -38,7 +38,6 @@ function productBtnEvents() {
 
 //         $('input:checkbox').prop('checked', this.checked);   
 //        $('input[name="prod-id"]').not(this).prop('checked', this.checked);
-//        alert($('input[name="prod-id"]:checked'));
     });
 
     $(".btn-cp").click(function () {

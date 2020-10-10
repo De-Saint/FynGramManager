@@ -4,7 +4,7 @@
 	// Toolbar extra buttons
 	var btnFinish = $('<button></button>').text('Finish')
 		.addClass('btn btn-success')
-		.on('click', function(){ alert('Finish Clicked'); });
+		.on('click', function(){  });
 	var btnCancel = $('<button></button>').text('Cancel')
 		.addClass('btn btn-danger')
 		.on('click', function(){ $('#smartwizard').smartWizard("reset"); });

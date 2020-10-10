@@ -41,17 +41,17 @@
                                     <div class="product-slider">
                                         <div id="carousel2" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner">
-                                                <div class="carousel-item pimg active"> 
-                                                    <img  class="product-image" alt="img">
+                                                <div class="carousel-item pimg active align-items-center text-center"> 
+                                                    <img  class="product-image img-thumbnail " style="height: 250px !important; width: 250px!important;" alt="img">
                                                 </div>
-                                                <div class="carousel-item pimg1">
-                                                    <img  class="product-image1"  alt="img"> 
+                                                <div class="carousel-item pimg1 align-items-center text-center">
+                                                    <img  class="product-image1 img-thumbnail"  style="height: 250px !important; width: 250px!important;"  alt="img"> 
                                                 </div>
-                                                <div class="carousel-item pimg2">
-                                                    <img   class="product-image2" alt="img"> 
+                                                <div class="carousel-item pimg2 align-items-center text-center">
+                                                    <img   class="product-image2 img-thumbnail"  style="height: 250px !important; width: 250px!important;" alt="img"> 
                                                 </div>
-                                                <div class="carousel-item pimg3">
-                                                    <img class="product-image3" alt="img"> 
+                                                <div class="carousel-item pim g3 align-items-center text-center">
+                                                    <img class="product-image3 img-thumbnail"   style="height: 250px !important; width: 250px!important;"alt="img"> 
                                                 </div>
                                             </div>
                                         </div>
@@ -60,23 +60,23 @@
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <div data-target="#carousel2" data-slide-to="0" class="thumb pimg">
-                                                            <img  class="product-image" alt="img"></div>
+                                                            <img  class="product-image  img-thumbnail" style="height: 95px !important; width: 92px !important;" alt="img"></div>
                                                         <div data-target="#carousel2" data-slide-to="1" class="thumb pimg1">
-                                                            <img  class="product-image1" alt="img"></div>
+                                                            <img  class="product-image1  img-thumbnail"  style="height: 95px !important; width: 92px !important;" alt="img"></div>
                                                         <div data-target="#carousel2" data-slide-to="2" class="thumb pimg2">
-                                                            <img  class="product-image2"alt="img"></div>
+                                                            <img  class="product-image2  img-thumbnail"  style="height: 95px !important; width: 92px !important;" alt="img"></div>
                                                         <div data-target="#carousel2" data-slide-to="3" class="thumb pimg3">
-                                                            <img  class="product-image3" alt="img"></div>
+                                                            <img  class="product-image3  img-thumbnail"  style="height: 95px !important; width: 92px !important;" alt="img"></div>
                                                     </div>
                                                     <div class="carousel-item">
                                                         <div data-target="#carousel2" data-slide-to="4" class="thumb pimg">
-                                                            <img  class="product-image"" alt="img"></div>
+                                                            <img  class="product-image  img-thumbnail"   style="height: 95px !important; width: 92px !important;"alt="img"></div>
                                                         <div data-target="#carousel2" data-slide-to="5" class="thumb pimg1">
-                                                            <img  class="product-image1" alt="img"></div>
+                                                            <img  class="product-image1  img-thumbnail"  style="height: 95px !important; width: 92px !important;" alt="img"></div>
                                                         <div data-target="#carousel2" data-slide-to="6" class="thumb pimg2">
-                                                            <img  class="product-image2" alt="img"></div>
+                                                            <img  class="product-image2  img-thumbnail"  style="height: 95px !important; width: 92px !important;" alt="img"></div>
                                                         <div data-target="#carousel2" data-slide-to="7" class="thumb pimg3">
-                                                            <img  class="product-image3" alt="img"></div>
+                                                            <img  class="product-image3 img-thumbnail"  style="height: 95px !important; width: 92px !important;" alt="img"></div>
                                                     </div>
                                                 </div> 
                                                 <a class="carousel-control-prev" href="#thumbcarousel1" role="button" data-slide="prev"> 
