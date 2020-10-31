@@ -148,11 +148,18 @@ function addProductBtnEvents() {
 
         var stocknotification = $("#addprod-stocknotification").val();
         var stockmin = $("#addprod-stockmin").val();
-
         var shippingheight = $("#addprod-shippingheight").val();
         var shippingdepth = $("#addprod-shippingdepth").val();
         var shippingwidth = $("#addprod-shippingwidth").val();
-
+        if (!shippingdepth) {
+            shippingdepth = 0;
+        }
+        if (!shippingdepth) {
+            shippingdepth = 0;
+        }
+        if (!shippingwidth) {
+            shippingwidth = 0;
+        }
         option = GetProductOption();
         productid = GetProductID();
         var data = [option, sessionid, name, desc, refnumber, upcbarcode, prodcondition, sellingprice, costprice, quantity, quantitymin, selectedcatids, selectedproperties, unit,
@@ -411,9 +418,23 @@ function DisplayAddProductDetails(data) {
     $("#addprod-quantitymin").val(data.QuantityDetails.minimum_quantity);
     $("#addprod-unitvalue").val(data.UnitDetails.value);
     $("#addprod-stockmin").val(data.StockDetails.minimum_stock_level);
-    $("#addprod-shippingwidth").val(data.ShippingPackageDetails.package_width);
-    $("#addprod-shippingheight").val(data.ShippingPackageDetails.package_height);
-    $("#addprod-shippingdepth").val(data.ShippingPackageDetails.package_depth);
+    if (data.ShippingPackageDetails.package_height) {
+        $("#addprod-shippingwidth").val(data.ShippingPackageDetails.package_width);
+    } else {
+        $("#addprod-shippingwidth").val(0);
+    }
+    
+    if (data.ShippingPackageDetails.package_height) {
+        $("#addprod-shippingheight").val(data.ShippingPackageDetails.package_height);
+    } else {
+        $("#addprod-shippingheight").val(0);
+    }
+
+    if (data.ShippingPackageDetails.package_depth) {
+        $("#addprod-shippingdepth").val(data.ShippingPackageDetails.package_depth);
+    } else {
+        $("#addprod-shippingdepth").val(0);
+    }
     $("#addprod-tags").tagsinput('add', data.InfoDetails.name);
 
 }

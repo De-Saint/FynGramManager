@@ -27,7 +27,6 @@ function validateBtnEvents() {
 
     $(".addproduct").click(function () {
         var sessiontype = GetSessionType();
-        alert(sessiontype);
         if (sessiontype === "Seller") {
             localStorage.setItem("option", "addproduct");
             window.location = extension + "LinksServlet?type=SellerAddProduct";
