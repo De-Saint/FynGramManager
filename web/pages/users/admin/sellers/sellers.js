@@ -159,7 +159,7 @@ function DisplayAllSellers(data) {
     hideLoader();
     var parent = $("#AllSellers");
     parent.find(".newclone").remove();
-    if (data === "none") {
+    if (data !== "none") {
         var childclone = parent.find(".seller-clone");
         var count = 0;
         var activatedcount = 0;
