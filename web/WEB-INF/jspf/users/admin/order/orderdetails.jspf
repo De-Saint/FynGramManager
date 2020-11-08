@@ -88,7 +88,7 @@
                         <div class="row ">
                             <div class="col-lg-10 ">
                                 <p class=""><select class="form-control select-sm" id="ordershipmethod">
-                                        <option value="two">two</option>
+                                        
                                     </select></p>
 
                                 <address class="fs-15 font-weight-bold"> 

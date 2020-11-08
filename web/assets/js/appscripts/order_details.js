@@ -280,9 +280,11 @@ function DisplayOrderStatus(data) {
     }
 }
 function DisplayOrderShippingMethods(data) {
+    console.log(data);
     var cs = $("#ordershipmethod");
     if (data === "none") {
-        cs.text("No Results");
+//        cs.text("No Results");
+        cs.append($('<option/>').text("Please add a logistics company. Go to the shipping page"));
     } else {
         var ids = data[0];
         var result = data[1];
