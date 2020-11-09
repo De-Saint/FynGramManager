@@ -74,7 +74,47 @@
 
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-12">
+                <div class="card ">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                Step1: Confirmed <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>For Confirmed Order. <br>Update the Order status to 'Confirmed', after you have confirmed the payment and the availability of the ordered items</a></p> " data-original-title="" title="">?</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                Step2: Shipping/Logistics <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>For Shipping Method <br> Select a shipping/logistics Company/Method or Add a new shipping company. <br>To Add New Shipping Method: <br>Click on the 5th Menu, Click on Shipping, Click on Add New Shipping Button and Fill the form.</a></p> " data-original-title="" title="">?</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                 Step3: Shipped <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>For Shipped Order. <br>Update the Order status to 'Shipped' after you have packaged and shipped the item(s)</a></p> " data-original-title="" title="">?</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                Step4: Delivered <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>For Delivered Order. <br>Update the Order status to 'Delivered', after the order has been delivered. And after 48hrs the fund will be transferred to the Seller..</a></p> " data-original-title="" title="">?</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                Step5: Cancelled <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>To Cancel the Order. <br>Update the Order Status to 'Cancelled'.</a></p> " data-original-title="" title="">?</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4">
+                            <div class="card-body ">
+                                Step6: Dispute & Settled <span class="form-help" data-toggle="popover" data-placement="top" data-content="<p>For Dispute. <br>If a dispute is reported about an order, Update the the Order Status to 'Dispute' to put the order on hold. <br> After the Dispute has been settled, then, Update the Order Status to 'Settled'</a></p> " data-original-title="" title="">?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
         <div class="row">
             <div class="col-xl-6">
                 <div class="card ">
@@ -88,7 +128,7 @@
                         <div class="row ">
                             <div class="col-lg-10 ">
                                 <p class=""><select class="form-control select-sm" id="ordershipmethod">
-                                        
+
                                     </select></p>
 
                                 <address class="fs-15 font-weight-bold"> 
@@ -139,16 +179,11 @@
                                     </address>
 
                                 </div>
-                                   
+
                             </div>
                             <div class="col-lg-3 text-right">
                                 <p class="h3"><button class="btn btn-outline-primary btn-sm UpdateOrderStatusBtn">Update Status</button></p>
-
                             </div>
-                            
-                            <div class="">
-                            <p class="mb-1 mt-5"><span class="font-weight-semibold">(Confirm => Ship => Deliver) </span> <span class=""> (Confirm/Cancel => Ship/Cancel)</span></p>
-                        </div>
                         </div>
                     </div>
                 </div>
